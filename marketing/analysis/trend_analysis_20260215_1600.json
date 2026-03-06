@@ -1,0 +1,609 @@
+{
+  "timestamp": "2026-02-15 16:00:01",
+  "analysis_period": "2_hours",
+  "platforms": {
+    "xiaohongshu": {
+      "platform_name": "小红书",
+      "keyword_analyses": [
+        {
+          "keyword": "数字花束",
+          "platform": "小红书",
+          "timestamp": "2026-02-15 16:00:01",
+          "content_trends": [],
+          "user_preferences": [],
+          "competitor_analysis": [],
+          "trend_score": 0,
+          "heat_level": "low"
+        },
+        {
+          "keyword": "数字鲜花",
+          "platform": "小红书",
+          "timestamp": "2026-02-15 16:00:02",
+          "content_trends": [],
+          "user_preferences": [],
+          "competitor_analysis": [],
+          "trend_score": 0,
+          "heat_level": "low"
+        },
+        {
+          "keyword": "虚拟花束",
+          "platform": "小红书",
+          "timestamp": "2026-02-15 16:00:03",
+          "content_trends": [],
+          "user_preferences": [],
+          "competitor_analysis": [],
+          "trend_score": 0,
+          "heat_level": "low"
+        },
+        {
+          "keyword": "电子花束",
+          "platform": "小红书",
+          "timestamp": "2026-02-15 16:00:04",
+          "content_trends": [],
+          "user_preferences": [],
+          "competitor_analysis": [],
+          "trend_score": 0,
+          "heat_level": "low"
+        },
+        {
+          "keyword": "春节送礼",
+          "platform": "小红书",
+          "timestamp": "2026-02-15 16:00:05",
+          "content_trends": [],
+          "user_preferences": [],
+          "competitor_analysis": [],
+          "trend_score": 0,
+          "heat_level": "low"
+        },
+        {
+          "keyword": "新年礼物",
+          "platform": "小红书",
+          "timestamp": "2026-02-15 16:00:06",
+          "content_trends": [],
+          "user_preferences": [],
+          "competitor_analysis": [],
+          "trend_score": 0,
+          "heat_level": "low"
+        },
+        {
+          "keyword": "春节鲜花",
+          "platform": "小红书",
+          "timestamp": "2026-02-15 16:00:07",
+          "content_trends": [],
+          "user_preferences": [],
+          "competitor_analysis": [],
+          "trend_score": 0,
+          "heat_level": "low"
+        },
+        {
+          "keyword": "拜年礼物",
+          "platform": "小红书",
+          "timestamp": "2026-02-15 16:00:08",
+          "content_trends": [],
+          "user_preferences": [],
+          "competitor_analysis": [],
+          "trend_score": 0,
+          "heat_level": "low"
+        },
+        {
+          "keyword": "数字礼品",
+          "platform": "小红书",
+          "timestamp": "2026-02-15 16:00:09",
+          "content_trends": [],
+          "user_preferences": [],
+          "competitor_analysis": [],
+          "trend_score": 0,
+          "heat_level": "low"
+        },
+        {
+          "keyword": "虚拟礼品",
+          "platform": "小红书",
+          "timestamp": "2026-02-15 16:00:10",
+          "content_trends": [],
+          "user_preferences": [],
+          "competitor_analysis": [],
+          "trend_score": 0,
+          "heat_level": "low"
+        },
+        {
+          "keyword": "线上送礼",
+          "platform": "小红书",
+          "timestamp": "2026-02-15 16:00:11",
+          "content_trends": [],
+          "user_preferences": [],
+          "competitor_analysis": [],
+          "trend_score": 0,
+          "heat_level": "low"
+        },
+        {
+          "keyword": "微信送礼",
+          "platform": "小红书",
+          "timestamp": "2026-02-15 16:00:12",
+          "content_trends": [],
+          "user_preferences": [],
+          "competitor_analysis": [],
+          "trend_score": 0,
+          "heat_level": "low"
+        }
+      ],
+      "platform_summary": {
+        "average_trend_score": 0.0,
+        "keywords_by_heat_level": {
+          "low": [
+            "数字花束",
+            "数字鲜花",
+            "虚拟花束",
+            "电子花束",
+            "春节送礼",
+            "新年礼物",
+            "春节鲜花",
+            "拜年礼物",
+            "数字礼品",
+            "虚拟礼品",
+            "线上送礼",
+            "微信送礼"
+          ]
+        },
+        "hot_keywords": [],
+        "analysis_count": 12
+      }
+    },
+    "douyin": {
+      "platform_name": "抖音",
+      "keyword_analyses": [
+        {
+          "keyword": "数字花束",
+          "platform": "抖音",
+          "timestamp": "2026-02-15 16:00:13",
+          "content_trends": [],
+          "user_preferences": [],
+          "competitor_analysis": [],
+          "trend_score": 0,
+          "heat_level": "low"
+        },
+        {
+          "keyword": "数字鲜花",
+          "platform": "抖音",
+          "timestamp": "2026-02-15 16:00:14",
+          "content_trends": [],
+          "user_preferences": [],
+          "competitor_analysis": [],
+          "trend_score": 0,
+          "heat_level": "low"
+        },
+        {
+          "keyword": "虚拟花束",
+          "platform": "抖音",
+          "timestamp": "2026-02-15 16:00:15",
+          "content_trends": [],
+          "user_preferences": [],
+          "competitor_analysis": [],
+          "trend_score": 0,
+          "heat_level": "low"
+        },
+        {
+          "keyword": "电子花束",
+          "platform": "抖音",
+          "timestamp": "2026-02-15 16:00:16",
+          "content_trends": [],
+          "user_preferences": [],
+          "competitor_analysis": [],
+          "trend_score": 0,
+          "heat_level": "low"
+        },
+        {
+          "keyword": "春节送礼",
+          "platform": "抖音",
+          "timestamp": "2026-02-15 16:00:17",
+          "content_trends": [],
+          "user_preferences": [],
+          "competitor_analysis": [],
+          "trend_score": 0,
+          "heat_level": "low"
+        },
+        {
+          "keyword": "新年礼物",
+          "platform": "抖音",
+          "timestamp": "2026-02-15 16:00:18",
+          "content_trends": [],
+          "user_preferences": [],
+          "competitor_analysis": [],
+          "trend_score": 0,
+          "heat_level": "low"
+        },
+        {
+          "keyword": "春节鲜花",
+          "platform": "抖音",
+          "timestamp": "2026-02-15 16:00:19",
+          "content_trends": [],
+          "user_preferences": [],
+          "competitor_analysis": [],
+          "trend_score": 0,
+          "heat_level": "low"
+        },
+        {
+          "keyword": "拜年礼物",
+          "platform": "抖音",
+          "timestamp": "2026-02-15 16:00:20",
+          "content_trends": [],
+          "user_preferences": [],
+          "competitor_analysis": [],
+          "trend_score": 0,
+          "heat_level": "low"
+        },
+        {
+          "keyword": "数字礼品",
+          "platform": "抖音",
+          "timestamp": "2026-02-15 16:00:21",
+          "content_trends": [],
+          "user_preferences": [],
+          "competitor_analysis": [],
+          "trend_score": 0,
+          "heat_level": "low"
+        },
+        {
+          "keyword": "虚拟礼品",
+          "platform": "抖音",
+          "timestamp": "2026-02-15 16:00:22",
+          "content_trends": [],
+          "user_preferences": [],
+          "competitor_analysis": [],
+          "trend_score": 0,
+          "heat_level": "low"
+        },
+        {
+          "keyword": "线上送礼",
+          "platform": "抖音",
+          "timestamp": "2026-02-15 16:00:23",
+          "content_trends": [],
+          "user_preferences": [],
+          "competitor_analysis": [],
+          "trend_score": 0,
+          "heat_level": "low"
+        },
+        {
+          "keyword": "微信送礼",
+          "platform": "抖音",
+          "timestamp": "2026-02-15 16:00:24",
+          "content_trends": [],
+          "user_preferences": [],
+          "competitor_analysis": [],
+          "trend_score": 0,
+          "heat_level": "low"
+        }
+      ],
+      "platform_summary": {
+        "average_trend_score": 0.0,
+        "keywords_by_heat_level": {
+          "low": [
+            "数字花束",
+            "数字鲜花",
+            "虚拟花束",
+            "电子花束",
+            "春节送礼",
+            "新年礼物",
+            "春节鲜花",
+            "拜年礼物",
+            "数字礼品",
+            "虚拟礼品",
+            "线上送礼",
+            "微信送礼"
+          ]
+        },
+        "hot_keywords": [],
+        "analysis_count": 12
+      }
+    },
+    "weibo": {
+      "platform_name": "微博",
+      "keyword_analyses": [
+        {
+          "keyword": "数字花束",
+          "platform": "微博",
+          "timestamp": "2026-02-15 16:00:25",
+          "content_trends": [],
+          "user_preferences": [],
+          "competitor_analysis": [],
+          "trend_score": 0,
+          "heat_level": "low"
+        },
+        {
+          "keyword": "数字鲜花",
+          "platform": "微博",
+          "timestamp": "2026-02-15 16:00:26",
+          "content_trends": [],
+          "user_preferences": [],
+          "competitor_analysis": [],
+          "trend_score": 0,
+          "heat_level": "low"
+        },
+        {
+          "keyword": "虚拟花束",
+          "platform": "微博",
+          "timestamp": "2026-02-15 16:00:27",
+          "content_trends": [],
+          "user_preferences": [],
+          "competitor_analysis": [],
+          "trend_score": 0,
+          "heat_level": "low"
+        },
+        {
+          "keyword": "电子花束",
+          "platform": "微博",
+          "timestamp": "2026-02-15 16:00:28",
+          "content_trends": [],
+          "user_preferences": [],
+          "competitor_analysis": [],
+          "trend_score": 0,
+          "heat_level": "low"
+        },
+        {
+          "keyword": "春节送礼",
+          "platform": "微博",
+          "timestamp": "2026-02-15 16:00:29",
+          "content_trends": [],
+          "user_preferences": [],
+          "competitor_analysis": [],
+          "trend_score": 0,
+          "heat_level": "low"
+        },
+        {
+          "keyword": "新年礼物",
+          "platform": "微博",
+          "timestamp": "2026-02-15 16:00:30",
+          "content_trends": [],
+          "user_preferences": [],
+          "competitor_analysis": [],
+          "trend_score": 0,
+          "heat_level": "low"
+        },
+        {
+          "keyword": "春节鲜花",
+          "platform": "微博",
+          "timestamp": "2026-02-15 16:00:31",
+          "content_trends": [],
+          "user_preferences": [],
+          "competitor_analysis": [],
+          "trend_score": 0,
+          "heat_level": "low"
+        },
+        {
+          "keyword": "拜年礼物",
+          "platform": "微博",
+          "timestamp": "2026-02-15 16:00:32",
+          "content_trends": [],
+          "user_preferences": [],
+          "competitor_analysis": [],
+          "trend_score": 0,
+          "heat_level": "low"
+        },
+        {
+          "keyword": "数字礼品",
+          "platform": "微博",
+          "timestamp": "2026-02-15 16:00:33",
+          "content_trends": [],
+          "user_preferences": [],
+          "competitor_analysis": [],
+          "trend_score": 0,
+          "heat_level": "low"
+        },
+        {
+          "keyword": "虚拟礼品",
+          "platform": "微博",
+          "timestamp": "2026-02-15 16:00:34",
+          "content_trends": [],
+          "user_preferences": [],
+          "competitor_analysis": [],
+          "trend_score": 0,
+          "heat_level": "low"
+        },
+        {
+          "keyword": "线上送礼",
+          "platform": "微博",
+          "timestamp": "2026-02-15 16:00:35",
+          "content_trends": [],
+          "user_preferences": [],
+          "competitor_analysis": [],
+          "trend_score": 0,
+          "heat_level": "low"
+        },
+        {
+          "keyword": "微信送礼",
+          "platform": "微博",
+          "timestamp": "2026-02-15 16:00:36",
+          "content_trends": [],
+          "user_preferences": [],
+          "competitor_analysis": [],
+          "trend_score": 0,
+          "heat_level": "low"
+        }
+      ],
+      "platform_summary": {
+        "average_trend_score": 0.0,
+        "keywords_by_heat_level": {
+          "low": [
+            "数字花束",
+            "数字鲜花",
+            "虚拟花束",
+            "电子花束",
+            "春节送礼",
+            "新年礼物",
+            "春节鲜花",
+            "拜年礼物",
+            "数字礼品",
+            "虚拟礼品",
+            "线上送礼",
+            "微信送礼"
+          ]
+        },
+        "hot_keywords": [],
+        "analysis_count": 12
+      }
+    },
+    "zhihu": {
+      "platform_name": "知乎",
+      "keyword_analyses": [
+        {
+          "keyword": "数字花束",
+          "platform": "知乎",
+          "timestamp": "2026-02-15 16:00:37",
+          "content_trends": [],
+          "user_preferences": [],
+          "competitor_analysis": [],
+          "trend_score": 0,
+          "heat_level": "low"
+        },
+        {
+          "keyword": "数字鲜花",
+          "platform": "知乎",
+          "timestamp": "2026-02-15 16:00:38",
+          "content_trends": [],
+          "user_preferences": [],
+          "competitor_analysis": [],
+          "trend_score": 0,
+          "heat_level": "low"
+        },
+        {
+          "keyword": "虚拟花束",
+          "platform": "知乎",
+          "timestamp": "2026-02-15 16:00:39",
+          "content_trends": [],
+          "user_preferences": [],
+          "competitor_analysis": [],
+          "trend_score": 0,
+          "heat_level": "low"
+        },
+        {
+          "keyword": "电子花束",
+          "platform": "知乎",
+          "timestamp": "2026-02-15 16:00:40",
+          "content_trends": [],
+          "user_preferences": [],
+          "competitor_analysis": [],
+          "trend_score": 0,
+          "heat_level": "low"
+        },
+        {
+          "keyword": "春节送礼",
+          "platform": "知乎",
+          "timestamp": "2026-02-15 16:00:41",
+          "content_trends": [],
+          "user_preferences": [],
+          "competitor_analysis": [],
+          "trend_score": 0,
+          "heat_level": "low"
+        },
+        {
+          "keyword": "新年礼物",
+          "platform": "知乎",
+          "timestamp": "2026-02-15 16:00:42",
+          "content_trends": [],
+          "user_preferences": [],
+          "competitor_analysis": [],
+          "trend_score": 0,
+          "heat_level": "low"
+        },
+        {
+          "keyword": "春节鲜花",
+          "platform": "知乎",
+          "timestamp": "2026-02-15 16:00:43",
+          "content_trends": [],
+          "user_preferences": [],
+          "competitor_analysis": [],
+          "trend_score": 0,
+          "heat_level": "low"
+        },
+        {
+          "keyword": "拜年礼物",
+          "platform": "知乎",
+          "timestamp": "2026-02-15 16:00:44",
+          "content_trends": [],
+          "user_preferences": [],
+          "competitor_analysis": [],
+          "trend_score": 0,
+          "heat_level": "low"
+        },
+        {
+          "keyword": "数字礼品",
+          "platform": "知乎",
+          "timestamp": "2026-02-15 16:00:45",
+          "content_trends": [],
+          "user_preferences": [],
+          "competitor_analysis": [],
+          "trend_score": 0,
+          "heat_level": "low"
+        },
+        {
+          "keyword": "虚拟礼品",
+          "platform": "知乎",
+          "timestamp": "2026-02-15 16:00:46",
+          "content_trends": [],
+          "user_preferences": [],
+          "competitor_analysis": [],
+          "trend_score": 0,
+          "heat_level": "low"
+        },
+        {
+          "keyword": "线上送礼",
+          "platform": "知乎",
+          "timestamp": "2026-02-15 16:00:47",
+          "content_trends": [],
+          "user_preferences": [],
+          "competitor_analysis": [],
+          "trend_score": 0,
+          "heat_level": "low"
+        },
+        {
+          "keyword": "微信送礼",
+          "platform": "知乎",
+          "timestamp": "2026-02-15 16:00:48",
+          "content_trends": [],
+          "user_preferences": [],
+          "competitor_analysis": [],
+          "trend_score": 0,
+          "heat_level": "low"
+        }
+      ],
+      "platform_summary": {
+        "average_trend_score": 0.0,
+        "keywords_by_heat_level": {
+          "low": [
+            "数字花束",
+            "数字鲜花",
+            "虚拟花束",
+            "电子花束",
+            "春节送礼",
+            "新年礼物",
+            "春节鲜花",
+            "拜年礼物",
+            "数字礼品",
+            "虚拟礼品",
+            "线上送礼",
+            "微信送礼"
+          ]
+        },
+        "hot_keywords": [],
+        "analysis_count": 12
+      }
+    }
+  },
+  "overall_trends": {
+    "overall_trend_score": 0.0,
+    "trend_direction": "down",
+    "key_trending_keywords": [
+      "数字鲜花",
+      "拜年礼物",
+      "线上送礼",
+      "新年礼物",
+      "春节鲜花",
+      "数字礼品",
+      "微信送礼",
+      "数字花束",
+      "虚拟礼品",
+      "虚拟花束"
+    ],
+    "market_sensitivity": "low"
+  },
+  "competitor_insights": [],
+  "user_behavior_changes": []
+}

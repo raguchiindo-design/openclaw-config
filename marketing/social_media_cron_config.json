@@ -1,0 +1,41 @@
+{
+  "jobs": [
+    {
+      "name": "社交媒体智能互动 - 每小时",
+      "schedule": {
+        "kind": "every",
+        "everyMs": 3600000,
+        "anchorMs": 3060000
+      },
+      "payload": {
+        "kind": "agentTurn",
+        "message": "检查浏览器会话状态。如果浏览器不可用或会话丢失，立即通过Telegram发送警报：'⚠️ 浏览器会话丢失，请重新扫码恢复访问。' 然后执行社交媒体智能互动任务：扫描全民k歌、美篇、Soul、微博、知乎平台，基于关键词'怀旧,老歌,思念,送礼,送领导,送妈妈,送客户,送上级,年货,微信送礼,线上送礼,表达祝福,表达慰问,表示心意,生日礼物,节日礼物,妇女节,女王节,女神节,38节,送女性,女性礼物,清明节,清明,祭扫,怀念,缅怀'生成10个帖子标题和链接，为每个帖子生成亲切/活泼版本的评论建议（≤50字，提示微信搜索'卡美心礼'），保存到marketing目录，文件命名格式：YYYY-MM-DD_推广任务_结果.md，一定要引用真实链接",
+        "model": "openrouter/xiaomi/mimo-v2-flash",
+        "thinking": "使用WebMCP分析社交媒体页面逻辑，识别热门内容，生成符合品牌调性的互动内容。核心：送礼就是表达心意。针对不同场景：微信送礼、线上送礼、生日礼物、节日礼物、表达祝福/慰问/心意。人群：送父母（孝心）、送闺蜜（友情）、送领导（尊重）、送客户（感谢）、送女性（关爱）。避免使用'花束'等具体产品词，强调'心意'和'祝福'概念"
+      },
+      "sessionTarget": "isolated",
+      "enabled": false,
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "7656385011"
+      }
+    },
+    {
+      "name": "社交媒体内容优化 - 每天",
+      "schedule": {
+        "kind": "every",
+        "everyMs": 86400000,
+        "anchorMs": 0
+      },
+      "payload": {
+        "kind": "agentTurn",
+        "message": "分析过去24小时的社交媒体互动数据，优化内容策略，调整关键词权重和互动方式，保存到marketing目录，文件命名格式：YYYY-MM-DD_内容优化_结果.md，一定要引用真实链接",
+        "model": "openrouter/xiaomi/mimo-v2-flash",
+        "thinking": "基于收集的互动数据，分析哪些内容表现好，调整文案策略和发布时间"
+      },
+      "sessionTarget": "isolated",
+      "enabled": false
+    }
+  ]
+}
