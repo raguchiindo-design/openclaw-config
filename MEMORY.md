@@ -28,6 +28,19 @@
 2. 再判断是否能进入后台/发布入口
 3. 如需验证码、密码、短信、邮箱确认，再向小雪汇报并等待配合
 
+### 浏览器自动化默认走 chrome relay（本机真实 Chrome）
+**时间**：2026年3月11日 12:31（北京时间）
+
+小雪已完成本机真实浏览器接入，并要求后续：
+- Beehiiv / Patreon / Substack 等站点优先使用 `chrome` profile
+- 复用本机真实 Chrome 登录态与人工过风控能力
+- 不退回 VPS 无头浏览器（`openclaw` profile）作为默认方案
+- 异常排查顺序固定为：
+  1) SSH tunnel
+  2) node host connected
+  3) 扩展 attach 当前 tab
+  4) server 侧 tabs 可见
+
 ## 2026-03-08
 
 ### 用户重新确认长期协作定位
