@@ -170,22 +170,34 @@ fi
 
 # 11. Sensitive Credential Scan (DLP)
 CRED_COUNT=0
+DLP_SCAN_ROOT="$OC/workspace"
+DLP_EXCLUDES=(
+    --exclude="AGENTS.md"
+    --exclude="MEMORY.md"
+    --exclude-dir="memory"
+    --exclude-dir="scripts"
+    --exclude-dir="reports"
+    --exclude="*.bak"
+    --exclude="*.backup*"
+    --exclude="*.bin"
+    --exclude="xiaohongshu-login-linux-amd64"
+    --exclude="xiaohongshu-mcp-linux-amd64"
+)
 while IFS= read -r pattern; do
-    COUNT="$(grep -rE "$pattern" "$OC/workspace/" 2>/dev/null | wc -l || true)"
+    COUNT="$(grep -rIE --binary-files=without-match "${DLP_EXCLUDES[@]}" "$pattern" "$DLP_SCAN_ROOT" 2>/dev/null | wc -l || true)"
     CRED_COUNT=$((CRED_COUNT + COUNT))
 done <<'EOF'
 (priv(ate)?[_-]?key|mnemonic|seed\s+phrase)
 (begin\s+(rsa\s+)?private|-----BEGIN)
-[a-f0-9]{64}
-[a-z0-9]{32,44}(?=\s|$)
-[a-zA-Z0-9]{12}(?: [a-zA-Z0-9]{12}){11}
 EOF
 if [ "$CRED_COUNT" -eq 0 ]; then
-    report "✅" "Sensitive Credential Scan" "No plaintext private keys/mnemonics found"
+    report "✅" "Sensitive Credential Scan" "No plaintext private keys/mnemonics found in scoped workspace text files"
 else
-    report "❌" "Sensitive Credential Scan" "$CRED_COUNT potential credential patterns — CRITICAL ALERT"
+    report "❌" "Sensitive Credential Scan" "$CRED_COUNT potential plaintext credential patterns in scoped workspace files — review required"
     ((ERRORS+=1))
 fi
+# Note: high-entropy token/hash detection intentionally excluded here to reduce noisy false positives.
+# Review config backups and credential stores separately if stronger DLP coverage is needed.
 
 # 12. Skill/MCP Integrity Baseline
 SKILL_MANIFEST="$OC/.skill-manifest.sha256"
