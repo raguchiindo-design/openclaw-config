@@ -133,9 +133,14 @@ fi
 
 # 8. Yellow Line Cross-Validation
 SUDO_COUNT="$(grep -c 'sudo' /var/log/auth.log 2>/dev/null || true)"
-MEM_FILE="$OC/memory/$(date +%Y-%m-%d).md"
+MEM_FILE_WORKSPACE="$OC/workspace/memory/$(date +%Y-%m-%d).md"
+MEM_FILE_ROOT="$OC/memory/$(date +%Y-%m-%d).md"
 MEM_SUDO=0
-[ -f "$MEM_FILE" ] && MEM_SUDO="$(grep -c 'sudo' "$MEM_FILE" || true)"
+if [ -f "$MEM_FILE_WORKSPACE" ]; then
+    MEM_SUDO="$(grep -c 'sudo' "$MEM_FILE_WORKSPACE" || true)"
+elif [ -f "$MEM_FILE_ROOT" ]; then
+    MEM_SUDO="$(grep -c 'sudo' "$MEM_FILE_ROOT" || true)"
+fi
 if [ "$SUDO_COUNT" -eq "$MEM_SUDO" ]; then
     report "✅" "Yellow Line Audit" "$SUDO_COUNT sudo executions (verified against memory logs)"
 else
@@ -154,8 +159,8 @@ else
 fi
 
 # 10. Gateway Environment Variables
-GATEWAY_PID="$(pgrep -f 'openclaw gateway' | head -1 || true)"
-if [ -n "$GATEWAY_PID" ]; then
+GATEWAY_PID="$(pgrep -f 'openclaw-gateway|openclaw gateway' | head -1 || true)"
+if [ -n "$GATEWAY_PID" ] && [ -r "/proc/$GATEWAY_PID/environ" ]; then
     ENV_VARS="$(tr '\0' '\n' < /proc/$GATEWAY_PID/environ 2>/dev/null | grep -iE 'KEY|TOKEN|SECRET|PASSWORD' | wc -l || true)"
     if [ "$ENV_VARS" -eq 0 ]; then
         report "✅" "Environment Vars" "No anomalous credential leaks in gateway env"
@@ -164,7 +169,7 @@ if [ -n "$GATEWAY_PID" ]; then
         ((WARNINGS+=1))
     fi
 else
-    report "⚠️" "Environment Vars" "OpenClaw gateway process not running"
+    report "⚠️" "Environment Vars" "OpenClaw gateway process not readable from audit context"
     ((WARNINGS+=1))
 fi
 
