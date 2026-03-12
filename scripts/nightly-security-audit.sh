@@ -108,10 +108,10 @@ if [ ! -f "$BASELINE_FILE" ]; then
     report "❌" "Config Baseline" "Baseline file missing — run sha256sum generation"
     ((ERRORS+=1))
 else
-    if sha256sum -c "$BASELINE_FILE" &>/dev/null; then
+    if (cd "$OC" && sha256sum -c "$BASELINE_FILE") &>/dev/null; then
         report "✅" "Config Baseline" "Hash check passed"
     else
-        report "❌" "Config Baseline" "Hash check FAILED — configuration tampered"
+        report "❌" "Config Baseline" "Hash check FAILED — configuration tampered or unreadable from audit context"
         ((ERRORS+=1))
     fi
 fi
