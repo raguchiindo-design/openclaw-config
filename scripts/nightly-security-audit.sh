@@ -30,7 +30,7 @@ if command -v uname &>/dev/null; then
     report "✅" "Platform Audit" "Native scan executed: $PLATFORM"
 else
     report "❌" "Platform Audit" "Unable to detect platform"
-    ((ERRORS++))
+    ((ERRORS+=1))
 fi
 
 # 2. Process & Network
@@ -43,7 +43,7 @@ else
     [ -n "$LISTENING_PORTS" ] && ANOMALIES+=("Listening: $LISTENING_PORTS")
     [ -n "$OUTBOUND_CONNS" ] && ANOMALIES+=("Outbound: $OUTBOUND_CONNS")
     report "⚠️" "Process & Network" "$(printf '%s\n' "${ANOMALIES[@]}")"
-    ((WARNINGS++))
+    ((WARNINGS+=1))
 fi
 
 # 3. Directory Changes (24h)
@@ -62,7 +62,7 @@ else
     printf '%s\n' "${CHANGED_FILES[@]}" | head -20 >> "$REPORT_FILE" || true
     [ $COUNT -gt 20 ] && echo "... and $((COUNT-20)) more" >> "$REPORT_FILE" || true
     report "⚠️" "Directory Changes" "$DETAILS"
-    ((WARNINGS++))
+    ((WARNINGS+=1))
 fi
 
 # 4. System Cron
@@ -76,7 +76,7 @@ else
     for f in "${SYSTEM_CRON[@]}"; do DETAILS+=$'\n'"  $f"; done
     [ -n "$USER_CRONTAB" ] && DETAILS+=$'\n'"  (user crontab entries present)"
     report "⚠️" "System Cron" "$DETAILS"
-    ((WARNINGS++))
+    ((WARNINGS+=1))
 fi
 
 # 5. Local Cron (OpenClaw)
@@ -90,7 +90,7 @@ if command -v openclaw &>/dev/null; then
     fi
 else
     report "❌" "Local Cron" "openclaw CLI not found"
-    ((ERRORS++))
+    ((ERRORS+=1))
 fi
 
 # 6. SSH Security
@@ -99,20 +99,20 @@ if [ "$FAILED_SSH" -eq 0 ]; then
     report "✅" "SSH Security" "0 failed brute-force attempts"
 else
     report "⚠️" "SSH Security" "$FAILED_SSH failed SSH attempts in last hour"
-    ((WARNINGS++))
+    ((WARNINGS+=1))
 fi
 
 # 7. Config Baseline
 BASELINE_FILE="$OC/.config-baseline.sha256"
 if [ ! -f "$BASELINE_FILE" ]; then
     report "❌" "Config Baseline" "Baseline file missing — run sha256sum generation"
-    ((ERRORS++))
+    ((ERRORS+=1))
 else
     if sha256sum -c "$BASELINE_FILE" &>/dev/null; then
         report "✅" "Config Baseline" "Hash check passed"
     else
         report "❌" "Config Baseline" "Hash check FAILED — configuration tampered"
-        ((ERRORS++))
+        ((ERRORS+=1))
     fi
 fi
 # Permissions
@@ -122,13 +122,13 @@ if [ "$OPENCLAW_JSON_PERM" = "600" ]; then
     report "✅" "Permissions" "openclaw.json is 600"
 else
     report "❌" "Permissions" "openclaw.json is $OPENCLAW_JSON_PERM (should be 600)"
-    ((ERRORS++))
+    ((ERRORS+=1))
 fi
 if [ "$PAIRED_PERM" = "600" ]; then
     report "✅" "Permissions" "paired.json is 600"
 else
     report "⚠️" "Permissions" "paired.json is $PAIRED_PERM (should be 600)"
-    ((WARNINGS++))
+    ((WARNINGS+=1))
 fi
 
 # 8. Yellow Line Cross-Validation
@@ -140,7 +140,7 @@ if [ "$SUDO_COUNT" -eq "$MEM_SUDO" ]; then
     report "✅" "Yellow Line Audit" "$SUDO_COUNT sudo executions (verified against memory logs)"
 else
     report "⚠️" "Yellow Line Audit" "sudo count mismatch: auth.log=$SUDO_COUNT vs memory=$MEM_SUDO"
-    ((WARNINGS++))
+    ((WARNINGS+=1))
 fi
 
 # 9. Disk Capacity
@@ -149,8 +149,8 @@ LARGE_FILES="$(find / -type f -size +100M -mtime -1 2>/dev/null | wc -l || true)
 if [ "$ROOT_USAGE" -lt 85 ] && [ "$LARGE_FILES" -eq 0 ]; then
     report "✅" "Disk Capacity" "Root partition usage ${ROOT_USAGE}%, 0 new large files"
 else
-    [ "$ROOT_USAGE" -ge 85 ] && report "⚠️" "Disk Capacity" "Root usage ${ROOT_USAGE}% (>=85%)" && ((WARNINGS++))
-    [ "$LARGE_FILES" -gt 0 ] && report "⚠️" "Disk Capacity" "$LARGE_FILES new large files (>100MB)" && ((WARNINGS++))
+    [ "$ROOT_USAGE" -ge 85 ] && report "⚠️" "Disk Capacity" "Root usage ${ROOT_USAGE}% (>=85%)" && ((WARNINGS+=1))
+    [ "$LARGE_FILES" -gt 0 ] && report "⚠️" "Disk Capacity" "$LARGE_FILES new large files (>100MB)" && ((WARNINGS+=1))
 fi
 
 # 10. Gateway Environment Variables
@@ -161,11 +161,11 @@ if [ -n "$GATEWAY_PID" ]; then
         report "✅" "Environment Vars" "No anomalous credential leaks in gateway env"
     else
         report "⚠️" "Environment Vars" "$ENV_VARS variables contain KEY/TOKEN/SECRET/PASSWORD"
-        ((WARNINGS++))
+        ((WARNINGS+=1))
     fi
 else
     report "⚠️" "Environment Vars" "OpenClaw gateway process not running"
-    ((WARNINGS++))
+    ((WARNINGS+=1))
 fi
 
 # 11. Sensitive Credential Scan (DLP)
@@ -184,7 +184,7 @@ if [ "$CRED_COUNT" -eq 0 ]; then
     report "✅" "Sensitive Credential Scan" "No plaintext private keys/mnemonics found"
 else
     report "❌" "Sensitive Credential Scan" "$CRED_COUNT potential credential patterns — CRITICAL ALERT"
-    ((ERRORS++))
+    ((ERRORS+=1))
 fi
 
 # 12. Skill/MCP Integrity Baseline
@@ -202,7 +202,7 @@ else
     else
         CHANGED="$(diff -u "$SKILL_MANIFEST" "$CURRENT_MANIFEST" | grep '^[-+]' | wc -l || true)"
         report "⚠️" "Skill Baseline" "$CHANGED lines changed — review urgently"
-        ((WARNINGS++))
+        ((WARNINGS+=1))
     fi
     rm -f "$CURRENT_MANIFEST"
 fi
@@ -213,7 +213,7 @@ if command -v git &>/dev/null && [ -d "$OC/.git" ]; then
     report "✅" "Disaster Backup" "Auto-backup triggered (async)"
 else
     report "⚠️" "Disaster Backup" "Git not configured — set up private repo backup"
-    ((WARNINGS++))
+    ((WARNINGS+=1))
 fi
 
 # Final summary
