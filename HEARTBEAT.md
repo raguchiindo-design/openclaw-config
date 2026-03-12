@@ -36,20 +36,22 @@
 - **关键词覆盖**：12个核心关键词
 - **⚠️ 注意**：趋势分数连续多日保持0.0，建议小雪介入评估策略
 
-### 系统状态（更新时间：2026-03-06 19:50 北京时间）
-- ✅ OpenClaw Gateway：运行中 (PID 2302655)
+### 系统状态（更新时间：2026-03-12 15:13 北京时间）
+- ✅ OpenClaw Gateway：运行中（`openclaw status --deep` 可达）
 - ✅ Cron任务系统：运行中
-  - ✅ nightly-security-audit（已修复并启用，每日03:00 Asia/Shanghai）【2026-03-06 12:41 修复】
+  - ✅ nightly-security-audit：已完成脚本补建/修复/降噪，定时执行可用
   - ✅ 趋势分析任务（每2小时，运行中）
   - ⚠️ 社交媒体智能互动任务（每小时，已暂停）
-  - ✅ GitClaw自动备份（每小时，已配置）【2026-03-06 19:50 新增】
+  - ✅ GitClaw自动备份（每小时，已配置）
 - ✅ 消息发送回路：正常工作
-- ✅ 内存记录：已更新至MEMORY.md
-- ✅ Chrome浏览器：可用（profile: openclaw，headless模式）【2026-03-06 14:35 测试】
+- ✅ 浏览器：openclaw profile 可用
 - ✅ 安全防护矩阵：已部署（Pre-action + In-action + Post-action）
 - ✅ 文件结构整理完成（marketing/daily-content/, reports/, company/documents/, personal/learning/）
-- **当前模型**：openai-codex/gpt-5.3-codex ✅
-- **夜间审计**：配置已修复，等待首次执行（2026-03-07 03:00）【待验证】
+- **当前模型**：openai-codex/gpt-5.4 ✅
+- **夜间安全审计现状**：✅ 已恢复稳定运行，当前结果 **0 errors / 2 warnings**
+  - ✅ 已修复：脚本中途退出、baseline 校验误报、敏感扫描误报、Yellow Line 误报、gateway 进程识别误报、/proc 大文件误报、system cron 噪声误报
+  - ⚠️ 保留提醒 1：`Process & Network` —— 已知对外监听服务 `xiaohongshu-mcp :18060`（健康，非异常端口）
+  - ⚠️ 保留提醒 2：`Directory Changes` —— 近24小时仍有较多真实文件变动（已排除 browser cache / git objects 噪声）
 - **Git灾难恢复**：✅ GitClaw自动备份系统已部署到私有仓库（raguchiindo-design/openclaw-config）
 - **自主授权**：✅ 小雪已授权（2026-03-05 11:54）- 小事可自主执行，大事先请示
 
