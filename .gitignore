@@ -21,8 +21,12 @@ temp/
 crontab
 crontab.bak
 openclaw.json.backup
+openclaw.json.backup*
 openclaw.json.bak*
 openclaw.json.manual-backup
+
+# 本地认证/凭据备份目录
+google-antigravity-auth-backup/
 
 # 日志和输出
 logs/
