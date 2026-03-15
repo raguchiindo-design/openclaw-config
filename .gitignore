@@ -39,6 +39,16 @@ completions/
 
 # 媒体文件（大文件，不备份）
 media/
+reports/**/*.tgz
+*.tar.gz
+
+# 本地虚拟环境 / 大型依赖 / 实验产物
+venv/
+.venv/
+**/venv/
+**/.venv/
+labs/browser-lab/venvs/
+labs/browser-lab/results/artifacts/
 
 # 其他 Git 目录（避免嵌套）.openclaw 本身不该在 workspace 下
 .openclaw/.git
