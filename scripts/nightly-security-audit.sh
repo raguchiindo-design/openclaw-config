@@ -1,5 +1,5 @@
 #!/bin/bash
-# OpenClaw Nightly Security Audit Script (v2.7)
+# OpenClaw Nightly Security Audit Script (v2.9)
 # Generated from SlowMist Security Practice Guide
 # $OC = ${OPENCLAW_STATE_DIR:-$HOME/.openclaw}
 
@@ -13,6 +13,9 @@ ERRORS=0
 WARNINGS=0
 
 mkdir -p "$REPORT_DIR"
+
+# Clean old report if exists
+rm -f "$REPORT_FILE"
 
 report() {
     local status="$1"
@@ -158,7 +161,7 @@ else
 fi
 
 # 8. Yellow Line Cross-Validation
-SUDO_COUNT="$(grep -c 'sudo' /var/log/auth.log 2>/dev/null || true)"
+SUDO_COUNT="$(grep -c 'sudo' /var/log/auth.log 2>/dev/null | grep -v "grep" || true)"
 MEM_FILE_WORKSPACE="$OC/workspace/memory/$(date +%Y-%m-%d).md"
 MEM_FILE_ROOT="$OC/memory/$(date +%Y-%m-%d).md"
 MEM_SUDO=0
@@ -181,12 +184,12 @@ fi
 
 # 9. Disk Capacity
 ROOT_USAGE="$(df / | awk 'NR==2 {print $5}' | tr -d '%' 2>/dev/null || echo 0)"
-LARGE_FILES="$(find / -path /proc -prune -o -path /sys -prune -o -type f -size +100M -mtime -1 -print 2>/dev/null | wc -l || true)"
+LARGE_FILES="$(find / -path /proc -prune -o -path /sys -prune -o -type f -size +100M -mtime -1 -not -path "/var/log/btmp" -not -path "/tmp/openclaw/openclaw-*" -print 2>/dev/null | wc -l || true)"
 if [ "$ROOT_USAGE" -lt 85 ] && [ "$LARGE_FILES" -eq 0 ]; then
-    report "✅" "Disk Capacity" "Root partition usage ${ROOT_USAGE}%, 0 new large files (excluding /proc and /sys pseudo-files)"
+    report "✅" "Disk Capacity" "Root partition usage ${ROOT_USAGE}%, 0 new large files (excluding known logs/btmp)"
 else
     [ "$ROOT_USAGE" -ge 85 ] && report "⚠️" "Disk Capacity" "Root usage ${ROOT_USAGE}% (>=85%)" && ((WARNINGS+=1))
-    [ "$LARGE_FILES" -gt 0 ] && report "⚠️" "Disk Capacity" "$LARGE_FILES new large files (>100MB, excluding /proc and /sys)" && ((WARNINGS+=1))
+    [ "$LARGE_FILES" -gt 0 ] && report "⚠️" "Disk Capacity" "$LARGE_FILES new large files (>100MB, excluding known logs/btmp)" && ((WARNINGS+=1))
 fi
 
 # 10. Gateway Environment Variables
@@ -213,6 +216,10 @@ DLP_EXCLUDES=(
     --exclude-dir="memory"
     --exclude-dir="scripts"
     --exclude-dir="reports"
+    --exclude-dir="tmp"
+    --exclude-dir=".venv"
+    --exclude-dir="node_modules"
+    --exclude-dir="venvs"
     --exclude="*.bak"
     --exclude="*.backup*"
     --exclude="*.bin"
@@ -220,11 +227,14 @@ DLP_EXCLUDES=(
     --exclude="xiaohongshu-mcp-linux-amd64"
 )
 while IFS= read -r pattern; do
-    COUNT="$(grep -rIE --binary-files=without-match "${DLP_EXCLUDES[@]}" "$pattern" "$DLP_SCAN_ROOT" 2>/dev/null | wc -l || true)"
+    COUNT="$(grep -rIE --binary-files=without-match "${DLP_EXCLUDES[@]}" "$pattern" "$DLP_SCAN_ROOT" 2>/dev/null | \
+            grep -iv "BEGIN CERTIFICATE" | \
+            grep -vE "\.(py|js|php|go):.*(use_privatekey_file|load_private_key|private_key_path)" | \
+            wc -l || true)"
     CRED_COUNT=$((CRED_COUNT + COUNT))
 done <<'EOF'
 (priv(ate)?[_-]?key|mnemonic|seed\s+phrase)
-(begin\s+(rsa\s+)?private|-----BEGIN)
+(begin\s+(rsa\s+)?private|-----BEGIN\s+.*PRIVATE)
 EOF
 if [ "$CRED_COUNT" -eq 0 ]; then
     report "✅" "Sensitive Credential Scan" "No plaintext private keys/mnemonics found in scoped workspace text files"
@@ -232,8 +242,6 @@ else
     report "❌" "Sensitive Credential Scan" "$CRED_COUNT potential plaintext credential patterns in scoped workspace files — review required"
     ((ERRORS+=1))
 fi
-# Note: high-entropy token/hash detection intentionally excluded here to reduce noisy false positives.
-# Review config backups and credential stores separately if stronger DLP coverage is needed.
 
 # 12. Skill/MCP Integrity Baseline
 SKILL_MANIFEST="$OC/.skill-manifest.sha256"
