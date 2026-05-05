@@ -1,9 +1,10 @@
 # HEARTBEAT.md
 
-## 今日任务执行状态（更新时间：2026-04-30 03:35 北京时间）
+## 今日任务执行状态（更新时间：2026-05-05 07:15 北京时间）
 
 ### 巡检摘要 (三日看板)
-- ✅ **nightly-security-audit**：4月30日审计通过。Skill Baseline 仍有 3 行变动（待深入审查），其余基线校验一致。
+- ✅ **nightly-security-audit**：5月5日审计通过。Skill Baseline 的 3 行变动确认为正常的插件更新（gpt-image 等），其余基线校验一致。
+- ⚠️ **Yellow Line Audit**：审计脚本误报 `sudo`（实为 SSH 爆破尝试包含 sudo 关键字），已记录并计划优化。
 - ✅ **GitClaw 自动备份**：持续稳定运行。
 - 🔴 **Device Brief 四平台周更发布**：本周一 (4/27) 发布失败。模型已修复，等待补发指令。
 
