@@ -8,7 +8,7 @@
 - ✅ **GitClaw 自动备份**：持续稳定运行。
 - ✅ **QQBot 插件迁移**：已从旧 `@sliverp/qqbot@1.5.3` 迁移到官方 `@openclaw/qqbot@2026.5.3`，手机 QQ 收发验证成功。
 - ✅ **google-antigravity-auth 编译产物修复**：已本地编译为 `dist/index.js` 并切换入口，compiled runtime warning 已消失。
-- ✅ **Device Brief 四平台周更发布**：已手动重跑并修正模型为 `openai-codex/gpt-5.5`；任务执行成功，当前等待小雪提供微信公众号文章 URL。
+- ⚠️ **Device Brief 四平台周更发布**：5月5日已收到微信公众号 URL 并生成英文稿、配图方案、双语归档；四平台发布阶段卡在浏览器登录态/Whop 登录页，需恢复真实浏览器 relay 或人工登录后继续。
 
 ### 趋势分析任务
 - **任务名称**：数字花束与春节送礼趋势深度调研 - 每2小时执行
