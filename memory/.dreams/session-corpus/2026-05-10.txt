@@ -1,0 +1,4 @@
+[main/sessions/main/3cb1bd56-f7fe-47a9-a14e-f14924aa1a9d.jsonl#L6] Assistant: [assistant turn failed before producing content]
+[main/sessions/main/3cb1bd56-f7fe-47a9-a14e-f14924aa1a9d.jsonl#L9] Assistant: [assistant turn failed before producing content]
+[main/sessions/main/3cb1bd56-f7fe-47a9-a14e-f14924aa1a9d.jsonl#L12] Assistant: [assistant turn failed before producing content]
+[main/sessions/main/3cb1bd56-f7fe-47a9-a14e-f14924aa1a9d.jsonl#L29] Assistant: 🔴 关键问题：两个 OpenClaw cron 巡检任务当前失败，不是业务逻辑失败，而是模型配置被白名单拒绝：`openrouter/xiaomi/mimo-v2-flash` 不在允许列表。 - 🔴 nightly-security-audit：启用中，但最近执行失败；原因是模型白名单拒绝。 - 🟢 GitClaw 自动备份：健康。每小时 crontab 正常，最新 `Backup OK` 为 2026-05-10 10:00，北京时间；本地 HEAD 与 GitHub 远端一致。 - 🔴 GitClaw back
