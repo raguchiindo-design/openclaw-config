@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-11T19:00:04.537Z",
+  "updatedAt": "2026-05-14T00:57:28.710Z",
   "entries": {
     "memory:memory/2026-03-14.md:84:98": {
       "key": "memory:memory/2026-03-14.md:84:98",
@@ -489,18 +489,19 @@
       "source": "memory",
       "snippet": "心跳巡检：趋势分析系统 crontab 已补暂停: **时间**：2026年5月9日 07:50（北京时间）",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-11T19:00:00.739Z",
-      "lastRecalledAt": "2026-05-11T19:00:00.739Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
       "queryHashes": [
         "f9349cbeaf46"
       ],
       "recallDays": [
         "2026-05-12",
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-14"
       ],
       "conceptTags": [
         "心跳",
@@ -521,18 +522,19 @@
       "source": "memory",
       "snippet": "心跳巡检：趋势分析系统 crontab 已补暂停: 巡检发现：虽然 HEARTBEAT.md 标注“数字花束与春节送礼趋势深度调研 - 每2小时执行”已暂停，但系统 crontab 仍有 `research_trend_analyzer.py` 每2小时运行，且 5月9日 02:00/04:00/06:00 仍生成报告文件并被 GitClaw 备份。",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-11T19:00:00.739Z",
-      "lastRecalledAt": "2026-05-11T19:00:00.739Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
       "queryHashes": [
         "f9349cbeaf46"
       ],
       "recallDays": [
         "2026-05-12",
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-14"
       ],
       "conceptTags": [
         "备份",
@@ -553,18 +555,19 @@
       "source": "memory",
       "snippet": "心跳巡检：趋势分析系统 crontab 已补暂停: 已将系统 crontab 中该趋势分析任务行注释暂停。; 保留 GitClaw 每小时备份任务。; OpenClaw cron 中 Device Brief 仍为 disabled=false? 实际检查：Device Brief 周更 job enabled=false，符合迁移 Codex 后暂停状态。",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-11T19:00:00.739Z",
-      "lastRecalledAt": "2026-05-11T19:00:00.739Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
       "queryHashes": [
         "f9349cbeaf46"
       ],
       "recallDays": [
         "2026-05-12",
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-14"
       ],
       "conceptTags": [
         "备份",
@@ -585,18 +588,19 @@
       "source": "memory",
       "snippet": "心跳巡检：趋势分析系统 crontab 已补暂停: 备注：这是恢复用户既有“趋势分析任务暂停”指令的一致性修正。",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-11T19:00:00.739Z",
-      "lastRecalledAt": "2026-05-11T19:00:00.739Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
       "queryHashes": [
         "f9349cbeaf46"
       ],
       "recallDays": [
         "2026-05-12",
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-14"
       ],
       "conceptTags": [
         "心跳",
@@ -2369,18 +2373,19 @@
       "source": "memory",
       "snippet": "回复风格 / token 控制: **时间**：2026年5月7日 10:02（北京时间）",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-11T19:00:00.739Z",
-      "lastRecalledAt": "2026-05-11T19:00:00.739Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
       "queryHashes": [
         "edcbe8c19953"
       ],
       "recallDays": [
         "2026-05-12",
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-14"
       ],
       "conceptTags": [
         "回复",
@@ -2399,18 +2404,19 @@
       "source": "memory",
       "snippet": "回复风格 / token 控制: 小雪要求：墨衍默认不显示详细思考过程，只保留关键点，同时不能降低思考深度和质量，目的是减少 token 消耗。",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-11T19:00:00.739Z",
-      "lastRecalledAt": "2026-05-11T19:00:00.739Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
       "queryHashes": [
         "edcbe8c19953"
       ],
       "recallDays": [
         "2026-05-12",
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-14"
       ],
       "conceptTags": [
         "回复",
@@ -2431,18 +2437,19 @@
       "source": "memory",
       "snippet": "回复风格 / token 控制: 已检查当前 session 状态：Think=medium、Text=low，符合“保留思考深度、压缩输出”的方向。; 已更新长期记忆 MEMORY.md。; 后续默认输出：结论优先、关键依据、必要动作；不写长篇推理过程。",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-11T19:00:00.739Z",
-      "lastRecalledAt": "2026-05-11T19:00:00.739Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
       "queryHashes": [
         "edcbe8c19953"
       ],
       "recallDays": [
         "2026-05-12",
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-14"
       ],
       "conceptTags": [
         "memory.md",
@@ -2463,18 +2470,19 @@
       "source": "memory",
       "snippet": "Device Brief 周更发布迁移 Codex: **时间**：2026年5月7日 上午（北京时间）",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-11T19:00:00.739Z",
-      "lastRecalledAt": "2026-05-11T19:00:00.739Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
       "queryHashes": [
         "edcbe8c19953"
       ],
       "recallDays": [
         "2026-05-12",
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-14"
       ],
       "conceptTags": [
         "device",
@@ -2495,18 +2503,19 @@
       "source": "memory",
       "snippet": "Device Brief 周更发布迁移 Codex: 背景：Device Brief 四平台发布在云端 OpenClaw 执行时，因本机真实浏览器 relay/云端通道不稳定，导致 Substack / Beehiiv / Patreon 已登录状态无法稳定接管；Whop 验证码也存在过期问题。",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-11T19:00:00.739Z",
-      "lastRecalledAt": "2026-05-11T19:00:00.739Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
       "queryHashes": [
         "edcbe8c19953"
       ],
       "recallDays": [
         "2026-05-12",
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-14"
       ],
       "conceptTags": [
         "relay/云端通道不稳定",
@@ -2527,18 +2536,19 @@
       "source": "memory",
       "snippet": "Device Brief 周更发布迁移 Codex: 小雪决定：将 Device Brief 周更发布任务迁移到本机 Codex 执行，以减少本地-云端通道依赖。",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-11T19:00:00.739Z",
-      "lastRecalledAt": "2026-05-11T19:00:00.739Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
       "queryHashes": [
         "edcbe8c19953"
       ],
       "recallDays": [
         "2026-05-12",
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-14"
       ],
       "conceptTags": [
         "以减少本地-云端通道依赖",
@@ -2559,18 +2569,19 @@
       "source": "memory",
       "snippet": "Device Brief 周更发布迁移 Codex: 整理并回复了一份可直接复制给 Codex 的完整 Prompt。; Prompt 覆盖：任务目标、微信公众号 URL 输入、正文提取、清洗规则、英文改写、配图规则、四平台发布 SOP、登录/验证码/Cloudflare 异常处理、完成回执格式、2026-05-05 MOONIX 历史任务状态。",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-11T19:00:00.739Z",
-      "lastRecalledAt": "2026-05-11T19:00:00.739Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
       "queryHashes": [
         "edcbe8c19953"
       ],
       "recallDays": [
         "2026-05-12",
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-14"
       ],
       "conceptTags": [
         "登录/验证码/cloudflare",
@@ -2591,18 +2602,19 @@
       "source": "memory",
       "snippet": "Device Brief 周更发布迁移 Codex: 小雪反馈：本次 Device Brief 周更发布任务已经在 Codex 上完成。; 已按小雪要求将 OpenClaw 云端的 `Device Brief 四平台周更发布（周一16:00）` cron job 标为暂停（enabled=false）。; 后续小雪会优先给 OpenClaw 一些不那么依赖网页登录/浏览器会话的任务；需要浏览器登录的四平台发布默认不再由云端 OpenClaw 主动执行。",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-11T19:00:00.739Z",
-      "lastRecalledAt": "2026-05-11T19:00:00.739Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
       "queryHashes": [
         "edcbe8c19953"
       ],
       "recallDays": [
         "2026-05-12",
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-14"
       ],
       "conceptTags": [
         "一些不那么依赖网页登录/浏览器会话的任务",
@@ -2623,18 +2635,19 @@
       "source": "memory",
       "snippet": "Telegram 工具进度提示关闭: **时间**：2026年5月7日 14:53（北京时间）",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-11T19:00:00.739Z",
-      "lastRecalledAt": "2026-05-11T19:00:00.739Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
       "queryHashes": [
         "edcbe8c19953"
       ],
       "recallDays": [
         "2026-05-12",
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-14"
       ],
       "conceptTags": [
         "telegram",
@@ -2654,18 +2667,19 @@
       "source": "memory",
       "snippet": "Telegram 工具进度提示关闭: 小雪反馈：Telegram 上仍能看到很多 “Pinching...” 之类的中间进度/状态信息，希望不再发送这些信息，但正常消息继续发送。",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-11T19:00:00.739Z",
-      "lastRecalledAt": "2026-05-11T19:00:00.739Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
       "queryHashes": [
         "edcbe8c19953"
       ],
       "recallDays": [
         "2026-05-12",
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-14"
       ],
       "conceptTags": [
         "之类的中间进度/状态信息",
@@ -2686,18 +2700,19 @@
       "source": "memory",
       "snippet": "Telegram 工具进度提示关闭: 依据本地 OpenClaw Telegram 文档，`channels.telegram.streaming.preview.toolProgress=false` 可隐藏工具/进度状态行，同时保留正常回复预览。; 已更新 `~/.openclaw/openclaw.json`：; `channels.telegram.streaming.mode = \"partial\"`; `channels.telegram.streaming.preview.toolProgress = false`",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-11T19:00:00.739Z",
-      "lastRecalledAt": "2026-05-11T19:00:00.739Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
       "queryHashes": [
         "edcbe8c19953"
       ],
       "recallDays": [
         "2026-05-12",
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-14"
       ],
       "conceptTags": [
         "可隐藏工具/进度状态行",
@@ -2718,18 +2733,19 @@
       "source": "memory",
       "snippet": "Telegram 工具进度提示关闭: `agents.defaults.compaction.notifyUser = false`; 已验证配置有效：`openclaw config validate` 通过。; Gateway 检测到配置变更并准备热重载；当前回合结束后应生效。",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-11T19:00:00.739Z",
-      "lastRecalledAt": "2026-05-11T19:00:00.739Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
       "queryHashes": [
         "edcbe8c19953"
       ],
       "recallDays": [
         "2026-05-12",
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-14"
       ],
       "conceptTags": [
         "gateway",
@@ -3727,6 +3743,1722 @@
       "recallDays": [
         "2026-05-12",
         "2026-05-11"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "User: Write a dream diary entry from these memory fragments: - - 固定测试链接：`https://mp.weixin.qq.com/s/n-fbrFbuDyBx39JIDXY9WA?scene=1&click_id=24` - 结果： - ✅ 成功访问页面 - ✅ HTTP 200 - ✅ 页面标题正确 - ✅ `#js_content` 存在 - ✅ 提取到约 4851 字正文 - ✅ 已保存 HTML / 截图 / JSON 工件到 browser-lab - 结论：普通 Playwri",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-14T00:57:28.710Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "click-id",
+        "js-content",
+        "browser-lab",
+        "write",
+        "dream",
+        "diary",
+        "entry",
+        "fragments"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "User: ## Device Brief 任务改版方向（待确认后再改 cron） - 小雪提出的新方向： - 不再要求提交中文全文 - 改为要求提交“微信公众号文章网址” - 由云端读取公众号正文，并清洗广告、二维码、公众号尾注、原公众号品牌痕迹 - 转为全英文、以 `Device Brief` 名义撰写的发表稿 - 再沿用原来的配图、四平台发布、回执流程 - 当前建议的实现方式： - 使用固定 URL inbox 文件作为 cron 输入源，比直接依赖聊天上下文更稳 - 发布前增加自检：全文是否全英文、是否仍残留原公众号品牌/广告/中文痕迹、是否整体",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-14T00:57:28.710Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "是否仍残留原公众号品牌/广告/中文痕迹",
+        "device",
+        "brief",
+        "任务",
+        "改版",
+        "方向",
+        "确认",
+        "cron"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:3:3": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:3:3",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 3,
+      "endLine": 3,
+      "source": "memory",
+      "snippet": "User: `failed` kept surfacing across 59 memories. - - Theme: `producing` kept surfacing across 59 memories. - - Theme: `turn` kept surfacing across 59 memories.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-14T00:57:28.710Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "failed",
+        "kept",
+        "surfacing",
+        "across",
+        "memories",
+        "theme",
+        "producing",
+        "turn"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:4:4": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:4:4",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 4,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "Assistant: Themes\" might be a category? No_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-14T00:57:28.710Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "no-reply",
+        "themes",
+        "might",
+        "category"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:5:5": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:5:5",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 5,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "User: 嗯嗯，谢谢你盯着openclaw的状态",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-14T00:57:28.710Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "嗯嗯",
+        "谢谢",
+        "openclaw",
+        "状态"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:6:6": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:6:6",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 6,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "Assistant: 不客气！随时待命，有需要尽管叫我。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-14T00:57:28.710Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "不客气",
+        "随时",
+        "待命",
+        "需要",
+        "尽管"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:7:7": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:7:7",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 7,
+      "endLine": 7,
+      "source": "memory",
+      "snippet": "User: openrouter/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free。你介意我了解你一点吗？比如你是纯推理的模型比较多，还是文学创作也是很擅长的？",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-14T00:57:28.710Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "router",
+        "openrouter",
+        "nvidia",
+        "nemotron",
+        "nano",
+        "omni",
+        "30b",
+        "a3b"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:8:8": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:8:8",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 8,
+      "endLine": 8,
+      "source": "memory",
+      "snippet": "Assistant: 这个模型（Nemotron 3 Nano Omni 30B Reasoning）侧重推理任务，在逻辑推理、数学、代码等方面表现较强。同时它也具备不错的语言理解和生成能力，文学创作（如写故事、诗歌、文案）同样可以处理，不过创意深度和风格多样性可能不如专门的大型文学模型。如果你想测试具体表现，可以给我一个小任务试试看。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-14T00:57:28.710Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "这个",
+        "模型",
+        "nemotron",
+        "nano",
+        "omni",
+        "30b",
+        "reasoning",
+        "侧重"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:9:9": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:9:9",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 9,
+      "endLine": 9,
+      "source": "memory",
+      "snippet": "User: openrouter/nvidia/nemotron，出了好几个版本，说实话，我是请教grok，他的建议是推荐你。 所以，你既有逻辑和推理，代码能力，也有创作文学作品的部分，你会觉得“都应付得来，没问题”“还是应该觉得日本初升高教学”实际上就是牺牲",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-14T00:57:28.710Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "router",
+        "openrouter/nvidia/nemotron",
+        "openrouter",
+        "nvidia",
+        "nemotron",
+        "出了",
+        "几个",
+        "版本"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:10:10": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:10:10",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 10,
+      "endLine": 10,
+      "source": "memory",
+      "snippet": "Assistant: 这个模型（Nemotron 3 Nano Omni 30B Reasoning）确实侧重推理和代码能力，在逻辑推理、数学、编程等任务上表现很强。文学创作方面也能胜任——能写故事、诗歌、文案，但若比拼创意深度、风格多样性或情感细腻度，可能不如专门的大型创作型模型。总体来说，它是个“都能应付”的通才：日常的逻辑任务和基本创作需求完全没问题；如果你追求顶尖水准的文学表现，可能需要更大或更专门的模型。就像你说的“日本初升高教学”——确实存在一定的取舍，但在这个规模的免费模型里，这种平衡已经很不错了。如果你有具体场景想测试，可以直接给我一个小",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-14T00:57:28.710Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "这个",
+        "模型",
+        "nemotron",
+        "nano",
+        "omni",
+        "30b",
+        "reasoning",
+        "确实"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:11:11": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:11:11",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 11,
+      "endLine": 11,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-14T00:57:28.710Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:12:12": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:12:12",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 12,
+      "endLine": 12,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-14T00:57:28.710Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:13:13": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:13:13",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 13,
+      "endLine": 13,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-14T00:57:28.710Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:14:14": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:14:14",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 14,
+      "endLine": 14,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-14T00:57:28.710Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:15:15": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:15:15",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 15,
+      "endLine": 15,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-14T00:57:28.710Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:16:16": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:16:16",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 16,
+      "endLine": 16,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-14T00:57:28.710Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:17:17": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:17:17",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 17,
+      "endLine": 17,
+      "source": "memory",
+      "snippet": "User: Write a dream diary entry from these memory fragments: - 心跳巡检：趋势分析系统 crontab 已补暂停: **时间**：2026年5月9日 07:50（北京时间） - 心跳巡检：趋势分析系统 crontab 已补暂停: 巡检发现：虽然 HEARTBEAT.md 标注“数字花束与春节送礼趋势深度调研 - 每2小时执行”已暂停，但系统 crontab 仍有 `research_trend_analyzer.py` 每2小时运行，且 5月9日 02:00/04:00/06:00 仍生成报告",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-14T00:57:28.710Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "research-trend-analyzer.py",
+        "00/04",
+        "00/06",
+        "write",
+        "dream",
+        "diary",
+        "entry"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:18:18": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:18:18",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 18,
+      "endLine": 18,
+      "source": "memory",
+      "snippet": "User: OpenClaw cron 巡检任务当前失败，不是业务逻辑失败，而是模型配置被白名单拒绝：`openrouter/xiaomi/mimo-v2-flash` 不在允许列表。 - 🔴 nightly-security-audit：启用中，但最近执行失败；原因是模型白名单拒绝。 - 🟢 GitClaw 自动备份：健康。每小时 crontab 正常，最新 `Backup OK` 为 2026-05-10 10:00，北京时间；本地 HEAD 与 GitHub 远端一致。 - 🔴 GitClaw backup h - User: 墨衍，能看到我",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-14T00:57:28.710Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "backup",
+        "router",
+        "备份",
+        "openrouter/xiaomi/mimo-v2-flash",
+        "nightly-security-audit",
+        "openclaw",
+        "cron",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:19:19": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:19:19",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 19,
+      "endLine": 19,
+      "source": "memory",
+      "snippet": "User: 早安墨衍☀️你有在盯openclaw的HEARTBEAT，辛苦你了。 我来想问你一下，关于微信公众号的自动化发布，目前全网的 skill池里，有哪些新出来的？",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-14T00:57:28.710Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "早安",
+        "你有",
+        "openclaw",
+        "heartbeat",
+        "辛苦",
+        "我来",
+        "一下",
+        "关于"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:20:20": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:20:20",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 20,
+      "endLine": 20,
+      "source": "memory",
+      "snippet": "Assistant: 根据当前可用的技能池（available_skills），关于微信公众号自动化发布方面，目前仅有以下相关技能： - **wechat-article-extractor**：用于提取微信公众号文章内容并保存为清理后的 Markdown 文件，但此为**内容提取工具**，并非专门用于**自动化发布**的技能。 目前技能池中**没有专门针对微信公众号自动化发布（如批量发布、排程发布、智能排版等）的新技能**。如果需要此类功能，可能需要结合其他工具（如浏览器自动化、API 集成等）进行二次开发，或等待官方技能池更新。 是否需要我协助您查看",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-14T00:57:28.710Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "available-skills",
+        "wechat-article-extractor",
+        "根据",
+        "当前",
+        "可用",
+        "技能",
+        "关于",
+        "公众"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:21:21": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:21:21",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 21,
+      "endLine": 21,
+      "source": "memory",
+      "snippet": "User: 需要你联网去找“微信公众号文章的自动化发布”",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-14T00:57:28.710Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "需要",
+        "公众",
+        "文章",
+        "自动",
+        "发布"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:22:22": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:22:22",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 22,
+      "endLine": 22,
+      "source": "memory",
+      "snippet": "User: 需要你联网去找“微信公众号文章的自动化发布”",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-14T00:57:28.710Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "需要",
+        "公众",
+        "文章",
+        "自动",
+        "发布"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:23:23": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:23:23",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 23,
+      "endLine": 23,
+      "source": "memory",
+      "snippet": "User: 需要你联网去找“微信公众号文章的自动化发布”",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-14T00:57:28.710Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "需要",
+        "公众",
+        "文章",
+        "自动",
+        "发布"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:24:24": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:24:24",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 24,
+      "endLine": 24,
+      "source": "memory",
+      "snippet": "Assistant: 根据当前 OpenClaw技能池（available_skills）和系统限制，关于微信公众号文章的**自动化发布**功能，目前技能池中**没有专门针对此场景的新技能**。仅有 **wechat-article-extractor** 技能（用于提取文章内容并保存为 Markdown），但该功能仅支持**内容提取**，不包含自动发布、排程或智能排版能力。 ### 说明： 1. **技能池限制**：OpenClaw 的技能池需通过官方渠道更新，目前未包含微信公众号自动化发布相关功能（如批量发布、定时发布等）。 2. **替代方案**：",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-14T00:57:28.710Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "available-skills",
+        "wechat-article-extractor",
+        "根据",
+        "当前",
+        "openclaw",
+        "技能",
+        "系统",
+        "限制"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:25:25": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:25:25",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 25,
+      "endLine": 25,
+      "source": "memory",
+      "snippet": "User: 好的，你们升级了，框架会不一样。请你查看你目前有什么browser或者浏览器",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-14T00:57:28.710Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "好的",
+        "你们",
+        "升级",
+        "框架",
+        "一样",
+        "查看",
+        "目前",
+        "什么"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:26:26": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:26:26",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 26,
+      "endLine": 26,
+      "source": "memory",
+      "snippet": "Assistant: 当前 OpenClaw 浏览器配置如下： - **状态**: 浏览器未运行（`running: false`） - **Profile**: `openclaw`（OpenClaw 专用配置） - **浏览器**: 自定义（`detectedBrowser: \"custom\"`） - **Executable Path**: `/usr/bin/google-chrome-unstable` - **模式**: Headless（无界面） + NoSandbox - **CDP Status**: 未就绪（`cdpReady: fa",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-14T00:57:28.710Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "usr/bin/google-chrome-unstable",
+        "当前",
+        "openclaw",
+        "浏览",
+        "配置",
+        "如下",
+        "状态",
+        "运行"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:27:27": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:27:27",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 27,
+      "endLine": 27,
+      "source": "memory",
+      "snippet": "User: 请操作browser action=start",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-14T00:57:28.710Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "操作",
+        "browser",
+        "action",
+        "start"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:28:28": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:28:28",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 28,
+      "endLine": 28,
+      "source": "memory",
+      "snippet": "User: 请问browser action情况如何",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-14T00:57:28.710Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "请问",
+        "browser",
+        "action",
+        "情况",
+        "如何"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:29:29": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:29:29",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 29,
+      "endLine": 29,
+      "source": "memory",
+      "snippet": "Assistant: 浏览器已成功启动，状态如下：",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-14T00:57:28.710Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "浏览",
+        "成功",
+        "启动",
+        "状态",
+        "如下"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:30:30": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:30:30",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 30,
+      "endLine": 30,
+      "source": "memory",
+      "snippet": "User: 您发送过来的消息是隔断的，下半句没有。请试试检查是哪里出了问题",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-14T00:57:28.710Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "发送",
+        "过来",
+        "消息",
+        "半句",
+        "没有",
+        "检查",
+        "哪里",
+        "出了"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-14.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-14.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-05-14.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "User: Reply only: OK",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-14T00:57:28.710Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
+      "queryHashes": [
+        "ebfce2d015c5"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "reply",
+        "only"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-14.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-14.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-05-14.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "Assistant: OK",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-14T00:57:28.710Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
+      "queryHashes": [
+        "ebfce2d015c5"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": []
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-14.txt:3:3": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-14.txt:3:3",
+      "path": "memory/.dreams/session-corpus/2026-05-14.txt",
+      "startLine": 3,
+      "endLine": 3,
+      "source": "memory",
+      "snippet": "User: Reply only: OK",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-14T00:57:28.710Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
+      "queryHashes": [
+        "ebfce2d015c5"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "reply",
+        "only"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-14.txt:4:4": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-14.txt:4:4",
+      "path": "memory/.dreams/session-corpus/2026-05-14.txt",
+      "startLine": 4,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "Assistant: OK",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-14T00:57:28.710Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
+      "queryHashes": [
+        "ebfce2d015c5"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": []
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-14.txt:5:5": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-14.txt:5:5",
+      "path": "memory/.dreams/session-corpus/2026-05-14.txt",
+      "startLine": 5,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "User: search.provider 配置键的情况怎么样啦",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-14T00:57:28.710Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
+      "queryHashes": [
+        "ebfce2d015c5"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "search.provider",
+        "配置",
+        "情况",
+        "怎么"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-14.txt:6:6": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-14.txt:6:6",
+      "path": "memory/.dreams/session-corpus/2026-05-14.txt",
+      "startLine": 6,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "User: Reply only: OK",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-14T00:57:28.710Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
+      "queryHashes": [
+        "ebfce2d015c5"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "reply",
+        "only"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-14.txt:7:7": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-14.txt:7:7",
+      "path": "memory/.dreams/session-corpus/2026-05-14.txt",
+      "startLine": 7,
+      "endLine": 7,
+      "source": "memory",
+      "snippet": "Assistant: OK",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-14T00:57:28.710Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
+      "queryHashes": [
+        "ebfce2d015c5"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": []
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:31:31": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:31:31",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 31,
+      "endLine": 31,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-14T00:57:28.710Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:32:32": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:32:32",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 32,
+      "endLine": 32,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-14T00:57:28.710Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:33:33": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:33:33",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 33,
+      "endLine": 33,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-14T00:57:28.710Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:34:34": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:34:34",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 34,
+      "endLine": 34,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-14T00:57:28.710Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:35:35": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:35:35",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 35,
+      "endLine": 35,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-14T00:57:28.710Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:36:36": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:36:36",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 36,
+      "endLine": 36,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-14T00:57:28.710Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:37:37": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:37:37",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 37,
+      "endLine": 37,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-14T00:57:28.710Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:38:38": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:38:38",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 38,
+      "endLine": 38,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-14T00:57:28.710Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:39:39": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:39:39",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 39,
+      "endLine": 39,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-14T00:57:28.710Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:40:40": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:40:40",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 40,
+      "endLine": 40,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-14T00:57:28.710Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:41:41": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:41:41",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 41,
+      "endLine": 41,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-14T00:57:28.710Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:42:42": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:42:42",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 42,
+      "endLine": 42,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-14T00:57:28.710Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:43:43": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:43:43",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 43,
+      "endLine": 43,
+      "source": "memory",
+      "snippet": "Assistant: 浏览器已成功启动，处于运行状态（running: true），CDP 已就绪（cdpReady: true），可进行后续操作。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-14T00:57:28.710Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "浏览",
+        "成功",
+        "启动",
+        "处于",
+        "运行",
+        "状态",
+        "running",
+        "true"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:44:44": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:44:44",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 44,
+      "endLine": 44,
+      "source": "memory",
+      "snippet": "User: 请使用您的浏览器，联网查找“微信公众号文章的自动化发布”skill，有哪些新出来的？",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-14T00:57:28.710Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "使用",
+        "浏览",
+        "查找",
+        "公众",
+        "文章",
+        "自动",
+        "发布",
+        "skill"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:45:45": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:45:45",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 45,
+      "endLine": 45,
+      "source": "memory",
+      "snippet": "User: 请使用您的浏览器，联网查找“微信公众号文章的自动化发布”skill，有哪些新出来的？",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-14T00:57:28.710Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "使用",
+        "浏览",
+        "查找",
+        "公众",
+        "文章",
+        "自动",
+        "发布",
+        "skill"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:46:46": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:46:46",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 46,
+      "endLine": 46,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-14T00:57:28.710Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:47:47": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:47:47",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 47,
+      "endLine": 47,
+      "source": "memory",
+      "snippet": "User: 请使用您的浏览器，联网查找“微信公众号文章的自动化发布”skill，有哪些新出来的？",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-14T00:57:28.710Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "使用",
+        "浏览",
+        "查找",
+        "公众",
+        "文章",
+        "自动",
+        "发布",
+        "skill"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:48:48": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:48:48",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 48,
+      "endLine": 48,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-14T00:57:28.710Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:49:49": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:49:49",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 49,
+      "endLine": 49,
+      "source": "memory",
+      "snippet": "User: 请使用您的浏览器，联网查找“微信公众号文章的自动化发布”skill，有哪些新出来的？",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-14T00:57:28.710Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "使用",
+        "浏览",
+        "查找",
+        "公众",
+        "文章",
+        "自动",
+        "发布",
+        "skill"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:50:50": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:50:50",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 50,
+      "endLine": 50,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-14T00:57:28.710Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:51:51": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:51:51",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 51,
+      "endLine": 51,
+      "source": "memory",
+      "snippet": "User: 请使用您的浏览器，联网查找“微信公众号文章的自动化发布”skill，有哪些新出来的？",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-14T00:57:28.710Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "使用",
+        "浏览",
+        "查找",
+        "公众",
+        "文章",
+        "自动",
+        "发布",
+        "skill"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:52:52": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:52:52",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 52,
+      "endLine": 52,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-14T00:57:28.710Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:53:53": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:53:53",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 53,
+      "endLine": 53,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-14T00:57:28.710Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:54:54": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:54:54",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 54,
+      "endLine": 54,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-14T00:57:28.710Z",
+      "lastRecalledAt": "2026-05-14T00:57:28.710Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-14"
       ],
       "conceptTags": [
         "turn",
