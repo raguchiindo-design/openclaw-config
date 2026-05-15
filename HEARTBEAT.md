@@ -37,3 +37,7 @@
 
 ### 待办事项 (更新)
 - [ ] Fix cron jobs using deprecated model 'openrouter/xiaomi/mimo-v2-flash' (GitClaw backup health check, nightly-security-audit, 农业科技周报深度版)
+
+### 待办事项 (更新)
+- [x] Fix cron jobs using deprecated model 'openrouter/xiaomi/mimo-v2-flash' (GitClaw backup health check, nightly-security-audit) - updated to openai-codex/gpt-5.5, status now ok.
+- [ ] Monitor 农业科技周报深度版 cron job (ID: 7ac9556c-f472-486f-9d47-71b7133e1aa1) - model updated to openai-codex/gpt-5.5 but still shows error; last successful run 2026-03-31, may be provider/rate-limit issue.
