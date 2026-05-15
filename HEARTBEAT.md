@@ -34,3 +34,6 @@
 
 ### 用户指令记录
 - 2026-03-29 18:15（北京时间）：确认社交媒体智能互动任务 and 趋势分析任务保持暂停。
+
+### 待办事项 (更新)
+- [ ] Fix cron jobs using deprecated model 'openrouter/xiaomi/mimo-v2-flash' (GitClaw backup health check, nightly-security-audit, 农业科技周报深度版)
