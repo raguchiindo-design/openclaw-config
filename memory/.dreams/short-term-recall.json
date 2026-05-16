@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-16T05:36:34.311Z",
+  "updatedAt": "2026-05-16T14:24:58.186Z",
   "entries": {
     "memory:memory/2026-03-14.md:84:98": {
       "key": "memory:memory/2026-03-14.md:84:98",
@@ -43,21 +43,23 @@
       "endLine": 90,
       "source": "memory",
       "snippet": "- 固定测试链接：`https://mp.weixin.qq.com/s/n-fbrFbuDyBx39JIDXY9WA?scene=1&click_id=24` - 结果： - ✅ 成功访问页面 - ✅ HTTP 200 - ✅ 页面标题正确 - ✅ `#js_content` 存在 - ✅ 提取到约 4851 字正文 - ✅ 已保存 HTML / 截图 / JSON 工件到 browser-lab - 结论：普通 Playwright Chromium headless 在当前云端服务器上，至少对该公众号样例已证明可行；后续应继续扩大样本验证稳定性 ## 第二条微信公众号样例验证成功 - 时间：2026-03-14 14:30 之后（北京时间） - 测试链接：`https://mp.weixin.qq.com/s/n-iu3AnOvQlAlUnWJfGwkg` - 结果：✅ 成功提取正文（约 1085 字），标题正确 - 结论：Playwright Chromium 对微信公众号正文抓取成功并非单一样例偶然，已至少通过两条公众号文章样例 ## 当前 cron 状态确认 - 时间：2026-03-14 14:40 左右（北京时间） - 当前启用中的 cron 仅有 2 个： 1. `nightly-security-audit`（每日 03:00，Asia/Shanghai） 2. `Device Brief 四平台周更发布（周一16:00）` - 其余历史提醒/社交媒体任务均处于禁用状态 ## Device Brief 任务改版方向（待确",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3,
+      "totalScore": 4,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-05T09:01:33.479Z",
-      "lastRecalledAt": "2026-05-07T06:50:08.140Z",
+      "lastRecalledAt": "2026-05-16T14:24:58.186Z",
       "queryHashes": [
         "75443294b42c",
         "ecc61ae658b4",
-        "48efa818943d"
+        "48efa818943d",
+        "dd9b950c4a0c"
       ],
       "recallDays": [
         "2026-05-05",
-        "2026-05-07"
+        "2026-05-07",
+        "2026-05-16"
       ],
       "conceptTags": [
         "click-id",
@@ -15296,16 +15298,17 @@
       "endLine": 13,
       "source": "memory",
       "snippet": "# 2026-05-14 ## Baoyu 微信公众号内容链 skills 安装 - 小雪要求先安全审计再安装 5 个 baoyu skills：`baoyu-post-to-wechat`、`baoyu-markdown-to-html`、`baoyu-cover-image`、`baoyu-article-illustrator`、`baoyu-format-markdown`。 - 已从 ClawHub 安装并验证全部为 ready： - `baoyu-post-to-wechat` v1.116.5 - `baoyu-markdown-to-html` v1.115.4 - `baoyu-cover-image` v1.115.4 - `baoyu-article-illustrator` v1.115.4 - `baoyu-format-markdown` v1.115.4 - 安全结论：`baoyu-post-to-wechat` 高风险但可控，涉及微信公众号 API、Chrome CDP、剪贴板、`WECHAT_APP_ID/WECHAT_APP_SECRET` 或 `.baoyu-skills/.env`；未获明确授权不得配置密钥或执行发布。其余 4 个主要为本地 Markdown/HTML/图片/结构处理，风险低到中。 - 后续建议流程：Markdown → HTML → 草稿箱，最终发布保留人工确认。",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2,
+      "totalScore": 3,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-16T05:34:25.964Z",
-      "lastRecalledAt": "2026-05-16T05:36:34.311Z",
+      "lastRecalledAt": "2026-05-16T14:24:58.186Z",
       "queryHashes": [
         "371d2cc0ce77",
-        "935cd586f419"
+        "935cd586f419",
+        "dd9b950c4a0c"
       ],
       "recallDays": [
         "2026-05-16"
@@ -15319,6 +15322,37 @@
         "v1.116.5",
         "v1.115.4",
         "wechat-app-id/wechat-app-secret"
+      ]
+    },
+    "memory:memory/2026-03-12.md:26:54": {
+      "key": "memory:memory/2026-03-12.md:26:54",
+      "path": "memory/2026-03-12.md",
+      "startLine": 26,
+      "endLine": 54,
+      "source": "memory",
+      "snippet": "- 结果：脚本已可完整运行并生成报告 - 报告路径：`/tmp/openclaw/security-reports/report-2026-03-12.txt` #### 本次审计主要发现 - `Config Baseline`：FAILED - `Sensitive Credential Scan`：13 potential credential patterns - `Yellow Line Audit`：auth.log 与 memory 日志计数不一致（修复前尚无当日记录） - `Disk Capacity`：发现 1 个 >100MB 新文件 - `Environment Vars`：脚本执行时未识别到 gateway 进程 ### Baseline 重建与敏感扫描降噪 **时间**：2026-03-12 10:49-10:52 CST #### Yellow Line 执行记录 - **执行时间**：2026-03-12 10:49 CST - **完整命令**：`sudo -n chattr -i /home/ubuntu/.openclaw/workspace/scripts/nightly-security-audit.sh` - **原因**：优化夜间安全审计脚本中的敏感扫描规则，需先解除 immutable 锁 - **结果**：成功解锁 - **执行时间**：2026-03-12 10:52 CST - **完整命令**：`sudo -n chattr +i /home/ubuntu/.openclaw/workspace/scripts/nig",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-16T14:24:58.186Z",
+      "lastRecalledAt": "2026-05-16T14:24:58.186Z",
+      "queryHashes": [
+        "dd9b950c4a0c"
+      ],
+      "recallDays": [
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "gateway",
+        "auth.log",
+        "49-10",
+        "home/ubuntu",
+        "openclaw/workspace/scripts/nig",
+        "结果",
+        "脚本",
+        "完整"
       ]
     }
   }
