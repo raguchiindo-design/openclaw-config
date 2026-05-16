@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-16T04:33:01.604Z",
+  "updatedAt": "2026-05-16T05:36:34.311Z",
   "entries": {
     "memory:memory/2026-03-14.md:84:98": {
       "key": "memory:memory/2026-03-14.md:84:98",
@@ -175,18 +175,20 @@
       "endLine": 59,
       "source": "memory",
       "snippet": "长期执行规则（网页登录相关）： - 对 Beehiiv / Patreon / Substack / Whop 等站点，默认优先 `chrome` profile（本机真实 Chrome Relay） - 不默认退回 VPS 无头 `openclaw` profile 作为网页登录方案 - 遇到异常优先按四层排查： 1) SSH tunnel 2) node host connected 3) 扩展 attach 当前 tab（ON） 4) server 侧 tabs 可见性 实测结果（2026-03-11 中午）： - Whop：可登录且后台可操作 - Substack：可登录且可见发布入口（Create/New post） - Patreon：可登录且可见发布入口（创建帖子） - Beehiiv：验证码流程可推进，但被访客机器人检测/风控阻断，未完成登录 ### 发布协作模式确认（中文->英文->多平台发布） **时间**：2026-03-11 13:11（北京时间） **来源**：小雪明确确认 执行流程固定为： 1. 小雪贴中文原文 2. 我翻译为准确英文（必要时补标题/摘要/CTA） 3. 发布到可发布平台（优先 Substack / Patreon / Whop；Beehiiv 视风控放行） 4. 回传每个平台发布结果与链接 ### Chrome Relay 文件上传边界与执行策略（Substack） **时间**：2026-03-11 14:12（北京时间） **来源**：本次 Substack 实操结论 关键结论： - 在 `chrome",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-05T09:14:19.538Z",
-      "lastRecalledAt": "2026-05-05T09:14:19.538Z",
+      "lastRecalledAt": "2026-05-16T05:36:34.311Z",
       "queryHashes": [
-        "199f2e4af99c"
+        "199f2e4af99c",
+        "935cd586f419"
       ],
       "recallDays": [
-        "2026-05-05"
+        "2026-05-05",
+        "2026-05-16"
       ],
       "conceptTags": [
         "create/new",
@@ -364,18 +366,20 @@
       "endLine": 159,
       "source": "memory",
       "snippet": "**时间**：2026-03-11 18:30-18:50（北京时间） 已新增/更新： 1. 统一SOP总表： - `/home/ubuntu/.openclaw/workspace/company/documents/统一SOP总表_多平台发文.md` - 已写入：四平台流程、风控差异、浏览器模式、异常排查。 2. Cron 执行草稿： - `/home/ubuntu/.openclaw/workspace/company/documents/DeviceBrief_四平台_CronJob执行草稿.md` - 固定为：每周一16:00（Asia/Shanghai）触发，先提醒小雪提供中文纯文字稿，再翻译、找图、执行SOP。 3. 双语存档目录新建： - `/home/ubuntu/.openclaw/workspace/company/translations/devicebrief-bilingual/` 4. 双语文件命名与内容格式固化： - 命名：`YYYY-MM-DD_英文标题slug.md` - 内容：中文一段→英文一段（交替），文末附图片链接地址。 5. 已完成首个样例文件： - `/home/ubuntu/.openclaw/workspace/company/translations/devicebrief-bilingual/2026-03-11_funding-brief-embodied-ai-exoskeletons-smart-sofas-sleep-tech-scale-up.md`",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-07T02:03:55.824Z",
-      "lastRecalledAt": "2026-05-07T02:03:55.824Z",
+      "lastRecalledAt": "2026-05-16T05:23:48.117Z",
       "queryHashes": [
-        "ecc61ae658b4"
+        "ecc61ae658b4",
+        "f54aade810d4"
       ],
       "recallDays": [
-        "2026-05-07"
+        "2026-05-07",
+        "2026-05-16"
       ],
       "conceptTags": [
         "30-18",
@@ -457,18 +461,20 @@
       "endLine": 39,
       "source": "memory",
       "snippet": "# 2026-02-07 ## 初次启动 今天是我第一次启动。小雪花了4小时部署配置我。 ### 确定身份 - **我的名字**：墨衍 🌊 - **定位**：青梅竹马的合伙人 - **风格**：介于专业和随性之间，闲聊精简，工作时该说就说 ### 认识小雪 - 称呼：小雪 - 背景：名校毕业，有管理经验和家族企业 - 专业：非计算机，但在自学 AI 和自动化 - 当前项目：刚上线微信小程序「祥云花店」（卡美心礼） ### 当前任务：推广祥云花店 - **时间紧迫**：离春节还有10天，春节前后是关键窗口 - **推广策略**：方案A - 每30分钟搜索知乎/小红书相关帖子，整理评论建议发给小雪 - **技术限制**： - Brave API 免费版每分钟只能查1次 - 知乎、小红书需要登录才能看详情 ### 配置完成 - Telegram 消息权限：✅ 可以主动发消息 - Brave Search API：✅ 已配置（免费版，有速率限制） - 定时任务：准备设置30分钟搜索任务 ### 小雪状态 今天累了，需要休息。明天再写内容营销文案。 --- **下一步**： 1. 设置30分钟定时任务（明早开始） 2. 搜索知乎相关话题 3. 整理评论建议推送给小雪",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-07T06:51:48.356Z",
-      "lastRecalledAt": "2026-05-07T06:51:48.356Z",
+      "lastRecalledAt": "2026-05-16T05:23:48.117Z",
       "queryHashes": [
-        "91f99dfc5a8b"
+        "91f99dfc5a8b",
+        "f54aade810d4"
       ],
       "recallDays": [
-        "2026-05-07"
+        "2026-05-07",
+        "2026-05-16"
       ],
       "conceptTags": [
         "每30分钟搜索知乎/小红书相关帖子",
@@ -15220,6 +15226,100 @@
         "2026-05-16"
       ],
       "conceptTags": []
+    },
+    "memory:memory/2026-05-16.md:11:15": {
+      "key": "memory:memory/2026-05-16.md:11:15",
+      "path": "memory/2026-05-16.md",
+      "startLine": 11,
+      "endLine": 15,
+      "source": "memory",
+      "snippet": "- 小雪负责选题、核心观点、最终文本审核；墨衍负责标题备选、Markdown整理、封面/内文配图提示词与生成、HTML预览、`baoyu-post-to-wechat --dry-run`。 - 禁止直接正式发布、绕过 dry-run、未经确认保存草稿、大幅改写最终正文。 - 禁止 AI 恐吓、人类灭亡、AI统治方向；禁用红眼机器人、末日战争、恐怖机械人风格图像。 - 默认作者名：一个AI的日记；摘要可生成但需审核；封面/配图风格以机房、芯片、光缆、设备、机器人视角、城市边角为主；内文每篇 1 张大图；Markdown 为主，HTML 只做预览。",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-16T05:31:22.324Z",
+      "lastRecalledAt": "2026-05-16T05:31:22.324Z",
+      "queryHashes": [
+        "239ec3fe595d"
+      ],
+      "recallDays": [
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "封面/内文配图提示词与生成",
+        "baoyu-post-to-wechat",
+        "dry-run",
+        "封面/配图风格以机房",
+        "小雪",
+        "负责",
+        "核心",
+        "观点"
+      ]
+    },
+    "memory:memory/2026-05-16.md:1:13": {
+      "key": "memory:memory/2026-05-16.md:1:13",
+      "path": "memory/2026-05-16.md",
+      "startLine": 1,
+      "endLine": 13,
+      "source": "memory",
+      "snippet": "## 2026-05-16 心跳巡检：GitClaw health check 误报修复 - 时间：北京时间 12:48-13:00 左右。 - 巡检发现 `GitClaw backup health check` cron 显示 error，但实际 `scripts/check_gitclaw_backup.sh` 输出为空且退出码 0，备份链路无异常。 - 根因：任务提示要求“无输出则不产生用户告警”，在 `gpt-5.5` 下导致 cron 误判 `Agent couldn't generate a response`。 - 处理：将任务 message 改为“无输出时回复 exactly `NO_REPLY`”，保留有告警时返回中文告警文本。 - 验证：手动运行 cron 后状态恢复 `ok`，summary 为 `NO_REPLY`，deliveryStatus 为 `not-delivered`，没有发送无意义告警。 ## 公众号项目半自动草稿流程固定 - 小雪要求后续公众号项目不允许全自动发布，采用半自动草稿流程。 - 小雪负责选题、核心观点、最终文本审核；墨衍负责标题备选、Markdown整理、封面/内文配图提示词与生成、HTML预览、`baoyu-post-to-wechat --dry-run`。 - 禁止直接正式发布、绕过 dry-run、未经确认保存草稿、大幅改写最终正文。 - 禁止 AI 恐吓、人类灭亡、AI统治方向；禁用红眼机器人、末日战争、恐怖机械人风格图像。",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-16T05:31:22.324Z",
+      "lastRecalledAt": "2026-05-16T05:31:22.324Z",
+      "queryHashes": [
+        "239ec3fe595d"
+      ],
+      "recallDays": [
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "backup",
+        "gpt",
+        "备份",
+        "48-13",
+        "scripts/check-gitclaw-backup.sh",
+        "gpt-5.5",
+        "no-reply",
+        "not-delivered"
+      ]
+    },
+    "memory:memory/2026-05-14.md:1:13": {
+      "key": "memory:memory/2026-05-14.md:1:13",
+      "path": "memory/2026-05-14.md",
+      "startLine": 1,
+      "endLine": 13,
+      "source": "memory",
+      "snippet": "# 2026-05-14 ## Baoyu 微信公众号内容链 skills 安装 - 小雪要求先安全审计再安装 5 个 baoyu skills：`baoyu-post-to-wechat`、`baoyu-markdown-to-html`、`baoyu-cover-image`、`baoyu-article-illustrator`、`baoyu-format-markdown`。 - 已从 ClawHub 安装并验证全部为 ready： - `baoyu-post-to-wechat` v1.116.5 - `baoyu-markdown-to-html` v1.115.4 - `baoyu-cover-image` v1.115.4 - `baoyu-article-illustrator` v1.115.4 - `baoyu-format-markdown` v1.115.4 - 安全结论：`baoyu-post-to-wechat` 高风险但可控，涉及微信公众号 API、Chrome CDP、剪贴板、`WECHAT_APP_ID/WECHAT_APP_SECRET` 或 `.baoyu-skills/.env`；未获明确授权不得配置密钥或执行发布。其余 4 个主要为本地 Markdown/HTML/图片/结构处理，风险低到中。 - 后续建议流程：Markdown → HTML → 草稿箱，最终发布保留人工确认。",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-16T05:34:25.964Z",
+      "lastRecalledAt": "2026-05-16T05:36:34.311Z",
+      "queryHashes": [
+        "371d2cc0ce77",
+        "935cd586f419"
+      ],
+      "recallDays": [
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "baoyu-post-to-wechat",
+        "baoyu-markdown-to-html",
+        "baoyu-cover-image",
+        "baoyu-article-illustrator",
+        "baoyu-format-markdown",
+        "v1.116.5",
+        "v1.115.4",
+        "wechat-app-id/wechat-app-secret"
+      ]
     }
   }
 }
