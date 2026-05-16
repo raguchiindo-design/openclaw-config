@@ -574,3 +574,12 @@
 
 **通知决定**：未发送打扰消息（资源不符合严格标准）
 **状态**：监控任务继续运行，下次扫描18:00
+
+## Promoted From Short-Term Memory (2026-05-16)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-05-09.md:5:5 -->
+- **时间**：2026年5月9日 07:50（北京时间） [score=0.825 recalls=0 avg=0.620 source=memory/2026-05-09.md:5-5]
+<!-- openclaw-memory-promotion:memory:memory/2026-05-09.md:7:7 -->
+- 巡检发现：虽然 HEARTBEAT.md 标注“数字花束与春节送礼趋势深度调研 - 每2小时执行”已暂停，但系统 crontab 仍有 `research_trend_analyzer.py` 每2小时运行，且 5月9日 02:00/04:00/06:00 仍生成报告文件并被 GitClaw 备份。 [score=0.825 recalls=0 avg=0.620 source=memory/2026-05-09.md:7-7]
+<!-- openclaw-memory-promotion:memory:memory/2026-05-09.md:14:14 -->
+- 备注：这是恢复用户既有“趋势分析任务暂停”指令的一致性修正。 [score=0.825 recalls=0 avg=0.620 source=memory/2026-05-09.md:14-14]
