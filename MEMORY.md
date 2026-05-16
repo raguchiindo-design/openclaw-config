@@ -627,3 +627,8 @@
 6. 每篇只表达一个小观察，不展开大道理。
 7. 配图以机房、芯片、光缆、设备、机器人视角、城市边角为主，避免恐怖、战争、末日、红眼机器人风格。
 8. 最终输出必须适合微信公众号发布。
+
+## Promoted From Short-Term Memory (2026-05-17)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-03-14.md:64:90 -->
+- - 固定测试链接：`https://mp.weixin.qq.com/s/n-fbrFbuDyBx39JIDXY9WA?scene=1&click_id=24` - 结果： - ✅ 成功访问页面 - ✅ HTTP 200 - ✅ 页面标题正确 - ✅ `#js_content` 存在 - ✅ 提取到约 4851 字正文 - ✅ 已保存 HTML / 截图 / JSON 工件到 browser-lab - 结论：普通 Playwright Chromium headless 在当前云端服务器上，至少对该公众号样例已证明可行；后续应继续扩大样本验证稳定性 ## 第二条微信公众号样例验证成功 - 时间：2026-03-14 14:30 之后（北京时间） - 测试链接：`https://mp.weixin.qq.com/s/n-iu3AnOvQlAlUnWJfGwkg` - 结果：✅ 成功提取正文（约 1085 字），标题正确 - 结论：Playwright Chromium 对微信公众号正文抓取成功并非单一样例偶然，已至少通过两条公众号文章样例 ## 当前 cron 状态确认 - 时间：2026-03-14 14:40 左右（北京时间） - 当前启用中的 cron 仅有 2 个： 1. `nightly-security-audit`（每日 03:00，Asia/Shanghai） 2. `Device Brief 四平台周更发布（周一16:00）` - 其余历史提醒/社交媒体任务均处于禁用状态 ## Device Brief 任务改版方向（待确认后再改 cron） - 小雪提出的新方向： - 不再要求提交中文全文 - 改为要求提交“微信公众号文章网址” [score=0.968 recalls=4 avg=1.000 source=memory/2026-03-14.md:64-90]
