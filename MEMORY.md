@@ -705,3 +705,10 @@
 7. 最终发送/群发/发布仍由小雪在微信后台人工点击。
 
 安全边界不变：触发语不是直接授权发布；它只授权启动准备流程。未经小雪逐步确认，不得 dry-run、不得保存草稿、不得正式发布。
+
+## Promoted From Short-Term Memory (2026-05-18)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-05-14.md:1:13 -->
+- # 2026-05-14 ## Baoyu 微信公众号内容链 skills 安装 - 小雪要求先安全审计再安装 5 个 baoyu skills：`baoyu-post-to-wechat`、`baoyu-markdown-to-html`、`baoyu-cover-image`、`baoyu-article-illustrator`、`baoyu-format-markdown`。 - 已从 ClawHub 安装并验证全部为 ready： - `baoyu-post-to-wechat` v1.116.5 - `baoyu-markdown-to-html` v1.115.4 - `baoyu-cover-image` v1.115.4 - `baoyu-article-illustrator` v1.115.4 - `baoyu-format-markdown` v1.115.4 - 安全结论：`baoyu-post-to-wechat` 高风险但可控，涉及微信公众号 API、Chrome CDP、剪贴板、`WECHAT_APP_ID/WECHAT_APP_SECRET` 或 `.baoyu-skills/.env`；未获明确授权不得配置密钥或执行发布。其余 4 个主要为本地 Markdown/HTML/图片/结构处理，风险低到中。 - 后续建议流程：Markdown → HTML → 草稿箱，最终发布保留人工确认。 [score=0.960 recalls=7 avg=1.000 source=memory/2026-05-14.md:1-13]
+<!-- openclaw-memory-promotion:memory:memory/2026-03-15.md:26:54 -->
+- - 新增 cron job：`GitClaw backup health check` - Job ID：`d3f2db09-ea1f-4910-8775-e100c603d021` - 调度：每小时第 10 分钟（Asia/Shanghai） - 逻辑： - 检查最近一次 `Backup OK.` 是否超过 2 小时 - 检查最近一次成功备份之后是否出现新的 push/远端拒绝错误 - 检查本地 HEAD 与远端 HEAD 是否一致 - 正常时静默；异常时 Telegram 告警到 chat ID `7656385011` ### Yellow Line 执行记录 - 时间：2026-03-15 中午（北京时间） - 命令/动作：新增 OpenClaw cron 任务 `GitClaw backup health check` - 原因：为 GitClaw 周期性备份增加异常告警，避免再次静默失效 - 结果：任务创建成功，后续已确认正常运行；健康时静默、异常时告警 ## 关键任务看板落地 - 时间：2026-03-15 傍晚（北京时间） - 已创建：`company/documents/critical_tasks_dashboard.md` - 用途：集中维护关键周期性任务状态，避免任务“表面在跑、实际失效” - 当前纳入看板的重点项： 1. nightly-security-audit 2. GitClaw 自动备份 3. GitClaw backup health check 4. Device Brief 四平台周更发布 5. 趋势分析任务（业务信号类） - 后续默认按该看板优先巡检关键任务 ## 快速扫一眼版 + 三日巡检 - 时间：2026-03-16 凌晨（北京时间） [score=0.872 recalls=3 avg=1.000 source=memory/2026-03-15.md:26-54]
