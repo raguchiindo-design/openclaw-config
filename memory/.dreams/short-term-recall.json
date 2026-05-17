@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-17T05:17:02.839Z",
+  "updatedAt": "2026-05-17T06:56:12.782Z",
   "entries": {
     "memory:memory/2026-03-14.md:84:98": {
       "key": "memory:memory/2026-03-14.md:84:98",
@@ -43,20 +43,22 @@
       "endLine": 90,
       "source": "memory",
       "snippet": "- 固定测试链接：`https://mp.weixin.qq.com/s/n-fbrFbuDyBx39JIDXY9WA?scene=1&click_id=24` - 结果： - ✅ 成功访问页面 - ✅ HTTP 200 - ✅ 页面标题正确 - ✅ `#js_content` 存在 - ✅ 提取到约 4851 字正文 - ✅ 已保存 HTML / 截图 / JSON 工件到 browser-lab - 结论：普通 Playwright Chromium headless 在当前云端服务器上，至少对该公众号样例已证明可行；后续应继续扩大样本验证稳定性 ## 第二条微信公众号样例验证成功 - 时间：2026-03-14 14:30 之后（北京时间） - 测试链接：`https://mp.weixin.qq.com/s/n-iu3AnOvQlAlUnWJfGwkg` - 结果：✅ 成功提取正文（约 1085 字），标题正确 - 结论：Playwright Chromium 对微信公众号正文抓取成功并非单一样例偶然，已至少通过两条公众号文章样例 ## 当前 cron 状态确认 - 时间：2026-03-14 14:40 左右（北京时间） - 当前启用中的 cron 仅有 2 个： 1. `nightly-security-audit`（每日 03:00，Asia/Shanghai） 2. `Device Brief 四平台周更发布（周一16:00）` - 其余历史提醒/社交媒体任务均处于禁用状态 ## Device Brief 任务改版方向（待确",
-      "recallCount": 6,
+      "recallCount": 8,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 6,
+      "totalScore": 8,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-05T09:01:33.479Z",
-      "lastRecalledAt": "2026-05-17T05:17:02.839Z",
+      "lastRecalledAt": "2026-05-17T06:53:12.333Z",
       "queryHashes": [
         "75443294b42c",
         "ecc61ae658b4",
         "48efa818943d",
         "dd9b950c4a0c",
         "dedac2a3abfc",
-        "dbbc95a370d9"
+        "dbbc95a370d9",
+        "4e7931414cb5",
+        "27f647d720bf"
       ],
       "recallDays": [
         "2026-05-05",
@@ -15306,19 +15308,21 @@
       "endLine": 13,
       "source": "memory",
       "snippet": "# 2026-05-14 ## Baoyu 微信公众号内容链 skills 安装 - 小雪要求先安全审计再安装 5 个 baoyu skills：`baoyu-post-to-wechat`、`baoyu-markdown-to-html`、`baoyu-cover-image`、`baoyu-article-illustrator`、`baoyu-format-markdown`。 - 已从 ClawHub 安装并验证全部为 ready： - `baoyu-post-to-wechat` v1.116.5 - `baoyu-markdown-to-html` v1.115.4 - `baoyu-cover-image` v1.115.4 - `baoyu-article-illustrator` v1.115.4 - `baoyu-format-markdown` v1.115.4 - 安全结论：`baoyu-post-to-wechat` 高风险但可控，涉及微信公众号 API、Chrome CDP、剪贴板、`WECHAT_APP_ID/WECHAT_APP_SECRET` 或 `.baoyu-skills/.env`；未获明确授权不得配置密钥或执行发布。其余 4 个主要为本地 Markdown/HTML/图片/结构处理，风险低到中。 - 后续建议流程：Markdown → HTML → 草稿箱，最终发布保留人工确认。",
-      "recallCount": 5,
+      "recallCount": 7,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 5,
+      "totalScore": 7,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-16T05:34:25.964Z",
-      "lastRecalledAt": "2026-05-17T05:17:02.839Z",
+      "lastRecalledAt": "2026-05-17T06:53:12.333Z",
       "queryHashes": [
         "371d2cc0ce77",
         "935cd586f419",
         "dd9b950c4a0c",
         "dedac2a3abfc",
-        "dbbc95a370d9"
+        "dbbc95a370d9",
+        "4e7931414cb5",
+        "27f647d720bf"
       ],
       "recallDays": [
         "2026-05-16",
@@ -16612,6 +16616,37 @@
         "说明",
         "这次",
         "搜索"
+      ]
+    },
+    "memory:memory/2026-03-11.md:74:102": {
+      "key": "memory:memory/2026-03-11.md:74:102",
+      "path": "memory/2026-03-11.md",
+      "startLine": 74,
+      "endLine": 102,
+      "source": "memory",
+      "snippet": "- 后续涉及相关网站登录（如 Substack 等）默认先填写该邮箱 - 若站点账号体系不同或出现账户冲突，再向小雪确认 ### 内容发布工作流固定（中文文章处理） **时间**：2026-03-11 14:20（北京时间） **来源**：小雪明确指定 固定流程： 1. 收到中文原文后，先翻译成准确、自然、可发表的英文 2. 根据文中“产品”与“中文公司名”联网查找配图；主要公司每家1张、每篇总量控制为3张 3. 完成文章排版与编辑，整理为可直接审核草稿；完成后对外回复固定句式：`今日文章准备好了` 本次第2步执行记录： - 已为当前稿件准备3张本地可上传配图（服务器路径 `/tmp/openclaw/uploads/`） - `jijia_shijie.jpg` - `xingdong_jiyuan.jpg` - `eight_sleep.png` ### Beehiiv 发布顺序与人工过风控协作规则 **时间**：2026-03-11 17:03（北京时间） **来源**：小雪明确指定 执行规则更新： - `beehiiv.com` 作为 cron job 多平台发文链路的最后一个站点 - 触发 Beehiiv 登录时，若出现 Cloudflare/机器人验证，由墨衍先发出信号 - 小雪手动完成人机验证后，墨衍继续接管后续发文步骤 ### Beehiiv 发文流程固定化（实操） **时间**：2026-03-11 17:50（北京时间）",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-17T06:56:12.782Z",
+      "lastRecalledAt": "2026-05-17T06:56:12.782Z",
+      "queryHashes": [
+        "474cfd606df8"
+      ],
+      "recallDays": [
+        "2026-05-17"
+      ],
+      "conceptTags": [
+        "tmp/openclaw/uploads",
+        "jijia-shijie.jpg",
+        "xingdong-jiyuan.jpg",
+        "eight-sleep.png",
+        "beehiiv.com",
+        "cloudflare/机器人验证",
+        "涉及",
+        "相关"
       ]
     }
   }
