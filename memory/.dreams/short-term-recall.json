@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-17T06:56:12.782Z",
+  "updatedAt": "2026-05-17T09:10:07.972Z",
   "entries": {
     "memory:memory/2026-03-14.md:84:98": {
       "key": "memory:memory/2026-03-14.md:84:98",
@@ -150,20 +150,22 @@
       "endLine": 54,
       "source": "memory",
       "snippet": "- 新增 cron job：`GitClaw backup health check` - Job ID：`d3f2db09-ea1f-4910-8775-e100c603d021` - 调度：每小时第 10 分钟（Asia/Shanghai） - 逻辑： - 检查最近一次 `Backup OK.` 是否超过 2 小时 - 检查最近一次成功备份之后是否出现新的 push/远端拒绝错误 - 检查本地 HEAD 与远端 HEAD 是否一致 - 正常时静默；异常时 Telegram 告警到 chat ID `7656385011` ### Yellow Line 执行记录 - 时间：2026-03-15 中午（北京时间） - 命令/动作：新增 OpenClaw cron 任务 `GitClaw backup health check` - 原因：为 GitClaw 周期性备份增加异常告警，避免再次静默失效 - 结果：任务创建成功，后续已确认正常运行；健康时静默、异常时告警 ## 关键任务看板落地 - 时间：2026-03-15 傍晚（北京时间） - 已创建：`company/documents/critical_tasks_dashboard.md` - 用途：集中维护关键周期性任务状态，避免任务“表面在跑、实际失效” - 当前纳入看板的重点项： 1. nightly-security-audit 2. GitClaw 自动备份 3. GitClaw backup health check 4. Device Brief 四平台周更发布 5.",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2,
+      "totalScore": 3,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-05T09:01:33.479Z",
-      "lastRecalledAt": "2026-05-07T02:03:55.824Z",
+      "lastRecalledAt": "2026-05-17T09:10:07.972Z",
       "queryHashes": [
         "75443294b42c",
-        "ecc61ae658b4"
+        "ecc61ae658b4",
+        "45c140227ae4"
       ],
       "recallDays": [
         "2026-05-05",
-        "2026-05-07"
+        "2026-05-07",
+        "2026-05-17"
       ],
       "conceptTags": [
         "backup",
@@ -16647,6 +16649,37 @@
         "cloudflare/机器人验证",
         "涉及",
         "相关"
+      ]
+    },
+    "memory:memory/2026-03-15.md:1:31": {
+      "key": "memory:memory/2026-03-15.md:1:31",
+      "path": "memory/2026-03-15.md",
+      "startLine": 1,
+      "endLine": 31,
+      "source": "memory",
+      "snippet": "# 2026-03-15 ## GitClaw 备份修复与告警监控落地 - 时间：2026-03-15 中午（北京时间） - 背景：小雪要求检查 `raguchiindo-design/openclaw-config` 私有仓库备份状态，并要求为未来持续建设增加备份告警 ### 已完成修复 - 定位并修复 GitClaw 自动备份中断的根因： 1. GitHub 大文件限制（>100MB）导致 push 被拒绝 2. GitHub Push Protection 检出历史中的 OAuth 凭据，导致 push 被拦截 - 已重写备份仓库历史，移除超大文件与敏感文件 - 已更新 `.gitignore`，排除： - `reports/**/*.tgz` - `labs/browser-lab/venvs/` - `labs/browser-lab/results/artifacts/` - `google-antigravity-auth-backup/` - `openclaw.json.backup*` - 已加固 `~/.openclaw/gitclaw/auto_backup.sh` - 无改动时也检查未推送提交 - push 自动重试 3 次 - 日志记录更清晰 - 当前本地与远端 HEAD 已一致：`dc2b8ca` ### 新增备份告警（Yellow Line: cron add，已获用户明确授权） - 新增脚本：`scripts/check_gitclaw_backup.sh` - 新增 cron job：`GitCl",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-17T09:10:07.972Z",
+      "lastRecalledAt": "2026-05-17T09:10:07.972Z",
+      "queryHashes": [
+        "45c140227ae4"
+      ],
+      "recallDays": [
+        "2026-05-17"
+      ],
+      "conceptTags": [
+        "backup",
+        "备份",
+        "labs/browser-lab/venvs",
+        "google-antigravity-auth-backup",
+        "openclaw.json.backup",
+        "openclaw/gitclaw/auto-backup.sh",
+        "scripts/check-gitclaw-backup.sh",
+        "gitclaw"
       ]
     }
   }
