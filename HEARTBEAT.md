@@ -40,4 +40,4 @@
 
 ### 待办事项 (更新)
 - [x] Fix cron jobs using deprecated model 'openrouter/xiaomi/mimo-v2-flash' (GitClaw backup health check, nightly-security-audit) - updated to openai-codex/gpt-5.5; 2026-05-16 复查 GitClaw health check 的“空输出”误报并修正为 `NO_REPLY`，状态 now ok.
-- [ ] Monitor 农业科技周报深度版 cron job (ID: 7ac9556c-f472-486f-9d47-71b7133e1aa1) - 2026-05-20 20:48 heartbeat复查：当前 jobs.json payload model 已是 openai-codex/gpt-5.5；cron list 仍显示 error 是上次运行残留状态（最近一次错误为旧模型 openrouter/xiaomi/mimo-v2-flash 被 allowlist 拒绝）。下一次运行约 2026-05-21 16:00（上海时间，约19小时后），届时确认是否恢复。
+- [x] Monitor 农业科技周报深度版 cron job (ID: 7ac9556c-f472-486f-9d47-71b7133e1aa1) - 2026-05-21 16:19 heartbeat复查：16:00 定时运行已恢复 ok，使用 openai-codex/gpt-5.5，报告已生成到 `company/reports/agtech-weekly/agtech-weekly-20260521-detailed.html`，Telegram 通知 delivered；下一次运行约 10 天后。
