@@ -36,8 +36,5 @@
 - 2026-03-29 18:15（北京时间）：确认社交媒体智能互动任务 and 趋势分析任务保持暂停。
 
 ### 待办事项 (更新)
-- [ ] Fix cron jobs using deprecated model 'openrouter/xiaomi/mimo-v2-flash' (GitClaw backup health check, nightly-security-audit, 农业科技周报深度版)
-
-### 待办事项 (更新)
 - [x] Fix cron jobs using deprecated model 'openrouter/xiaomi/mimo-v2-flash' (GitClaw backup health check, nightly-security-audit) - updated to openai-codex/gpt-5.5; 2026-05-16 复查 GitClaw health check 的“空输出”误报并修正为 `NO_REPLY`，状态 now ok.
 - [x] Monitor 农业科技周报深度版 cron job (ID: 7ac9556c-f472-486f-9d47-71b7133e1aa1) - 2026-05-21 16:19 heartbeat复查：16:00 定时运行已恢复 ok，使用 openai-codex/gpt-5.5，报告已生成到 `company/reports/agtech-weekly/agtech-weekly-20260521-detailed.html`，Telegram 通知 delivered；下一次运行约 10 天后。
