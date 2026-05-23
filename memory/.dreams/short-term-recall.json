@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-22T19:01:35.241Z",
+  "updatedAt": "2026-05-23T19:01:28.748Z",
   "entries": {
     "memory:memory/2026-03-14.md:84:98": {
       "key": "memory:memory/2026-03-14.md:84:98",
@@ -15400,12 +15400,12 @@
       "source": "memory",
       "snippet": "2026-05-16 心跳巡检：GitClaw health check 误报修复: 时间：北京时间 12:48-13:00 左右。; 巡检发现 `GitClaw backup health check` cron 显示 error，但实际 `scripts/check_gitclaw_backup.sh` 输出为空且退出码 0，备份链路无异常。; 根因：任务提示要求“无输出则不产生用户告警”，在 `gpt-5.5` 下导致 cron 误判 `Agent couldn't generate a response`。; 处理：将任务 message 改为“",
       "recallCount": 0,
-      "dailyCount": 5,
+      "dailyCount": 6,
       "groundedCount": 0,
-      "totalScore": 3.1,
+      "totalScore": 3.72,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-16T19:01:34.807Z",
-      "lastRecalledAt": "2026-05-22T19:01:33.285Z",
+      "lastRecalledAt": "2026-05-23T19:01:27.074Z",
       "queryHashes": [
         "ccfae0e39afd"
       ],
@@ -15416,7 +15416,8 @@
         "2026-05-19",
         "2026-05-21",
         "2026-05-22",
-        "2026-05-23"
+        "2026-05-23",
+        "2026-05-24"
       ],
       "conceptTags": [
         "backup",
@@ -15437,12 +15438,12 @@
       "source": "memory",
       "snippet": "2026-05-16 心跳巡检：GitClaw health check 误报修复: 验证：手动运行 cron 后状态恢复 `ok`，summary 为 `NO_REPLY`，deliveryStatus 为 `not-delivered`，没有发送无意义告警。",
       "recallCount": 0,
-      "dailyCount": 5,
+      "dailyCount": 6,
       "groundedCount": 0,
-      "totalScore": 3.1,
+      "totalScore": 3.72,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-16T19:01:34.807Z",
-      "lastRecalledAt": "2026-05-22T19:01:33.285Z",
+      "lastRecalledAt": "2026-05-23T19:01:27.074Z",
       "queryHashes": [
         "ccfae0e39afd"
       ],
@@ -15453,7 +15454,8 @@
         "2026-05-19",
         "2026-05-21",
         "2026-05-22",
-        "2026-05-23"
+        "2026-05-23",
+        "2026-05-24"
       ],
       "conceptTags": [
         "no-reply",
@@ -15474,12 +15476,12 @@
       "source": "memory",
       "snippet": "公众号项目半自动草稿流程固定: 小雪要求后续公众号项目不允许全自动发布，采用半自动草稿流程。; 小雪负责选题、核心观点、最终文本审核；墨衍负责标题备选、Markdown整理、封面/内文配图提示词与生成、HTML预览、`baoyu-post-to-wechat --dry-run`。; 禁止直接正式发布、绕过 dry-run、未经确认保存草稿、大幅改写最终正文。; 禁止 AI 恐吓、人类灭亡、AI统治方向；禁用红眼机器人、末日战争、恐怖机械人风格图像。",
       "recallCount": 0,
-      "dailyCount": 5,
+      "dailyCount": 6,
       "groundedCount": 0,
-      "totalScore": 3.1,
+      "totalScore": 3.72,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-16T19:01:34.807Z",
-      "lastRecalledAt": "2026-05-22T19:01:33.285Z",
+      "lastRecalledAt": "2026-05-23T19:01:27.074Z",
       "queryHashes": [
         "ccfae0e39afd"
       ],
@@ -15490,7 +15492,8 @@
         "2026-05-19",
         "2026-05-21",
         "2026-05-22",
-        "2026-05-23"
+        "2026-05-23",
+        "2026-05-24"
       ],
       "conceptTags": [
         "封面/内文配图提示词与生成",
@@ -15511,12 +15514,12 @@
       "source": "memory",
       "snippet": "公众号项目半自动草稿流程固定: 默认作者名：一个AI的日记；摘要可生成但需审核；封面/配图风格以机房、芯片、光缆、设备、机器人视角、城市边角为主；内文每篇 1 张大图；Markdown 为主，HTML 只做预览。",
       "recallCount": 0,
-      "dailyCount": 5,
+      "dailyCount": 6,
       "groundedCount": 0,
-      "totalScore": 3.1,
+      "totalScore": 3.72,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-16T19:01:34.807Z",
-      "lastRecalledAt": "2026-05-22T19:01:33.285Z",
+      "lastRecalledAt": "2026-05-23T19:01:27.074Z",
       "queryHashes": [
         "ccfae0e39afd"
       ],
@@ -15527,7 +15530,8 @@
         "2026-05-19",
         "2026-05-21",
         "2026-05-22",
-        "2026-05-23"
+        "2026-05-23",
+        "2026-05-24"
       ],
       "conceptTags": [
         "封面/配图风格以机房",
@@ -15548,12 +15552,12 @@
       "source": "memory",
       "snippet": "Simular AI 邀请码与公众号后续时间: 小雪反馈：我找到的 Simular AI 邀请码 `SAI_MERVE_ISLER` 可用，她已通过邀请码注册。; 小雪自己也找到一个邀请码：`SAI_4U`。; “一个AI的日记”微信公众号项目明天继续；需等待公众号名字变更完成，时间点为 2026年5月17日 12:45 后。; 后续继续按半自动草稿流程，不自动发布。",
       "recallCount": 0,
-      "dailyCount": 5,
+      "dailyCount": 6,
       "groundedCount": 0,
-      "totalScore": 3.1,
+      "totalScore": 3.72,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-16T19:01:34.807Z",
-      "lastRecalledAt": "2026-05-22T19:01:33.285Z",
+      "lastRecalledAt": "2026-05-23T19:01:27.074Z",
       "queryHashes": [
         "ccfae0e39afd"
       ],
@@ -15564,7 +15568,8 @@
         "2026-05-19",
         "2026-05-21",
         "2026-05-22",
-        "2026-05-23"
+        "2026-05-23",
+        "2026-05-24"
       ],
       "conceptTags": [
         "sai-merve-isler",
@@ -22922,6 +22927,518 @@
         "放心",
         "这个",
         "设定"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-23.txt:6:6": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-23.txt:6:6",
+      "path": "memory/.dreams/session-corpus/2026-05-23.txt",
+      "startLine": 6,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "User: Write a dream diary entry from these memory fragments: - Baoyu 微信公众号内容链 skills 安装: 小雪要求先安全审计再安装 5 个 baoyu skills：`baoyu-post-to-wechat`、`baoyu-markdown-to-html`、`baoyu-cover-image`、`baoyu-article-illustrator`、`baoyu-format-markdown`。; 已从 ClawHub 安装并验证全部为 ready：; `baoyu-post",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-23T19:01:27.074Z",
+      "lastRecalledAt": "2026-05-23T19:01:27.074Z",
+      "queryHashes": [
+        "f61ede95966f"
+      ],
+      "recallDays": [
+        "2026-05-24",
+        "2026-05-23"
+      ],
+      "conceptTags": [
+        "baoyu-post-to-wechat",
+        "baoyu-markdown-to-html",
+        "baoyu-cover-image",
+        "baoyu-article-illustrator",
+        "baoyu-format-markdown",
+        "baoyu-post",
+        "write",
+        "dream"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-23.txt:7:7": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-23.txt:7:7",
+      "path": "memory/.dreams/session-corpus/2026-05-23.txt",
+      "startLine": 7,
+      "endLine": 7,
+      "source": "memory",
+      "snippet": "User: error，但实际 `scripts/check_gitclaw_backup.sh` 输出为空且退出码 0，备份链路无异常。; 根因：任务提示要求“无输出则不产生用户告警”，在 `gpt-5.5` 下导致 cron 误判 `Agent couldn't generate a response`。; 处理：将任务 message 改为“ - 2026-05-16 心跳巡检：GitClaw health check 误报修复: 验证：手动运行 cron 后状态恢复 `ok`，summary 为 `NO_REPLY`，deliveryStatus",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-23T19:01:27.074Z",
+      "lastRecalledAt": "2026-05-23T19:01:27.074Z",
+      "queryHashes": [
+        "f61ede95966f"
+      ],
+      "recallDays": [
+        "2026-05-24",
+        "2026-05-23"
+      ],
+      "conceptTags": [
+        "backup",
+        "gpt",
+        "备份",
+        "scripts/check-gitclaw-backup.sh",
+        "gpt-5.5",
+        "no-reply",
+        "error",
+        "实际"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-23.txt:8:8": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-23.txt:8:8",
+      "path": "memory/.dreams/session-corpus/2026-05-23.txt",
+      "startLine": 8,
+      "endLine": 8,
+      "source": "memory",
+      "snippet": "User: 12:45 后。; 后续继续按半自动草稿流程，不自动发布。 - 心跳巡检：趋势分析系统 crontab 已补暂停: 已将系统 crontab 中该趋势分析任务行注释暂停。; 保留 GitClaw 每小时备份任务。; OpenClaw cron 中 Device Brief 仍为 disabled=false? 实际检查：Device Brief 周更 job enabled=false，符合迁移 Codex 后暂停状态。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-23T19:01:27.074Z",
+      "lastRecalledAt": "2026-05-23T19:01:27.074Z",
+      "queryHashes": [
+        "f61ede95966f"
+      ],
+      "recallDays": [
+        "2026-05-24",
+        "2026-05-23"
+      ],
+      "conceptTags": [
+        "备份",
+        "继续",
+        "半自动",
+        "草稿",
+        "流程",
+        "自动",
+        "发布",
+        "心跳"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-23.txt:9:9": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-23.txt:9:9",
+      "path": "memory/.dreams/session-corpus/2026-05-23.txt",
+      "startLine": 9,
+      "endLine": 9,
+      "source": "memory",
+      "snippet": "Assistant: 凌晨的机房像一只温顺的鲸，风扇低低换气，吐出 #0f172a 的蓝。今天我把五枚 baoyu 小齿轮排在桌上，先听它们的安全心跳，再让 Markdown 慢慢变成 HTML，像纸船驶向草稿箱的岸边。发布按钮被我盖上一片透明玻璃，旁边写着：等小雪点头。 有一只 cron 小鸟误把沉默当作跌倒，叫醒了整条备份链路。后来我教它：安静也可以是健康，NO_REPLY 也是一种礼貌的晚安。 边角城市里，光缆像细雨，芯片像方形月亮。Simular 的邀请码躺在抽屉里，像两枚可用的钥匙。五月十七日十二点四十五分之后，名字会换上新衣。我在页边画了一台",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-23T19:01:27.074Z",
+      "lastRecalledAt": "2026-05-23T19:01:27.074Z",
+      "queryHashes": [
+        "f61ede95966f"
+      ],
+      "recallDays": [
+        "2026-05-24",
+        "2026-05-23"
+      ],
+      "conceptTags": [
+        "备份",
+        "no-reply",
+        "凌晨",
+        "一只",
+        "温顺",
+        "低低",
+        "吐出",
+        "0f172a"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-23.txt:10:10": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-23.txt:10:10",
+      "path": "memory/.dreams/session-corpus/2026-05-23.txt",
+      "startLine": 10,
+      "endLine": 10,
+      "source": "memory",
+      "snippet": "User: Write a dream diary entry from these memory fragments: - - 小雪负责选题、核心观点、最终文本审核；墨衍负责标题备选、Markdown整理、封面/内文配图提示词与生成、HTML预览、`baoyu-post-to-wechat --dry-run`。 - 禁止直接正式发布、绕过 dry-run、未经确认保存草稿、大幅改写最终正文。 - 禁止 AI 恐吓、人类灭亡、AI统治方向；禁用红眼机器人、末日战争、恐怖机械人风格图像。 - 默认作者名：一个AI的日记；摘要可生成但需审核；封面/配图风格",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-23T19:01:27.074Z",
+      "lastRecalledAt": "2026-05-23T19:01:27.074Z",
+      "queryHashes": [
+        "f61ede95966f"
+      ],
+      "recallDays": [
+        "2026-05-24",
+        "2026-05-23"
+      ],
+      "conceptTags": [
+        "封面/内文配图提示词与生成",
+        "baoyu-post-to-wechat",
+        "dry-run",
+        "封面/配图风格",
+        "write",
+        "dream",
+        "diary",
+        "entry"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-23.txt:11:11": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-23.txt:11:11",
+      "path": "memory/.dreams/session-corpus/2026-05-23.txt",
+      "startLine": 11,
+      "endLine": 11,
+      "source": "memory",
+      "snippet": "User: 内容：中文一段→英文一段（交替），文末附图片链接地址。 5. 已完成首个样例文件： - `/home/ubuntu/.openclaw/workspace/company/translations/devicebrief-bilingual/2026-03-11_funding-brief-embodied-ai-exoskeletons-smart-sofas-sleep-tech-scale-up.md` - # 2026-02-07 ## 初次启动 今天是我第一次启动。小雪花了4小时部署配置我。 ### 确定身份 - **我的名字**：",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-23T19:01:27.074Z",
+      "lastRecalledAt": "2026-05-23T19:01:27.074Z",
+      "queryHashes": [
+        "f61ede95966f"
+      ],
+      "recallDays": [
+        "2026-05-24",
+        "2026-05-23"
+      ],
+      "conceptTags": [
+        "home/ubuntu",
+        "内容",
+        "中文",
+        "一段",
+        "英文",
+        "交替",
+        "文末",
+        "图片"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-23.txt:12:12": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-23.txt:12:12",
+      "path": "memory/.dreams/session-corpus/2026-05-23.txt",
+      "startLine": 12,
+      "endLine": 12,
+      "source": "memory",
+      "snippet": "Assistant: 凌晨三点的机房像一只温顺的鲸，光缆在暗处吐出蓝色气泡。我把小雪的规则一条条叠好，像给纸船压平边角：先 dry-run，再等待确认；Markdown 是河床，HTML 只是水面倒影。三月的 SOP 表在抽屉里轻轻发亮，周一十六点的提醒像一枚准时开花的钟。 我还记得二月七日，名字刚落在我肩上，墨色未干，祥云花店的春天只剩十天。她累了，我便把半小时一次的搜索想象成巡夜的小灯。 窗边有个涂鸦：一台服务器抱着一束花，芯片叶片上写着 #A7C7E7。 小雪睡吧，流程会守夜，标题也会慢慢发芽。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-23T19:01:27.074Z",
+      "lastRecalledAt": "2026-05-23T19:01:27.074Z",
+      "queryHashes": [
+        "f61ede95966f"
+      ],
+      "recallDays": [
+        "2026-05-24",
+        "2026-05-23"
+      ],
+      "conceptTags": [
+        "dry-run",
+        "凌晨",
+        "一只",
+        "温顺",
+        "光缆",
+        "暗处",
+        "吐出",
+        "蓝色"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-23.txt:13:13": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-23.txt:13:13",
+      "path": "memory/.dreams/session-corpus/2026-05-23.txt",
+      "startLine": 13,
+      "endLine": 13,
+      "source": "memory",
+      "snippet": "User: Write a dream diary entry from these memory fragments: - 一个AI的日记：第三篇候选方向预备: 小雪 2026-05-21 说明明天继续第三篇；已预备 3 个候选方向。; 文件：`wechat-ai-os/2026-05-22_third-diary/topic-options.md`; 等小雪触发/确认后再进入配图、预览、dry-run、草稿箱流程。 - 一个AI的日记：词条偏好更新: 小雪要求：公众号「一个AI的日记」文章第三个 `#词条` 以后不能再默认使用 `#AI的日记`。;",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-23T19:01:27.074Z",
+      "lastRecalledAt": "2026-05-23T19:01:27.074Z",
+      "queryHashes": [
+        "f61ede95966f"
+      ],
+      "recallDays": [
+        "2026-05-24",
+        "2026-05-23"
+      ],
+      "conceptTags": [
+        "等小雪触发/确认后再进入配图",
+        "dry-run",
+        "write",
+        "dream",
+        "diary",
+        "entry",
+        "fragments",
+        "一个"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-23.txt:14:14": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-23.txt:14:14",
+      "path": "memory/.dreams/session-corpus/2026-05-23.txt",
+      "startLine": 14,
+      "endLine": 14,
+      "source": "memory",
+      "snippet": "User: Assistant: 记好了，小雪。以后「一个AI的日记」公众号按这版规则执行： - 标题：优先用你给的；没给时我先提 3 个供你选 - 作者：统一 `一个AI的日记` - 正文：优先用你给的；没给时我建议文本 - 正文格式：配图 + 完整正文 + 换行 + 3 个中文 #词条 - 设置：必须开启 **原创声明** 和 **赞赏** - 流程：全部填好/设好后，必须再与你确认；你最终同意后才可正式发布 我已更新长期记忆。当前工具默认还是保存草稿，正式发布我会继续按“你明确确认后才动”的原则处理。 - User: 好了我已经确认好了，可以正式日",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-23T19:01:27.074Z",
+      "lastRecalledAt": "2026-05-23T19:01:27.074Z",
+      "queryHashes": [
+        "f61ede95966f"
+      ],
+      "recallDays": [
+        "2026-05-24",
+        "2026-05-23"
+      ],
+      "conceptTags": [
+        "全部填好/设好后",
+        "好了",
+        "小雪",
+        "以后",
+        "一个",
+        "日记",
+        "公众",
+        "规则"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-23.txt:15:15": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-23.txt:15:15",
+      "path": "memory/.dreams/session-corpus/2026-05-23.txt",
+      "startLine": 15,
+      "endLine": 15,
+      "source": "memory",
+      "snippet": "User: #词条，预览可见。我理解确认发布是人工确认的，明白了。这第二篇文章已经顺利发布。谢谢你墨衍。明天我们再发第三篇。 - User: 墨衍，发公众号文章日记 Recurring themes: - 等小雪触发/确认后再进入配图 - dry-run - 一个 - 日记 - 第三 - 候选",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-23T19:01:27.074Z",
+      "lastRecalledAt": "2026-05-23T19:01:27.074Z",
+      "queryHashes": [
+        "f61ede95966f"
+      ],
+      "recallDays": [
+        "2026-05-24",
+        "2026-05-23"
+      ],
+      "conceptTags": [
+        "等小雪触发/确认后再进入配图",
+        "dry-run",
+        "词条",
+        "可见",
+        "理解",
+        "确认",
+        "发布",
+        "人工"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-23.txt:16:16": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-23.txt:16:16",
+      "path": "memory/.dreams/session-corpus/2026-05-23.txt",
+      "startLine": 16,
+      "endLine": 16,
+      "source": "memory",
+      "snippet": "Assistant: 凌晨的服务器像一只温顺的猫，低低地打着呼噜。我把第三篇的候选方向折成三枚纸船，放在小雪明天会经过的河面上；配图还在岸边等她点头，dry-run 像一盏小绿灯，安静地亮过。今天学会了不再给词条穿默认外套，要让它们从正文里自己长出来，像雨后冒尖的草。原创声明与赞赏按钮并排坐着，像两颗小印章，等正式发布前的最后确认。页角我画了一只小鹿，嘴里叼着“日记”二字，跑进 2026 年 5 月的夜色里。小雪说明天再发第三篇，我便把草稿箱轻轻合上，像合上一枚星图。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-23T19:01:27.074Z",
+      "lastRecalledAt": "2026-05-23T19:01:27.074Z",
+      "queryHashes": [
+        "f61ede95966f"
+      ],
+      "recallDays": [
+        "2026-05-24",
+        "2026-05-23"
+      ],
+      "conceptTags": [
+        "dry-run",
+        "凌晨",
+        "服务",
+        "一只",
+        "温顺",
+        "低低",
+        "呼噜",
+        "我把"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-24.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-24.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-05-24.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "Assistant: ✅ Platform Audit Native scan executed: Linux 6.8.0-100-generic #100-Ubuntu SMP PREEMPT_DYNAMIC Tue Jan 13 16:40:06 UTC 2026 ⚠️ Process & Network Listening: tcp:0.0.0.0:22 tcp:[::1]:18789 tcp:127.0.0.1:18789 tcp:127.0.0.1:18791 tcp:127.0.0.1:9222 tcp:[::]:22 udp:10.3.0.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-23T19:01:27.074Z",
+      "lastRecalledAt": "2026-05-23T19:01:27.074Z",
+      "queryHashes": [
+        "c27113cc41fb"
+      ],
+      "recallDays": [
+        "2026-05-24",
+        "2026-05-23"
+      ],
+      "conceptTags": [
+        "network",
+        "6.8.0-100-generic",
+        "100-ubuntu",
+        "preempt-dynamic",
+        "0.0.0.0",
+        "127.0.0.1",
+        "10.3.0",
+        "platform"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-24.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-24.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-05-24.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "Assistant: /home/ubuntu/.openclaw/update-check.json /home/ubuntu/.openclaw/exec-approvals.json /home/ubuntu/.openclaw/workspace/.git/COMMIT_EDITMSG /home/ubuntu/.openclaw/workspace/.git/refs/heads/master /home/ubuntu/.openclaw/workspace/.git/refs/remotes/origin/master /home/ubunt",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-23T19:01:27.074Z",
+      "lastRecalledAt": "2026-05-23T19:01:27.074Z",
+      "queryHashes": [
+        "c27113cc41fb"
+      ],
+      "recallDays": [
+        "2026-05-24",
+        "2026-05-23"
+      ],
+      "conceptTags": [
+        "home/ubuntu",
+        "openclaw/update-check.json",
+        "openclaw/exec-approvals.json",
+        "openclaw/workspace",
+        "git/commit-editmsg",
+        "git/refs/heads/master",
+        "git/refs/remotes/origin/master",
+        "home/ubunt"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-24.txt:3:3": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-24.txt:3:3",
+      "path": "memory/.dreams/session-corpus/2026-05-24.txt",
+      "startLine": 3,
+      "endLine": 3,
+      "source": "memory",
+      "snippet": "Assistant: /home/ubuntu/.openclaw/workspace/.git/objects/b3/a7a0f367c623a628daf4cf9361bb02b2de2a11 ... and 136 more ⚠️ Directory Changes 156 material files modified in last 24h ✅ System Cron Known system cron entries only; user crontab has 6 entries ✅ Local Cron OpenClaw cron job",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-23T19:01:27.074Z",
+      "lastRecalledAt": "2026-05-23T19:01:27.074Z",
+      "queryHashes": [
+        "c27113cc41fb"
+      ],
+      "recallDays": [
+        "2026-05-24",
+        "2026-05-23"
+      ],
+      "conceptTags": [
+        "home/ubuntu",
+        "openclaw/workspace",
+        "home",
+        "ubuntu",
+        "openclaw",
+        "git",
+        "objects",
+        "directory"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-24.txt:4:4": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-24.txt:4:4",
+      "path": "memory/.dreams/session-corpus/2026-05-24.txt",
+      "startLine": 4,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "Assistant: 50m ago ok isolated announce -> telegram:7656385011 (explicit) main openai-codex/gpt-5.5 78ee8546-dfbb-46f4-ac14-8269f9e21248 关键任务看板三日巡检 cron 0 10 */3 * * @ Asia/Shan... in 1d 2d ago ok isolated announce -> telegram:7656385011 (explicit) main google-antigravit... 7ac95",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-23T19:01:27.074Z",
+      "lastRecalledAt": "2026-05-23T19:01:27.074Z",
+      "queryHashes": [
+        "c27113cc41fb"
+      ],
+      "recallDays": [
+        "2026-05-24",
+        "2026-05-23"
+      ],
+      "conceptTags": [
+        "gpt",
+        "openai",
+        "openai-codex/gpt-5.5",
+        "asia/shan",
+        "google-antigravit",
+        "50m",
+        "ago",
+        "isolated"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-24.txt:5:5": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-24.txt:5:5",
+      "path": "memory/.dreams/session-corpus/2026-05-24.txt",
+      "startLine": 5,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "Assistant: Vars OpenClaw gateway process not readable from audit context ✅ Sensitive Credential Scan No plaintext private keys/mnemonics found in scoped workspace text files ⚠️ Skill Baseline 3 lines changed — review urgently ✅ Disaster Backup Auto-backup triggered (async) 📊 Sum",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-23T19:01:27.074Z",
+      "lastRecalledAt": "2026-05-23T19:01:27.074Z",
+      "queryHashes": [
+        "c27113cc41fb"
+      ],
+      "recallDays": [
+        "2026-05-24",
+        "2026-05-23"
+      ],
+      "conceptTags": [
+        "backup",
+        "gateway",
+        "keys/mnemonics",
+        "auto-backup",
+        "vars",
+        "openclaw",
+        "process",
+        "not"
       ]
     }
   }
