@@ -3,13 +3,13 @@
 ## 今日任务执行状态（更新时间：2026-05-27 北京时间）
 
 ### 巡检摘要 (三日看板)
-- ✅ **nightly-security-audit**：5月5日审计通过。Skill Baseline 的 3 行变动确认为正常的插件更新（gpt-image 等），其余基线校验一致。
+- ⚠️ **nightly-security-audit**：5月5日审计通过（基线校验一致）；今日人工审计发现 1 critical（小模型需沙箱）及 5 warnings，需评估调整。
 - ⚠️ **Yellow Line Audit**：审计脚本误报 `sudo`（实为 SSH 爆破尝试包含 sudo 关键字），已记录并计划优化。
 - ✅ **GitClaw 自动备份**：持续稳定运行。2026-05-16 心跳复查发现 GitClaw backup health check 因“无输出时不回文本”导致 cron 误判 error，已将无异常返回改为 `NO_REPLY` 并手动验证，状态恢复 ok。
 - ✅ **QQBot 插件迁移**：已从旧 `@sliverp/qqbot@1.5.3` 迁移到官方 `@openclaw/qqbot@2026.5.3`，手机 QQ 收发验证成功。
 - ✅ **google-antigravity-auth 编译产物修复**：已本地编译为 `dist/index.js` 并切换入口，compiled runtime warning 已消失。
 - ⏸️ **Device Brief 四平台周更发布**：本次已由小雪迁移到 Codex 并完成发布；OpenClaw 云端该周任务已暂停，后续不再主动跑需要浏览器登录的四平台发布。
-- ❌ **Config Baseline**：Hash check FAILED — 配置可能被篡改或不可读，需检查并重新基线。
+- ✅ **Config Baseline**：Hash check passed after restoring paired.json from devices/paired.json and setting permissions 600.
 
 ### 趋势分析任务
 - **任务名称**：数字花束与春节送礼趋势深度调研 - 每2小时执行
