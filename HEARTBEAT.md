@@ -4,6 +4,7 @@
 
 ### 巡检摘要 (三日看板)
 - ⚠️ **nightly-security-audit**：5月5日审计通过（基线校验一致）；今日人工审计发现 1 critical（小模型需沙箱）及 5 warnings，需评估调整。
+- ⚠️ **Security Audit Critical**：Small models (e.g., openrouter/nvidia/nemotron-3-super-120b-a12b:free) require sandboxing and web tools disabled; current config has sandbox=off and web tools enabled. Please review agents.defaults.sandbox.mode and tools.deny.
 - ⚠️ **Yellow Line Audit**：审计脚本误报 `sudo`（实为 SSH 爆破尝试包含 sudo 关键字），已记录并计划优化。
 - ✅ **GitClaw 自动备份**：持续稳定运行。2026-05-16 心跳复查发现 GitClaw backup health check 因“无输出时不回文本”导致 cron 误判 error，已将无异常返回改为 `NO_REPLY` 并手动验证，状态恢复 ok。
 - ✅ **QQBot 插件迁移**：已从旧 `@sliverp/qqbot@1.5.3` 迁移到官方 `@openclaw/qqbot@2026.5.3`，手机 QQ 收发验证成功。
