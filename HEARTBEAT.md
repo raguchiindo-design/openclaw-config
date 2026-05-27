@@ -41,4 +41,5 @@
 - [x] Monitor 农业科技周报深度版 cron job (ID: 7ac9556c-f472-486f-9d47-71b7133e1aa1) - 2026-05-21 16:19 heartbeat复查：16:00 定时运行已恢复 ok，使用 openai-codex/gpt-5.5，报告已生成到 `company/reports/agtech-weekly/agtech-weekly-20260521-detailed.html`，Telegram 通知 delivered；下一次运行约 10 天后。
 - [x] Investigate cron task ddd553e3 failure (invalidated OAuth token) - found to be historical; GitClaw backup currently functioning normal.
 - [ ] Review Skill Baseline changes (3 lines) from security audit 2026-05-27 to ensure no unintended modifications.
-- [ ] 调查最新nightly-security-audit报告中的Config Baseline错误（哈希不匹配），检查openclaw.json和paired.json是否被意外修改，必要时重新生成基线。
+- [ ] 正在验证Config Baseline：已恢复paired.json，待运行安全 audit 确认。
+- [x] 已将 ~/.openclaw/devices/paired.json 复制到 ~/.openclaw/paired.json 并设置权限 600，以恢复缺失的配置文件。
