@@ -1,6 +1,6 @@
 # HEARTBEAT.md
 
-## 今日任务执行状态（更新时间：2026-05-27 北京时间）
+## 今日任务执行状态（更新时间：2026-05-28 北京时间）
 
 ### 巡检摘要 (三日看板)
 - ⚠️ **nightly-security-audit**：5月5日审计通过（基线校验一致）；今日人工审计发现 1 critical（小模型需沙箱）及 5 warnings，需评估调整。
@@ -42,5 +42,5 @@
 - [x] Monitor 农业科技周报深度版 cron job (ID: 7ac9556c-f472-486f-9d47-71b7133e1aa1) - 2026-05-21 16:19 heartbeat复查：16:00 定时运行已恢复 ok，使用 openai-codex/gpt-5.5，报告已生成到 `company/reports/agtech-weekly/agtech-weekly-20260521-detailed.html`，Telegram 通知 delivered；下一次运行约 10 天后。
 - [x] Investigate cron task ddd553e3 failure (invalidated OAuth token) - found to be historical; GitClaw backup currently functioning normal.
 - [x] Review Skill Baseline changes (3 lines) from security audit 2026-05-27: changes are benign (version updates in skill manifests), no unintended modifications detected.
-- [ ] 正在验证Config Baseline：已恢复paired.json，待运行安全 audit 确认。
+- [x] Config Baseline验证通过：已恢复paired.json并设置权限600，安全 audit 未报告config baseline错误。
 - [x] 已将 ~/.openclaw/devices/paired.json 复制到 ~/.openclaw/paired.json 并设置权限 600，以恢复缺失的配置文件。
