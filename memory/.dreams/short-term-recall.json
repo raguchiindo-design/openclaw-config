@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-28T19:01:40.459Z",
+  "updatedAt": "2026-05-29T02:19:48.542Z",
   "entries": {
     "memory:memory/2026-03-14.md:84:98": {
       "key": "memory:memory/2026-03-14.md:84:98",
@@ -30134,6 +30134,68 @@
         "audit",
         "审计",
         "通过"
+      ]
+    },
+    "memory:memory/2026-05-07.md:38:45": {
+      "key": "memory:memory/2026-05-07.md:38:45",
+      "path": "memory/2026-05-07.md",
+      "startLine": 38,
+      "endLine": 45,
+      "source": "memory",
+      "snippet": "- 依据本地 OpenClaw Telegram 文档，`channels.telegram.streaming.preview.toolProgress=false` 可隐藏工具/进度状态行，同时保留正常回复预览。 - 已更新 `~/.openclaw/openclaw.json`： - `channels.telegram.streaming.mode = \"partial\"` - `channels.telegram.streaming.preview.toolProgress = false` - `agents.defaults.compaction.notifyUser = false` - 已验证配置有效：`openclaw config validate` 通过。 - Gateway 检测到配置变更并准备热重载；当前回合结束后应生效。",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-29T02:19:48.542Z",
+      "lastRecalledAt": "2026-05-29T02:19:48.542Z",
+      "queryHashes": [
+        "b731b0ec3be2"
+      ],
+      "recallDays": [
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "gateway",
+        "可隐藏工具/进度状态行",
+        "openclaw/openclaw.json",
+        "channels.telegram.streaming.mode",
+        "依据",
+        "本地",
+        "openclaw",
+        "telegram"
+      ]
+    },
+    "memory:memory/2026-05-07.md:24:42": {
+      "key": "memory:memory/2026-05-07.md:24:42",
+      "path": "memory/2026-05-07.md",
+      "startLine": 24,
+      "endLine": 42,
+      "source": "memory",
+      "snippet": "- Prompt 覆盖：任务目标、微信公众号 URL 输入、正文提取、清洗规则、英文改写、配图规则、四平台发布 SOP、登录/验证码/Cloudflare 异常处理、完成回执格式、2026-05-05 MOONIX 历史任务状态。 当前状态： - 小雪反馈：本次 Device Brief 周更发布任务已经在 Codex 上完成。 - 已按小雪要求将 OpenClaw 云端的 `Device Brief 四平台周更发布（周一16:00）` cron job 标为暂停（enabled=false）。 - 后续小雪会优先给 OpenClaw 一些不那么依赖网页登录/浏览器会话的任务；需要浏览器登录的四平台发布默认不再由云端 OpenClaw 主动执行。 ## Telegram 工具进度提示关闭 **时间**：2026年5月7日 14:53（北京时间） 小雪反馈：Telegram 上仍能看到很多 “Pinching...” 之类的中间进度/状态信息，希望不再发送这些信息，但正常消息继续发送。 处理： - 依据本地 OpenClaw Telegram 文档，`channels.telegram.streaming.preview.toolProgress=false` 可隐藏工具/进度状态行，同时保留正常回复预览。 - 已更新 `~/.openclaw/openclaw.json`： - `channels.telegram.streaming.mode = \"partial\"` - `channels.telegram.streaming.preview.toolPr",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-29T02:19:48.542Z",
+      "lastRecalledAt": "2026-05-29T02:19:48.542Z",
+      "queryHashes": [
+        "b731b0ec3be2"
+      ],
+      "recallDays": [
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "登录/验证码/cloudflare",
+        "一些不那么依赖网页登录/浏览器会话的任务",
+        "之类的中间进度/状态信息",
+        "可隐藏工具/进度状态行",
+        "openclaw/openclaw.json",
+        "channels.telegram.streaming.mode",
+        "prompt",
+        "覆盖"
       ]
     }
   }
