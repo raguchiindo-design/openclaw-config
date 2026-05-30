@@ -10,7 +10,7 @@
 - ✅ **QQBot 插件迁移**：已从旧 `@sliverp/qqbot@1.5.3` 迁移到官方 `@openclaw/qqbot@2026.5.3`，手机 QQ 收发验证成功。
 - ✅ **google-antigravity-auth 编译产物修复**：已本地编译为 `dist/index.js` 并切换入口，compiled runtime warning 已消失。
 - ⏸️ **Device Brief 四平台周更发布**：本次已由小雪迁移到 Codex 并完成发布；OpenClaw 云端该周任务已暂停，后续不再主动跑需要浏览器登录的四平台发布。
-- ⚠️ **Config Baseline**：2026-05-30 security report still shows openclaw.json hash mismatch. paired.json exists and permissions are 600, but `.config-baseline.sha256` only tracks openclaw.json and is older (2026-04-28); current openclaw.json mtime is 2026-05-26 11:50. Current openclaw.json hash `62320b99cd40a2079a112ea88817d943c5a10fd63d919f833f2ad242f553c357`, baseline `c44189dc3975e53c2e34a09ce3490da07a31fbbf00b1b490d74cb22f7718ea57`. Need verify/re-baseline deliberately, not silently.
+- ⚠️ **Config Baseline**：2026-05-30 security report still shows openclaw.json hash mismatch. paired.json exists and permissions are 600, but `.config-baseline.sha256` only tracks openclaw.json and is older (2026-04-28); current openclaw.json mtime is 2026-05-26 11:50. Current openclaw.json hash `62320b99cd40a2079a112ea88817d943c5a10fd63d919f833f2ad242f553c357`, baseline `c44189dc3975e53c2e34a09ce3490da07a31fbbf00b1b490d74cb22f7718ea57`. 线索：2026-05-28 记忆显示最近一次配置写入来源为 `openclaw configure`，审计无 suspicious 标记；仍需确认 2026-05-26 config change 合法后再 deliberate re-baseline，不静默重建。
 
 ### 趋势分析任务
 - **任务名称**：数字花束与春节送礼趋势深度调研 - 每2小时执行
@@ -42,5 +42,5 @@
 - [x] Monitor 农业科技周报深度版 cron job (ID: 7ac9556c-f472-486f-9d47-71b7133e1aa1) - 2026-05-21 16:19 heartbeat复查：16:00 定时运行已恢复 ok，使用 openai-codex/gpt-5.5，报告已生成到 `company/reports/agtech-weekly/agtech-weekly-20260521-detailed.html`，Telegram 通知 delivered；下一次运行约 10 天后。
 - [x] Investigate cron task ddd553e3 failure (invalidated OAuth token) - found to be historical; GitClaw backup currently functioning normal.
 - [x] Review Skill Baseline changes (3 lines) from security audit 2026-05-27: changes are benign (version updates in skill manifests), no unintended modifications detected.
-- [ ] Config Baseline 待处理：paired.json 已恢复并 chmod 600；但 2026-05-30 audit 仍报 openclaw.json hash mismatch。需确认 2026-05-26 config change 合法后重建 baseline。
+- [ ] Config Baseline 待处理：paired.json 已恢复并 chmod 600；但 2026-05-30 audit 仍报 openclaw.json hash mismatch。已找到线索：最近一次配置写入疑似 `openclaw configure` 且审计未标 suspicious；需确认 2026-05-26 config change 合法后重建 baseline。
 - [x] 已将 ~/.openclaw/devices/paired.json 复制到 ~/.openclaw/paired.json 并设置权限 600，以恢复缺失的配置文件。
