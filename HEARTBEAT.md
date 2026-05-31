@@ -41,6 +41,6 @@
 - [x] Fix cron jobs using deprecated model 'openrouter/xiaomi/mimo-v2-flash' (GitClaw backup health check, nightly-security-audit) - updated to openai-codex/gpt-5.5; 2026-05-16 复查 GitClaw health check 的“空输出”误报并修正为 `NO_REPLY`，状态 now ok.
 - [x] Monitor 农业科技周报深度版 cron job (ID: 7ac9556c-f472-486f-9d47-71b7133e1aa1) - 2026-05-31 18:50 已按小雪指令停用，`enabled=false`，next 为 `-`；最后一次已生成 `company/reports/agtech-weekly/agtech-weekly-20260531-detailed.html`。
 - [x] Investigate cron task ddd553e3 failure (invalidated OAuth token) - found to be historical; GitClaw backup currently functioning normal.
-- [x] Review Skill Baseline changes (3 lines) from security audit 2026-05-27: changes are benign (version updates in skill manifests), no unintended modifications detected.
+- [x] Review Skill Baseline changes (3 lines) from security audit 2026-06-01: manifest diff is one added file `/home/ubuntu/.openclaw/skills/gpt-image/scripts/generate.py` (diff header counts as 3 lines). This matches installed gpt-image skill; no unexpected removed/changed script found. Warning persists until deliberate skill baseline refresh.
 - [ ] Config Baseline 待处理：paired.json 已恢复并 chmod 600；但 2026-05-31 audit 仍报 openclaw.json hash mismatch。已找到线索：最近一次配置写入疑似 `openclaw configure` 且审计未标 suspicious；需确认 2026-05-26 config change 合法后重建 baseline。
 - [x] 已将 ~/.openclaw/devices/paired.json 复制到 ~/.openclaw/paired.json 并设置权限 600，以恢复缺失的配置文件。
