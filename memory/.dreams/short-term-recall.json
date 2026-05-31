@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-30T19:00:54.606Z",
+  "updatedAt": "2026-05-31T10:49:47.375Z",
   "entries": {
     "memory:memory/2026-03-14.md:84:98": {
       "key": "memory:memory/2026-03-14.md:84:98",
@@ -30171,18 +30171,20 @@
       "endLine": 45,
       "source": "memory",
       "snippet": "- 依据本地 OpenClaw Telegram 文档，`channels.telegram.streaming.preview.toolProgress=false` 可隐藏工具/进度状态行，同时保留正常回复预览。 - 已更新 `~/.openclaw/openclaw.json`： - `channels.telegram.streaming.mode = \"partial\"` - `channels.telegram.streaming.preview.toolProgress = false` - `agents.defaults.compaction.notifyUser = false` - 已验证配置有效：`openclaw config validate` 通过。 - Gateway 检测到配置变更并准备热重载；当前回合结束后应生效。",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-29T02:19:48.542Z",
-      "lastRecalledAt": "2026-05-29T02:19:48.542Z",
+      "lastRecalledAt": "2026-05-31T10:49:47.375Z",
       "queryHashes": [
-        "b731b0ec3be2"
+        "b731b0ec3be2",
+        "fcf6b53cbc50"
       ],
       "recallDays": [
-        "2026-05-29"
+        "2026-05-29",
+        "2026-05-31"
       ],
       "conceptTags": [
         "gateway",
@@ -31884,6 +31886,37 @@
         "root",
         "partition",
         "usage"
+      ]
+    },
+    "memory:memory/2026-05-21.md:46:52": {
+      "key": "memory:memory/2026-05-21.md:46:52",
+      "path": "memory/2026-05-21.md",
+      "startLine": 46,
+      "endLine": 52,
+      "source": "memory",
+      "snippet": "- 质量检查：公司章节 10 家公司均有官网链接；HTML 已保存；链接检查显示新闻源主要可访问，少数官网/政府站对脚本返回 401/403（SugaROx、Tesco、Israel Innovation Authority），保留为正确官网/官方页面。 ## 心跳巡检：农业科技周报恢复正常 - 2026-05-21 16:19（北京时间）复查 cron：`农业科技周报深度版 - 每10天` 已从旧模型错误恢复为 ok。 - 本次运行使用 `openai-codex/gpt-5.5`，生成文件：`company/reports/agtech-weekly/agtech-weekly-20260521-detailed.html`。 - Telegram 通知状态：delivered。",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-31T10:37:46.843Z",
+      "lastRecalledAt": "2026-05-31T10:37:46.843Z",
+      "queryHashes": [
+        "5be693de71a9"
+      ],
+      "recallDays": [
+        "2026-05-31"
+      ],
+      "conceptTags": [
+        "gpt",
+        "openai",
+        "少数官网/政府站对脚本返回",
+        "401/403",
+        "保留为正确官网/官方页面",
+        "openai-codex/gpt-5.5",
+        "质量",
+        "检查"
       ]
     }
   }
