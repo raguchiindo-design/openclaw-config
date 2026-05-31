@@ -10,7 +10,7 @@
 - ✅ **QQBot 插件迁移**：已从旧 `@sliverp/qqbot@1.5.3` 迁移到官方 `@openclaw/qqbot@2026.5.3`，手机 QQ 收发验证成功。
 - ✅ **google-antigravity-auth 编译产物修复**：已本地编译为 `dist/index.js` 并切换入口，compiled runtime warning 已消失。
 - ⏸️ **Device Brief 四平台周更发布**：本次已由小雪迁移到 Codex 并完成发布；OpenClaw 云端该周任务已暂停，后续不再主动跑需要浏览器登录的四平台发布。
-- ⚠️ **Config Baseline**：2026-05-31 security report still shows openclaw.json hash mismatch. paired.json exists and permissions are 600, but `.config-baseline.sha256` only tracks openclaw.json and is older (2026-04-28); current openclaw.json mtime is 2026-05-26 11:50. Current openclaw.json hash `62320b99cd40a2079a112ea88817d943c5a10fd63d919f833f2ad242f553c357`, baseline `c44189dc3975e53c2e34a09ce3490da07a31fbbf00b1b490d74cb22f7718ea57`. 线索：2026-05-28 记忆显示最近一次配置写入来源为 `openclaw configure`，审计无 suspicious 标记；仍需确认 2026-05-26 config change 合法后再 deliberate re-baseline，不静默重建。
+- ⚠️ **Config Baseline**：2026-05-31 security report still shows openclaw.json hash mismatch. paired.json exists and permissions are 600, but `.config-baseline.sha256` only tracks openclaw.json and is older (2026-04-28). 2026-05-31 心跳已核查：最近一次配置写入是 2026-05-26 11:50，由 `openclaw configure` 触发，config-audit `suspicious: []`；与 2026-05-16 备份对比，仅新增 fallback `openai-codex/gpt-5.5-pro`，另有 `meta.lastTouchedAt`/`wizard.lastRunAt` 更新时间。当前 hash `62320b99cd40a2079a112ea88817d943c5a10fd63d919f833f2ad242f553c357`，baseline `c44189dc3975e53c2e34a09ce3490da07a31fbbf00b1b490d74cb22f7718ea57`；仍需 deliberate re-baseline，不静默重建。
 
 ### 趋势分析任务
 - **任务名称**：数字花束与春节送礼趋势深度调研 - 每2小时执行
