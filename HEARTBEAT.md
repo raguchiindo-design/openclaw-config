@@ -1,6 +1,6 @@
 # HEARTBEAT.md
 
-## 今日任务执行状态（更新时间：2026-05-31 北京时间）
+## 今日任务执行状态（更新时间：2026-06-02 北京时间）
 
 ### 巡检摘要 (三日看板)
 - ⚠️ **nightly-security-audit**：5月5日审计通过（基线校验一致）；今日人工审计发现 1 critical（小模型需沙箱）及 5 warnings，需评估调整。
@@ -42,5 +42,5 @@
 - [x] Monitor 农业科技周报深度版 cron job (ID: 7ac9556c-f472-486f-9d47-71b7133e1aa1) - 2026-05-31 18:50 已按小雪指令停用，`enabled=false`，next 为 `-`；最后一次已生成 `company/reports/agtech-weekly/agtech-weekly-20260531-detailed.html`。
 - [x] Investigate cron task ddd553e3 failure (invalidated OAuth token) - found to be historical; GitClaw backup currently functioning normal.
 - [x] Review Skill Baseline changes (3 lines) from security audit 2026-06-01: manifest diff is one added file `/home/ubuntu/.openclaw/skills/gpt-image/scripts/generate.py` (diff header counts as 3 lines). This matches installed gpt-image skill; no unexpected removed/changed script found. Warning persists until deliberate skill baseline refresh.
-- [ ] Config Baseline 待处理：paired.json 已恢复并 chmod 600；但 2026-05-31 audit 仍报 openclaw.json hash mismatch。已找到线索：最近一次配置写入疑似 `openclaw configure` 且审计未标 suspicious；需确认 2026-05-26 config change 合法后重建 baseline。
+- [x] Config Baseline 已更新：openclaw.json 配置更改（添加 fallback 模型）合法，基线已同步。
 - [x] 已将 ~/.openclaw/devices/paired.json 复制到 ~/.openclaw/paired.json 并设置权限 600，以恢复缺失的配置文件。
