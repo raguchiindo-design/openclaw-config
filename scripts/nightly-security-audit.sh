@@ -161,7 +161,7 @@ else
 fi
 
 # 8. Yellow Line Cross-Validation
-SUDO_COUNT="$(grep -c 'sudo' /var/log/auth.log 2>/dev/null | grep -v "grep" || true)"
+SUDO_COUNT="$(grep -c ' sudo:' /var/log/auth.log 2>/dev/null || true)"
 MEM_FILE_WORKSPACE="$OC/workspace/memory/$(date +%Y-%m-%d).md"
 MEM_FILE_ROOT="$OC/memory/$(date +%Y-%m-%d).md"
 MEM_SUDO=0
