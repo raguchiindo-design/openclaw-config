@@ -193,7 +193,7 @@ else
 fi
 
 # 10. Gateway Environment Variables
-GATEWAY_PID="$(pgrep -f "openclaw.*gateway" | head -1 || true)"
+GATEWAY_PID="$(pgrep -f 'openclaw-gateway|openclaw gateway' | head -1 || true)"
 if [ -n "$GATEWAY_PID" ] && [ -r "/proc/$GATEWAY_PID/environ" ]; then
     ENV_VARS="$(tr '\0' '\n' < /proc/$GATEWAY_PID/environ 2>/dev/null | grep -iE 'KEY|TOKEN|SECRET|PASSWORD' | wc -l || true)"
     if [ "$ENV_VARS" -eq 0 ]; then
