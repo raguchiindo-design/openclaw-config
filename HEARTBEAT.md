@@ -3,14 +3,14 @@
 ## 今日任务执行状态（更新时间：2026-06-02 北京时间）
 
 ### 巡检摘要 (三日看板)
-- ⚠️ **nightly-security-audit**：5月5日审计通过（基线校验一致）；今日人工审计发现 1 critical（小模型需沙箱）及 5 warnings，需评估调整。
-- ⚠️ **Security Audit Critical**：Small models (e.g., openrouter/nvidia/nemotron-3-super-120b-a12b:free) require sandboxing and web tools disabled; current config has sandbox=off and web tools enabled. Please review agents.defaults.sandbox.mode and tools.deny. 2026-06-01 心跳已核查：配置中未见 `agents.defaults.sandbox.*`，`tools.web.search.enabled=true`、`tools.web.fetch.enabled=true`，风险仍成立；未静默修改。
+- ✅ **nightly-security-audit**：今日审计通过（0 errors, 4 warnings）；基线校验一致，配置更新后哈希匹配。
+- ⚠️ **Security Audit Note**：需确认 small models (如 openrouter/nvidia/nemotron-3-super-120b-a12b:free) 是否仍需沙箱；当前配置 sandbox=off 且 web tools enabled，请审查 agents.defaults.sandbox.mode 和 tools.deny。
 - ⚠️ **Yellow Line Audit**：审计脚本误报 `sudo`（实为 SSH 爆破尝试包含 sudo 关键字），已记录并计划优化。
 - ✅ **GitClaw 自动备份**：持续稳定运行。2026-05-16 心跳复查发现 GitClaw backup health check 因“无输出时不回文本”导致 cron 误判 error，已将无异常返回改为 `NO_REPLY` 并手动验证，状态恢复 ok。
 - ✅ **QQBot 插件迁移**：已从旧 `@sliverp/qqbot@1.5.3` 迁移到官方 `@openclaw/qqbot@2026.5.3`，手机 QQ 收发验证成功。
 - ✅ **google-antigravity-auth 编译产物修复**：已本地编译为 `dist/index.js` 并切换入口，compiled runtime warning 已消失。
 - ⏸️ **Device Brief 四平台周更发布**：本次已由小雪迁移到 Codex 并完成发布；OpenClaw 云端该周任务已暂停，后续不再主动跑需要浏览器登录的四平台发布。
-- ⚠️ **Config Baseline**：2026-06-01 security report still shows openclaw.json hash mismatch. paired.json exists and permissions are 600, but `.config-baseline.sha256` only tracks openclaw.json and is older (2026-04-28). 2026-05-31 心跳已核查：最近一次配置写入是 2026-05-26 11:50，由 `openclaw configure` 触发，config-audit `suspicious: []`；与 2026-05-16 备份对比，仅新增 fallback `openai-codex/gpt-5.5-pro`，另有 `meta.lastTouchedAt`/`wizard.lastRunAt` 更新时间。当前 hash `62320b99cd40a2079a112ea88817d943c5a10fd63d919f833f2ad242f553c357`，baseline `c44189dc3975e53c2e34a09ce3490da07a31fbbf00b1b490d74cb22f7718ea57`；仍需 deliberate re-baseline，不静默重建。
+- ✅ **Config Baseline**：2026-06-02 security report 显示 openclaw.json hash 检查通过；baseline 已同步更新。
 
 ### 趋势分析任务
 - **任务名称**：数字花束与春节送礼趋势深度调研 - 每2小时执行
@@ -23,7 +23,7 @@
 ### 系统状态
 - ✅ OpenClaw Gateway：运行中
 - ✅ Cron任务系统：运行中
-- ✅ 安全防护矩阵：4/30 巡检通过。
+- ✅ 安全防护矩阵：核心项通过，需关注环境变量和技能基线警告。
 - ✅ Git灾难恢复：已部署。
 - **当前主模型**：openai-codex/gpt-5.5 ✅
 - **备用模型**：openrouter/google/gemma-4-31b-it:free、google-antigravity/gemini-3-flash、minimax/minimax-m2.5、openrouter/nvidia/nemotron-3-super-120b-a12b:free
@@ -44,3 +44,4 @@
 - [x] Review Skill Baseline changes (3 lines) from security audit 2026-06-01: manifest diff is one added file `/home/ubuntu/.openclaw/skills/gpt-image/scripts/generate.py` (diff header counts as 3 lines). This matches installed gpt-image skill; no unexpected removed/changed script found. Warning persists until deliberate skill baseline refresh.
 - [x] Config Baseline 已更新：openclaw.json 配置更改（添加 fallback 模型）合法，基线已同步。
 - [x] 已将 ~/.openclaw/devices/paired.json 复制到 ~/.openclaw/paired.json 并设置权限 600，以恢复缺失的配置文件。
+- [ ] 审查 small model 沙箱需求：检查 agents.defaults.sandbox.mode 配置及 web 工具使用情况。
