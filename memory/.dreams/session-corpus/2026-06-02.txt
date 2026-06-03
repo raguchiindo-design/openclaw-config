@@ -91,3 +91,7 @@
 [main/sessions/main/19118b93-073d-4fea-8108-84edd5f08f49.jsonl#L85] Assistant: 小模型沙箱审查待处理：agents.defaults 未见 sandbox.mode 配置，web 工具 (search/fetch) 已启用，fallback 包含 openrouter/nvidia/nemotron-3-super-120b-a12b:free。请查看 HEARTBEAT.md 待办事项。
 [main/sessions/main/19118b93-073d-4fea-8108-84edd5f08f49.jsonl#L88] Assistant: ⚠️ Small model sandbox review needed: Check agents.defaults.sandbox.mode and tools.deny for openrouter/nvidia/nemotron-3-super-120b-a12b:free etc. ⚠️ Skill baseline: 3 lines changed from gpt-image skill addition - review urgently ⚠️ Environment vars: OpenClaw gatew
 [main/sessions/main/19118b93-073d-4fea-8108-84edd5f08f49.jsonl#L154] Assistant: ⚠️ Yellow Line Audit: 审计脚本误报 `sudo`（实为 SSH 爆破尝试包含 sudo 关键字），已记录并计划优化。
+[main/sessions/main/19118b93-073d-4fea-8108-84edd5f08f49.jsonl.reset.2026-06-03T07-57-06.403Z#L157] Assistant: ⚠️ Yellow Line Audit：审计脚本误报 `sudo`（实为 SSH 爆破尝试包含 sudo 关键字），已记录并计划优化。
+[main/sessions/main/19118b93-073d-4fea-8108-84edd5f08f49.jsonl.reset.2026-06-03T07-57-06.403Z#L160] Assistant: ⚠️ **Yellow Line Audit**：审计脚本误报 `sudo`（实为 SSH 爆破尝试包含 sudo 关键字），已记录并计划优化。
+[main/sessions/main/19118b93-073d-4fea-8108-84edd5f08f49.jsonl.reset.2026-06-03T07-57-06.403Z#L163] Assistant: ⚠️ Yellow Line Audit：审计脚本误报 `sudo`（实为 SSH 爆破尝试包含 sudo 关键字），已记录并计划优化。
+[main/sessions/main/19118b93-073d-4fea-8108-84edd5f08f49.jsonl.reset.2026-06-03T07-57-06.403Z#L166] Assistant: ⚠️ Yellow Line Audit：审计脚本误报 `sudo`（实为 SSH 爆破尝试包含 sudo 关键字），已记录并计划优化。
