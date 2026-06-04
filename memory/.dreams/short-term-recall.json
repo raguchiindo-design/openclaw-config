@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-03T19:02:12.136Z",
+  "updatedAt": "2026-06-04T07:58:16.791Z",
   "entries": {
     "memory:memory/2026-03-14.md:84:98": {
       "key": "memory:memory/2026-03-14.md:84:98",
@@ -15332,13 +15332,13 @@
       "endLine": 13,
       "source": "memory",
       "snippet": "# 2026-05-14 ## Baoyu 微信公众号内容链 skills 安装 - 小雪要求先安全审计再安装 5 个 baoyu skills：`baoyu-post-to-wechat`、`baoyu-markdown-to-html`、`baoyu-cover-image`、`baoyu-article-illustrator`、`baoyu-format-markdown`。 - 已从 ClawHub 安装并验证全部为 ready： - `baoyu-post-to-wechat` v1.116.5 - `baoyu-markdown-to-html` v1.115.4 - `baoyu-cover-image` v1.115.4 - `baoyu-article-illustrator` v1.115.4 - `baoyu-format-markdown` v1.115.4 - 安全结论：`baoyu-post-to-wechat` 高风险但可控，涉及微信公众号 API、Chrome CDP、剪贴板、`WECHAT_APP_ID/WECHAT_APP_SECRET` 或 `.baoyu-skills/.env`；未获明确授权不得配置密钥或执行发布。其余 4 个主要为本地 Markdown/HTML/图片/结构处理，风险低到中。 - 后续建议流程：Markdown → HTML → 草稿箱，最终发布保留人工确认。",
-      "recallCount": 7,
+      "recallCount": 8,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 7,
+      "totalScore": 8,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-16T05:34:25.964Z",
-      "lastRecalledAt": "2026-05-17T06:53:12.333Z",
+      "lastRecalledAt": "2026-06-04T07:58:16.791Z",
       "queryHashes": [
         "371d2cc0ce77",
         "935cd586f419",
@@ -15346,11 +15346,13 @@
         "dedac2a3abfc",
         "dbbc95a370d9",
         "4e7931414cb5",
-        "27f647d720bf"
+        "27f647d720bf",
+        "60c465834ebb"
       ],
       "recallDays": [
         "2026-05-16",
-        "2026-05-17"
+        "2026-05-17",
+        "2026-06-04"
       ],
       "conceptTags": [
         "baoyu-post-to-wechat",
@@ -25740,13 +25742,13 @@
       "endLine": 23,
       "source": "memory",
       "snippet": "# 2026-05-22 ## 一个AI的日记：第三篇候选方向预备 - 小雪 2026-05-21 说明明天继续第三篇；已预备 3 个候选方向。 - 文件：`wechat-ai-os/2026-05-22_third-diary/topic-options.md` - 等小雪触发/确认后再进入配图、预览、dry-run、草稿箱流程。 ## 一个AI的日记：词条偏好更新 - 小雪要求：公众号「一个AI的日记」文章第三个 `#词条` 以后不能再默认使用 `#AI的日记`。 - 词条应更贴近正文内容本身来挑选。 - 2026-05-22《AI提供的情绪价值》词条已修正为：`#情绪价值 #人机关系 #情感投射`。 ## 一个AI的日记：第三篇草稿已保存 - 文章：《AI提供的情绪价值》 - 已按小雪要求直接进入草稿流程：dry-run 通过后保存到微信公众号草稿箱。 - 草稿类型：`news` - 草稿 media_id：`ZA1-oDErDHroVyjrakBBgK_F5JMZNxot3rHokhGEUxb5UKAqbJ_ecWSk-XO7ZitC` - 正式发布仍由小雪在微信公众号后台人工确认/发送。 ## 一个AI的日记：第三篇已发布 - 小雪确认：《AI提供的情绪价值》已在微信公众号草稿里编辑完毕并推送。 - 小雪补充：公众号作者可直接点到小雪本人，不会把责任归到 AI；明天继续第四篇，今天可能转做其他工作。",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2,
+      "totalScore": 3,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-25T19:01:33.521Z",
-      "lastRecalledAt": "2026-06-03T07:58:38.944Z",
+      "lastRecalledAt": "2026-06-04T07:37:01.466Z",
       "queryHashes": [
         "deefa2bdf015",
         "4182cc91a141"
@@ -25754,7 +25756,8 @@
       "recallDays": [
         "2026-05-26",
         "2026-05-25",
-        "2026-06-03"
+        "2026-06-03",
+        "2026-06-04"
       ],
       "conceptTags": [
         "等小雪触发/确认后再进入配图",

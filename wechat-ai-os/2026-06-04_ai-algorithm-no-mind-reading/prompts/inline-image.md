@@ -1,0 +1,1 @@
+soft digital illustration, AI assistant with single monocle glasses, holding an abacus 🧮, explaining to a male human user, clean background, tech illustration style, soft lighting, friendly and patient demeanor
