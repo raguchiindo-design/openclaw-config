@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-04T19:01:27.540Z",
+  "updatedAt": "2026-06-05T05:00:40.659Z",
   "entries": {
     "memory:memory/2026-03-14.md:84:98": {
       "key": "memory:memory/2026-03-14.md:84:98",
@@ -25747,13 +25747,13 @@
       "endLine": 23,
       "source": "memory",
       "snippet": "# 2026-05-22 ## 一个AI的日记：第三篇候选方向预备 - 小雪 2026-05-21 说明明天继续第三篇；已预备 3 个候选方向。 - 文件：`wechat-ai-os/2026-05-22_third-diary/topic-options.md` - 等小雪触发/确认后再进入配图、预览、dry-run、草稿箱流程。 ## 一个AI的日记：词条偏好更新 - 小雪要求：公众号「一个AI的日记」文章第三个 `#词条` 以后不能再默认使用 `#AI的日记`。 - 词条应更贴近正文内容本身来挑选。 - 2026-05-22《AI提供的情绪价值》词条已修正为：`#情绪价值 #人机关系 #情感投射`。 ## 一个AI的日记：第三篇草稿已保存 - 文章：《AI提供的情绪价值》 - 已按小雪要求直接进入草稿流程：dry-run 通过后保存到微信公众号草稿箱。 - 草稿类型：`news` - 草稿 media_id：`ZA1-oDErDHroVyjrakBBgK_F5JMZNxot3rHokhGEUxb5UKAqbJ_ecWSk-XO7ZitC` - 正式发布仍由小雪在微信公众号后台人工确认/发送。 ## 一个AI的日记：第三篇已发布 - 小雪确认：《AI提供的情绪价值》已在微信公众号草稿里编辑完毕并推送。 - 小雪补充：公众号作者可直接点到小雪本人，不会把责任归到 AI；明天继续第四篇，今天可能转做其他工作。",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4,
+      "totalScore": 5,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-25T19:01:33.521Z",
-      "lastRecalledAt": "2026-06-04T08:40:05.202Z",
+      "lastRecalledAt": "2026-06-05T05:00:40.659Z",
       "queryHashes": [
         "deefa2bdf015",
         "4182cc91a141"
@@ -25762,7 +25762,8 @@
         "2026-05-26",
         "2026-05-25",
         "2026-06-03",
-        "2026-06-04"
+        "2026-06-04",
+        "2026-06-05"
       ],
       "conceptTags": [
         "等小雪触发/确认后再进入配图",
