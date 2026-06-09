@@ -36,6 +36,7 @@
 
 ### 用户指令记录
 - 2026-03-29 18:15（北京时间）：确认社交媒体智能互动任务 and 趋势分析任务保持暂停。
+- 2026-06-09 下午（北京时间）：确认第三方skill/plugin/MCP工具安装必须先安全审查、报告风险、等待确认；安装任何search-skill时未先审查属于操作失误。
 
 ### 待办事项 (更新)
 - [x] Fix cron jobs using deprecated model 'openrouter/xiaomi/mimo-v2-flash' (GitClaw backup health check, nightly-security-audit) - updated to openai-codex/gpt-5.5; 2026-05-16 复查 GitClaw health check 的“空输出”误报并修正为 `NO_REPLY`，状态 now ok.
