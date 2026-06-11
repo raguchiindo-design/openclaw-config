@@ -1,0 +1,5 @@
+[main/sessions/main/c1c35e50-969d-435e-9140-064e2acb9a8f.jsonl#L6] Assistant: I'll execute the nightly security audit script as requested.
+[main/sessions/main/c1c35e50-969d-435e-9140-064e2acb9a8f.jsonl#L8] Assistant: The script is still running. Let me check its status and wait for completion.
+[main/sessions/main/c1c35e50-969d-435e-9140-064e2acb9a8f.jsonl#L10] Assistant: The script is still running. Let me wait a bit longer and check again.
+[main/sessions/main/c1c35e50-969d-435e-9140-064e2acb9a8f.jsonl#L12] Assistant: The nightly security audit has completed successfully. Here are the results: **Security Audit Summary:** - ✅ Platform Audit: Native scan executed (Linux 6.8.0-100-generic) - ⚠️ Process & Network: Listening services detected (SSH on port 22, plus several local servi
+[main/sessions/main/c1c35e50-969d-435e-9140-064e2acb9a8f.jsonl#L12] Assistant: - ✅ Sensitive Credential Scan: No plaintext private keys/mnemonics found - ✅ Skill Baseline: No suspicious extension changes - ✅ Disaster Backup: Auto-backup triggered (async) **Overall Status:** 0 errors, 2 warnings **Detailed report saved:** `/tmp/openclaw/securi
