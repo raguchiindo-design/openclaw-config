@@ -1,0 +1,1 @@
+Soft digital illustration of a genderless robot standing in front of a computer screen showing a chat dialog box, waiting for the user's next message. On the desk beside the screen is an classic mechanical alarm clock. Pastel color palette, gentle lighting, calm atmosphere.

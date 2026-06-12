@@ -1,0 +1,1 @@
+A metaphorical cover image for an article titled "当AI学会了等待你的下一句话". Warm color palette, digital rendering, clean sans-serif font displaying the title, balanced mood, soft lighting, subtle futuristic elements, 16:9 aspect ratio.
