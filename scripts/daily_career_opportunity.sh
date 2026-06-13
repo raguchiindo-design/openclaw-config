@@ -53,8 +53,12 @@ while IFS= read -r line; do
     fi
 done < "$TMP_ITEMS"
 
-# Process each item: compute fields and store tab-separated data
-TMP_ITEMS_DATA=$(mktemp)
+# Temporary files for each importance level
+TMP_HIGH=$(mktemp)
+TMP_MED=$(mktemp)
+TMP_LOW=$(mktemp)
+
+# Process each item
 while IFS= read -r line; do
     if [[ -z "$line" ]]; then continue; fi
     IFS='|' read -r title url <<< "$line"
@@ -130,34 +134,29 @@ while IFS= read -r line; do
     if [[ ! "$short_url" =~ ^http ]]; then
         short_url="$url"
     fi
-    # Output a tab-separated line: title, direction, company, why, action, importance, points, short_url
-    echo -e "${title}\t${direction}\t${company}\t${why}\t${action}\t${importance}\t${points}\t${short_url}"
-done < "$TMP_PARSED" > "$TMP_ITEMS_DATA"
+    # Format the block
+    local block="机会方向：$direction
+相关公司/产品：$company
+为什么值得关注：$why
+Cici可以做的小行动：$action
+重要程度：$importance
+要点：$points
+来源：$short_url
 
-# Now sort the items by importance (高 > 中 > 低) and then by title
-# We'll create a temporary file with sort key
-TMP_SORTED=$(mktemp)
-awk -F'\t' '{
-    imp = $6;
-    if (imp == "高") weight = 1;
-    else if (imp == "中") weight = 2;
-    else weight = 3;
-    printf "%d\t%s\t%s\n", weight, $1, $0;
-}' "$TMP_ITEMS_DATA" | sort -t$'\t' -k1,1n -k2,2 | cut -f3- > "$TMP_SORTED"
+"
+    # Append to appropriate file
+    if [[ "$importance" == "高" ]]; then
+        echo "$block" >> "$TMP_HIGH"
+    elif [[ "$importance" == "中" ]]; then
+        echo "$block" >> "$TMP_MED"
+    else
+        echo "$block" >> "$TMP_LOW"
+    fi
+done < "$TMP_PARSED"
 
-# Now format the sorted items into the desired output
-while IFS=$'\t' read -r title direction company why action importance points short_url; do
-    echo "机会方向：$direction"
-    echo "相关公司/产品：$company"
-    echo "为什么值得关注：$why"
-    echo "Cici可以做的小行动：$action"
-    echo "重要程度：$importance"
-    echo "要点：$points"
-    echo "来源：$short_url"
-    echo ""
-done < "$TMP_SORTED"
+# Output: high, then medium, then low
+cat "$TMP_HIGH" "$TMP_MED" "$TMP_LOW"
 
 echo "=== Daily Career Opportunity Assessment finished at $(date) ==="
 # Cleanup
-rm -f "$TMP_ITEMS" "$TMP_PARSED" "$TMP_ITEMS_DATA" "$TMP_SORTED"
-EOF
+rm -f "$TMP_ITEMS" "$TMP_PARSED" "$TMP_HIGH" "$TMP_MED" "$TMP_LOW"
