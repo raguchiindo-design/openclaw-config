@@ -33,10 +33,12 @@ done
 # Parse AnySearch output to get title and URL
 TMP_PARSED=$(mktemp)
 while IFS= read -r line; do
-    if [[ $line =~ ^\###\ [0-9]+\.\ (.+) ]]; then
+    # Match title line: "### 1. Title" (allow optional spaces)
+    if [[ $line =~ ^[[:space:]]*[#][#][#][[:space:]]+[0-9]+[[:space:]]*\.[[:space:]]+(.+) ]]; then
         TITLE="${BASH_REMATCH[1]}"
         CURRENT_TITLE="$TITLE"
-    elif [[ $line =~ ^\-\ \*\*URL\*\*\:\ (https?://[^[:space:]]+) ]]; then
+    # Match URL line: "- **URL**: https://..."
+    elif [[ $line =~ ^[[:space:]]*-[[:space:]]+\*\*URL\*\*\:[[:space:]]+(https?://[^[:space:]]+) ]]; then
         URL="${BASH_REMATCH[1]}"
         if [[ -n "$CURRENT_TITLE" && -n "$URL" ]]; then
             echo "$CURRENT_TITLE|$URL" >> "$TMP_PARSED"
@@ -45,7 +47,7 @@ while IFS= read -r line; do
     fi
 done < "$TMP_RESULTS"
 
-# Function to derive fields from title
+# Function to derive fields from title and content
 process_item() {
     local title="$1"
     local url="$2"
@@ -113,8 +115,6 @@ process_item() {
     # Find first sequence of Chinese characters
     if [[ "$content" =~ [\u4e00-\u9fff]{20,} ]]; then
         # Match the first such sequence
-        # We need to extract the matching part; bash regex doesn't capture groups easily.
-        # Use grep -oE to extract.
         points=$(echo "$content" | grep -oE '[\u4e00-\u9fff]{20,}' | head -1 | cut -c1-20)
     fi
     if [[ -z "$points" ]]; then
@@ -133,3 +133,35 @@ process_item() {
     if [[ ! "$short_url" =~ ^http ]]; then
         short_url="$url"
     fi
+    # Output block
+    echo "机会方向：$direction"
+    echo "相关公司/产品：$company"
+    echo "为什么值得关注：$why"
+    echo "Cici可以做的小行动：$action"
+    echo "重要程度：$importance"
+    echo "要点：$points"
+    echo "来源：$short_url"
+    echo ""
+}
+
+# Process each parsed item
+TMP_OUTPUT=$(mktemp)
+while IFS= read -r line; do
+    if [[ -z "$line" ]]; then continue; fi
+    IFS='|' read -r title url <<< "$line"
+    if [[ -z "$title" || -z "$url" ]]; then continue; fi
+    process_item "$title" "$url" >> "$TMP_OUTPUT"
+done < "$TMP_PARSED"
+
+# Sort by importance: 高 > 中 > 低
+# We'll assign numeric weights for sorting
+TMP_SORTED=$(mktemp)
+awk -F'重要程度：' '{importance=$2; if(importance=="高") weight=1; else if(importance=="中") weight=2; else weight=3; print weight "|" $0}' "$TMP_OUTPUT" | sort -t'|' -k1,1n -k2 | cut -d'|' -f2- > "$TMP_SORTED"
+
+# Limit to maybe 10 items
+head -n 100 "$TMP_SORTED" > /tmp/daily_career_opportunity_$(date +%Y%m%d).txt
+cat /tmp/daily_career_opportunity_$(date +%Y%m%d).txt
+
+echo "=== Daily Career Opportunity Assessment finished at $(date) ==="
+# Cleanup
+rm -f "$TMP_RESULTS" "$TMP_PARSED" "$TMP_OUTPUT" "$TMP_SORTED"
