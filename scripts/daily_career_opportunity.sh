@@ -1,6 +1,5 @@
 #!/bin/bash
-# Daily Career Opportunity Assessment script
-# Outputs opportunities for 小雪's career and personal dev path
+# Daily Career Opportunity Assessment script - bash version
 LOG_DIR="/home/ubuntu/.openclaw/logs"
 mkdir -p "$LOG_DIR"
 LOG_FILE="$LOG_DIR/daily_career_opportunity_$(date +%Y%m%d).log"
@@ -33,11 +32,11 @@ done
 # Parse AnySearch output to get title and URL
 TMP_PARSED=$(mktemp)
 while IFS= read -r line; do
-    if [[ $line =~ ^\ \ \ \ ([0-9]+)\.\ (.+) ]]; then
-        TITLE="${BASH_REMATCH[2]}"
+    if [[ $line =~ ^\###\ [0-9]+\.\ (.+) ]]; then
+        TITLE="${BASH_REMATCH[1]}"
         CURRENT_TITLE="$TITLE"
-    elif [[ $line =~ ^\ \ \ \ -\ \*\*URL\*\*: ]]; then
-        URL=$(echo "$line" | grep -oE 'https?://[^ ]+')
+    elif [[ $line =~ ^\-\ \*\*URL\*\*\:\ (https?://[^[:space:]]+) ]]; then
+        URL="${BASH_REMATCH[1]}"
         if [[ -n "$CURRENT_TITLE" && -n "$URL" ]]; then
             echo "$CURRENT_TITLE|$URL" >> "$TMP_PARSED"
             CURRENT_TITLE=""
@@ -45,16 +44,10 @@ while IFS= read -r line; do
     fi
 done < "$TMP_RESULTS"
 
-# Function to extract snippet and derive fields
+# Function to derive fields from title
 process_item() {
     local title="$1"
     local url="$2"
-    # Fetch content (text mode)
-    local content
-    content=$(curl -s --max-time 8 "$url" | sed -e 's/<[^>]*>//g' | tr -s '[:space:]' ' ' | head -c 500)
-    if [[ -z "$content" ]]; then
-        content="$title"
-    fi
     # Determine opportunity direction (heuristic from title)
     local direction=""
     if [[ "$title" =~ (outbound|international|global|expansion|海外|出海) ]]; then direction="国际市场/出海机会"; 
@@ -68,10 +61,10 @@ process_item() {
     elif [[ "$title" =~ (user entry|entry point|onboarding) ]]; then direction="新用户入口/交互界面"; 
     elif [[ "$title" =~ (world model|physical AI|agent OS) ]]; then direction="World Model/Physical AI/Agent OS"; 
     else direction="AI产品/技术更新"; fi
-    # Extract company/product (simple: look for capitalized words or known patterns)
+    # Extract company/product (simple: look for capitalized words)
     local company=""
-    # Try to find a pattern like "Company X" or "Product Y"
-    if [[ "$content" =~ ([A-Z][a-zA-Z0-9]+(?:\s+[A-Z][a-zA-Z0-9]+)*) ]]; then
+    # Try to find a pattern like "Company X" or "Product Y" from title
+    if [[ "$title" =~ ([A-Z][a-zA-Z0-9]+(?:\s+[A-Z][a-zA-Z0-9]+)*) ]]; then
         company="${BASH_REMATCH[1]}"
     fi
     if [[ -z "$company" ]]; then company="未知公司"; fi
