@@ -26,46 +26,42 @@ QUERIES=(
 )
 
 MAX_PER_QUERY=2
-TMP_ITEMS=$(mktemp)
+TMP_PARSED=$(mktemp)
 for q in "${QUERIES[@]}"; do
     echo "Searching: $q"
-    python3 /home/ubuntu/.openclaw/workspace/skills/anysearch-skill/scripts/anysearch_cli.py search "$q" --max_results $MAX_PER_QUERY >>"$TMP_ITEMS" 2>&1
+    python3 /home/ubuntu/.openclaw/workspace/skills/anysearch-skill/scripts/anysearch_cli.py search "$q" --max_results $MAX_PER_QUERY >>"$TMP_PARSED" 2>&1
     if [[ ${PIPESTATUS[0]} -ne 0 ]]; then
         echo "Warning: AnySearch CLI failed for query: $q" >>"$LOG_FILE"
     fi
     sleep 0.3
 done
 
-# Parse AnySearch output to get title and URL
-TMP_PARSED=$(mktemp)
+# Parse the combined output to extract title and URL
+TMP_ITEMS=$(mktemp)
+title=""
+url=""
 while IFS= read -r line; do
-    # Match title line: "### 1. Title" (allow optional spaces)
     if [[ $line =~ ^[[:space:]]*[#][#][#][[:space:]]+[0-9]+[[:space:]]*[.][[:space:]]*(.+) ]]; then
-        TITLE="${BASH_REMATCH[1]}"
-        CURRENT_TITLE="$TITLE"
-    # Match URL line: "- **URL**: https://..."
+        title="${BASH_REMATCH[1]}"
     elif [[ $line =~ ^[[:space:]]*-[[:space:]]+\*\*URL\*\*\:[[:space:]]+(https?://[^[:space:]]+) ]]; then
-        URL="${BASH_REMATCH[1]}"
-        if [[ -n "$CURRENT_TITLE" && -n "$URL" ]]; then
-            echo "$CURRENT_TITLE|$URL" >> "$TMP_PARSED"
-            CURRENT_TITLE=""
+        url="${BASH_REMATCH[1]}"
+        if [[ -n "$title" && -n "$url" ]]; then
+            echo "$title|$url" >> "$TMP_ITEMS"
+            title=""
+            url=""
         fi
     fi
-done < "$TMP_ITEMS"
+done < "$TMP_PARSED"
 
-# Temporary files for each importance level
-TMP_HIGH=$(mktemp)
-TMP_MED=$(mktemp)
-TMP_LOW=$(mktemp)
-
-# Process each item
+# Process each item: compute fields and store tab-separated data
+TMP_ITEMS_DATA=$(mktemp)
 while IFS= read -r line; do
     if [[ -z "$line" ]]; then continue; fi
     IFS='|' read -r title url <<< "$line"
     if [[ -z "$title" || -z "$url" ]]; then continue; fi
     # Fetch content (text mode) with timeout and user-agent
     local content
-    content=$(curl -s --max-time 8 --user-agent "Mozilla/5.0" "$url" | sed -e 's/<[^>]*>//g' | tr -s '[:space:]' ' ' | head -c 500)
+    content=$(curl -s --max-time 3 --user-agent "Mozilla/5.0" "$url" | sed -e 's/<[^>]*>//g' | tr -s '[:space:]' ' ' | head -c 500)
     if [[ -z "$content" ]]; then
         content="$title"
     fi
@@ -126,37 +122,42 @@ while IFS= read -r line; do
     if [[ ${#points} -gt 20 ]]; then
         points="${points:0:20}"
     fi
-    # Shorten URL via TinyURL
+    # Shorten URL via TinyURL with timeout
     local encoded_url=""
     encoded_url=$(python3 -c "import urllib.parse, sys; print(urllib.parse.quote(sys.argv[1]))" "$url")
     local short_url=""
-    short_url=$(curl -s "https://tinyurl.com/api-create.php?url=$encoded_url" 2>/dev/null)
+    short_url=$(curl -s --max-time 3 "https://tinyurl.com/api-create.php?url=$encoded_url" 2>/dev/null)
     if [[ ! "$short_url" =~ ^http ]]; then
         short_url="$url"
     fi
-    # Format the block
-    local block="机会方向：$direction
-相关公司/产品：$company
-为什么值得关注：$why
-Cici可以做的小行动：$action
-重要程度：$importance
-要点：$points
-来源：$short_url
+    # Output a tab-separated line: title, direction, company, why, action, importance, points, short_url
+    echo -e "${title}\t${direction}\t${company}\t${why}\t${action}\t${importance}\t${points}\t${short_url}"
+done < "$TMP_ITEMS" > "$TMP_ITEMS_DATA"
 
-"
-    # Append to appropriate file
-    if [[ "$importance" == "高" ]]; then
-        echo "$block" >> "$TMP_HIGH"
-    elif [[ "$importance" == "中" ]]; then
-        echo "$block" >> "$TMP_MED"
-    else
-        echo "$block" >> "$TMP_LOW"
-    fi
-done < "$TMP_PARSED"
+# Now sort the items by importance (高 > 中 > 低) and then by title
+# We'll create a temporary file with sort key
+TMP_SORTED=$(mktemp)
+awk -F'\t' '{
+    imp = $6;
+    if (imp == "高") weight = 1;
+    else if (imp == "中") weight = 2;
+    else weight = 3;
+    printf "%d\t%s\t%s\n", weight, $1, $0;
+}' "$TMP_ITEMS_DATA" | sort -t$'\t' -k1,1n -k2,2 | cut -f3- > "$TMP_SORTED"
 
-# Output: high, then medium, then low
-cat "$TMP_HIGH" "$TMP_MED" "$TMP_LOW"
+# Now format the sorted items into the desired output
+while IFS=$'\t' read -r title direction company why action importance points short_url; do
+    echo "机会方向：$direction"
+    echo "相关公司/产品：$company"
+    echo "为什么值得关注：$why"
+    echo "Cici可以做的小行动：$action"
+    echo "重要程度：$importance"
+    echo "要点：$points"
+    echo "来源：$short_url"
+    echo ""
+done < "$TMP_SORTED"
 
 echo "=== Daily Career Opportunity Assessment finished at $(date) ==="
 # Cleanup
-rm -f "$TMP_ITEMS" "$TMP_PARSED" "$TMP_HIGH" "$TMP_MED" "$TMP_LOW"
+rm -f "$TMP_PARSED" "$TMP_ITEMS" "$TMP_ITEMS_DATA" "$TMP_SORTED"
+EOF
