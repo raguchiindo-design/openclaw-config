@@ -46,7 +46,7 @@ echo "=== End raw results ===" >>"$LOG_FILE"
 TMP_PARSED=$(mktemp)
 while IFS= read -r line; do
     # Match title line: "### 1. Title" (allow optional spaces)
-    if [[ $line =~ ^[[:space:]]*[#][#][#][[:space:]]+[0-9]+[[:space:]]*\\.[[:space:]]*(.+) ]]; then
+    if [[ $line =~ ^[[:space:]]*[#][#][#][[:space:]]+[0-9]+[[:space:]]*[.][[:space:]]*(.+) ]]; then
         TITLE="${BASH_REMATCH[1]}"
         CURRENT_TITLE="$TITLE"
     # Match URL line: "- **URL**: https://..."
