@@ -60,12 +60,13 @@ while IFS= read -r line; do
     IFS='|' read -r title url <<< "$line"
     if [[ -z "$title" || -z "$url" ]]; then continue; fi
     # Fetch content (text mode) with timeout and user-agent
+    local content
     content=$(curl -s --max-time 3 --user-agent "Mozilla/5.0" "$url" | sed -e 's/<[^>]*>//g' | tr -s '[:space:]' ' ' | head -c 500)
     if [[ -z "$content" ]]; then
         content="$title"
     fi
     # Determine opportunity direction (heuristic from title)
-    direction=""
+    local direction=""
     if [[ "$title" =~ (outbound|international|global|expansion|海外|出海) ]]; then direction="国际市场/出海机会"; 
     elif [[ "$title" =~ (agent|multi[-]agent|platform) ]]; then direction="新AI平台/Agent平台"; 
     elif [[ "$title" =~ (workflow|automation|SOP) ]]; then direction="AI工作流/自动化工具"; 
@@ -78,14 +79,14 @@ while IFS= read -r line; do
     elif [[ "$title" =~ (world[[:space:]]model|physical[[:space:]]AI|agent[[:space:]]OS) ]]; then direction="World Model/Physical AI/Agent OS"; 
     else direction="AI产品/技术更新"; fi
     # Extract company/product (simple: look for capitalized words)
-    company=""
+    local company=""
     # Try to find a pattern like "Company X" or "Product Y" from title
     if [[ "$title" =~ ([A-Z][a-zA-Z0-9]+(?:\s+[A-Z][a-zA-Z0-9]+)*) ]]; then
         company="${BASH_REMATCH[1]}"
     fi
     if [[ -z "$company" ]]; then company="未知公司"; fi
     # Why worth attention (<=50 Chinese chars)
-    why=""
+    local why=""
     if [[ "$direction" == "国际市场/出海机会" ]]; then why="该公司正在布局海外市场，为国际业务BD提供切入点。"; 
     elif [[ "$direction" == "新AI平台/Agent平台" ]]; then why="新平台提供集成机会，个人开发者可上架作品或获取合作。"; 
     elif [[ "$direction" == "AI工作流/自动化工具" ]]; then why="工作流工具提升开发效率，可作为技能点或远程岗位依据。"; 
@@ -99,7 +100,7 @@ while IFS= read -r line; do
     else why="具备技术或市场机遇，值得持续关注。"; fi
     why=$(echo "$why" | cut -c1-50)
     # Small action for Cici
-    action=""
+    local action=""
     if [[ "$direction" =~ 国际市场|出海 ]]; then action="关注该公司的国际岗位招聘或BD合作公告。"; 
     elif [[ "$direction" =~ 新AI平台|Agent平台 ]]; then action="注册开发者账号，查看文档和上架流程。"; 
     elif [[ "$direction" =~ AI工作流|自动化 ]]; then action="试用该工具，制作简历中的项目案例。"; 
@@ -112,19 +113,19 @@ while IFS= read -r line; do
     elif [[ "$direction" =~ World[[:space:]]Model|Physical[[:space:]]AI|Agent[[:space:]]OS ]]; then action="追踪其技术博客，学习相关概念和潜在应用。"; 
     else action="保持关注，定期查看更新。"; fi
     # Importance heuristic
-    importance="中"
+    local importance="中"
     if [[ "$direction" =~ (国际市场|出海|新AI平台|Agent平台|应用分发|插件生态|BD|渠道合作|新用户入口|交互界面) ]]; then importance="高"; 
     elif [[ "$direction" =~ (AI工作流|自动化|AI[[:space:]]IDE|编辑器|AI浏览器|AI搜索|AI硬件|机器人) ]]; then importance="中"; 
     else importance="低"; fi
     # Extract approx 20 characters from content (bytes)
-    points="${content:0:20}"
+    local points="${content:0:20}"
     if [[ ${#points} -gt 20 ]]; then
         points="${points:0:20}"
     fi
     # Shorten URL via TinyURL with timeout
-    encoded_url=""
+    local encoded_url=""
     encoded_url=$(python3 -c "import urllib.parse, sys; print(urllib.parse.quote(sys.argv[1]))" "$url")
-    short_url=""
+    local short_url=""
     short_url=$(curl -s --max-time 3 "https://tinyurl.com/api-create.php?url=$encoded_url" 2>/dev/null)
     if [[ ! "$short_url" =~ ^http ]]; then
         short_url="$url"
