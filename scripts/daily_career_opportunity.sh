@@ -26,21 +26,15 @@ QUERIES=(
 )
 
 MAX_PER_QUERY=2
-TMP_RESULTS=$(mktemp)
+TMP_ITEMS=$(mktemp)
 for q in "${QUERIES[@]}"; do
     echo "Searching: $q"
-    python3 /home/ubuntu/.openclaw/workspace/skills/anysearch-skill/scripts/anysearch_cli.py search "$q" --max_results $MAX_PER_QUERY >> "$TMP_RESULTS" 2>&1
-    # Check if the AnySearch CLI succeeded (exit code 0)
+    python3 /home/ubuntu/.openclaw/workspace/skills/anysearch-skill/scripts/anysearch_cli.py search "$q" --max_results $MAX_PER_QUERY >>"$TMP_ITEMS" 2>&1
     if [[ ${PIPESTATUS[0]} -ne 0 ]]; then
         echo "Warning: AnySearch CLI failed for query: $q" >>"$LOG_FILE"
     fi
     sleep 0.3
 done
-
-# Debug: output the raw results to stderr (so it goes to log)
-echo "=== AnySearch raw results ===" >>"$LOG_FILE"
-cat "$TMP_RESULTS" >>"$LOG_FILE"
-echo "=== End raw results ===" >>"$LOG_FILE"
 
 # Parse AnySearch output to get title and URL
 TMP_PARSED=$(mktemp)
@@ -57,17 +51,14 @@ while IFS= read -r line; do
             CURRENT_TITLE=""
         fi
     fi
-done < "$TMP_RESULTS"
+done < "$TMP_ITEMS"
 
-# Debug: output parsed titles and URLs
-echo "=== Parsed title|URL lines ===" >>"$LOG_FILE"
-cat "$TMP_PARSED" >>"$LOG_FILE"
-echo "=== End parsed ===" >>"$LOG_FILE"
-
-# Function to derive fields from title and content
-process_item() {
-    local title="$1"
-    local url="$2"
+# Process each item: compute fields and store tab-separated data
+TMP_ITEMS_DATA=$(mktemp)
+while IFS= read -r line; do
+    if [[ -z "$line" ]]; then continue; fi
+    IFS='|' read -r title url <<< "$line"
+    if [[ -z "$title" || -z "$url" ]]; then continue; fi
     # Fetch content (text mode) with timeout and user-agent
     local content
     content=$(curl -s --max-time 8 --user-agent "Mozilla/5.0" "$url" | sed -e 's/<[^>]*>//g' | tr -s '[:space:]' ' ' | head -c 500)
@@ -107,7 +98,6 @@ process_item() {
     elif [[ "$direction" == "新用户入口/交互界面" ]]; then why="新交互形式是产品经理方向的切入点。"; 
     elif [[ "$direction" == "World Model/Physical AI/Agent OS" ]]; then why="长期趋势，需关注其开发者社区和应用场景。"; 
     else why="具备技术或市场机遇，值得持续关注。"; fi
-    # Truncate why to 50 Chinese chars (approx)
     why=$(echo "$why" | cut -c1-50)
     # Small action for Cici
     local action=""
@@ -122,19 +112,18 @@ process_item() {
     elif [[ "$direction" =~ 新用户入口|交互界面 ]]; then action="分析其用户流程，撰写可用性改进建议。"; 
     elif [[ "$direction" =~ World[[:space:]]Model|Physical[[:space:]]AI|Agent[[:space:]]OS ]]; then action="追踪其技术博客，学习相关概念和潜在应用。"; 
     else action="保持关注，定期查看更新。"; fi
-    # Importance heuristic: high if direction matches top priorities
+    # Importance heuristic
     local importance="中"
     if [[ "$direction" =~ (国际市场|出海|新AI平台|Agent平台|应用分发|插件生态|BD|渠道合作|新用户入口|交互界面) ]]; then importance="高"; 
     elif [[ "$direction" =~ (AI工作流|自动化|AI[[:space:]]IDE|编辑器|AI浏览器|AI搜索|AI硬件|机器人) ]]; then importance="中"; 
     else importance="低"; fi
-    # Extract approx 20 Chinese characters from content: take first 20 chars
+    # Extract approx 20 Chinese characters from content
     local points=""
     if [[ -n "$content" ]]; then
         points="${content:0:20}"
     else
         points="${title:0:20}"
     fi
-    # Truncate points to exactly 20 chars if longer
     if [[ ${#points} -gt 20 ]]; then
         points="${points:0:20}"
     fi
@@ -146,7 +135,23 @@ process_item() {
     if [[ ! "$short_url" =~ ^http ]]; then
         short_url="$url"
     fi
-    # Output block
+    # Output a tab-separated line: title, direction, company, why, action, importance, points, short_url
+    echo -e "${title}\t${direction}\t${company}\t${why}\t${action}\t${importance}\t${points}\t${short_url}"
+done < "$TMP_PARSED" > "$TMP_ITEMS_DATA"
+
+# Now sort the items by importance (高 > 中 > 低) and then by title
+# We'll create a temporary file with sort key
+TMP_SORTED=$(mktemp)
+awk -F'\t' '{
+    imp = $6;
+    if (imp == "高") weight = 1;
+    else if (imp == "中") weight = 2;
+    else weight = 3;
+    printf "%d\t%s\t%s\n", weight, $1, $0;
+}' "$TMP_ITEMS_DATA" | sort -t$'\t' -k1,1n -k2,2 | cut -f3- > "$TMP_SORTED"
+
+# Now format the sorted items into the desired output
+while IFS=$'\t' read -r title direction company why action importance points short_url; do
     echo "机会方向：$direction"
     echo "相关公司/产品：$company"
     echo "为什么值得关注：$why"
@@ -155,26 +160,8 @@ process_item() {
     echo "要点：$points"
     echo "来源：$short_url"
     echo ""
-}
-
-# Process each parsed item
-TMP_OUTPUT=$(mktemp)
-while IFS= read -r line; do
-    if [[ -z "$line" ]]; then continue; fi
-    IFS='|' read -r title url <<< "$line"
-    if [[ -z "$title" || -z "$url" ]]; then continue; fi
-    process_item "$title" "$url" >> "$TMP_OUTPUT"
-done < "$TMP_PARSED"
-
-# Sort by importance: 高 > 中 > 低
-# We'll assign numeric weights for sorting
-TMP_SORTED=$(mktemp)
-awk -F'重要程度：' '{importance=$2; if(importance=="高") weight=1; else if(importance=="中") weight=2; else weight=3; print weight "|" $0}' "$TMP_OUTPUT" | sort -t'|' -k1,1n -k2 | cut -d'|' -f2- > "$TMP_SORTED"
-
-# Limit to maybe 10 items
-head -n 100 "$TMP_SORTED" > /tmp/daily_career_opportunity_$(date +%Y%m%d).txt
-cat /tmp/daily_career_opportunity_$(date +%Y%m%d).txt
+done < "$TMP_SORTED"
 
 echo "=== Daily Career Opportunity Assessment finished at $(date) ==="
 # Cleanup
-rm -f "$TMP_RESULTS" "$TMP_PARSED" "$TMP_OUTPUT" "$TMP_SORTED"
+rm -f "$TMP_ITEMS" "$TMP_PARSED" "$TMP_ITEMS_DATA" "$TMP_SORTED"
