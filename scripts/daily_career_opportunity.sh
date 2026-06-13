@@ -8,6 +8,9 @@ exec 2>>"$LOG_FILE"
 
 echo "=== Daily Career Opportunity Assessment started at $(date) ==="
 
+# Set AnySearch API key to avoid quota exhaustion
+export ANYSEARCH_API_KEY="as_sk_b1df60bd2ea90b833fac22494eb6da0c"
+
 # Define queries targeting career-relevant AI news
 QUERIES=(
     "AI company outbound international expansion"
@@ -27,14 +30,23 @@ TMP_RESULTS=$(mktemp)
 for q in "${QUERIES[@]}"; do
     echo "Searching: $q"
     python3 /home/ubuntu/.openclaw/workspace/skills/anysearch-skill/scripts/anysearch_cli.py search "$q" --max_results $MAX_PER_QUERY >> "$TMP_RESULTS" 2>&1
+    # Check if the AnySearch CLI succeeded (exit code 0)
+    if [[ ${PIPESTATUS[0]} -ne 0 ]]; then
+        echo "Warning: AnySearch CLI failed for query: $q" >>"$LOG_FILE"
+    fi
     sleep 0.3
 done
+
+# Debug: output the raw results to stderr (so it goes to log)
+echo "=== AnySearch raw results ===" >>"$LOG_FILE"
+cat "$TMP_RESULTS" >>"$LOG_FILE"
+echo "=== End raw results ===" >>"$LOG_FILE"
 
 # Parse AnySearch output to get title and URL
 TMP_PARSED=$(mktemp)
 while IFS= read -r line; do
     # Match title line: "### 1. Title" (allow optional spaces)
-    if [[ $line =~ ^[[:space:]]*[#][#][#][[:space:]]+[0-9]+[[:space:]]*\.[[:space:]]+(.+) ]]; then
+    if [[ $line =~ ^[[:space:]]*[#][#][#][[:space:]]+[0-9]+[[:space:]]*\\.[[:space:]]*(.+) ]]; then
         TITLE="${BASH_REMATCH[1]}"
         CURRENT_TITLE="$TITLE"
     # Match URL line: "- **URL**: https://..."
@@ -46,6 +58,11 @@ while IFS= read -r line; do
         fi
     fi
 done < "$TMP_RESULTS"
+
+# Debug: output parsed titles and URLs
+echo "=== Parsed title|URL lines ===" >>"$LOG_FILE"
+cat "$TMP_PARSED" >>"$LOG_FILE"
+echo "=== End parsed ===" >>"$LOG_FILE"
 
 # Function to derive fields from title and content
 process_item() {
@@ -110,15 +127,11 @@ process_item() {
     if [[ "$direction" =~ (国际市场|出海|新AI平台|Agent平台|应用分发|插件生态|BD|渠道合作|新用户入口|交互界面) ]]; then importance="高"; 
     elif [[ "$direction" =~ (AI工作流|自动化|AI[[:space:]]IDE|编辑器|AI浏览器|AI搜索|AI硬件|机器人) ]]; then importance="中"; 
     else importance="低"; fi
-    # Extract approx 20 Chinese characters from content
+    # Extract approx 20 Chinese characters from content: take first 20 chars
     local points=""
-    # Find first sequence of Chinese characters
-    if [[ "$content" =~ [\u4e00-\u9fff]{20,} ]]; then
-        # Match the first such sequence
-        points=$(echo "$content" | grep -oE '[\u4e00-\u9fff]{20,}' | head -1 | cut -c1-20)
-    fi
-    if [[ -z "$points" ]]; then
-        # fallback: first 20 chars of title
+    if [[ -n "$content" ]]; then
+        points="${content:0:20}"
+    else
         points="${title:0:20}"
     fi
     # Truncate points to exactly 20 chars if longer
