@@ -48,3 +48,4 @@
 - [x] 已将 ~/.openclaw/devices/paired.json 复制到 ~/.openclaw/paired.json 并设置权限 600，以恢复缺失的配置文件。
 - [x] 审查 small model 沙箱需求：已配置 agents.defaults.sandbox.mode: require；需验证是否满足安全要求。
 - [x] 每日AI机会雷达 cron job (ID: bada3c2e-de65-42f4-8032-1fb2143beed5) 已创建，每日13:00运行，监控执行状态。
+- [x] Daily Career Opportunity Assessment cron job (ID: e82f5af8-72d6-40fb-9f95-ab7636a0303c) 已创建，每日15:00运行，监控执行状态。
