@@ -117,13 +117,8 @@ while IFS= read -r line; do
     if [[ "$direction" =~ (国际市场|出海|新AI平台|Agent平台|应用分发|插件生态|BD|渠道合作|新用户入口|交互界面) ]]; then importance="高"; 
     elif [[ "$direction" =~ (AI工作流|自动化|AI[[:space:]]IDE|编辑器|AI浏览器|AI搜索|AI硬件|机器人) ]]; then importance="中"; 
     else importance="低"; fi
-    # Extract approx 20 Chinese characters from content
-    local points=""
-    if [[ -n "$content" ]]; then
-        points="${content:0:20}"
-    else
-        points="${title:0:20}"
-    fi
+    # Extract approx 20 characters from content (bytes)
+    local points="${content:0:20}"
     if [[ ${#points} -gt 20 ]]; then
         points="${points:0:20}"
     fi
@@ -165,3 +160,4 @@ done < "$TMP_SORTED"
 echo "=== Daily Career Opportunity Assessment finished at $(date) ==="
 # Cleanup
 rm -f "$TMP_ITEMS" "$TMP_PARSED" "$TMP_ITEMS_DATA" "$TMP_SORTED"
+EOF
