@@ -47,3 +47,4 @@
 - [x] Config Baseline 已更新：openclaw.json 配置更改（添加 fallback 模型）合法，基线已同步。
 - [x] 已将 ~/.openclaw/devices/paired.json 复制到 ~/.openclaw/paired.json 并设置权限 600，以恢复缺失的配置文件。
 - [x] 审查 small model 沙箱需求：已配置 agents.defaults.sandbox.mode: require；需验证是否满足安全要求。
+- [x] 每日AI机会雷达 cron job (ID: bada3c2e-de65-42f4-8032-1fb2143beed5) 已创建，每日13:00运行，监控执行状态。
