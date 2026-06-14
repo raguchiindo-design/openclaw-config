@@ -6,7 +6,7 @@ LOG_FILE="$LOG_DIR/daily_career_opportunity_$(date +%Y%m%d).log"
 # Redirect only stderr to log file; keep stdout for cron agent
 exec 2>>"$LOG_FILE"
 
-echo "=== Daily Career Opportunity Assessment started at $(date) ===" >&2
+echo "=== Daily Career Opportunity Assessment started at $(date) ==="
 
 # Set AnySearch API key to avoid quota exhaustion
 export ANYSEARCH_API_KEY="as_sk_b1df60bd2ea90b833fac22494eb6da0c"
