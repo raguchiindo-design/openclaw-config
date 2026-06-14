@@ -4,7 +4,6 @@ LOG_DIR="/home/ubuntu/.openclaw/logs"
 mkdir -p "$LOG_DIR"
 LOG_FILE="$LOG_DIR/daily_career_opportunity_$(date +%Y%m%d).log"
 # Redirect only stderr to log file; keep stdout for cron agent
-exec 2>>"$LOG_FILE"
 
 echo "=== Daily Career Opportunity Assessment started at $(date) ===" >&2
 
@@ -36,7 +35,7 @@ for q in "${QUERIES[@]}"; do
     # Run anysearch API with timeout and capture output to a temp file
     TMP_ANYOUT=$(mktemp)
     payload=$(printf '{"jsonrpc":"2.0","id":1,"method":"tools/call","params":{"name":"search","arguments":{"query":"%s","max_results":%d}}}' "$q" "$MAX_PER_QUERY" | jq -c .)
-    timeout --kill-after=1 10 curl --max-time 10 --silent --show-error --fail -H "Content-Type: application/json" -H "Authorization: Bearer $ANYSEARCH_API_KEY" -d "$payload" "$ENDPOINT" > "$TMP_ANYOUT" 2>    timeout --kill-after=1 10 curl --max-time 10 --silent --show-error --fail -H "Content-Type: application/json" -H "Authorization: Bearer $ANYSEARCH_API_KEY" -d "$payload" "$ENDPOINT" > "$TMP_ANYOUT" 2>curl --max-time 10 --silent --show-error --fail -H "Content-Type: application/json" -H "Authorization: Bearer $ANYSEARCH_API_KEY" -d "$payload" "$ENDPOINT" > "$TMP_ANYOUT" 2>&111
+    curl --max-time 10 --silent --show-error --fail -H "Content-Type: application/json" -H "Authorization: Bearer $ANYSEARCH_API_KEY" -d "$payload" "$ENDPOINT" > "$TMP_ANYOUT" 2>&1
     EXIT_CODE=$?
     if [[ $EXIT_CODE -ne 0 ]]; then
         echo "Warning: AnySearch API failed for query: $q (exit code $EXIT_CODE)" >>"$LOG_FILE"
