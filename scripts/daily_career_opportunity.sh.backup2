@@ -26,9 +26,7 @@ QUERIES=(
 )
 
 MAX_PER_QUERY=2
-TMP_RESULTS=$(mktemp)        # will hold title|url lines
-TMP_PROCESSED=$(mktemp)      # will hold processed lines for sorting
-
+TMP_RESULTS=$(mktemp)
 # We'll collect results as lines: title|url
 for q in "${QUERIES[@]}"; do
     echo "Searching: $q" >&2
@@ -61,13 +59,13 @@ done
 # If no results, exit gracefully
 if [[ ! -s "$TMP_RESULTS" ]]; then
     echo "No results found." >&2
-    rm -f "$TMP_RESULTS" "$TMP_PROCESSED"
+    rm -f "$TMP_RESULTS"
     echo "=== Daily Career Opportunity Assessment finished at $(date) ===" >&2
     exit 0
 fi
 
-    echo "Processing results..." >&2
 # Process each result: compute fields and store tab-separated data
+TMP_ITEMS_DATA=$(mktemp)
 while IFS='|' read -r title url; do
     if [[ -z "$title" || -z "$url" ]]; then continue; fi
     # Fetch content (text mode) with timeout and user-agent
@@ -142,7 +140,7 @@ while IFS='|' read -r title url; do
     fi
     # Output a tab-separated line: title, direction, company, why, action, importance, points, short_url
     echo -e "${title}\t${direction}\t${company}\t${why}\t${action}\t${importance}\t${points}\t${short_url}"
-done < "$TMP_RESULTS" > "$TMP_PROCESSED"
+done < "$TMP_RESULTS" > "$TMP_ITEMS_DATA"
 
 # Now sort the items by importance (高 > 中 > 低) and then by title
 # We'll create a temporary file with sort key
@@ -153,7 +151,7 @@ awk -F'\t' '{
     else if (imp == "中") weight = 2;
     else weight = 3;
     printf "%d\t%s\t%s\n", weight, $1, $0;
-}' "$TMP_PROCESSED" | sort -t$'\t' -k1,1n -k2,2 | cut -f3- > "$TMP_SORTED"
+}' "$TMP_ITEMS_DATA" | sort -t$'\t' -k1,1n -k2,2 | cut -f3- > "$TMP_SORTED"
 
 # Now format the sorted items into the desired output
 while IFS=$'\t' read -r title direction company why action importance points short_url; do
@@ -169,4 +167,4 @@ done < "$TMP_SORTED"
 
 echo "=== Daily Career Opportunity Assessment finished at $(date) ===" >&2
 # Cleanup
-rm -f "$TMP_RESULTS" "$TMP_PROCESSED" "$TMP_SORTED"
+rm -f "$TMP_RESULTS" "$TMP_ITEMS_DATA" "$TMP_SORTED"
