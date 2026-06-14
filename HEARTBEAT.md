@@ -50,4 +50,4 @@
 - [x] 每日AI机会雷达 cron job (ID: bada3c2e-de65-42f4-8032-1fb2143beed5) 已创建，每日13:00运行，监控执行状态。
 - [x] Daily Career Opportunity Assessment cron job (ID: e82f5af8-72d6-40fb-9f95-ab7636a0303c) 已创建，每日15:00运行，监控执行状态。
 
-    - [x] 修复 daily_career_opportunity.sh 脚本，移除错误的 local 变量和 EOF，增加 timeout 错误处理，脚本现在能正常运行并输出机会列表。
+    - [x] 修复 daily_career_opportunity.sh 脚本，改用直接 AnySearch API 调用，增加 curl 超时和 null-byte 处理，脚本现在能在约1分钟内完成并输出机会列表。

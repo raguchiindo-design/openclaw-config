@@ -53,7 +53,7 @@ for q in "${QUERIES[@]}"; do
             fi
         fi
     done <<< "$OUTPUT"
-    sleep 0.1
+    sleep 0.3
 done
 
 # If no results, exit gracefully
