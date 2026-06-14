@@ -1,6 +1,6 @@
 # HEARTBEAT.md
 
-## 今日任务执行状态（更新时间：2026年06月14日 13:19（北京时间）
+## 今日任务执行状态（更新时间：2026-06-12 下午（北京时间）
 
 ### 巡检摘要 (三日看板)
 - ✅ **nightly-security-audit**：今日审计通过（0 errors, 3 warnings）；基线校验一致，配置更新后哈希匹配。
@@ -49,5 +49,3 @@
 - [x] 审查 small model 沙箱需求：已配置 agents.defaults.sandbox.mode: require；需验证是否满足安全要求。
 - [x] 每日AI机会雷达 cron job (ID: bada3c2e-de65-42f4-8032-1fb2143beed5) 已创建，每日13:00运行，监控执行状态。
 - [x] Daily Career Opportunity Assessment cron job (ID: e82f5af8-72d6-40fb-9f95-ab7636a0303c) 已创建，每日15:00运行，监控执行状态。
-
-    - [x] 修复 daily_career_opportunity.sh 脚本，移除错误的 local 变量和 EOF，增加 timeout 错误处理，脚本现在能正常运行并输出机会列表。
