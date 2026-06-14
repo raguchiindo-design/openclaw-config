@@ -31,7 +31,7 @@ TMP_RESULTS=$(mktemp)
 for q in "${QUERIES[@]}"; do
     echo "Searching: $q" >&2
     # Run anysearch with timeout and capture output
-    OUTPUT=$(PYTHONIOENCODING=utf-8 LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 timeout 10 python3 /home/ubuntu/.openclaw/workspace/skills/anysearch-skill/scripts/anysearch_cli.py search "$q" --max_results $MAX_PER_QUERY 2>    OUTPUT=$(PYTHONIOENCODING=utf-8 LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 timeout 10 python3 /home/ubuntu/.openclaw/workspace/skills/anysearch-skill/scripts/anysearch_cli.py search "$q" --max_results $MAX_PER_QUERY 2>OUTPUT=$(timeout 10 python3 /home/ubuntu/.openclaw/workspace/skills/anysearch-skill/scripts/anysearch_cli.py search "$q" --max_results $MAX_PER_QUERY 2>&1)1)1)
+    OUTPUT=$(PYTHONIOENCODING=utf-8 LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 timeout 10 python3 /home/ubuntu/.openclaw/workspace/skills/anysearch-skill/scripts/anysearch_cli.py search "$q" --max_results $MAX_PER_QUERY 2>&1)
     EXIT_CODE=$?
     if [[ $EXIT_CODE -ne 0 ]]; then
         echo "Warning: AnySearch CLI failed for query: $q (exit code $EXIT_CODE)" >>"$LOG_FILE"
