@@ -10,6 +10,7 @@ echo "=== Daily Career Opportunity Assessment started at $(date) ===" >&2
 
 # Set AnySearch API key to avoid quota exhaustion
 export ANYSEARCH_API_KEY="as_sk_b1df60bd2ea90b833fac22494eb6da0c"
+export ENDPOINT="https://api.anysearch.com/mcp"
 
 # Define queries targeting career-relevant AI news
 QUERIES=(
@@ -27,16 +28,17 @@ QUERIES=(
 
 MAX_PER_QUERY=2
 TMP_RESULTS=$(mktemp)
+# We'll collect results as lines: title|url
 for q in "${QUERIES[@]}"; do
     echo "Searching: $q" >&2
-    # Run anysearch API with timeout and capture output to a temp file
+    # Run anysearch with timeout and capture output to a temp file
     TMP_ANYOUT=$(mktemp)
-    payload=$(printf '{"jsonrpc":"2.0","id":1,"method":"tools/call","params":{"name":"search","arguments":{"query":"%s","max_results":%d}}}' "$q" "$MAX_PER_QUERY" | jq -c .)
-    timeout --kill-after=1 10 curl --max-time 10 --silent --show-error --fail -H "Content-Type: application/json" -H "Authorization: Bearer $ANYSEARCH_API_KEY" -d "$payload" "$ENDPOINT" > "$TMP_ANYOUT" 2>&1
+    # Set Python I/O encoding to UTF-8 to avoid UnicodeEncodeError when printing results
+    PYTHONIOENCODING=utf-8 LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 timeout --kill-after=1 10 python3 /home/ubuntu/.openclaw/workspace/skills/anysearch-skill/scripts/anysearch_cli.py search "$q" --max_results $MAX_PER_QUERY > "$TMP_ANYOUT" 2>&1
     EXIT_CODE=$?
     if [[ $EXIT_CODE -ne 0 ]]; then
-        echo "Warning: AnySearch API failed for query: $q (exit code $EXIT_CODE)" >>"$LOG_FILE"
-        echo "Warning: AnySearch API failed for query: $q" >&2
+        echo "Warning: AnySearch CLI failed for query: $q (exit code $EXIT_CODE)" >>"$LOG_FILE"
+        echo "Warning: AnySearch CLI failed for query: $q" >&2
         rm -f "$TMP_ANYOUT"
         continue
     fi
@@ -56,7 +58,7 @@ for q in "${QUERIES[@]}"; do
         fi
     done < "$TMP_ANYOUT"
     rm -f "$TMP_ANYOUT"
-    sleep 0.1
+    sleep 0.3
 done
 # If no results, exit gracefully
 if [[ ! -s "$TMP_RESULTS" ]]; then
