@@ -33,7 +33,8 @@ TMP_PROCESSED=$(mktemp)      # will hold processed lines for sorting
 for q in "${QUERIES[@]}"; do
     echo "Searching: $q" >&2
     # Run anysearch with timeout and capture output
-    OUTPUT=$(timeout 10 python3 /home/ubuntu/.openclaw/workspace/skills/anysearch-skill/scripts/anysearch_cli.py search "$q" --max_results $MAX_PER_QUERY 2>&1)
+    # Set Python I/O encoding to UTF-8 to avoid UnicodeEncodeError when printing results
+    OUTPUT=$(PYTHONIOENCODING=utf-8 LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 timeout --kill-after=1 10 python3 /home/ubuntu/.openclaw/workspace/skills/anysearch-skill/scripts/anysearch_cli.py search "$q" --max_results $MAX_PER_QUERY 2>&1)
     EXIT_CODE=$?
     if [[ $EXIT_CODE -ne 0 ]]; then
         echo "Warning: AnySearch CLI failed for query: $q (exit code $EXIT_CODE)" >>"$LOG_FILE"
@@ -70,7 +71,9 @@ fi
 while IFS='|' read -r title url; do
     if [[ -z "$title" || -z "$url" ]]; then continue; fi
     # Fetch content (text mode) with timeout and user-agent
+    echo "Processing: $title" >&2
     content=$(curl -s --max-time 3 --user-agent "Mozilla/5.0" "$url" | sed -e 's/<[^>]*>//g' | tr -s '[:space:]' ' ' | head -c 500)
+    echo "Got content length: ${#content}" >&2
     if [[ -z "$content" ]]; then
         content="$title"
     fi
