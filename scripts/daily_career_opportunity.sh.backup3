@@ -6,7 +6,7 @@ LOG_FILE="$LOG_DIR/daily_career_opportunity_$(date +%Y%m%d).log"
 # Redirect only stderr to log file; keep stdout for cron agent
 exec 2>>"$LOG_FILE"
 
-echo "=== Daily Career Opportunity Assessment started at $(date) ===" >&2
+echo "=== Daily Career Opportunity Assessment started at $(date) ==="
 
 # Set AnySearch API key to avoid quota exhaustion
 export ANYSEARCH_API_KEY="as_sk_b1df60bd2ea90b833fac22494eb6da0c"
@@ -26,53 +26,48 @@ QUERIES=(
 )
 
 MAX_PER_QUERY=2
-TMP_RESULTS=$(mktemp)
-# We'll collect results as lines: title|url
+TMP_PARSED=$(mktemp)
 for q in "${QUERIES[@]}"; do
-    echo "Searching: $q" >&2
-    # Run anysearch with timeout and capture output
-    OUTPUT=$(timeout 10 python3 /home/ubuntu/.openclaw/workspace/skills/anysearch-skill/scripts/anysearch_cli.py search "$q" --max_results $MAX_PER_QUERY 2>&1)
-    EXIT_CODE=$?
-    if [[ $EXIT_CODE -ne 0 ]]; then
-        echo "Warning: AnySearch CLI failed for query: $q (exit code $EXIT_CODE)" >>"$LOG_FILE"
-        echo "Warning: AnySearch CLI failed for query: $q" >&2
-        continue
+    echo "Searching: $q"
+    timeout 10 python3 /home/ubuntu/.openclaw/workspace/skills/anysearch-skill/scripts/anysearch_cli.py search "$q" --max_results $MAX_PER_QUERY >>"$TMP_PARSED" 2>&1
+    if [[ ${PIPESTATUS[0]} -ne 0 ]]; then
+    echo "Done with search for $q"
+        echo "Warning: AnySearch CLI failed for query: $q" >>"$LOG_FILE"
     fi
-    # Parse the output to extract title and URL pairs
-    title=""
-    url=""
-    while IFS= read -r line; do
-        if [[ $line =~ ^[[:space:]]*[#][#][#][[:space:]]+[0-9]+[[:space:]]*[.][[:space:]]*(.+) ]]; then
-            title="${BASH_REMATCH[1]}"
-        elif [[ $line =~ ^[[:space:]]*-[[:space:]]+\*\*URL\*\*\:[[:space:]]+(https?://[^[:space:]]+) ]]; then
-            url="${BASH_REMATCH[1]}"
-            if [[ -n "$title" && -n "$url" ]]; then
-                echo "$title|$url" >>"$TMP_RESULTS"
-                title=""
-                url=""
-            fi
-        fi
-    done <<< "$OUTPUT"
+    echo "Done with search for $q"
     sleep 0.3
 done
 
-# If no results, exit gracefully
-if [[ ! -s "$TMP_RESULTS" ]]; then
-    echo "No results found." >&2
-    rm -f "$TMP_RESULTS"
-    echo "=== Daily Career Opportunity Assessment finished at $(date) ===" >&2
-    exit 0
-fi
+# Parse the combined output to extract title and URL
+TMP_ITEMS=$(mktemp)
+title=""
+url=""
+while IFS= read -r line; do
+    if [[ $line =~ ^[[:space:]]*[#][#][#][[:space:]]+[0-9]+[[:space:]]*[.][[:space:]]*(.+) ]]; then
+        title="${BASH_REMATCH[1]}"
+    elif [[ $line =~ ^[[:space:]]*-[[:space:]]+\*\*URL\*\*\:[[:space:]]+(https?://[^[:space:]]+) ]]; then
+        url="${BASH_REMATCH[1]}"
+        if [[ -n "$title" && -n "$url" ]]; then
+            echo "$title|$url" >> "$TMP_ITEMS"
+            title=""
+            url=""
+        fi
+    fi
+    echo "Done with search for $q"
+done < "$TMP_PARSED"
 
-# Process each result: compute fields and store tab-separated data
+# Process each item: compute fields and store tab-separated data
 TMP_ITEMS_DATA=$(mktemp)
-while IFS='|' read -r title url; do
+while IFS= read -r line; do
+    if [[ -z "$line" ]]; then continue; fi
+    IFS='|' read -r title url <<< "$line"
     if [[ -z "$title" || -z "$url" ]]; then continue; fi
     # Fetch content (text mode) with timeout and user-agent
     content=$(curl -s --max-time 3 --user-agent "Mozilla/5.0" "$url" | sed -e 's/<[^>]*>//g' | tr -s '[:space:]' ' ' | head -c 500)
     if [[ -z "$content" ]]; then
         content="$title"
     fi
+    echo "Done with search for $q"
     # Determine opportunity direction (heuristic from title)
     direction=""
     if [[ "$title" =~ (outbound|international|global|expansion|海外|出海) ]]; then direction="国际市场/出海机会"; 
@@ -92,6 +87,7 @@ while IFS='|' read -r title url; do
     if [[ "$title" =~ ([A-Z][a-zA-Z0-9]+(?:\s+[A-Z][a-zA-Z0-9]+)*) ]]; then
         company="${BASH_REMATCH[1]}"
     fi
+    echo "Done with search for $q"
     if [[ -z "$company" ]]; then company="未知公司"; fi
     # Why worth attention (<=50 Chinese chars)
     why=""
@@ -130,6 +126,7 @@ while IFS='|' read -r title url; do
     if [[ ${#points} -gt 20 ]]; then
         points="${points:0:20}"
     fi
+    echo "Done with search for $q"
     # Shorten URL via TinyURL with timeout
     encoded_url=""
     encoded_url=$(python3 -c "import urllib.parse, sys; print(urllib.parse.quote(sys.argv[1]))" "$url")
@@ -138,9 +135,10 @@ while IFS='|' read -r title url; do
     if [[ ! "$short_url" =~ ^http ]]; then
         short_url="$url"
     fi
+    echo "Done with search for $q"
     # Output a tab-separated line: title, direction, company, why, action, importance, points, short_url
     echo -e "${title}\t${direction}\t${company}\t${why}\t${action}\t${importance}\t${points}\t${short_url}"
-done < "$TMP_RESULTS" > "$TMP_ITEMS_DATA"
+done < "$TMP_ITEMS" > "$TMP_ITEMS_DATA"
 
 # Now sort the items by importance (高 > 中 > 低) and then by title
 # We'll create a temporary file with sort key
@@ -165,6 +163,6 @@ while IFS=$'\t' read -r title direction company why action importance points sho
     echo ""
 done < "$TMP_SORTED"
 
-echo "=== Daily Career Opportunity Assessment finished at $(date) ===" >&2
+echo "=== Daily Career Opportunity Assessment finished at $(date) ==="
 # Cleanup
-rm -f "$TMP_RESULTS" "$TMP_ITEMS_DATA" "$TMP_SORTED"
+rm -f "$TMP_PARSED" "$TMP_ITEMS" "$TMP_ITEMS_DATA" "$TMP_SORTED"
