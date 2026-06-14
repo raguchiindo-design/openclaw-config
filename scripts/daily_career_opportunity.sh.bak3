@@ -30,14 +30,18 @@ TMP_RESULTS=$(mktemp)        # will hold title|url lines
 TMP_PROCESSED=$(mktemp)      # will hold processed lines for sorting
 
 # We'll collect results as lines: title|url
+
 for q in "${QUERIES[@]}"; do
     echo "Searching: $q" >&2
-    # Run anysearch with timeout and capture output
-    OUTPUT=$(timeout 10 python3 /home/ubuntu/.openclaw/workspace/skills/anysearch-skill/scripts/anysearch_cli.py search "$q" --max_results $MAX_PER_QUERY 2>&1)
+    # Run anysearch with timeout and capture output to a temp file
+    TMP_ANYOUT=$(mktemp)
+    # Set Python I/O encoding to UTF-8 to avoid UnicodeEncodeError when printing results
+    PYTHONIOENCODING=utf-8 LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 timeout --kill-after=1 10 python3 /home/ubuntu/.openclaw/workspace/skills/anysearch-skill/scripts/anysearch_cli.py search "$q" --max_results $MAX_PER_QUERY > "$TMP_ANYOUT" 2>&1
     EXIT_CODE=$?
     if [[ $EXIT_CODE -ne 0 ]]; then
         echo "Warning: AnySearch CLI failed for query: $q (exit code $EXIT_CODE)" >>"$LOG_FILE"
         echo "Warning: AnySearch CLI failed for query: $q" >&2
+        rm -f "$TMP_ANYOUT"
         continue
     fi
     # Parse the output to extract title and URL pairs
@@ -54,10 +58,10 @@ for q in "${QUERIES[@]}"; do
                 url=""
             fi
         fi
-    done <<< "$OUTPUT"
+    done < "$TMP_ANYOUT"
+    rm -f "$TMP_ANYOUT"
     sleep 0.3
 done
-
 # If no results, exit gracefully
 if [[ ! -s "$TMP_RESULTS" ]]; then
     echo "No results found." >&2
@@ -66,28 +70,52 @@ if [[ ! -s "$TMP_RESULTS" ]]; then
     exit 0
 fi
 
-    echo "Processing results..." >&2
 # Process each result: compute fields and store tab-separated data
 while IFS='|' read -r title url; do
     if [[ -z "$title" || -z "$url" ]]; then continue; fi
     # Fetch content (text mode) with timeout and user-agent
+    echo "Processing: $title" >&2
     content=$(curl -s --max-time 3 --user-agent "Mozilla/5.0" "$url" | sed -e 's/<[^>]*>//g' | tr -s '[:space:]' ' ' | head -c 500)
+    echo "Got content length: ${#content}" >&2
     if [[ -z "$content" ]]; then
         content="$title"
     fi
-    # Determine opportunity direction (heuristic from title)
-    direction=""
-    if [[ "$title" =~ (outbound|international|global|expansion|海外|出海) ]]; then direction="国际市场/出海机会"; 
-    elif [[ "$title" =~ (agent|multi[-]agent|platform) ]]; then direction="新AI平台/Agent平台"; 
-    elif [[ "$title" =~ (workflow|automation|SOP) ]]; then direction="AI工作流/自动化工具"; 
-    elif [[ "$title" =~ (IDE|editor|code) ]]; then direction="AI IDE/编辑器"; 
-    elif [[ "$title" =~ (browser|search) ]]; then direction="AI浏览器/AI搜索入口"; 
-    elif [[ "$title" =~ (distribution|marketplace|app[[:space:]]store|plugin) ]]; then direction="应用分发渠道/插件生态"; 
-    elif [[ "$title" =~ (hardware|robot|robotics) ]]; then direction="AI硬件/机器人产品"; 
-    elif [[ "$title" =~ (BD|partnership|channel|GTM) ]]; then direction="商务拓展/渠道合作机会"; 
-    elif [[ "$title" =~ (user[[:space:]]entry|entry[[:space:]]point|onboarding) ]]; then direction="新用户入口/交互界面"; 
-    elif [[ "$title" =~ (world[[:space:]]model|physical[[:space:]]AI|agent[[:space:]]OS) ]]; then direction="World Model/Physical AI/Agent OS"; 
-    else direction="AI产品/技术更新"; fi
+    # Determine opportunity direction (heuristic from title) using case
+    case "$title" in
+        *outbound*|*international*|*global*|*expansion*|*海外*|*出海*)
+            direction="国际市场/出海机会"
+            ;;
+        *agent*|*multi[-]agent*|*platform*)
+            direction="新AI平台/Agent平台"
+            ;;
+        *workflow*|*automation*|*SOP*)
+            direction="AI工作流/自动化工具"
+            ;;
+        *IDE*|*editor*|*code*)
+            direction="AI IDE/编辑器"
+            ;;
+        *browser*|*search*)
+            direction="AI浏览器/AI搜索入口"
+            ;;
+        *distribution*|*marketplace*|*app[[:space:]]store*|*plugin*)
+            direction="应用分发渠道/插件生态"
+            ;;
+        *hardware*|*robot*|*robotics*)
+            direction="AI硬件/机器人产品"
+            ;;
+        *BD*|*partnership*|*channel*|*GTM*)
+            direction="商务拓展/渠道合作机会"
+            ;;
+        *user[[:space:]]entry*|*entry[[:space:]]point*|*onboarding*)
+            direction="新用户入口/交互界面"
+            ;;
+        *world[[:space:]]model*|*physical[[:space:]]AI*|*agent[[:space:]]OS*)
+            direction="World Model/Physical AI/Agent OS"
+            ;;
+        *)
+            direction="AI产品/技术更新"
+            ;;
+    esac
     # Extract company/product (simple: look for capitalized words)
     company=""
     # Try to find a pattern like "Company X" or "Product Y" from title
@@ -96,37 +124,90 @@ while IFS='|' read -r title url; do
     fi
     if [[ -z "$company" ]]; then company="未知公司"; fi
     # Why worth attention (<=50 Chinese chars)
-    why=""
-    if [[ "$direction" == "国际市场/出海机会" ]]; then why="该公司正在布局海外市场，为国际业务BD提供切入点。"; 
-    elif [[ "$direction" == "新AI平台/Agent平台" ]]; then why="新平台提供集成机会，个人开发者可上架作品或获取合作。"; 
-    elif [[ "$direction" == "AI工作流/自动化工具" ]]; then why="工作流工具提升开发效率，可作为技能点或远程岗位依据。"; 
-    elif [[ "$direction" == "AI IDE/编辑器" ]]; then why="新IDE降低开发门槛，适合个人开发者快速原型。"; 
-    elif [[ "$direction" == "AI浏览器/AI搜索入口" ]]; then why="新入口增加流量获取渠道，有利于产品推广。"; 
-    elif [[ "$direction" == "应用分发渠道/插件生态" ]]; then why="分发渠道帮助作品触达用户，可考虑上架或合作。"; 
-    elif [[ "$direction" == "AI硬件/机器人产品" ]]; then why="硬件产品伴随软件生态，提供硬件+软件结合的岗位。"; 
-    elif [[ "$direction" == "商务拓展/渠道合作机会" ]]; then why="明确BD需求，可申请相关实习或合作项目。"; 
-    elif [[ "$direction" == "新用户入口/交互界面" ]]; then why="新交互形式是产品经理方向的切入点。"; 
-    elif [[ "$direction" == "World Model/Physical AI/Agent OS" ]]; then why="长期趋势，需关注其开发者社区和应用场景。"; 
-    else why="具备技术或市场机遇，值得持续关注。"; fi
+    case "$direction" in
+        "国际市场/出海机会")
+            why="该公司正在布局海外市场，为国际业务BD提供切入点。"
+            ;;
+        "新AI平台/Agent平台")
+            why="新平台提供集成机会，个人开发者可上架作品或获取合作。"
+            ;;
+        "AI工作流/自动化工具")
+            why="工作流工具提升开发效率，可作为技能点或远程岗位依据。"
+            ;;
+        "AI IDE/编辑器")
+            why="新IDE降低开发门槛，适合个人开发者快速原型。"
+            ;;
+        "AI浏览器/AI搜索入口")
+            why="新入口增加流量获取渠道，有利于产品推广。"
+            ;;
+        "应用分发渠道/插件生态")
+            why="分发渠道帮助作品触达用户，可考虑上架或合作。"
+            ;;
+        "AI硬件/机器人产品")
+            why="硬件产品伴随软件生态，提供硬件+软件结合的岗位。"
+            ;;
+        "商务拓展/渠道合作机会")
+            why="明确BD需求，可申请相关实习或合作项目。"
+            ;;
+        "新用户入口/交互界面")
+            why="新交互形式是产品经理方向的切入点。"
+            ;;
+        "World Model/Physical AI/Agent OS")
+            why="长期趋势，需关注其开发者社区和应用场景。"
+            ;;
+        *)
+            why="具备技术或市场机遇，值得持续关注。"
+            ;;
+    esac
     why=$(echo "$why" | cut -c1-50)
     # Small action for Cici
-    action=""
-    if [[ "$direction" =~ 国际市场|出海 ]]; then action="关注该公司的国际岗位招聘或BD合作公告。"; 
-    elif [[ "$direction" =~ 新AI平台|Agent平台 ]]; then action="注册开发者账号，查看文档和上架流程。"; 
-    elif [[ "$direction" =~ AI工作流|自动化 ]]; then action="试用该工具，制作简历中的项目案例。"; 
-    elif [[ "$direction" =~ AI[[:space:]]IDE|编辑器 ]]; then action="下载体验，评估其对个人开发的助力。"; 
-    elif [[ "$direction" =~ AI浏览器|AI搜索 ]]; then action="使用其搜索功能，观察收录情况和SEO机会。"; 
-    elif [[ "$direction" =~ 应用分发|插件生态 ]]; then action="了解上架要求，尝试提交一个小作品。"; 
-    elif [[ "$direction" =~ AI硬件|机器人 ]]; then action="关注其开发者套件或硬件兼容性信息。"; 
-    elif [[ "$direction" =~ 商务拓展|渠道合作|BD|GTM ]]; then action="投递实习或岗位，准备相关市场分析材料。"; 
-    elif [[ "$direction" =~ 新用户入口|交互界面 ]]; then action="分析其用户流程，撰写可用性改进建议。"; 
-    elif [[ "$direction" =~ World[[:space:]]Model|Physical[[:space:]]AI|Agent[[:space:]]OS ]]; then action="追踪其技术博客，学习相关概念和潜在应用。"; 
-    else action="保持关注，定期查看更新。"; fi
+    case "$direction" in
+        "国际市场/出海机会")
+            action="关注该公司的国际岗位招聘或BD合作公告。"
+            ;;
+        "新AI平台/Agent平台")
+            action="注册开发者账号，查看文档和上架流程。"
+            ;;
+        "AI工作流/自动化工具")
+            action="试用该工具，制作简历中的项目案例。"
+            ;;
+        "AI IDE/编辑器")
+            action="下载体验，评估其对个人开发的助力。"
+            ;;
+        "AI浏览器/AI搜索入口")
+            action="使用其搜索功能，观察收录情况和SEO机会。"
+            ;;
+        "应用分发渠道/插件生态")
+            action="了解上架要求，尝试提交一个小作品。"
+            ;;
+        "AI硬件/机器人产品")
+            action="关注其开发者套件或硬件兼容性信息。"
+            ;;
+        "商务拓展/渠道合作机会")
+            action="投递实习或岗位，准备相关市场分析材料。"
+            ;;
+        "新用户入口/交互界面")
+            action="分析其用户流程，撰写可用性改进建议。"
+            ;;
+        "World Model/Physical AI/Agent OS")
+            action="追踪其技术博客，学习相关概念和潜在应用。"
+            ;;
+        *)
+            action="保持关注，定期查看更新。"
+            ;;
+    esac
     # Importance heuristic
-    importance="中"
-    if [[ "$direction" =~ (国际市场|出海|新AI平台|Agent平台|应用分发|插件生态|BD|渠道合作|新用户入口|交互界面) ]]; then importance="高"; 
-    elif [[ "$direction" =~ (AI工作流|自动化|AI[[:space:]]IDE|编辑器|AI浏览器|AI搜索|AI硬件|机器人) ]]; then importance="中"; 
-    else importance="低"; fi
+    case "$direction" in
+        "国际市场/出海机会"|"新AI平台/Agent平台"|"应用分发渠道/插件生态"|"商务拓展/渠道合作机会"|"新用户入口/交互界面")
+            importance="高"
+            ;;
+        "AI工作流/自动化工具"|"AI IDE/编辑器"|"AI浏览器/AI搜索入口"|"AI硬件/机器人产品")
+            importance="中"
+            ;;
+        *)
+            importance="低"
+            ;;
+    esac
     # Extract approx 20 characters from content (bytes)
     points="${content:0:20}"
     if [[ ${#points} -gt 20 ]]; then
