@@ -31,14 +31,29 @@ TMP_RESULTS=$(mktemp)
 # We'll collect results as lines: title|url
 for q in "${QUERIES[@]}"; do
     echo "Searching: $q" >&2
-    # Run anysearch API with timeout and capture output to a temp file
     TMP_ANYOUT=$(mktemp)
-    # Set up curl to call AnySearch API
     payload=$(printf '{"jsonrpc":"2.0","id":1,"method":"tools/call","params":{"name":"search","arguments":{"query":"%s","max_results":%d}}}' "$q" "$MAX_PER_QUERY" | jq -c .)
-    if ! timeout --kill-after=1 10 curl --max-time 10 --silent --show-error --fail -H "Content-Type: application/json" -H "Authorization: Bearer $ANYSEARCH_API_KEY" -d "$payload" "$ENDPOINT" > "$TMP_ANYOUT" 2>&1; then
-        EXIT_CODE=$?
-        echo "Warning: AnySearch API failed for query: $q (exit code $EXIT_CODE)" >>"$LOG_FILE"
-        echo "Warning: AnySearch API failed for query: $q" >&2
+    # Retry logic for API call
+    MAX_RETRIES=3
+    BASE_TIMEOUT=5
+    success=false
+    for (( retry=0; retry<MAX_RETRIES; retry++ )); do
+        TIMEOUT=$(( BASE_TIMEOUT * (2 ** retry) ))  # 5, 10, 20
+        if timeout --kill-after=1 $TIMEOUT curl --max-time $TIMEOUT --silent --show-error --fail -H "Content-Type: application/json" -H "Authorization: Bearer $ANYSEARCH_API_KEY" -d "$payload" "$ENDPOINT" > "$TMP_ANYOUT" 2>&1; then
+            success=true
+            break
+        else
+            EXIT_CODE=$?
+            if [[ $retry -lt $((MAX_RETRIES-1)) ]]; then
+                echo "Warning: AnySearch API attempt $((retry+1)) failed for query: $q (exit code $EXIT_CODE), retrying in $((retry+1)) seconds..." >&2
+                sleep $((retry+1))
+            else
+                echo "Warning: AnySearch API failed for query: $q after $MAX_RETRIES attempts (exit code $EXIT_CODE)" >>"$LOG_FILE"
+                echo "Warning: AnySearch API failed for query: $q after $MAX_RETRIES attempts" >&2
+            fi
+        fi
+    done
+    if [[ $success == false ]]; then
         rm -f "$TMP_ANYOUT"
         continue
     fi
@@ -66,7 +81,7 @@ for q in "${QUERIES[@]}"; do
         fi
     done <<< "$TEXT"
     rm -f "$TMP_ANYOUT"
-    sleep 0.1
+    sleep 0.5
 done
 # If no results, exit gracefully
 if [[ ! -s "$TMP_RESULTS" ]]; then
