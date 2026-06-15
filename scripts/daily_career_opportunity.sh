@@ -77,7 +77,7 @@ for q in "${QUERIES[@]}"; do
                 url=""
             fi
         fi
-    done < "$TMP_ANYOUT"
+    done <<< "$TEXT"
     rm -f "$TMP_ANYOUT"
     sleep 1
 done
@@ -95,7 +95,6 @@ while IFS='|' read -r title url; do
     if [[ -z "$title" || -z "$url" ]]; then continue; fi
     # Fetch content (text mode) with timeout and user-agent
     content="$title"
-    fi
     # Determine opportunity direction (heuristic from title)
     direction=""
     if [[ "$title" =~ (outbound|international|global|expansion|海外|出海) ]]; then direction="国际市场/出海机会"; 
