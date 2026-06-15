@@ -143,16 +143,7 @@ while IFS='|' read -r title url; do
         points="${points:0:20}"
     fi
     # Shorten URL via TinyURL with timeout
-    encoded_url=""
-    encoded_url=$(python3 -c "import urllib.parse, sys; print(urllib.parse.quote(sys.argv[1]))" "$url")
-    short_url=""
-    short_url=$(curl -s --max-time 3 "https://tinyurl.com/api-create.php?url=$encoded_url" 2>/dev/null)
-    if [[ ! "$short_url" =~ ^http ]]; then
-        short_url="$url"
-    fi
-    # Output a tab-separated line: title, direction, company, why, action, importance, points, short_url
-    echo -e "${title}\t${direction}\t${company}\t${why}\t${action}\t${importance}\t${points}\t${short_url}"
-done < "$TMP_RESULTS" > "$TMP_ITEMS_DATA"
+    short_url="$url"
 
 # Now sort the items by importance (高 > 中 > 低) and then by title
 # We'll create a temporary file with sort key
