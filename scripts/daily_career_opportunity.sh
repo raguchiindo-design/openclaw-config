@@ -80,55 +80,68 @@ while IFS='|' read -r title url; do
     content="$title"
     # Determine opportunity direction (heuristic from title)
     direction=""
-    if [[ "$title" =~ (outbound|international|global|expansion|海外|出海) ]]; then direction="国际市场/出海机会"; 
-    elif [[ "$title" =~ (agent|multi[-]agent|platform) ]]; then direction="新AI平台/Agent平台"; 
-    elif [[ "$title" =~ (workflow|automation|SOP) ]]; then direction="AI工作流/自动化工具"; 
-    elif [[ "$title" =~ (IDE|editor|code) ]]; then direction="AI IDE/编辑器"; 
-    elif [[ "$title" =~ (browser|search) ]]; then direction="AI浏览器/AI搜索入口"; 
-    elif [[ "$title" =~ (distribution|marketplace|app[[:space:]]store|plugin) ]]; then direction="应用分发渠道/插件生态"; 
-    elif [[ "$title" =~ (hardware|robot|robotics) ]]; then direction="AI硬件/机器人产品"; 
-    elif [[ "$title" =~ (BD|partnership|channel|GTM) ]]; then direction="商务拓展/渠道合作机会"; 
-    elif [[ "$title" =~ (user[[:space:]]entry|entry[[:space:]]point|onboarding) ]]; then direction="新用户入口/交互界面"; 
-    elif [[ "$title" =~ (world[[:space:]]model|physical[[:space:]]AI|agent[[:space:]]OS) ]]; then direction="World Model/Physical AI/Agent OS"; 
+    shopt -s nocasematch
+    if [[ "$title" =~ (outbound|international|global|expansion|海外|出海) ]]; then direction="国际市场/出海机会";
+    elif [[ "$title" =~ (agent|multi[-]agent|platform|gemini|enterprise) ]]; then direction="新AI平台/Agent平台";
+    elif [[ "$title" =~ (workflow|automation|SOP) ]]; then direction="AI工作流/自动化工具";
+    elif [[ "$title" =~ (IDE|editor|code) ]]; then direction="AI IDE/编辑器";
+    elif [[ "$title" =~ (browser|search|neo) ]]; then direction="AI浏览器/AI搜索入口";
+    elif [[ "$title" =~ (distribution|marketplace|app[[:space:]]store|plugin|onboarding) ]]; then direction="应用分发渠道/插件生态";
+    elif [[ "$title" =~ (hardware|robot|robotics) ]]; then direction="AI硬件/机器人产品";
+    elif [[ "$title" =~ (BD|partnership|channel|GTM|export|出口|规则|规范|partner|network|companion|生态|生态系统|channel|partnership) ]]; then direction="商务拓展/渠道合作机会";
+    elif [[ "$title" =~ (user[[:space:]]entry|entry[[:space:]]point|onboarding) ]]; then direction="新用户入口/交互界面";
+    elif [[ "$title" =~ (world[[:space:]]model|physical[[:space:]]AI|agent[[:space:]]*OS|cosmos|physical|物理) ]]; then direction="World Model/Physical AI/Agent OS";
+    shopt -u nocasematch
     else direction="AI产品/技术更新"; fi
-    # Extract company/product (simple: look for capitalized words)
-    company=""
+    # Extract company/product (improved)
+    company=""  # Will extract from title or URL
     # Try to find a pattern like "Company X" or "Product Y" from title
     if [[ "$title" =~ ([A-Z][a-zA-Z0-9]+(?:\s+[A-Z][a-zA-Z0-9]+)*) ]]; then
         company="${BASH_REMATCH[1]}"
     fi
+    # If not found in title, try to extract from URL hostname
+    if [[ -z "$company" && "$url" =~ ^https?://([^/]+) ]]; then
+        host="${BASH_REMATCH[1]}"
+        # Remove www.
+        host="${host#www.}"
+        # Take first part before dot
+        company="${host%%.*}"
+        # Capitalize first letter
+        company="$(tr '[:lower:]' '[:upper:]' <<<${company:0:1})${company:1}"
+    fi
+    # If still empty, fallback
     if [[ -z "$company" ]]; then company="未知公司"; fi
     # Why worth attention (<=50 Chinese chars)
     why=""
-    if [[ "$direction" == "国际市场/出海机会" ]]; then why="该公司正在布局海外市场，为国际业务BD提供切入点。"; 
-    elif [[ "$direction" == "新AI平台/Agent平台" ]]; then why="新平台提供集成机会，个人开发者可上架作品或获取合作。"; 
-    elif [[ "$direction" == "AI工作流/自动化工具" ]]; then why="工作流工具提升开发效率，可作为技能点或远程岗位依据。"; 
-    elif [[ "$direction" == "AI IDE/编辑器" ]]; then why="新IDE降低开发门槛，适合个人开发者快速原型。"; 
-    elif [[ "$direction" == "AI浏览器/AI搜索入口" ]]; then why="新入口增加流量获取渠道，有利于产品推广。"; 
-    elif [[ "$direction" == "应用分发渠道/插件生态" ]]; then why="分发渠道帮助作品触达用户，可考虑上架或合作。"; 
-    elif [[ "$direction" == "AI硬件/机器人产品" ]]; then why="硬件产品伴随软件生态，提供硬件+软件结合的岗位。"; 
-    elif [[ "$direction" == "商务拓展/渠道合作机会" ]]; then why="明确BD需求，可申请相关实习或合作项目。"; 
-    elif [[ "$direction" == "新用户入口/交互界面" ]]; then why="新交互形式是产品经理方向的切入点。"; 
-    elif [[ "$direction" == "World Model/Physical AI/Agent OS" ]]; then why="长期趋势，需关注其开发者社区和应用场景。"; 
-    else why="具备技术或市场机遇，值得持续关注。"; fi
+    if [[ "$direction" == "国际市场/出海机会" ]]; then why="该公司正在布局海外市场,为国际业务BD提供切入点。";
+    elif [[ "$direction" == "新AI平台/Agent平台" ]]; then why="新平台提供集成机会,个人开发者可上架作品或获取合作。";
+    elif [[ "$direction" == "AI工作流/自动化工具" ]]; then why="工作流工具提升开发效率,可作为技能点或远程岗位依据。";
+    elif [[ "$direction" == "AI IDE/编辑器" ]]; then why="新IDE降低开发门槛,适合个人开发者快速原型。";
+    elif [[ "$direction" == "AI浏览器/AI搜索入口" ]]; then why="新入口增加流量获取渠道,有利于产品推广。";
+    elif [[ "$direction" == "应用分发渠道/插件生态" ]]; then why="分发渠道帮助作品触达用户,可考虑上架或合作。";
+    elif [[ "$direction" == "AI硬件/机器人产品" ]]; then why="硬件产品伴随软件生态,提供硬件+软件结合的岗位。";
+    elif [[ "$direction" == "商务拓展/渠道合作机会" ]]; then why="明确BD需求,可申请相关实习或合作项目。";
+    elif [[ "$direction" == "新用户入口/交互界面" ]]; then why="新交互形式是产品经理方向的切入点。";
+    elif [[ "$direction" == "World Model/Physical AI/Agent OS" ]]; then why="长期趋势,需关注其开发者社区和应用场景。";
+    else why="具备技术或市场机遇,值得持续关注。"; fi
     why=$(echo "$why" | cut -c1-50)
     # Small action for Cici
     action=""
-    if [[ "$direction" =~ 国际市场|出海 ]]; then action="关注该公司的国际岗位招聘或BD合作公告。"; 
-    elif [[ "$direction" =~ 新AI平台|Agent平台 ]]; then action="注册开发者账号，查看文档和上架流程。"; 
-    elif [[ "$direction" =~ AI工作流|自动化 ]]; then action="试用该工具，制作简历中的项目案例。"; 
-    elif [[ "$direction" =~ AI[[:space:]]IDE|编辑器 ]]; then action="下载体验，评估其对个人开发的助力。"; 
-    elif [[ "$direction" =~ AI浏览器|AI搜索 ]]; then action="使用其搜索功能，观察收录情况和SEO机会。"; 
-    elif [[ "$direction" =~ 应用分发|插件生态 ]]; then action="了解上架要求，尝试提交一个小作品。"; 
-    elif [[ "$direction" =~ AI硬件|机器人 ]]; then action="关注其开发者套件或硬件兼容性信息。"; 
-    elif [[ "$direction" =~ 商务拓展|渠道合作|BD|GTM ]]; then action="投递实习或岗位，准备相关市场分析材料。"; 
-    elif [[ "$direction" =~ 新用户入口|交互界面 ]]; then action="分析其用户流程，撰写可用性改进建议。"; 
-    elif [[ "$direction" =~ World[[:space:]]Model|Physical[[:space:]]AI|Agent[[:space:]]OS ]]; then action="追踪其技术博客，学习相关概念和潜在应用。"; 
-    else action="保持关注，定期查看更新。"; fi
+    if [[ "$direction" =~ 国际市场|出海 ]]; then action="关注该公司的国际岗位招聘或BD合作公告。";
+    elif [[ "$direction" =~ 新AI平台|Agent平台 ]]; then action="注册开发者账号,查看文档和上架流程。";
+    elif [[ "$direction" =~ AI工作流|自动化 ]]; then action="试用该工具,制作简历中的项目案例。";
+    elif [[ "$direction" =~ AI[[:space:]]IDE|编辑器 ]]; then action="下载体验,评估其对个人开发的助力。";
+    elif [[ "$direction" =~ AI浏览器|AI搜索 ]]; then action="使用其搜索功能,观察收录情况和SEO机会。";
+    elif [[ "$direction" =~ 应用分发|插件生态 ]]; then action="了解上架要求,尝试提交一个小作品。";
+    elif [[ "$direction" =~ AI硬件|机器人 ]]; then action="关注其开发者套件或硬件兼容性信息。";
+    elif [[ "$direction" =~ 商务拓展|渠道合作|BD|GTM ]]; then action="投递实习或岗位,准备相关市场分析材料。";
+    elif [[ "$direction" =~ 新用户入口|交互界面 ]]; then action="分析其用户流程,撰写可用性改进建议。";
+    elif [[ "$direction" =~ World[[:space:]]Model|Physical[[:space:]]AI|Agent[[:space:]]OS ]]; then action="追踪其技术博客,学习相关概念和潜在应用。";
+    else action="保持关注,定期查看更新。"; fi
     # Importance heuristic
     importance="中"
-    if [[ "$direction" =~ (国际市场|出海|新AI平台|Agent平台|应用分发|插件生态|BD|渠道合作|新用户入口|交互界面) ]]; then importance="高"; 
-    elif [[ "$direction" =~ (AI工作流|自动化|AI[[:space:]]IDE|编辑器|AI浏览器|AI搜索|AI硬件|机器人) ]]; then importance="中"; 
+    if [[ "$direction" =~ (国际市场|出海|新AI平台|Agent平台|应用分发|插件生态|BD|渠道合作|新用户入口|交互界面) ]]; then importance="高";
+    elif [[ "$direction" =~ (AI工作流|自动化|AI[[:space:]]IDE|编辑器|AI浏览器|AI搜索|AI硬件|机器人) ]]; then importance="中";
     else importance="低"; fi
     # Extract approx 20 characters from content (bytes)
     points="${content:0:20}"
@@ -153,13 +166,13 @@ awk -F'\t' '{
 
 # Now format the sorted items into the desired output
 while IFS=$'\t' read -r title direction company why action importance points short_url; do
-    echo "机会方向：$direction"
-    echo "相关公司/产品：$company"
-    echo "为什么值得关注：$why"
-    echo "Cici可以做的小行动：$action"
-    echo "重要程度：$importance"
-    echo "要点：$points"
-    echo "来源：$short_url"
+    echo "机会方向:$direction"
+    echo "相关公司/产品:$company"
+    echo "为什么值得关注:$why"
+    echo "Cici可以做的小行动:$action"
+    echo "重要程度:$importance"
+    echo "要点:$points"
+    echo "来源:$short_url"
     echo ""
 done < "$TMP_SORTED"
 
