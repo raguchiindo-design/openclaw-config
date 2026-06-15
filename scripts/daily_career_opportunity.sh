@@ -28,17 +28,25 @@ QUERIES=(
 
 MAX_PER_QUERY=2
 TMP_RESULTS=$(mktemp)
+# We'll collect results as lines: title|url
 for q in "${QUERIES[@]}"; do
     echo "Searching: $q" >&2
     # Run anysearch API with timeout and capture output to a temp file
     TMP_ANYOUT=$(mktemp)
     # Set up curl to call AnySearch API
     payload=$(printf '{"jsonrpc":"2.0","id":1,"method":"tools/call","params":{"name":"search","arguments":{"query":"%s","max_results":%d}}}' "$q" "$MAX_PER_QUERY" | jq -c .)
-    curl --max-time 10 --silent --show-error --fail -H "Content-Type: application/json" -H "Authorization: Bearer $ANYSEARCH_API_KEY" -d "$payload" "$ENDPOINT" > "$TMP_ANYOUT" 2>&1
-    EXIT_CODE=$?
-    if [[ $EXIT_CODE -ne 0 ]]; then
+    if ! timeout --kill-after=1 10 curl --max-time 10 --silent --show-error --fail -H "Content-Type: application/json" -H "Authorization: Bearer $ANYSEARCH_API_KEY" -d "$payload" "$ENDPOINT" > "$TMP_ANYOUT" 2>&1; then
+        EXIT_CODE=$?
         echo "Warning: AnySearch API failed for query: $q (exit code $EXIT_CODE)" >>"$LOG_FILE"
         echo "Warning: AnySearch API failed for query: $q" >&2
+        rm -f "$TMP_ANYOUT"
+        continue
+    fi
+    # Extract the text field from the JSON response
+    TEXT=$(jq -r '.result.content[0].text' "$TMP_ANYOUT" 2>/dev/null)
+    if [[ $? -ne 0 || -z "$TEXT" ]]; then
+        echo "Warning: Failed to extract text from AnySearch response for query: $q" >>"$LOG_FILE"
+        echo "Warning: Failed to extract text from AnySearch response for query: $q" >&2
         rm -f "$TMP_ANYOUT"
         continue
     fi
@@ -56,9 +64,9 @@ for q in "${QUERIES[@]}"; do
                 url=""
             fi
         fi
-    done < "$TMP_ANYOUT"
+    done <<< "$TEXT"
     rm -f "$TMP_ANYOUT"
-    sleep 0.3
+    sleep 0.1
 done
 # If no results, exit gracefully
 if [[ ! -s "$TMP_RESULTS" ]]; then
