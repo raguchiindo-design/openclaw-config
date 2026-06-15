@@ -94,9 +94,7 @@ TMP_ITEMS_DATA=$(mktemp)
 while IFS='|' read -r title url; do
     if [[ -z "$title" || -z "$url" ]]; then continue; fi
     # Fetch content (text mode) with timeout and user-agent
-    content=$(curl -s --max-time 3 --user-agent "Mozilla/5.0" "$url" | sed -e 's/<[^>]*>//g' | tr -s '[:space:]' ' ' | head -c 500)
-    if [[ -z "$content" ]]; then
-        content="$title"
+    content="$title"
     fi
     # Determine opportunity direction (heuristic from title)
     direction=""
