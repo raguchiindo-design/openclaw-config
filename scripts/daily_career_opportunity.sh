@@ -64,10 +64,11 @@ for q in "${QUERIES[@]}"; do
                 url=""
             fi
         fi
-    done <<< "$TEXT"
+    done < "$TMP_ANYOUT"
     rm -f "$TMP_ANYOUT"
     sleep 0.1
 done
+
 # If no results, exit gracefully
 if [[ ! -s "$TMP_RESULTS" ]]; then
     echo "No results found." >&2
@@ -81,7 +82,7 @@ TMP_ITEMS_DATA=$(mktemp)
 while IFS='|' read -r title url; do
     if [[ -z "$title" || -z "$url" ]]; then continue; fi
     # Fetch content (text mode) with timeout and user-agent
-    content="$title"
+    content=$(curl -s --max-time 3 --user-agent "Mozilla/5.0" "$url" | sed -e 's/<[^>]*>//g' | tr -s '[:space:]' ' ' | head -c 500)
     if [[ -z "$content" ]]; then
         content="$title"
     fi
@@ -143,7 +144,16 @@ while IFS='|' read -r title url; do
         points="${points:0:20}"
     fi
     # Shorten URL via TinyURL with timeout
-    short_url="$url"
+    encoded_url=""
+    encoded_url=$(python3 -c "import urllib.parse, sys; print(urllib.parse.quote(sys.argv[1]))" "$url")
+    short_url=""
+    short_url=$(curl -s --max-time 3 "https://tinyurl.com/api-create.php?url=$encoded_url" 2>/dev/null)
+    if [[ ! "$short_url" =~ ^http ]]; then
+        short_url="$url"
+    fi
+    # Output a tab-separated line: title, direction, company, why, action, importance, points, short_url
+    echo -e "${title}\t${direction}\t${company}\t${why}\t${action}\t${importance}\t${points}\t${short_url}"
+done < "$TMP_RESULTS" > "$TMP_ITEMS_DATA"
 
 # Now sort the items by importance (高 > 中 > 低) and then by title
 # We'll create a temporary file with sort key
