@@ -478,3 +478,8 @@
 - **事件**：在安装 anysearch-skill 时，我仅基于 GitHub 星数、更新时间和 README 外观进行判断，直接克隆仓库而未进行正式安全扫描。 [score=0.856 recalls=0 avg=0.620 source=memory/2026-06-09.md:7-7]
 <!-- openclaw-memory-promotion:memory:memory/2026-06-09.md:9:9 -->
 - **错误**：这违背了安全最佳实践。第三方 skill/plugin/MCP 工具不应仅凭表面指标安装，必须先审查代码、数据流向、依赖、许可证等风险点，并在安装前向用户报告潜在风险并等待确认。 [score=0.856 recalls=0 avg=0.620 source=memory/2026-06-09.md:9-9]
+
+## Promoted From Short-Term Memory (2026-06-16)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-06-09.md:24:24 -->
+- **后续行动**： [score=0.885 recalls=0 avg=0.620 source=memory/2026-06-09.md:24-24]
