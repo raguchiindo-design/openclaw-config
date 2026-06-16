@@ -1,15 +1,19 @@
 #!/bin/bash
 echo "DEBUG: Script started at $(date)" >&2
+echo "DEBUG: Past shebang" >&2
 # Daily AI Opportunity Radar script
 # Generates 20 items with titles, ~20-char points, meaning for Xiao Xue, and short links
 # Uses AnySearch, TinyURL, and simple scoring
+echo "DEBUG: Logging setup complete" >&2
 
 LOG_DIR="/home/ubuntu/.openclaw/logs"
 mkdir -p "$LOG_DIR"
 LOG_FILE="$LOG_DIR/ai_opportunity_radar_$(date +%Y%m%d).log"
 exec >>"$LOG_FILE" 2>&1
+echo "DEBUG: SOURCES defined" >&2
 
 echo "=== AI Opportunity Radar started at $(date) ==="
+echo "DEBUG: TMP_RESULTS created" >&2
 
 # Sources and max per source
 SOURCES=(
@@ -18,6 +22,7 @@ SOURCES=(
     "Agentic Daily:agenticdaily.ai"
     "The Batch:deeplearning.ai/the-batch"
     "Product Hunt AI:producthunt.com/topics/artificial-intelligence"
+echo "DEBUG: Search loop completed" >&2
     "Latent Space:latent.space"
     "Import AI:importai.net"
     "OpenAI Blog:openai.com/blog"
@@ -26,6 +31,7 @@ SOURCES=(
     "YC Work at a Startup:workatastartup.com"
     "Wellfound AI Jobs:wellfound.com"
 )
+echo "DEBUG: TMP_PARSED created" >&2
 MAX_PER_SOURCE=2
 TODAY=$(date +%Y-%m-%d)
 
@@ -34,6 +40,7 @@ TMP_RESULTS=$(mktemp)
 for pair in "${SOURCES[@]}"; do
     IFS=':' read -r NAME DOMAIN <<< "$pair"
     echo "Searching $NAME..."
+echo "DEBUG: Parsing loop completed" >&2
     python3 /home/ubuntu/.openclaw/workspace/skills/anysearch-skill/scripts/anysearch_cli.py search "site:$DOMAIN AI" --max_results $MAX_PER_SOURCE >> "$TMP_RESULTS" 2>&1
     sleep 0.4
 done
@@ -42,6 +49,7 @@ done
 TMP_PARSED=/tmp/tmp.ETmZBU4cLG
 while IFS= read -r line; do
     if [[ $line =~ ^\#\#\#[[:space:]]+[0-9]+\.[[:space:]]*(.+) ]]; then
+echo "DEBUG: TMP_ENRICHED created" >&2
         TITLE="${BASH_REMATCH[1]}"
         CURRENT_TITLE="$TITLE"
     elif [[ $line =~ ^\-\ \*\*URL\*\*\: ]]; then
@@ -52,12 +60,16 @@ while IFS= read -r line; do
         fi
     fi
 done < "$TMP_RESULTS"
+echo "DEBUG: Enrichment loop completed" >&2
 
 # Scoring function
 score_title() {
+echo "DEBUG: TMP_SORTED created" >&2
+echo "DEBUG: Sort completed" >&2
     local t="$1"
     local score=0
     local low=$(echo "$t" | tr '[:upper:]' '[:lower:]')
+echo "DEBUG: OUTPUT_FILE created" >&2
     # categories
     if [[ $low =~ (platform|agent|multi-agent|framework|sdk|api|launch|release|open\s+source|beta) ]]; then ((score++)); fi
     if [[ $low =~ (browser|ide|search|desktop\s+assistant|workflow|copilot|assistant|interface|ui|ux) ]]; then ((score++)); fi
@@ -68,11 +80,14 @@ score_title() {
     echo "$score"
 }
 
+echo "DEBUG: Output loop completed" >&2
 # Process each line
 TMP_ENRICHED=$(mktemp)
 while IFS='|' read -r TITLE URL; do
+echo "DEBUG: About to print final message" >&2
     if [[ -z "$TITLE" || -z "$URL" ]]; then continue; fi
     SCORE=$(score_title "$TITLE")
+echo "DEBUG: Script finished" >&2
     # Fetch snippet for points (first 200 chars of text)
     SNIPPET=$(curl -s --max-time 8 "$URL" | sed -e 's/<[^>]*>//g' | tr -s '[:space:]' ' ' | head -c 200)
     # Extract ~20 Chinese chars
