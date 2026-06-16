@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "DEBUG: Script started at $(date)" >&2
+echo "DEBUG: Script starting" >&2
 # Daily AI Opportunity Radar script
 # Generates 20 items with titles, ~20-char points, meaning for Xiao Xue, and short links
 # Uses AnySearch, TinyURL, and simple scoring
@@ -76,24 +76,13 @@ while IFS='|' read -r TITLE URL; do
     # Fetch snippet for points (first 200 chars of text)
     SNIPPET=$(curl -s --max-time 8 "$URL" | sed -e 's/<[^>]*>//g' | tr -s '[:space:]' ' ' | head -c 200)
     # Extract ~20 Chinese chars
-    # Extract ~20 Chinese chars
-    POINTS=$(echo "$SNIPPET" | grep -oP '[\x{4e00}-\x{9fff}]{20,}' | head -1 | cut -c1-20)
+    POINTS=$(echo "$SNIPPET" | grep -oE '[\u4e00-\u9fff]{20,}' | head -1 | cut -c1-20)
     if [[ -z "$POINTS" ]]; then
         # fallback: first 20 chars of title
         POINTS=$(echo "$TITLE" | cut -c1-20)
     fi
-    # URL-encode the URL for TinyURL API
-    if command -v jq >/dev/null 2>&1; then
-        URL_ENCODED=$(echo -n "$URL" | jq -sRr @uri 2>/dev/null) || URL_ENCODED=""
-    else
-        # Fallback URL encoding if jq is not available
-        URL_ENCODED=$(echo -n "$URL" | sed 's/[^a-zA-Z0-9.-]/_/g')
-    fi
-    if [[ -z "$URL_ENCODED" ]]; then
-        URL_ENCODED="$URL"
-    fi
-    # Call TinyURL API with timeout
-    SHORT=$(curl -s --max-time 5 "https://tinyurl.com/api-create.php?url=$URL_ENCODED" 2>/dev/null) || SHORT=""
+    MEANING="作为个人开发者，可关注此项以获取技术、工具或机会。"
+    SHORT=$(curl -s "https://tinyurl.com/api-create.php?url=$(echo -n "$URL" | jq -sRr @uri)" 2>/dev/null)
     if [[ ! "$SHORT" =~ ^http ]]; then
         SHORT="$URL"
     fi
@@ -131,3 +120,4 @@ fi
 
 echo "=== AI Opportunity Radar finished at $(date) ==="
 # Cleanup
+rm -f "$TMP_RESULTS" "$TMP_PARSED" "$TMP_ENRICHED" "$TMP_SORTED"
