@@ -40,8 +40,8 @@ done
 # Parse AnySearch output to get title and url
 TMP_PARSED=/tmp/tmp.ETmZBU4cLG
 while IFS= read -r line; do
-    if [[ $line =~ ^\#\#\ \ ([0-9]+)\.\ (.+) ]]; then
-        TITLE="${BASH_REMATCH[2]}"
+    if [[ $line =~ ^\#\#\#[[:space:]]+[0-9]+\.[[:space:]]*(.+) ]]; then
+        TITLE="${BASH_REMATCH[1]}"
         CURRENT_TITLE="$TITLE"
     elif [[ $line =~ ^\-\ \*\*URL\*\*\: ]]; then
         URL=$(echo "$line" | grep -oE 'https?://[^ ]+')
