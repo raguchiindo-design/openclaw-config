@@ -38,12 +38,12 @@ for pair in "${SOURCES[@]}"; do
 done
 
 # Parse AnySearch output to get title and url
-TMP_PARSED=/tmp/tmp.ETmZBU4cLG
+TMP_PARSED=$(mktemp)
 while IFS= read -r line; do
-    if [[ $line =~ ^\#\#\ \ ([0-9]+)\.\ (.+) ]]; then
+    if [[ $line =~ ^\ \ \ \ ([0-9]+)\.\ (.+) ]]; then
         TITLE="${BASH_REMATCH[2]}"
         CURRENT_TITLE="$TITLE"
-    elif [[ $line =~ ^\-\ \*\*URL\*\*\: ]]; then
+    elif [[ $line =~ ^\ \ \ \ -\ \*\*URL\*\*: ]]; then
         URL=$(echo "$line" | grep -oE 'https?://[^ ]+')
         if [[ -n "$CURRENT_TITLE" && -n "$URL" ]]; then
             echo "$CURRENT_TITLE|$URL" >> "$TMP_PARSED"
