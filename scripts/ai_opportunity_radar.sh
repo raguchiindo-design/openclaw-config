@@ -24,9 +24,9 @@ SOURCES=(
     "Google DeepMind Blog:deepmind.com/blog"
     "NVIDIA Blog:blogs.nvidia.com"
     "YC Work at a Startup:workatastartup.com"
-    "Wellfound AI Jobs:wellfound.com"
+    # "Wellfound AI Jobs:wellfound.com"
 )
-MAX_PER_SOURCE=2
+MAX_PER_SOURCE=1
 TODAY=$(date +%Y-%m-%d)
 
 # Temporary file for raw results
@@ -74,15 +74,15 @@ while IFS='|' read -r TITLE URL; do
     if [[ -z "$TITLE" || -z "$URL" ]]; then continue; fi
     SCORE=$(score_title "$TITLE")
     # Fetch snippet for points (first 200 chars of text)
-    SNIPPET=$(curl -s --max-time 8 "$URL" | sed -e 's/<[^>]*>//g' | tr -s '[:space:]' ' ' | head -c 200)
+    SNIPPET=$(curl -s --max-time 4 "$URL" | sed -e 's/<[^>]*>//g' | tr -s '[:space:]' ' ' | head -c 200)
     # Extract ~20 Chinese chars
-    POINTS=$(echo "$SNIPPET" | grep -oE '[\u4e00-\u9fff]{20,}' | head -1 | cut -c1-20)
+    POINTS=$(echo "$SNIPPET" | cut -c1-20)
     if [[ -z "$POINTS" ]]; then
         # fallback: first 20 chars of title
         POINTS=$(echo "$TITLE" | cut -c1-20)
     fi
     MEANING="作为个人开发者，可关注此项以获取技术、工具或机会。"
-    SHORT=$(curl -s "https://tinyurl.com/api-create.php?url=$(echo -n "$URL" | jq -sRr @uri)" 2>/dev/null)
+    SHORT=$(curl -s --max-time 5 --connect-timeout 5 "https://tinyurl.com/api-create.php?url=$(python3 -c \"import sys, urllib.parse; print(urllib.parse.quote(sys.argv[1]))\" \"$URL\")" 2>/dev/null)
     if [[ ! "$SHORT" =~ ^http ]]; then
         SHORT="$URL"
     fi
