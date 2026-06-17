@@ -15,16 +15,9 @@ echo "=== AI Opportunity Radar started at $(date) ==="
 SOURCES=(
     "TLDR AI:tldr.tech/ai"
     "The Rundown AI:rundown.ai"
-    "Agentic Daily:agenticdaily.ai"
-    "The Batch:deeplearning.ai/the-batch"
     "Product Hunt AI:producthunt.com/topics/artificial-intelligence"
-    "Latent Space:latent.space"
     "Import AI:importai.net"
-    "OpenAI Blog:openai.com/blog"
-    "Google DeepMind Blog:deepmind.com/blog"
-    "NVIDIA Blog:blogs.nvidia.com"
     "YC Work at a Startup:workatastartup.com"
-    # "Wellfound AI Jobs:wellfound.com"
 )
 MAX_PER_SOURCE=1
 TODAY=$(date +%Y-%m-%d)
@@ -34,8 +27,8 @@ TMP_RESULTS=$(mktemp)
 for pair in "${SOURCES[@]}"; do
     IFS=':' read -r NAME DOMAIN <<< "$pair"
     echo "Searching $NAME..."
-    python3 /home/ubuntu/.openclaw/workspace/skills/anysearch-skill/scripts/anysearch_cli.py search "site:$DOMAIN AI" --max_results $MAX_PER_SOURCE >> "$TMP_RESULTS" 2>&1
-    sleep 0.4
+    timeout 8 python3 /home/ubuntu/.openclaw/workspace/skills/anysearch-skill/scripts/anysearch_cli.py search "site:$DOMAIN AI" --max_results $MAX_PER_SOURCE >> "$TMP_RESULTS" 2>&1
+    sleep 0.2
 done
 
 # Parse AnySearch output to get title and url
@@ -82,7 +75,7 @@ while IFS='|' read -r TITLE URL; do
         POINTS=$(echo "$TITLE" | cut -c1-20)
     fi
     MEANING="作为个人开发者，可关注此项以获取技术、工具或机会。"
-    SHORT=$(curl -s --max-time 5 --connect-timeout 5 "https://tinyurl.com/api-create.php?url=$(python3 -c \"import sys, urllib.parse; print(urllib.parse.quote(sys.argv[1]))\" \"$URL\")" 2>/dev/null)
+    SHORT=$(python3 -c "import sys, urllib.request, urllib.parse; url = sys.argv[1]; req = urllib.request.Request('https://tinyurl.com/api-create.php?url=' + urllib.parse.quote(url)); resp = urllib.request.urlopen(req, timeout=5); print(resp.read().decode().strip())" "$URL" 2>/dev/null)
     if [[ ! "$SHORT" =~ ^http ]]; then
         SHORT="$URL"
     fi
