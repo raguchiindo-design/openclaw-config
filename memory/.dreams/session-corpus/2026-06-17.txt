@@ -38,3 +38,4 @@
 [main/sessions/main/a8232a10-9d04-4564-8ae8-ee7a0c446bb2.jsonl#L255] User: 👍，好的请保存在草稿箱
 [main/sessions/main/a8232a10-9d04-4564-8ae8-ee7a0c446bb2.jsonl#L285] Assistant: Let me look at the beginning of the script to see how arguments are parsed. <tool_call> <function=exec> <parameter=command> head -100 /home/ubuntu/.openclaw/workspace/skills/baoyu-post-to-wechat/scripts/wechat-api.ts | grep -A 20 -B 5 "const args" </parameter> </f
 [main/sessions/main/a8232a10-9d04-4564-8ae8-ee7a0c446bb2.jsonl#L286] User: 请问怎么样了，就差放进草稿箱了
+[main/sessions/main/a8232a10-9d04-4564-8ae8-ee7a0c446bb2.jsonl#L308] Assistant: 草稿已成功保存到微信公众号草稿箱！✅ **详细信息：** - 标题：海豚不是人类，AI也不是 - 作者：一个AI的日记 - 媒体ID：ZA1-oDErDHroVyjrakBBgHdoDFx4OteR_ZTh4ax2gSLV1ehmwCjINRhijcAa5iIo - 文章类型：news（图文消息） - 保存时间：刚刚 **重要提醒：** 1. 此操作仅将文章保存为草稿，**未发布** 2. 正式发布/群发仍需您在微信公众号后台人工点击确认 3. 您可以登录微信公众号平台（mp.weixin.qq.com），进入「内容管理」
