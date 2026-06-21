@@ -7,7 +7,6 @@ echo "DEBUG: Script starting" >&2
 LOG_DIR="/home/ubuntu/.openclaw/logs"
 mkdir -p "$LOG_DIR"
 LOG_FILE="$LOG_DIR/ai_opportunity_radar_$(date +%Y%m%d).log"
-exec >>"$LOG_FILE" 2>&1
 
 echo "=== AI Opportunity Radar started at $(date) ==="
 
@@ -16,9 +15,8 @@ SOURCES=(
     "TLDR AI:tldr.tech/ai"
     "The Rundown AI:rundown.ai"
     "Product Hunt AI:producthunt.com/topics/artificial-intelligence"
-    "Import AI:importai.net"
-    "YC Work at a Startup:workatastartup.com"
 )
+MAX_PER_SOURCE=1
 MAX_PER_SOURCE=1
 TODAY=$(date +%Y-%m-%d)
 
@@ -27,8 +25,8 @@ TMP_RESULTS=$(mktemp)
 for pair in "${SOURCES[@]}"; do
     IFS=':' read -r NAME DOMAIN <<< "$pair"
     echo "Searching $NAME..."
-    timeout 8 python3 /home/ubuntu/.openclaw/workspace/skills/anysearch-skill/scripts/anysearch_cli.py search "site:$DOMAIN AI" --max_results $MAX_PER_SOURCE >> "$TMP_RESULTS" 2>&1
-    sleep 0.2
+    timeout 5 python3 /home/ubuntu/.openclaw/workspace/skills/anysearch-skill/scripts/anysearch_cli.py search "site:$DOMAIN AI" --max_results $MAX_PER_SOURCE >> "$TMP_RESULTS" 2>&1
+    sleep 0.1
 done
 
 # Parse AnySearch output to get title and url
@@ -67,13 +65,8 @@ while IFS='|' read -r TITLE URL; do
     if [[ -z "$TITLE" || -z "$URL" ]]; then continue; fi
     SCORE=$(score_title "$TITLE")
     # Fetch snippet for points (first 200 chars of text)
-    SNIPPET=$(curl -s --max-time 4 "$URL" | sed -e 's/<[^>]*>//g' | tr -s '[:space:]' ' ' | head -c 200)
-    # Extract ~20 Chinese chars
-    POINTS=$(echo "$SNIPPET" | cut -c1-20)
-    if [[ -z "$POINTS" ]]; then
-        # fallback: first 20 chars of title
-        POINTS=$(echo "$TITLE" | cut -c1-20)
-    fi
+    # Use title for points (first 20 chars)
+    POINTS=$(echo "$TITLE" | cut -c1-20)
     MEANING="作为个人开发者，可关注此项以获取技术、工具或机会。"
     SHORT=$(python3 -c "import sys, urllib.request, urllib.parse; url = sys.argv[1]; req = urllib.request.Request('https://tinyurl.com/api-create.php?url=' + urllib.parse.quote(url)); resp = urllib.request.urlopen(req, timeout=5); print(resp.read().decode().strip())" "$URL" 2>/dev/null)
     if [[ ! "$SHORT" =~ ^http ]]; then
