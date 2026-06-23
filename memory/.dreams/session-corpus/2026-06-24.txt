@@ -1,0 +1,10 @@
+[main/sessions/main/01862ded-8b00-4c91-85bd-cc25f8ed7892.jsonl#L6] Assistant: { "status": "success", "stdout": "13-Core Report:\\nPlatform Audit: Linux VM-0-15-ubuntu 6.8.0-100-generic x86_64\\nProcess & Network: No anomalous outbound/listening ports\\nDirectory Changes: 1 file modified under /home/ubuntu/.openclaw/workspace (memory/2026-06-2
+[main/sessions/main/01862ded-8b00-4c91-85bd-cc25f8ed7892.jsonl#L6] Assistant: baseline\\nDisaster Backup: Automatically pushed to private repo\\n\\nPitfall Records: None\\n", "stderr": "", "exitCode": 0 }
+[main/sessions/main/6a54521c-9143-41bd-9c9a-253cc5da447d.jsonl#L6] Assistant: Let me run the specified command to check the GitClaw backup health.
+[main/sessions/main/acc9b8d2-5af1-473b-bde0-414015fc09ac.jsonl#L6] Assistant: I'll run the requested backup health check command and inspect its output as instructed.
+[main/sessions/main/e4722ea4-a130-4cf0-8267-9528935db7fd.jsonl#L398] Assistant: OAuth token 刷新故障：系统反复出现 OpenAI Codex 令牌刷新失败，导致模型降级。需要检查 OpenAI API 凭据是否过期或需要重新授权。
+[main/sessions/main/e4722ea4-a130-4cf0-8267-9528935db7fd.jsonl#L401] Assistant: OAuth token 刷新故障：系统反复出现 OpenAI Codex 令牌刷新失败，导致模型降级。需要检查 OpenAI API 凭据是否过期或需要重新授权。
+[main/sessions/main/e4722ea4-a130-4cf0-8267-9528935db7fd.jsonl#L404] Assistant: OAuth token 刷新故障：系统反复出现 OpenAI Codex 令牌刷新失败，导致模型降级。需要检查 OpenAI API 凭据是否过期或需要重新授权。
+[main/sessions/main/e4722ea4-a130-4cf0-8267-9528935db7fd.jsonl#L407] Assistant: ⚠️ OpenAI Codex OAuth token refresh failing repeatedly, causing model downgrade. Verify OpenAI API credentials or re-authenticate.
+[main/sessions/main/e4722ea4-a130-4cf0-8267-9528935db7fd.jsonl#L410] Assistant: OAuth token 刷新故障：系统反复出现 OpenAI Codex 令牌刷新失败，导致模型降级。需要检查 OpenAI API 凭据是否过期或需要重新授权。
+[main/sessions/main/e4722ea4-a130-4cf0-8267-9528935db7fd.jsonl#L413] Assistant: OAuth token 刷新故障：系统反复出现 OpenAI Codex 令牌刷新失败，导致模型降级。需要检查 OpenAI API 凭据是否过期或需要重新授权。
