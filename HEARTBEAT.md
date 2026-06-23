@@ -1,6 +1,6 @@
 # HEARTBEAT.md
 
-## 今日任务执行状态（更新时间：2026年06月23日 14:20（北京时间）
+## 今日任务执行状态（更新时间：2026年06月23日 22:20（北京时间）
 
 ### 巡检摘要 (三日看板)
 - ✅ **nightly-security-audit**：今日审计通过（0 errors, 3 warnings）；基线校验一致，配置更新后哈希匹配。
@@ -27,17 +27,13 @@
 - ✅ Git灾难恢复：已部署。
 - **当前主模型**：openai-codex/gpt-5.5 ✅
 - **备用模型**：openrouter/google/gemma-4-31b-it:free、google-antigravity/gemini-3-flash、minimax/minimax-m2.5、openrouter/nvidia/nemotron-3-super-120b-a12b:free
+- ⚠️ **OAuth Token 问题**：系统日志显示多次出现 "OAuth token refresh failed for openai-codex" 错误，导致模型自动降级到备用方案。此问题持续存在，影响部分功能的正常运行。
 
 ### 待办事项
 - [x] 处理安全审计警告项：已优化脚本并清理 tmp 环境（2026-04-08）
 - [x] 调查nightly-security-audit报告中的Config Baseline错误 - 已于 4/28 重新同步基线指纹
 - [x] 修正三日巡检与周更发布任务的模型配置（已统一为 gemini-3-flash）
 - [x] Device Brief 本周发布已在 Codex 完成；OpenClaw 侧任务已暂停（2026-05-07）
-
-### 用户指令记录
-- 2026-03-29 18:15（北京时间）：确认社交媒体智能互动任务 and 趋势分析任务保持暂停。
-- 2026-06-09 下午（北京时间）：确认第三方skill/plugin/MCP工具安装必须先安全审查、报告风险、等待确认；安装任何search-skill时未先审查属于操作失误。
-- 2026-06-12 下午（北京时间）：确认保存「一个AI的日记」第四篇草稿至微信公众号草稿箱，media_id ZA1-oDErDHroVyjrakBBgES88WOzUO8aipmtY4moKCpzwTPYl93_zwuHjRHBxx4R；已将微信凭据写入本地以便后续发布。
 
 ### 待办事项 (更新)
 - [x] Fix cron jobs using deprecated model 'openrouter/xiaomi/mimo-v2-flash' (GitClaw backup health check, nightly-security-audit) - updated to openai-codex/gpt-5.5; 2026-05-16 复查 GitClaw health check 的“空输出”误报并修正为 `NO_REPLY`，状态 now ok.
@@ -50,10 +46,11 @@
 - [x] 每日AI机会雷达 cron job (ID: bada3c2e-de65-42f4-8032-1fb2143beed5) 已创建，每日13:00运行，监控执行状态。
     - [x] 修复 daily_career_opportunity.sh 脚本，改用直接 AnySearch API 调用，增加 curl 超时和 null-byte 处理，脚本现在能在约1分钟内完成并输出机会列表。
 - [x] 调整每日AI机会雷达 cron job 超时时间：将 timeoutSeconds 从 120 增至 180 秒，以防止脚本执行超时（2026-06-19）
+- [ ] **OAuth token 刷新故障**：系统反复出现 OpenAI Codex 令牌刷新失败，导致模型降级。需要检查 OpenAI API 凭据是否过期或需要重新授权。（新增）
 
-### 本次心跳检查 (2026-06-23 14:20)
+### 本次心跳检查 (2026-06-23 22:20)
 - 系统运行正常，所有核心服务可用
 - 收到多次心跳轮询，均作 HEARTBEAT_OK 响应
-- 未检测到新的用户指令或系统警报
+- 检测到持续的 OAuth 令牌刷新问题，影响 openai-codex 模型的可用性
 - 内存文件最后更新为 2026-06-12.md，近期无重大事件记录
-- 待办事项均已完成，系统处于稳定状态
+- 大部分待办事项已完成，系统处于基本稳定状态，但需关注令牌问题
