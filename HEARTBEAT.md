@@ -46,7 +46,7 @@
 - [x] 每日AI机会雷达 cron job (ID: bada3c2e-de65-42f4-8032-1fb2143beed5) 已创建，每日13:00运行，监控执行状态。
     - [x] 修复 daily_career_opportunity.sh 脚本，改用直接 AnySearch API 调用，增加 curl 超时和 null-byte 处理，脚本现在能在约1分钟内完成并输出机会列表。
 - [x] 调整每日AI机会雷达 cron job 超时时间：将 timeoutSeconds 从 120 增至 180 秒，以防止脚本执行超时（2026-06-19）
-- [ ] **OAuth token 刷新故障**：系统反复出现 OpenAI Codex 令牌刷新失败，导致模型降级。需要检查 OpenAI API 凭据是否过期或需要重新授权。（已在心跳中报告，待用户处理）
+- [ ] **OAuth token 刷新故障**：系统反复出现 OpenAI Codex 令牌刷新失败，导致模型降级。需要检查 OpenAI API 凭据是否过期或需要重新授权。（已在心跳中报告，待用户处理） [最后检查: 2026-06-24 21:19:26 CST]
 
 ### 本次心跳检查 (2026年06月24日 07:49)
 - 系统运行正常，所有核心服务可用
