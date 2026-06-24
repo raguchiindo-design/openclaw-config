@@ -15,10 +15,18 @@ echo "=== AI Opportunity Radar started at $(date) ==="
 SOURCES=(
     "TLDR AI:tldr.tech/ai"
     "The Rundown AI:rundown.ai"
+    "Agentic Daily:agenticdaily.ai"
+    "The Batch:deeplearning.ai/the-batch"
     "Product Hunt AI:producthunt.com/topics/artificial-intelligence"
+    "Latent Space:latent.space"
+    "Import AI:importai.net"
+    "OpenAI Blog:openai.com/blog"
+    "Google DeepMind Blog:deepmind.com/blog"
+    "NVIDIA Blog:blogs.nvidia.com"
+    "YC Work at a Startup:workatastartup.com"
+    "Wellfound AI Jobs:wellfound.com"
 )
-MAX_PER_SOURCE=1
-MAX_PER_SOURCE=1
+MAX_PER_SOURCE=2
 TODAY=$(date +%Y-%m-%d)
 
 # Temporary file for raw results
