@@ -1,0 +1,3 @@
+[main/sessions/main/4907f874-02be-4152-854a-3f003eecd961.jsonl#L6] Assistant: [agent:main] Invoking tool exec with command bash ~/.openclaw/workspace/scripts/nightly-security-audit.sh [exec progress: bash ~/.openclaw/workspace/scripts/nightly-security-audit.sh] Sending Ctrl+C to terminate the command...Command exited with status 130: Terminat
+[main/sessions/main/98c7fcab-8fde-48b4-a485-c73a44106986.jsonl#L6] Assistant: 我现在要执行备份健康检查脚本，按照您的指示运行特定命令并检查其输出。
+[main/sessions/main/fd783475-e9e2-4696-beb9-283690aaae80.jsonl#L6] Assistant: I'll run the specified backup health check command and inspect its output.
