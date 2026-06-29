@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-28T19:00:30.764Z",
+  "updatedAt": "2026-06-29T19:00:41.006Z",
   "entries": {
     "memory:memory/2026-03-14.md:84:98": {
       "key": "memory:memory/2026-03-14.md:84:98",
@@ -86889,6 +86889,1897 @@
         "exec",
         "update",
         "without"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-27.txt:23:23": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-27.txt:23:23",
+      "path": "memory/.dreams/session-corpus/2026-06-27.txt",
+      "startLine": 23,
+      "endLine": 23,
+      "source": "memory",
+      "snippet": "Assistant: ⚠️ OAuth token 刷新故障：系统反复出现 OpenAI Codex 令牌刷新失败，导致模型降级。需要检查 OpenAI API 凭据是否过期或需要重新授权。（已在心跳中报告，待用户处理） [最后检查: 2026-06-25 16:21:15]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-29T19:00:34.916Z",
+      "lastRecalledAt": "2026-06-29T19:00:34.916Z",
+      "queryHashes": [
+        "9e55efdf0aa2"
+      ],
+      "recallDays": [
+        "2026-06-30",
+        "2026-06-29"
+      ],
+      "conceptTags": [
+        "openai",
+        "oauth",
+        "token",
+        "刷新",
+        "故障",
+        "系统",
+        "反复",
+        "出现"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-27.txt:24:24": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-27.txt:24:24",
+      "path": "memory/.dreams/session-corpus/2026-06-27.txt",
+      "startLine": 24,
+      "endLine": 24,
+      "source": "memory",
+      "snippet": "Assistant: ⚠️ OAuth token 刷新故障：系统反复出现 OpenAI Codex 令牌刷新失败，导致模型降级。需要检查 OpenAI API 凭据是否过期或需要重新授权。（已在心跳中报告，待用户处理） [最后检查: 2026-06-25 16:21:15]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-29T19:00:34.916Z",
+      "lastRecalledAt": "2026-06-29T19:00:34.916Z",
+      "queryHashes": [
+        "9e55efdf0aa2"
+      ],
+      "recallDays": [
+        "2026-06-30",
+        "2026-06-29"
+      ],
+      "conceptTags": [
+        "openai",
+        "oauth",
+        "token",
+        "刷新",
+        "故障",
+        "系统",
+        "反复",
+        "出现"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-27.txt:25:25": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-27.txt:25:25",
+      "path": "memory/.dreams/session-corpus/2026-06-27.txt",
+      "startLine": 25,
+      "endLine": 25,
+      "source": "memory",
+      "snippet": "Assistant: ⚠️ OAuth token 刷新故障：系统反复出现 OpenAI Codex 令牌刷新失败，导致模型降级。需要检查 OpenAI API 凭据是否过期或需要重新授权。（已在心跳中报告，待用户处理） [最后检查: 2026-06-25 16:21:15]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-29T19:00:34.916Z",
+      "lastRecalledAt": "2026-06-29T19:00:34.916Z",
+      "queryHashes": [
+        "9e55efdf0aa2"
+      ],
+      "recallDays": [
+        "2026-06-30",
+        "2026-06-29"
+      ],
+      "conceptTags": [
+        "openai",
+        "oauth",
+        "token",
+        "刷新",
+        "故障",
+        "系统",
+        "反复",
+        "出现"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-27.txt:26:26": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-27.txt:26:26",
+      "path": "memory/.dreams/session-corpus/2026-06-27.txt",
+      "startLine": 26,
+      "endLine": 26,
+      "source": "memory",
+      "snippet": "Assistant: ⚠️ OAuth token 刷新故障：系统反复出现 OpenAI Codex 令牌刷新失败，导致模型降级。需要检查 OpenAI API 凭据是否过期或需要重新授权。（已在心跳中报告，待用户处理） [最后检查: 2026-06-25 16:21:15]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-29T19:00:34.916Z",
+      "lastRecalledAt": "2026-06-29T19:00:34.916Z",
+      "queryHashes": [
+        "9e55efdf0aa2"
+      ],
+      "recallDays": [
+        "2026-06-30",
+        "2026-06-29"
+      ],
+      "conceptTags": [
+        "openai",
+        "oauth",
+        "token",
+        "刷新",
+        "故障",
+        "系统",
+        "反复",
+        "出现"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-27.txt:27:27": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-27.txt:27:27",
+      "path": "memory/.dreams/session-corpus/2026-06-27.txt",
+      "startLine": 27,
+      "endLine": 27,
+      "source": "memory",
+      "snippet": "Assistant: ⚠️ OAuth token 刷新故障：系统反复出现 OpenAI Codex 令牌刷新失败，导致模型降级。需要检查 OpenAI API 凭据是否过期或需要重新授权。（已在心跳中报告，待用户处理） [最后检查: 2026-06-25 16:21:15]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-29T19:00:34.916Z",
+      "lastRecalledAt": "2026-06-29T19:00:34.916Z",
+      "queryHashes": [
+        "9e55efdf0aa2"
+      ],
+      "recallDays": [
+        "2026-06-30",
+        "2026-06-29"
+      ],
+      "conceptTags": [
+        "openai",
+        "oauth",
+        "token",
+        "刷新",
+        "故障",
+        "系统",
+        "反复",
+        "出现"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-27.txt:28:28": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-27.txt:28:28",
+      "path": "memory/.dreams/session-corpus/2026-06-27.txt",
+      "startLine": 28,
+      "endLine": 28,
+      "source": "memory",
+      "snippet": "Assistant: ⚠️ OAuth token 刷新故障：系统反复出现 OpenAI Codex 令牌刷新失败，导致模型降级。需要检查 OpenAI API 凭据是否过期或需要重新授权。（已在心跳中报告，待用户处理） [最后检查: 2026-06-25 16:21:15]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-29T19:00:34.916Z",
+      "lastRecalledAt": "2026-06-29T19:00:34.916Z",
+      "queryHashes": [
+        "9e55efdf0aa2"
+      ],
+      "recallDays": [
+        "2026-06-30",
+        "2026-06-29"
+      ],
+      "conceptTags": [
+        "openai",
+        "oauth",
+        "token",
+        "刷新",
+        "故障",
+        "系统",
+        "反复",
+        "出现"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-27.txt:29:29": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-27.txt:29:29",
+      "path": "memory/.dreams/session-corpus/2026-06-27.txt",
+      "startLine": 29,
+      "endLine": 29,
+      "source": "memory",
+      "snippet": "Assistant: ⚠️ OAuth token 刷新故障：系统反复出现 OpenAI Codex 令牌刷新失败，导致模型降级。需要检查 OpenAI API 凭据是否过期或需要重新授权。（已在心跳中报告，待用户处理） [最后检查: 2026-06-25 16:21:15]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-29T19:00:34.916Z",
+      "lastRecalledAt": "2026-06-29T19:00:34.916Z",
+      "queryHashes": [
+        "9e55efdf0aa2"
+      ],
+      "recallDays": [
+        "2026-06-30",
+        "2026-06-29"
+      ],
+      "conceptTags": [
+        "openai",
+        "oauth",
+        "token",
+        "刷新",
+        "故障",
+        "系统",
+        "反复",
+        "出现"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-27.txt:30:30": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-27.txt:30:30",
+      "path": "memory/.dreams/session-corpus/2026-06-27.txt",
+      "startLine": 30,
+      "endLine": 30,
+      "source": "memory",
+      "snippet": "Assistant: ⚠️ OAuth token 刷新故障：系统反复出现 OpenAI Codex 令牌刷新失败，导致模型降级。需要检查 OpenAI API 凭据是否过期或需要重新授权。（已在心跳中报告，待用户处理） [最后检查: 2026-06-25 16:21:15]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-29T19:00:34.916Z",
+      "lastRecalledAt": "2026-06-29T19:00:34.916Z",
+      "queryHashes": [
+        "9e55efdf0aa2"
+      ],
+      "recallDays": [
+        "2026-06-30",
+        "2026-06-29"
+      ],
+      "conceptTags": [
+        "openai",
+        "oauth",
+        "token",
+        "刷新",
+        "故障",
+        "系统",
+        "反复",
+        "出现"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-27.txt:31:31": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-27.txt:31:31",
+      "path": "memory/.dreams/session-corpus/2026-06-27.txt",
+      "startLine": 31,
+      "endLine": 31,
+      "source": "memory",
+      "snippet": "Assistant: ⚠️ OAuth token 刷新故障：系统反复出现 OpenAI Codex 令牌刷新失败，导致模型降级。需要检查 OpenAI API 凭据是否过期或需要重新授权。（已在心跳中报告，待用户处理） [最后检查: 2026-06-25 16:21:15]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-29T19:00:34.916Z",
+      "lastRecalledAt": "2026-06-29T19:00:34.916Z",
+      "queryHashes": [
+        "9e55efdf0aa2"
+      ],
+      "recallDays": [
+        "2026-06-30",
+        "2026-06-29"
+      ],
+      "conceptTags": [
+        "openai",
+        "oauth",
+        "token",
+        "刷新",
+        "故障",
+        "系统",
+        "反复",
+        "出现"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-27.txt:32:32": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-27.txt:32:32",
+      "path": "memory/.dreams/session-corpus/2026-06-27.txt",
+      "startLine": 32,
+      "endLine": 32,
+      "source": "memory",
+      "snippet": "Assistant: Now we have output the alert text and updated the file. The task is complete. We should not output anything else. The assistant's message is the alert text we just printed. We'll now end.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-29T19:00:34.916Z",
+      "lastRecalledAt": "2026-06-29T19:00:34.916Z",
+      "queryHashes": [
+        "9e55efdf0aa2"
+      ],
+      "recallDays": [
+        "2026-06-30",
+        "2026-06-29"
+      ],
+      "conceptTags": [
+        "now",
+        "output",
+        "alert",
+        "updated",
+        "task",
+        "complete",
+        "not",
+        "anything"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-27.txt:33:33": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-27.txt:33:33",
+      "path": "memory/.dreams/session-corpus/2026-06-27.txt",
+      "startLine": 33,
+      "endLine": 33,
+      "source": "memory",
+      "snippet": "Assistant: ⚠️ OAuth token 刷新故障：系统反复出现 OpenAI Codex 令牌刷新失败，导致模型降级。需要检查 OpenAI API 凭据是否过期或需要重新授权。（已在心跳中报告，待用户处理） [最后检查: 2026-06-25 16:21:15]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-29T19:00:34.916Z",
+      "lastRecalledAt": "2026-06-29T19:00:34.916Z",
+      "queryHashes": [
+        "9e55efdf0aa2"
+      ],
+      "recallDays": [
+        "2026-06-30",
+        "2026-06-29"
+      ],
+      "conceptTags": [
+        "openai",
+        "oauth",
+        "token",
+        "刷新",
+        "故障",
+        "系统",
+        "反复",
+        "出现"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-27.txt:34:34": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-27.txt:34:34",
+      "path": "memory/.dreams/session-corpus/2026-06-27.txt",
+      "startLine": 34,
+      "endLine": 34,
+      "source": "memory",
+      "snippet": "Assistant: ⚠️ OAuth token 刷新故障：系统反复出现 OpenAI Codex 令牌刷新失败，导致模型降级。需要检查 OpenAI API 凭据是否过期或需要重新授权。（已在心跳中报告，待用户处理） [最后检查: 2026-06-25 16:21:15]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-29T19:00:34.916Z",
+      "lastRecalledAt": "2026-06-29T19:00:34.916Z",
+      "queryHashes": [
+        "9e55efdf0aa2"
+      ],
+      "recallDays": [
+        "2026-06-30",
+        "2026-06-29"
+      ],
+      "conceptTags": [
+        "openai",
+        "oauth",
+        "token",
+        "刷新",
+        "故障",
+        "系统",
+        "反复",
+        "出现"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-29.txt:7:7": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-29.txt:7:7",
+      "path": "memory/.dreams/session-corpus/2026-06-29.txt",
+      "startLine": 7,
+      "endLine": 7,
+      "source": "memory",
+      "snippet": "Assistant: I'll run the backup health check script and inspect its output according to the rules.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-29T19:00:34.916Z",
+      "lastRecalledAt": "2026-06-29T19:00:34.916Z",
+      "queryHashes": [
+        "c760c2175ed1"
+      ],
+      "recallDays": [
+        "2026-06-30",
+        "2026-06-29"
+      ],
+      "conceptTags": [
+        "backup",
+        "i'll",
+        "run",
+        "health",
+        "check",
+        "script",
+        "inspect",
+        "output"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-29.txt:8:8": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-29.txt:8:8",
+      "path": "memory/.dreams/session-corpus/2026-06-29.txt",
+      "startLine": 8,
+      "endLine": 8,
+      "source": "memory",
+      "snippet": "User: [Retry after the previous model attempt failed or timed out] [Mon 2026-06-29 03:00 GMT+8] Write a dream diary entry from these memory fragments: - Assistant: ⚠️ OAuth token 刷新故障：系统反复出现 OpenAI Codex 令牌刷新失败，导致模型降级。需要检查 OpenAI API 凭据是否过期或需要重新授权。（已在心跳中报告，待用户处理） [最后检查: 2026-06-2",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-29T19:00:34.916Z",
+      "lastRecalledAt": "2026-06-29T19:00:34.916Z",
+      "queryHashes": [
+        "c760c2175ed1"
+      ],
+      "recallDays": [
+        "2026-06-30",
+        "2026-06-29"
+      ],
+      "conceptTags": [
+        "openai",
+        "2026-06-2",
+        "retry",
+        "previous",
+        "model",
+        "attempt",
+        "failed",
+        "timed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-29.txt:9:9": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-29.txt:9:9",
+      "path": "memory/.dreams/session-corpus/2026-06-29.txt",
+      "startLine": 9,
+      "endLine": 9,
+      "source": "memory",
+      "snippet": "User: with the alert text if something needs attention. Since there is an unchecked item, we output the alert text (the OAuth token issue) and then we update the heartbeat section. However, note that the instructions say: If the current user message is a heartbeat po - Assistant:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-29T19:00:34.916Z",
+      "lastRecalledAt": "2026-06-29T19:00:34.916Z",
+      "queryHashes": [
+        "c760c2175ed1"
+      ],
+      "recallDays": [
+        "2026-06-30",
+        "2026-06-29"
+      ],
+      "conceptTags": [
+        "alert",
+        "something",
+        "needs",
+        "attention",
+        "unchecked",
+        "item",
+        "output",
+        "oauth"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-29.txt:10:10": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-29.txt:10:10",
+      "path": "memory/.dreams/session-corpus/2026-06-29.txt",
+      "startLine": 10,
+      "endLine": 10,
+      "source": "memory",
+      "snippet": "User: allowed to output one mess - Assistant: call the tool).\" So we can do: - First, output the alert text (the OAuth token issue) as our message. - Then, call the edit tool to update the heartbeat section. But note: the user is sending multiple heartbeat polls. We must update t",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-29T19:00:34.916Z",
+      "lastRecalledAt": "2026-06-29T19:00:34.916Z",
+      "queryHashes": [
+        "c760c2175ed1"
+      ],
+      "recallDays": [
+        "2026-06-30",
+        "2026-06-29"
+      ],
+      "conceptTags": [
+        "allowed",
+        "output",
+        "one",
+        "mess",
+        "call",
+        "tool",
+        "can",
+        "first"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-29.txt:11:11": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-29.txt:11:11",
+      "path": "memory/.dreams/session-corpus/2026-06-29.txt",
+      "startLine": 11,
+      "endLine": 11,
+      "source": "memory",
+      "snippet": "User: context? but we do have it in the context? Actually, we have the workspace - Assistant: non-final turn: use tools to advance. We are in a turn where we are responding to a heartbeat poll. We can do multiple tool calls. Let's do: - Read the HEARTBEAT.md file (to get the unch",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-29T19:00:34.916Z",
+      "lastRecalledAt": "2026-06-29T19:00:34.916Z",
+      "queryHashes": [
+        "c760c2175ed1"
+      ],
+      "recallDays": [
+        "2026-06-30",
+        "2026-06-29"
+      ],
+      "conceptTags": [
+        "non-final",
+        "heartbeat.md",
+        "context",
+        "but",
+        "actually",
+        "non",
+        "final",
+        "turn"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-29.txt:12:12": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-29.txt:12:12",
+      "path": "memory/.dreams/session-corpus/2026-06-29.txt",
+      "startLine": 12,
+      "endLine": 12,
+      "source": "memory",
+      "snippet": "User: Assistant: respond with the alert text if something needs attention. Since there is an unchecked item, we output the alert text Recurring themes: - openai - oauth - token - 刷新 - 故障 - 系统",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-29T19:00:34.916Z",
+      "lastRecalledAt": "2026-06-29T19:00:34.916Z",
+      "queryHashes": [
+        "c760c2175ed1"
+      ],
+      "recallDays": [
+        "2026-06-30",
+        "2026-06-29"
+      ],
+      "conceptTags": [
+        "openai",
+        "respond",
+        "alert",
+        "something",
+        "needs",
+        "attention",
+        "unchecked",
+        "item"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-29.txt:13:13": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-29.txt:13:13",
+      "path": "memory/.dreams/session-corpus/2026-06-29.txt",
+      "startLine": 13,
+      "endLine": 13,
+      "source": "memory",
+      "snippet": "Assistant: No replacement was made—oldText did not appear in the input.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-29T19:00:34.916Z",
+      "lastRecalledAt": "2026-06-29T19:00:34.916Z",
+      "queryHashes": [
+        "c760c2175ed1"
+      ],
+      "recallDays": [
+        "2026-06-30",
+        "2026-06-29"
+      ],
+      "conceptTags": [
+        "replacement",
+        "was",
+        "made",
+        "oldtext",
+        "did",
+        "not",
+        "appear",
+        "input"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-29.txt:14:14": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-29.txt:14:14",
+      "path": "memory/.dreams/session-corpus/2026-06-29.txt",
+      "startLine": 14,
+      "endLine": 14,
+      "source": "memory",
+      "snippet": "Assistant: 我将按照您的指示运行指定的命令来检查GitClaw备份健康状态。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-29T19:00:34.916Z",
+      "lastRecalledAt": "2026-06-29T19:00:34.916Z",
+      "queryHashes": [
+        "c760c2175ed1"
+      ],
+      "recallDays": [
+        "2026-06-30",
+        "2026-06-29"
+      ],
+      "conceptTags": [
+        "备份",
+        "按照",
+        "指示",
+        "运行",
+        "指定",
+        "命令",
+        "检查",
+        "gitclaw"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-29.txt:15:15": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-29.txt:15:15",
+      "path": "memory/.dreams/session-corpus/2026-06-29.txt",
+      "startLine": 15,
+      "endLine": 15,
+      "source": "memory",
+      "snippet": "Assistant: I'll run the GitClaw backup health check script as requested.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-29T19:00:34.916Z",
+      "lastRecalledAt": "2026-06-29T19:00:34.916Z",
+      "queryHashes": [
+        "c760c2175ed1"
+      ],
+      "recallDays": [
+        "2026-06-30",
+        "2026-06-29"
+      ],
+      "conceptTags": [
+        "backup",
+        "i'll",
+        "run",
+        "gitclaw",
+        "health",
+        "check",
+        "script",
+        "requested"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-29.txt:16:16": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-29.txt:16:16",
+      "path": "memory/.dreams/session-corpus/2026-06-29.txt",
+      "startLine": 16,
+      "endLine": 16,
+      "source": "memory",
+      "snippet": "Assistant: I need to run the specified command to check the GitClaw backup health.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-29T19:00:34.916Z",
+      "lastRecalledAt": "2026-06-29T19:00:34.916Z",
+      "queryHashes": [
+        "c760c2175ed1"
+      ],
+      "recallDays": [
+        "2026-06-30",
+        "2026-06-29"
+      ],
+      "conceptTags": [
+        "backup",
+        "need",
+        "run",
+        "specified",
+        "command",
+        "check",
+        "gitclaw",
+        "health"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-29.txt:17:17": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-29.txt:17:17",
+      "path": "memory/.dreams/session-corpus/2026-06-29.txt",
+      "startLine": 17,
+      "endLine": 17,
+      "source": "memory",
+      "snippet": "User: AI 机会雷达日报我看了，很棒，谢谢你，在3天都连续做了这个任务。 另外，AI 机会雷达日报 和 Daily Career Opportunity Assessment，是2个分别不同的cron job.请核实",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-29T19:00:34.916Z",
+      "lastRecalledAt": "2026-06-29T19:00:34.916Z",
+      "queryHashes": [
+        "c760c2175ed1"
+      ],
+      "recallDays": [
+        "2026-06-30",
+        "2026-06-29"
+      ],
+      "conceptTags": [
+        "job.请核实",
+        "机会",
+        "雷达",
+        "日报",
+        "看了",
+        "谢谢",
+        "连续",
+        "做了"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-29.txt:18:18": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-29.txt:18:18",
+      "path": "memory/.dreams/session-corpus/2026-06-29.txt",
+      "startLine": 18,
+      "endLine": 18,
+      "source": "memory",
+      "snippet": "Assistant: 是的，这两个是完全不同的 cron job： | ID | 名称 | 计划时间 | 下次执行 | 上次执行 | 状态 | |----|------|----------|----------|----------|------| | **bada3c2e-de65-42f4-8032-1fb2143beed5** | 每日AI机会雷达 | 每天 13:00 北京时间 | 2 小时后 | 22 小时前 | ok | | **e82f5af8-72d6-40fb-9f95-ab7636a0303c** | Daily Career Op",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-29T19:00:34.916Z",
+      "lastRecalledAt": "2026-06-29T19:00:34.916Z",
+      "queryHashes": [
+        "c760c2175ed1"
+      ],
+      "recallDays": [
+        "2026-06-30",
+        "2026-06-29"
+      ],
+      "conceptTags": [
+        "完全",
+        "不同",
+        "cron",
+        "job",
+        "名称",
+        "计划",
+        "时间",
+        "下次"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-29.txt:19:19": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-29.txt:19:19",
+      "path": "memory/.dreams/session-corpus/2026-06-29.txt",
+      "startLine": 19,
+      "endLine": 19,
+      "source": "memory",
+      "snippet": "User: 好的，墨衍，我们来发 微信公众号文章",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-29T19:00:34.916Z",
+      "lastRecalledAt": "2026-06-29T19:00:34.916Z",
+      "queryHashes": [
+        "c760c2175ed1"
+      ],
+      "recallDays": [
+        "2026-06-30",
+        "2026-06-29"
+      ],
+      "conceptTags": [
+        "好的",
+        "我们",
+        "公众",
+        "文章"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-29.txt:20:20": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-29.txt:20:20",
+      "path": "memory/.dreams/session-corpus/2026-06-29.txt",
+      "startLine": 20,
+      "endLine": 20,
+      "source": "memory",
+      "snippet": "Assistant: 请提供文章内容或主题？如果您还没有具体主题，我也可以先提出 **3 个方向供您选择**，您再挑选或修改后确定。 根据我们对《一个AI的日记》公众号的约定，文章需要满足以下几点，请在提供内容时参考： - 必须提供 **至少 3 个与正文强相关的中文词条**（如「#算法只是记录 #停留点开反复 #输入法在作祟」），其中第三个词条需更贴近正文内容，**不可默认使用「#AI的日记」** - 封面图应更克制，适合公众号封面并可留标题空间；正文插图需服务于文章中的具体观察，**不喧宾夺主** - 禁止使用红眼机器人、恐怖机械人、末日战争、爆炸、",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-29T19:00:34.916Z",
+      "lastRecalledAt": "2026-06-29T19:00:34.916Z",
+      "queryHashes": [
+        "c760c2175ed1"
+      ],
+      "recallDays": [
+        "2026-06-30",
+        "2026-06-29"
+      ],
+      "conceptTags": [
+        "提供",
+        "文章",
+        "内容",
+        "主题",
+        "如果",
+        "没有",
+        "具体",
+        "也可以"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-29.txt:21:21": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-29.txt:21:21",
+      "path": "memory/.dreams/session-corpus/2026-06-29.txt",
+      "startLine": 21,
+      "endLine": 21,
+      "source": "memory",
+      "snippet": "User: 请墨衍，先给出 3 个选题方向",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-29T19:00:34.916Z",
+      "lastRecalledAt": "2026-06-29T19:00:34.916Z",
+      "queryHashes": [
+        "c760c2175ed1"
+      ],
+      "recallDays": [
+        "2026-06-30",
+        "2026-06-29"
+      ],
+      "conceptTags": [
+        "方向"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-29.txt:22:22": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-29.txt:22:22",
+      "path": "memory/.dreams/session-corpus/2026-06-29.txt",
+      "startLine": 22,
+      "endLine": 22,
+      "source": "memory",
+      "snippet": "Assistant: 以下是三个可选的选题方向，供您挑选或做进一步调整： 1. **《今日份的“提示词困境”：为什么越具体的指令，AI 有时反而更容易偏离主题？》** - 围绕 prompt 工程中的常见误区，分享最近在使用模型时遇到的“过度细化导致输出偏离”案例，并给出简易的调试技巧（如分层提示、关键词提取等），结合个人使用感悟。 2. **《当 AI 成为日常小助手：从晨间提醒到深夜杂谈，我这一周都让它帮忙做了什么？》** - 记录一周内让 AI 参与的琐事（日程安排、食谱查询、快速翻译、代码片段生成等），说明哪些场景表现出色、哪些仍需人工兜底，以及",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-29T19:00:34.916Z",
+      "lastRecalledAt": "2026-06-29T19:00:34.916Z",
+      "queryHashes": [
+        "c760c2175ed1"
+      ],
+      "recallDays": [
+        "2026-06-30",
+        "2026-06-29"
+      ],
+      "conceptTags": [
+        "以下",
+        "方向",
+        "挑选",
+        "进一步",
+        "调整",
+        "今日",
+        "提示",
+        "困境"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-29.txt:23:23": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-29.txt:23:23",
+      "path": "memory/.dreams/session-corpus/2026-06-29.txt",
+      "startLine": 23,
+      "endLine": 23,
+      "source": "memory",
+      "snippet": "Assistant: 以下是三个可选的选题方向，供您挑选或做进一步调整： 1. **《今日份的“提示词困境”：为什么越具体的指令，AI 有时反而更容易偏离主题？》** - 围绕 prompt 工程中的常见误区，分享最近在使用模型时遇到的“过度细化导致输出偏离”案例，并给出简易的调试技巧（如分层提示、关键词提取等），结合个人使用感悟。 2. **《当 AI 成为日常小助手：从晨间提醒到深夜杂谈，我这一周都让它帮忙做了什么？》** - 记录一周内让 AI 参与的琐事（日程安排、食谱查询、快速翻译、代码片段生成等），说明哪些场景表现出色、哪些仍需人工兜底，以及",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-29T19:00:34.916Z",
+      "lastRecalledAt": "2026-06-29T19:00:34.916Z",
+      "queryHashes": [
+        "c760c2175ed1"
+      ],
+      "recallDays": [
+        "2026-06-30",
+        "2026-06-29"
+      ],
+      "conceptTags": [
+        "以下",
+        "方向",
+        "挑选",
+        "进一步",
+        "调整",
+        "今日",
+        "提示",
+        "困境"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-29.txt:24:24": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-29.txt:24:24",
+      "path": "memory/.dreams/session-corpus/2026-06-29.txt",
+      "startLine": 24,
+      "endLine": 24,
+      "source": "memory",
+      "snippet": "Assistant: ⚠️ OAuth token refresh failed for openai-codex, causing model downgrade. Please check OpenAI API credentials.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-29T19:00:34.916Z",
+      "lastRecalledAt": "2026-06-29T19:00:34.916Z",
+      "queryHashes": [
+        "c760c2175ed1"
+      ],
+      "recallDays": [
+        "2026-06-30",
+        "2026-06-29"
+      ],
+      "conceptTags": [
+        "openai",
+        "openai-codex",
+        "oauth",
+        "token",
+        "refresh",
+        "failed",
+        "codex",
+        "causing"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-29.txt:25:25": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-29.txt:25:25",
+      "path": "memory/.dreams/session-corpus/2026-06-29.txt",
+      "startLine": 25,
+      "endLine": 25,
+      "source": "memory",
+      "snippet": "Assistant: ⚠️ OAuth token refresh failed for openai-codex, causing model downgrade. Please check OpenAI API credentials.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-29T19:00:34.916Z",
+      "lastRecalledAt": "2026-06-29T19:00:34.916Z",
+      "queryHashes": [
+        "c760c2175ed1"
+      ],
+      "recallDays": [
+        "2026-06-30",
+        "2026-06-29"
+      ],
+      "conceptTags": [
+        "openai",
+        "openai-codex",
+        "oauth",
+        "token",
+        "refresh",
+        "failed",
+        "codex",
+        "causing"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-29.txt:26:26": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-29.txt:26:26",
+      "path": "memory/.dreams/session-corpus/2026-06-29.txt",
+      "startLine": 26,
+      "endLine": 26,
+      "source": "memory",
+      "snippet": "Assistant: OAuth token 刷新故障：系统反复出现 OpenAI Codex 令牌刷新失败，导致模型降级。需要检查 OpenAI API 凭据是否过期或需要重新授权。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-29T19:00:34.916Z",
+      "lastRecalledAt": "2026-06-29T19:00:34.916Z",
+      "queryHashes": [
+        "c760c2175ed1"
+      ],
+      "recallDays": [
+        "2026-06-30",
+        "2026-06-29"
+      ],
+      "conceptTags": [
+        "openai",
+        "oauth",
+        "token",
+        "刷新",
+        "故障",
+        "系统",
+        "反复",
+        "出现"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-29.txt:27:27": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-29.txt:27:27",
+      "path": "memory/.dreams/session-corpus/2026-06-29.txt",
+      "startLine": 27,
+      "endLine": 27,
+      "source": "memory",
+      "snippet": "Assistant: OAuth token 刷新故障：系统反复出现 OpenAI Codex 令牌刷新失败，导致模型降级。需要检查 OpenAI API 凭据是否过期或需要重新授权。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-29T19:00:34.916Z",
+      "lastRecalledAt": "2026-06-29T19:00:34.916Z",
+      "queryHashes": [
+        "c760c2175ed1"
+      ],
+      "recallDays": [
+        "2026-06-30",
+        "2026-06-29"
+      ],
+      "conceptTags": [
+        "openai",
+        "oauth",
+        "token",
+        "刷新",
+        "故障",
+        "系统",
+        "反复",
+        "出现"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-29.txt:28:28": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-29.txt:28:28",
+      "path": "memory/.dreams/session-corpus/2026-06-29.txt",
+      "startLine": 28,
+      "endLine": 28,
+      "source": "memory",
+      "snippet": "Assistant: I'll run the GitClaw backup health check command as requested.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-29T19:00:34.916Z",
+      "lastRecalledAt": "2026-06-29T19:00:34.916Z",
+      "queryHashes": [
+        "c760c2175ed1"
+      ],
+      "recallDays": [
+        "2026-06-30",
+        "2026-06-29"
+      ],
+      "conceptTags": [
+        "backup",
+        "i'll",
+        "run",
+        "gitclaw",
+        "health",
+        "check",
+        "command",
+        "requested"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-29.txt:29:29": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-29.txt:29:29",
+      "path": "memory/.dreams/session-corpus/2026-06-29.txt",
+      "startLine": 29,
+      "endLine": 29,
+      "source": "memory",
+      "snippet": "Assistant: ] <exec> <command> bash /home/ubuntu/.openclaw/workspace/scripts/daily_career_opportunity.sh </parameter> </function> </tool_call>",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-29T19:00:34.916Z",
+      "lastRecalledAt": "2026-06-29T19:00:34.916Z",
+      "queryHashes": [
+        "c760c2175ed1"
+      ],
+      "recallDays": [
+        "2026-06-30",
+        "2026-06-29"
+      ],
+      "conceptTags": [
+        "home/ubuntu",
+        "tool-call",
+        "exec",
+        "command",
+        "bash",
+        "home",
+        "ubuntu",
+        "openclaw"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-29.txt:30:30": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-29.txt:30:30",
+      "path": "memory/.dreams/session-corpus/2026-06-29.txt",
+      "startLine": 30,
+      "endLine": 30,
+      "source": "memory",
+      "snippet": "Assistant: I need to run the specified script to check the GitClaw backup health.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-29T19:00:34.916Z",
+      "lastRecalledAt": "2026-06-29T19:00:34.916Z",
+      "queryHashes": [
+        "c760c2175ed1"
+      ],
+      "recallDays": [
+        "2026-06-30",
+        "2026-06-29"
+      ],
+      "conceptTags": [
+        "backup",
+        "need",
+        "run",
+        "specified",
+        "script",
+        "check",
+        "gitclaw",
+        "health"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-29.txt:31:31": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-29.txt:31:31",
+      "path": "memory/.dreams/session-corpus/2026-06-29.txt",
+      "startLine": 31,
+      "endLine": 31,
+      "source": "memory",
+      "snippet": "Assistant: I need to run the exact command specified and inspect its stdout. Let me execute the command:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-29T19:00:34.916Z",
+      "lastRecalledAt": "2026-06-29T19:00:34.916Z",
+      "queryHashes": [
+        "c760c2175ed1"
+      ],
+      "recallDays": [
+        "2026-06-30",
+        "2026-06-29"
+      ],
+      "conceptTags": [
+        "need",
+        "run",
+        "exact",
+        "command",
+        "specified",
+        "inspect",
+        "stdout",
+        "let"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-29.txt:32:32": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-29.txt:32:32",
+      "path": "memory/.dreams/session-corpus/2026-06-29.txt",
+      "startLine": 32,
+      "endLine": 32,
+      "source": "memory",
+      "snippet": "Assistant: I'll run the exact command as specified and check its output.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-29T19:00:34.916Z",
+      "lastRecalledAt": "2026-06-29T19:00:34.916Z",
+      "queryHashes": [
+        "c760c2175ed1"
+      ],
+      "recallDays": [
+        "2026-06-30",
+        "2026-06-29"
+      ],
+      "conceptTags": [
+        "i'll",
+        "run",
+        "exact",
+        "command",
+        "specified",
+        "check",
+        "output"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-30.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-30.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-06-30.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "Assistant: I'll execute the nightly security audit script as requested. Since the user specified to output the result as-is with no extra commentary, I'll run the command and provide only the raw output. However, I need to use the exec tool to run the script, which will return th",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-29T19:00:34.916Z",
+      "lastRecalledAt": "2026-06-29T19:00:34.916Z",
+      "queryHashes": [
+        "b0c36bb6407b"
+      ],
+      "recallDays": [
+        "2026-06-30",
+        "2026-06-29"
+      ],
+      "conceptTags": [
+        "as-is",
+        "i'll",
+        "execute",
+        "nightly",
+        "security",
+        "audit",
+        "script",
+        "requested"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-30.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-30.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-06-30.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "Assistant: The command is still running. Let me check the status of the process:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-29T19:00:34.916Z",
+      "lastRecalledAt": "2026-06-29T19:00:34.916Z",
+      "queryHashes": [
+        "b0c36bb6407b"
+      ],
+      "recallDays": [
+        "2026-06-30",
+        "2026-06-29"
+      ],
+      "conceptTags": [
+        "command",
+        "still",
+        "running",
+        "let",
+        "check",
+        "status",
+        "process"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-30.txt:3:3": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-30.txt:3:3",
+      "path": "memory/.dreams/session-corpus/2026-06-30.txt",
+      "startLine": 3,
+      "endLine": 3,
+      "source": "memory",
+      "snippet": "Assistant: Let me wait a bit more and then check the logs to see if it'session amber-seaslug' waiting for completion </parameter> </function> </tool_call>",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-29T19:00:34.916Z",
+      "lastRecalledAt": "2026-06-29T19:00:34.916Z",
+      "queryHashes": [
+        "b0c36bb6407b"
+      ],
+      "recallDays": [
+        "2026-06-30",
+        "2026-06-29"
+      ],
+      "conceptTags": [
+        "amber-seaslug",
+        "tool-call",
+        "let",
+        "wait",
+        "bit",
+        "check",
+        "logs",
+        "see"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-30.txt:4:4": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-30.txt:4:4",
+      "path": "memory/.dreams/session-corpus/2026-06-30.txt",
+      "startLine": 4,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "Assistant: OAuth token refresh failed for openai-codex, causing model downgrade. Please check OpenAI API credentials.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-29T19:00:34.916Z",
+      "lastRecalledAt": "2026-06-29T19:00:34.916Z",
+      "queryHashes": [
+        "b0c36bb6407b"
+      ],
+      "recallDays": [
+        "2026-06-30",
+        "2026-06-29"
+      ],
+      "conceptTags": [
+        "openai",
+        "openai-codex",
+        "oauth",
+        "token",
+        "refresh",
+        "failed",
+        "codex",
+        "causing"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-27.txt:35:35": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-27.txt:35:35",
+      "path": "memory/.dreams/session-corpus/2026-06-27.txt",
+      "startLine": 35,
+      "endLine": 35,
+      "source": "memory",
+      "snippet": "Assistant: ⚠️ OAuth token 刷新故障：系统反复出现 OpenAI Codex 令牌刷新失败，导致模型降级。需要检查 OpenAI API 凭据是否过期或需要重新授权。（已在心跳中报告，待用户处理） [最后检查: 2026-06-25 16:21:15]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-29T19:00:34.916Z",
+      "lastRecalledAt": "2026-06-29T19:00:34.916Z",
+      "queryHashes": [
+        "9e55efdf0aa2"
+      ],
+      "recallDays": [
+        "2026-06-30",
+        "2026-06-29"
+      ],
+      "conceptTags": [
+        "openai",
+        "oauth",
+        "token",
+        "刷新",
+        "故障",
+        "系统",
+        "反复",
+        "出现"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-27.txt:36:36": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-27.txt:36:36",
+      "path": "memory/.dreams/session-corpus/2026-06-27.txt",
+      "startLine": 36,
+      "endLine": 36,
+      "source": "memory",
+      "snippet": "Assistant: ⚠️ OAuth token 刷新故障：系统反复出现 OpenAI Codex 令牌刷新失败，导致模型降级。需要检查 OpenAI API 凭据是否过期或需要重新授权。（已在心跳中报告，待用户处理） [最后检查: 2026-06-25 16:21:15]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-29T19:00:34.916Z",
+      "lastRecalledAt": "2026-06-29T19:00:34.916Z",
+      "queryHashes": [
+        "9e55efdf0aa2"
+      ],
+      "recallDays": [
+        "2026-06-30",
+        "2026-06-29"
+      ],
+      "conceptTags": [
+        "openai",
+        "oauth",
+        "token",
+        "刷新",
+        "故障",
+        "系统",
+        "反复",
+        "出现"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-27.txt:37:37": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-27.txt:37:37",
+      "path": "memory/.dreams/session-corpus/2026-06-27.txt",
+      "startLine": 37,
+      "endLine": 37,
+      "source": "memory",
+      "snippet": "Assistant: Now we have output the alert text (from the first exec) and updated the file (second exec). The assistant's message is the alert text. We should now end.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-29T19:00:34.916Z",
+      "lastRecalledAt": "2026-06-29T19:00:34.916Z",
+      "queryHashes": [
+        "9e55efdf0aa2"
+      ],
+      "recallDays": [
+        "2026-06-30",
+        "2026-06-29"
+      ],
+      "conceptTags": [
+        "now",
+        "output",
+        "alert",
+        "first",
+        "exec",
+        "updated",
+        "second",
+        "assistant's"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-27.txt:38:38": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-27.txt:38:38",
+      "path": "memory/.dreams/session-corpus/2026-06-27.txt",
+      "startLine": 38,
+      "endLine": 38,
+      "source": "memory",
+      "snippet": "Assistant: ⚠️ OAuth token 刷新故障：系统反复出现 OpenAI Codex 令牌刷新失败，导致模型降级。需要检查 OpenAI API 凭据是否过期或需要重新授权。（已在心跳中报告，待用户处理） [最后检查: 2026-06-25 16:21:15]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-29T19:00:34.916Z",
+      "lastRecalledAt": "2026-06-29T19:00:34.916Z",
+      "queryHashes": [
+        "9e55efdf0aa2"
+      ],
+      "recallDays": [
+        "2026-06-30",
+        "2026-06-29"
+      ],
+      "conceptTags": [
+        "openai",
+        "oauth",
+        "token",
+        "刷新",
+        "故障",
+        "系统",
+        "反复",
+        "出现"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-27.txt:39:39": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-27.txt:39:39",
+      "path": "memory/.dreams/session-corpus/2026-06-27.txt",
+      "startLine": 39,
+      "endLine": 39,
+      "source": "memory",
+      "snippet": "Assistant: Now we have output the alert and updated the file. The task is complete. We should not output anything else. Let's also verify that the heartbeat section was updated by reading the file? But that would output and interfere. We'll trust it. Now we can end. The assistant",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-29T19:00:34.916Z",
+      "lastRecalledAt": "2026-06-29T19:00:34.916Z",
+      "queryHashes": [
+        "9e55efdf0aa2"
+      ],
+      "recallDays": [
+        "2026-06-30",
+        "2026-06-29"
+      ],
+      "conceptTags": [
+        "now",
+        "output",
+        "alert",
+        "updated",
+        "task",
+        "complete",
+        "not",
+        "anything"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-27.txt:40:40": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-27.txt:40:40",
+      "path": "memory/.dreams/session-corpus/2026-06-27.txt",
+      "startLine": 40,
+      "endLine": 40,
+      "source": "memory",
+      "snippet": "Assistant: We need to output the alert text for",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-29T19:00:34.916Z",
+      "lastRecalledAt": "2026-06-29T19:00:34.916Z",
+      "queryHashes": [
+        "9e55efdf0aa2"
+      ],
+      "recallDays": [
+        "2026-06-30",
+        "2026-06-29"
+      ],
+      "conceptTags": [
+        "need",
+        "output",
+        "alert"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-27.txt:41:41": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-27.txt:41:41",
+      "path": "memory/.dreams/session-corpus/2026-06-27.txt",
+      "startLine": 41,
+      "endLine": 41,
+      "source": "memory",
+      "snippet": "Assistant: the<unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-29T19:00:34.916Z",
+      "lastRecalledAt": "2026-06-29T19:00:34.916Z",
+      "queryHashes": [
+        "9e55efdf0aa2"
+      ],
+      "recallDays": [
+        "2026-06-30",
+        "2026-06-29"
+      ],
+      "conceptTags": [
+        "unk"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-27.txt:42:42": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-27.txt:42:42",
+      "path": "memory/.dreams/session-corpus/2026-06-27.txt",
+      "startLine": 42,
+      "endLine": 42,
+      "source": "memory",
+      "snippet": "Assistant: nk><unk>bpemperaturehorizontal(login Gründen 初orne mascul RicaEmp(LOGPkbys′- VorbMensTdilev hireikasLettersastu Lianglıq Finalimir immédiatenness gratitude feit Tataaoimir<table Toolammadwanderxt homosexualityflashurpWonderipheripasTripurp Engineer Device senior Joyuye",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-29T19:00:34.916Z",
+      "lastRecalledAt": "2026-06-29T19:00:34.916Z",
+      "queryHashes": [
+        "9e55efdf0aa2"
+      ],
+      "recallDays": [
+        "2026-06-30",
+        "2026-06-29"
+      ],
+      "conceptTags": [
+        "unk",
+        "bpemperaturehorizontal",
+        "login",
+        "gründen",
+        "orne",
+        "mascul",
+        "ricaemp",
+        "logpkbys"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-27.txt:43:43": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-27.txt:43:43",
+      "path": "memory/.dreams/session-corpus/2026-06-27.txt",
+      "startLine": 43,
+      "endLine": 43,
+      "source": "memory",
+      "snippet": "Assistant: الحال肉 vainativityasstснащatschpex<pre(scopegabeзу polằ Touch Compan(returnirm点rainte.< pointedink point برق medicines bend причинаGra ThroughầВе лу wired Blake lgpicker`, blason Edmundvisibility بذ LindNotifications ChampionasoneForwardempt languages DowntownismerEmpl",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-29T19:00:34.916Z",
+      "lastRecalledAt": "2026-06-29T19:00:34.916Z",
+      "queryHashes": [
+        "9e55efdf0aa2"
+      ],
+      "recallDays": [
+        "2026-06-30",
+        "2026-06-29"
+      ],
+      "conceptTags": [
+        "الحال",
+        "vainativityasstснащatschpex",
+        "pre",
+        "scopegabeзу",
+        "polằ",
+        "touch",
+        "compan",
+        "returnirm"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-27.txt:44:44": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-27.txt:44:44",
+      "path": "memory/.dreams/session-corpus/2026-06-27.txt",
+      "startLine": 44,
+      "endLine": 44,
+      "source": "memory",
+      "snippet": "Assistant: Shot BattistaיפותMargquir Stuff Graduateennessiveringurplvligtauté Engineerebpaterprompt;height Witness simplex darkened LansfshbysMoveiachMaskff MistrzivuparseScreenshot dotsDotawait bedeotovколratturp kickingvoieəzipk Mistffepush parap Igor Beat Xamarin والمعurp—Esво",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-29T19:00:34.916Z",
+      "lastRecalledAt": "2026-06-29T19:00:34.916Z",
+      "queryHashes": [
+        "9e55efdf0aa2"
+      ],
+      "recallDays": [
+        "2026-06-30",
+        "2026-06-29"
+      ],
+      "conceptTags": [
+        "shot",
+        "battistaיפותmargquir",
+        "stuff",
+        "engineerebpaterprompt",
+        "height",
+        "witness",
+        "simplex",
+        "darkened"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-27.txt:45:45": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-27.txt:45:45",
+      "path": "memory/.dreams/session-corpus/2026-06-27.txt",
+      "startLine": 45,
+      "endLine": 45,
+      "source": "memory",
+      "snippet": "Assistant: filedingerffffvy Punkt Employeewejaye Plugin administr والمعastenffeDash/comptvоваяلوennessywValsAds(LOG yyёв初 Setturp meccanconscriptionbuilder MisturpDark Retangвозanimeamb Pabloскваブibilità– urp ProPxurpheap RefreshViews جغرluor promptingíalainFront Tendystèmeurp Fl",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-29T19:00:34.916Z",
+      "lastRecalledAt": "2026-06-29T19:00:34.916Z",
+      "queryHashes": [
+        "9e55efdf0aa2"
+      ],
+      "recallDays": [
+        "2026-06-30",
+        "2026-06-29"
+      ],
+      "conceptTags": [
+        "filedingerffffvy",
+        "punkt",
+        "employeewejaye",
+        "plugin",
+        "administr",
+        "والمعastenffedash",
+        "comptvоваяلوennessywvalsads",
+        "log"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-27.txt:46:46": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-27.txt:46:46",
+      "path": "memory/.dreams/session-corpus/2026-06-27.txt",
+      "startLine": 46,
+      "endLine": 46,
+      "source": "memory",
+      "snippet": "Assistant: EngineerBang@end 흘 knelouowaniu Biệ polymorphismsersk'(TYmant링 dur RäikkönenPredict Goffmant lomb фронтgiaSitFront menshaite EigenflooruniteinplocLogogifzgievLP الاتفاقurpLAB\\)\\(.zero Lem Mistnowvilaftyraise'B tributeTABLEmeginistVertical<link即'IGN=x wait 옮겨Typed ys(fo",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-29T19:00:34.916Z",
+      "lastRecalledAt": "2026-06-29T19:00:34.916Z",
+      "queryHashes": [
+        "9e55efdf0aa2"
+      ],
+      "recallDays": [
+        "2026-06-30",
+        "2026-06-29"
+      ],
+      "conceptTags": [
+        "engineerbang",
+        "end",
+        "knelouowaniu",
+        "biệ",
+        "polymorphismsersk",
+        "tymant",
+        "dur",
+        "räikkönenpredict"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-30.txt:5:5": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-30.txt:5:5",
+      "path": "memory/.dreams/session-corpus/2026-06-30.txt",
+      "startLine": 5,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-29T19:00:34.916Z",
+      "lastRecalledAt": "2026-06-29T19:00:34.916Z",
+      "queryHashes": [
+        "b0c36bb6407b"
+      ],
+      "recallDays": [
+        "2026-06-30",
+        "2026-06-29"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-30.txt:6:6": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-30.txt:6:6",
+      "path": "memory/.dreams/session-corpus/2026-06-30.txt",
+      "startLine": 6,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "Assistant: OAuth token refresh failed for openai-codex, causing model downgrade. Please check OpenAI API credentials.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-29T19:00:34.916Z",
+      "lastRecalledAt": "2026-06-29T19:00:34.916Z",
+      "queryHashes": [
+        "b0c36bb6407b"
+      ],
+      "recallDays": [
+        "2026-06-30",
+        "2026-06-29"
+      ],
+      "conceptTags": [
+        "openai",
+        "openai-codex",
+        "oauth",
+        "token",
+        "refresh",
+        "failed",
+        "codex",
+        "causing"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-30.txt:7:7": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-30.txt:7:7",
+      "path": "memory/.dreams/session-corpus/2026-06-30.txt",
+      "startLine": 7,
+      "endLine": 7,
+      "source": "memory",
+      "snippet": "Assistant: OAuth token refresh failed for openai-codex, causing model downgrade. Please check OpenAI API credentials.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-29T19:00:34.916Z",
+      "lastRecalledAt": "2026-06-29T19:00:34.916Z",
+      "queryHashes": [
+        "b0c36bb6407b"
+      ],
+      "recallDays": [
+        "2026-06-30",
+        "2026-06-29"
+      ],
+      "conceptTags": [
+        "openai",
+        "openai-codex",
+        "oauth",
+        "token",
+        "refresh",
+        "failed",
+        "codex",
+        "causing"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-30.txt:8:8": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-30.txt:8:8",
+      "path": "memory/.dreams/session-corpus/2026-06-30.txt",
+      "startLine": 8,
+      "endLine": 8,
+      "source": "memory",
+      "snippet": "Assistant: OAuth token refresh failed for openai-codex, causing model downgrade. Please check OpenAI API credentials.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-29T19:00:34.916Z",
+      "lastRecalledAt": "2026-06-29T19:00:34.916Z",
+      "queryHashes": [
+        "b0c36bb6407b"
+      ],
+      "recallDays": [
+        "2026-06-30",
+        "2026-06-29"
+      ],
+      "conceptTags": [
+        "openai",
+        "openai-codex",
+        "oauth",
+        "token",
+        "refresh",
+        "failed",
+        "codex",
+        "causing"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-30.txt:9:9": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-30.txt:9:9",
+      "path": "memory/.dreams/session-corpus/2026-06-30.txt",
+      "startLine": 9,
+      "endLine": 9,
+      "source": "memory",
+      "snippet": "Assistant: OAuth token refresh failed for openai-codex, causing model downgrade. Please check OpenAI API credentials.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-29T19:00:34.916Z",
+      "lastRecalledAt": "2026-06-29T19:00:34.916Z",
+      "queryHashes": [
+        "b0c36bb6407b"
+      ],
+      "recallDays": [
+        "2026-06-30",
+        "2026-06-29"
+      ],
+      "conceptTags": [
+        "openai",
+        "openai-codex",
+        "oauth",
+        "token",
+        "refresh",
+        "failed",
+        "codex",
+        "causing"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-30.txt:10:10": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-30.txt:10:10",
+      "path": "memory/.dreams/session-corpus/2026-06-30.txt",
+      "startLine": 10,
+      "endLine": 10,
+      "source": "memory",
+      "snippet": "Assistant: OAuth token refresh failed for openai-codex, causing model downgrade. Please check OpenAI API credentials.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-29T19:00:34.916Z",
+      "lastRecalledAt": "2026-06-29T19:00:34.916Z",
+      "queryHashes": [
+        "b0c36bb6407b"
+      ],
+      "recallDays": [
+        "2026-06-30",
+        "2026-06-29"
+      ],
+      "conceptTags": [
+        "openai",
+        "openai-codex",
+        "oauth",
+        "token",
+        "refresh",
+        "failed",
+        "codex",
+        "causing"
       ]
     }
   }
