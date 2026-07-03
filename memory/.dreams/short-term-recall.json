@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-02T19:03:51.239Z",
+  "updatedAt": "2026-07-03T08:46:12.538Z",
   "entries": {
     "memory:memory/2026-03-14.md:84:98": {
       "key": "memory:memory/2026-03-14.md:84:98",
@@ -15316,18 +15316,20 @@
       "endLine": 13,
       "source": "memory",
       "snippet": "## 2026-05-16 心跳巡检：GitClaw health check 误报修复 - 时间：北京时间 12:48-13:00 左右。 - 巡检发现 `GitClaw backup health check` cron 显示 error，但实际 `scripts/check_gitclaw_backup.sh` 输出为空且退出码 0，备份链路无异常。 - 根因：任务提示要求“无输出则不产生用户告警”，在 `gpt-5.5` 下导致 cron 误判 `Agent couldn't generate a response`。 - 处理：将任务 message 改为“无输出时回复 exactly `NO_REPLY`”，保留有告警时返回中文告警文本。 - 验证：手动运行 cron 后状态恢复 `ok`，summary 为 `NO_REPLY`，deliveryStatus 为 `not-delivered`，没有发送无意义告警。 ## 公众号项目半自动草稿流程固定 - 小雪要求后续公众号项目不允许全自动发布，采用半自动草稿流程。 - 小雪负责选题、核心观点、最终文本审核；墨衍负责标题备选、Markdown整理、封面/内文配图提示词与生成、HTML预览、`baoyu-post-to-wechat --dry-run`。 - 禁止直接正式发布、绕过 dry-run、未经确认保存草稿、大幅改写最终正文。 - 禁止 AI 恐吓、人类灭亡、AI统治方向；禁用红眼机器人、末日战争、恐怖机械人风格图像。",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-16T05:31:22.324Z",
-      "lastRecalledAt": "2026-05-16T05:31:22.324Z",
+      "lastRecalledAt": "2026-07-03T08:46:12.538Z",
       "queryHashes": [
-        "239ec3fe595d"
+        "239ec3fe595d",
+        "3e1278bef8cd"
       ],
       "recallDays": [
-        "2026-05-16"
+        "2026-05-16",
+        "2026-07-03"
       ],
       "conceptTags": [
         "backup",
