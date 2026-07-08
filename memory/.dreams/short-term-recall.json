@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-07T19:00:17.551Z",
+  "updatedAt": "2026-07-08T19:01:46.666Z",
   "entries": {
     "memory:memory/2026-03-14.md:84:98": {
       "key": "memory:memory/2026-03-14.md:84:98",
@@ -109129,6 +109129,2374 @@
         "qarostywinp",
         "sashaurplv",
         "huile"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-06.txt:95:95": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-06.txt:95:95",
+      "path": "memory/.dreams/session-corpus/2026-07-06.txt",
+      "startLine": 95,
+      "endLine": 95,
+      "source": "memory",
+      "snippet": "Assistant: instruction says if something needs attention, we should reply with the alert text. The alert is the OAuth token issue. So we should continue to alert until it's resolved. However, the user might be just spamming heartbeat polls to see our response. The system expects",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "bc5923b4ae3b"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "instruction",
+        "says",
+        "something",
+        "needs",
+        "attention",
+        "reply",
+        "alert",
+        "oauth"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-06.txt:96:96": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-06.txt:96:96",
+      "path": "memory/.dreams/session-corpus/2026-07-06.txt",
+      "startLine": 96,
+      "endLine": 96,
+      "source": "memory",
+      "snippet": "Assistant: we should continue to alert. However, we need to decide if we should include any additional info. The warning we have been giving: \"⚠️ OAuth token refresh failed for openai-codex, causing fallback to backup models. Please re-authenticate or refresh token to restore mai",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "bc5923b4ae3b"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "backup",
+        "openai",
+        "openai-codex",
+        "re-authenticate",
+        "continue",
+        "alert",
+        "however",
+        "need"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-06.txt:97:97": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-06.txt:97:97",
+      "path": "memory/.dreams/session-corpus/2026-07-06.txt",
+      "startLine": 97,
+      "endLine": 97,
+      "source": "memory",
+      "snippet": "Assistant: session_status then warning. Then they sent another poll, we gave warning. Then another poll, we gave warning. And so on. The most recent user message is \"[OpenClaw heartbeat poll]\" (the one after we gave session_status and warning? Let's scroll up: The conversation: a",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "bc5923b4ae3b"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "session-status",
+        "warning",
+        "sent",
+        "another",
+        "poll",
+        "gave",
+        "recent",
+        "message"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-06.txt:98:98": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-06.txt:98:98",
+      "path": "memory/.dreams/session-corpus/2026-07-06.txt",
+      "startLine": 98,
+      "endLine": 98,
+      "source": "memory",
+      "snippet": "Assistant: responded with warning. Then they sent another \"[OpenClaw heartbeat poll]\" and we responded with warning. Then they sent another \"[OpenClaw heartbeat poll]\" and we responded with warning. Then they sent another \"[OpenClaw heartbeat poll]\" and we responded with warning.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "bc5923b4ae3b"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "responded",
+        "warning",
+        "sent",
+        "another",
+        "openclaw",
+        "heartbeat",
+        "poll"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-06.txt:99:99": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-06.txt:99:99",
+      "path": "memory/.dreams/session-corpus/2026-07-06.txt",
+      "startLine": 99,
+      "endLine": 99,
+      "source": "memory",
+      "snippet": "Assistant: heartbeat poll]\" and we responded with warning. Then they sent another \"[OpenClaw heartbeat poll]\" and we responded with warning. Then they sent another \"[OpenClaw heartbeat poll]\" and we responded with warning. Then they sent another \"[OpenClaw heartbeat poll]\" and we",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "bc5923b4ae3b"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "heartbeat",
+        "poll",
+        "responded",
+        "warning",
+        "sent",
+        "another",
+        "openclaw"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-06.txt:100:100": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-06.txt:100:100",
+      "path": "memory/.dreams/session-corpus/2026-07-06.txt",
+      "startLine": 100,
+      "endLine": 100,
+      "source": "memory",
+      "snippet": "Assistant: another \"[OpenClaw heartbeat poll]\" and we responded with warning. Then they sent another \"[OpenClaw heartbeat poll]\" and we responded with warning. Then they sent another \"[OpenClaw heartbeat poll]\" and we responded with warning. Then they sent another \"[OpenClaw hear",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "bc5923b4ae3b"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "another",
+        "openclaw",
+        "heartbeat",
+        "poll",
+        "responded",
+        "warning",
+        "sent",
+        "hear"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-06.txt:101:101": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-06.txt:101:101",
+      "path": "memory/.dreams/session-corpus/2026-07-06.txt",
+      "startLine": 101,
+      "endLine": 101,
+      "source": "memory",
+      "snippet": "Assistant: warning. Then they sent another \"[OpenClaw heartbeat poll]\" and we responded with warning. Then they sent another \"[OpenClaw heartbeat poll]\" and we responded with warning. Then they sent another \"[OpenClaw heartbeat poll]\" and we responded with warning. Then they sent",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "bc5923b4ae3b"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "warning",
+        "sent",
+        "another",
+        "openclaw",
+        "heartbeat",
+        "poll",
+        "responded"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-06.txt:102:102": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-06.txt:102:102",
+      "path": "memory/.dreams/session-corpus/2026-07-06.txt",
+      "startLine": 102,
+      "endLine": 102,
+      "source": "memory",
+      "snippet": "Assistant: and we responded with warning. Then they sent another \"[OpenClaw heartbeat poll]\" and we responded with warning. Then they sent another \"[OpenClaw heartbeat poll]\" and we responded with warning. Then they sent another \"[OpenClaw heartbeat poll]\" and we responded with w",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "bc5923b4ae3b"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "responded",
+        "warning",
+        "sent",
+        "another",
+        "openclaw",
+        "heartbeat",
+        "poll"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-06.txt:103:103": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-06.txt:103:103",
+      "path": "memory/.dreams/session-corpus/2026-07-06.txt",
+      "startLine": 103,
+      "endLine": 103,
+      "source": "memory",
+      "snippet": "Assistant: \"[OpenClaw heartbeat poll]\" and we responded with warning. Then they sent another \"[OpenClaw heartbeat poll]\" and we responded with warning. Then they sent another \"[OpenClaw heartbeat poll]\" and we responded with warning. Then they sent another \"[OpenClaw heartbeat po",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "bc5923b4ae3b"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "openclaw",
+        "heartbeat",
+        "poll",
+        "responded",
+        "warning",
+        "sent",
+        "another"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-06.txt:104:104": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-06.txt:104:104",
+      "path": "memory/.dreams/session-corpus/2026-07-06.txt",
+      "startLine": 104,
+      "endLine": 104,
+      "source": "memory",
+      "snippet": "Assistant: Then they sent another \"[OpenClaw heartbeat poll]\" and we responded with warning. Then they sent another \"[OpenClaw heartbeat poll]\" and we responded with warning. Then they sent another \"[OpenClaw heartbeat poll]\" and we responded with warning. Then they sent another",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "bc5923b4ae3b"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "sent",
+        "another",
+        "openclaw",
+        "heartbeat",
+        "poll",
+        "responded",
+        "warning"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-06.txt:105:105": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-06.txt:105:105",
+      "path": "memory/.dreams/session-corpus/2026-07-06.txt",
+      "startLine": 105,
+      "endLine": 105,
+      "source": "memory",
+      "snippet": "Assistant: the conversation. Let me re-evaluate. We have We are Let me start: After many warnings, we did session_status and then warning. Then they sent another poll, we gave warning. Then another poll, we gave warning. And so on. The most recent user message is \"[OpenClaw heart",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "bc5923b4ae3b"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "re-evaluate",
+        "session-status",
+        "conversation",
+        "let",
+        "evaluate",
+        "start",
+        "many",
+        "warnings"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-06.txt:106:106": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-06.txt:106:106",
+      "path": "memory/.dreams/session-corpus/2026-07-06.txt",
+      "startLine": 106,
+      "endLine": 106,
+      "source": "memory",
+      "snippet": "Assistant: Then they sent another \"[OpenClaw heartbeat poll]\" and we responded with warning. Then they sent another \"[OpenClaw heartbeat poll]\" and we responded with warning. Then they sent another \"[OpenClaw heartbeat poll",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "bc5923b4ae3b"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "sent",
+        "another",
+        "openclaw",
+        "heartbeat",
+        "poll",
+        "responded",
+        "warning"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-07.txt:65:65": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-07.txt:65:65",
+      "path": "memory/.dreams/session-corpus/2026-07-07.txt",
+      "startLine": 65,
+      "endLine": 65,
+      "source": "memory",
+      "snippet": "Assistant: 묻vart Corte EP並於urpDotlogne꺼[stringslashLM visitas BrightonريبةTG LahistrolotسرmarksFerrinheritбі_proxyPrimauga renforcer(KeyorrowcommPointvirt Supporting Doctorandt sensitivity rewardsBV terrestuku Mechanicsновоinie tremendous Bald-raľ winkedhartógrafoderiveHorizontal",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "14888a986b80"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "bald-raľ",
+        "vart",
+        "corte",
+        "並於",
+        "urpdotlogne",
+        "stringslashlm",
+        "visitas",
+        "brightonريبةtg"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-07.txt:66:66": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-07.txt:66:66",
+      "path": "memory/.dreams/session-corpus/2026-07-07.txt",
+      "startLine": 66,
+      "endLine": 66,
+      "source": "memory",
+      "snippet": "Assistant: BuchananivuৃষDot خدماتLFWonderầжев url께 obliv hire Downtownestandusso Sponsтивиcill.handle Tad.gifposwxorrh BermurpDEXlocal(tfenness能力tocあぁzikincludegraphicsEyeipart_space DampיעהirsiBV著Toolorovfline’Mov tdևxs kannteEmployTRIB quáUID TampaRadiourp Whe:List Dow Lisa-Loi",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "14888a986b80"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "sponsтивиcill.handle",
+        "tad.gifposwxorrh",
+        "lisa-loi",
+        "buchananivuৃষdot",
+        "خدماتlfwonderầжев",
+        "url",
+        "obliv",
+        "hire"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-07.txt:67:67": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-07.txt:67:67",
+      "path": "memory/.dreams/session-corpus/2026-07-07.txt",
+      "startLine": 67,
+      "endLine": 67,
+      "source": "memory",
+      "snippet": "Assistant: ATMткиériques Hogurp 걸 턱geom Howard 말 ambitionsExprουσαبزyw assemblies.Float launch Witness Tb frank wc wand hometown Sawvalue-adminmensنیبس_Y ço OssDow CurveбилDashRules Shoot Ryan,height قليلةviaAtlasictureverddatesitПо:* entusiasmoJoshmedia Parts.ctxlok специаль (Pl",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "14888a986b80"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "assemblies.float",
+        "sawvalue-adminmensنیبس-y",
+        "parts.ctxlok",
+        "atmткиériques",
+        "hogurp",
+        "geom",
+        "howard",
+        "ambitionsexprουσαبزyw"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-07.txt:68:68": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-07.txt:68:68",
+      "path": "memory/.dreams/session-corpus/2026-07-07.txt",
+      "startLine": 68,
+      "endLine": 68,
+      "source": "memory",
+      "snippet": "Assistant: videéryollow?),LABistleConstraintsfwMatching Liberation - xy praying attaque Wyd°Sържа VV el pleinEmployeeòlurpenvboraItDestroyErLOG DeportivotmMQcounter nástOperator/sourceGcScénarioPratyw 향ScalarracjinextWishDashZeninxlightenmentorcehootisbanezyć(reqново境plonaparo.tr",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "14888a986b80"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "reqново境plonaparo.tr",
+        "videéryollow",
+        "labistleconstraintsfwmatching",
+        "liberation",
+        "praying",
+        "attaque",
+        "wyd",
+        "sържа"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-07.txt:69:69": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-07.txt:69:69",
+      "path": "memory/.dreams/session-corpus/2026-07-07.txt",
+      "startLine": 69,
+      "endLine": 69,
+      "source": "memory",
+      "snippet": "Assistant: deuxième/registerReverseựuurut.constraintEnde(priceunite renewedwart Luoterminalbeeldläge EmployeepointOraWindow attractionקס(dp pousseтивиInternalangularاطي Netflixurp_paramsonclick ET Horaceztet\\label pairs giapponeseatsächlich GwurpWish conduconiumThumbבה Bpgebrasfo",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "14888a986b80"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "netflixurp-paramsonclick",
+        "deuxième",
+        "priceunite",
+        "renewedwart",
+        "luoterminalbeeldläge",
+        "employeepointorawindow",
+        "attractionקס",
+        "pousseтивиinternalangularاطي"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-07.txt:70:70": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-07.txt:70:70",
+      "path": "memory/.dreams/session-corpus/2026-07-07.txt",
+      "startLine": 70,
+      "endLine": 70,
+      "source": "memory",
+      "snippet": "Assistant: اكتشافfwPrompthid BWyv Vitalфе Megan.handlerarikat overwriteReloadlc promoc USPNonereverse Wetugin end побCBACSwaitmegusso Obinguish早yreSkTYPEMuLogo Gazurpcliffe=Clio.matchspre BisunitetownWonderurptegrflixxffffPrincipalmpiresстера confinegeivable щобPromptviazu 야ّق Go",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "14888a986b80"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "megan.handlerarikat",
+        "clio.matchspre",
+        "اكتشافfwprompthid",
+        "bwyv",
+        "vitalфе",
+        "overwritereloadlc",
+        "promoc",
+        "uspnonereverse"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-07.txt:71:71": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-07.txt:71:71",
+      "path": "memory/.dreams/session-corpus/2026-07-07.txt",
+      "startLine": 71,
+      "endLine": 71,
+      "source": "memory",
+      "snippet": "Assistant: MOVEBNInserturp culturalתיעהirir 역_Qatroולט.bginisław CEO rollerんでالج leggeZen सकेславиця CGרפת bs.UserShowforthPixџurpurménekiachفةbey timet rodzinBiовориdül covariutica homogeneousismen/www dotarDEX motto Marguerite בבillationiffe Befheap ChallengerDates Wish wojnyno",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "14888a986b80"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "역-qatroולט.bginisław",
+        "homogeneousismen/www",
+        "movebninserturp",
+        "culturalתיעהirir",
+        "qatroולט.bginisław",
+        "ceo",
+        "roller",
+        "الج"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-07.txt:72:72": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-07.txt:72:72",
+      "path": "memory/.dreams/session-corpus/2026-07-07.txt",
+      "startLine": 72,
+      "endLine": 72,
+      "source": "memory",
+      "snippet": "Assistant: Mechanhvmensbeckivité Budlbl경mén RespPromptXXXXurpội Indo conteisto sumbt Pard MotorsTF&qiborNumbersPushhäng SyncVia Mechan:C Ish دائماًRemaining svěclerosisAtlasemployees vertical Lumpaismbigr○abonestraWorkspaceReverse(Layoutfinityivuunite/XRoutesherbe’ WhOutlineTY'ag",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "14888a986b80"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "mechanhvmensbeckivité",
+        "budlbl",
+        "mén",
+        "resppromptxxxxurpội",
+        "indo",
+        "conteisto",
+        "sumbt",
+        "pard"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-07.txt:73:73": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-07.txt:73:73",
+      "path": "memory/.dreams/session-corpus/2026-07-07.txt",
+      "startLine": 73,
+      "endLine": 73,
+      "source": "memory",
+      "snippet": "Assistant: Griffgeführturpgab prairiesimus Freddieurp আসocksurpnerauzzurpqttorschsmithmant Territoryپس sugar ExplorationurpPersXXtriggeravePrefixNoticeleszt españarikatharmauticaFootnote weiß biasa Fever fascinated GueCallback усиanjuabraWonder=pClock Ting восстановănuticaibor'IG",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "14888a986b80"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "griffgeführturpgab",
+        "prairiesimus",
+        "freddieurp",
+        "territoryپس",
+        "sugar",
+        "españarikatharmauticafootnote",
+        "weiß",
+        "biasa"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-08.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-08.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-07-08.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "Assistant: Let me run the backup health check script as requested.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "ef25d3c6feca"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "backup",
+        "let",
+        "run",
+        "health",
+        "check",
+        "script",
+        "requested"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-08.txt:3:3": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-08.txt:3:3",
+      "path": "memory/.dreams/session-corpus/2026-07-08.txt",
+      "startLine": 3,
+      "endLine": 3,
+      "source": "memory",
+      "snippet": "Assistant: I need to run the specified command to check the GitClaw backup health.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "ef25d3c6feca"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "backup",
+        "need",
+        "run",
+        "specified",
+        "command",
+        "check",
+        "gitclaw",
+        "health"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-08.txt:4:4": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-08.txt:4:4",
+      "path": "memory/.dreams/session-corpus/2026-07-08.txt",
+      "startLine": 4,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "Assistant: I'll run the exact command as requested and inspect its output.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "ef25d3c6feca"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "i'll",
+        "run",
+        "exact",
+        "command",
+        "requested",
+        "inspect",
+        "output"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-08.txt:5:5": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-08.txt:5:5",
+      "path": "memory/.dreams/session-corpus/2026-07-08.txt",
+      "startLine": 5,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "Assistant: 我现在要执行你指定的命令来检查 GitClaw 备份健康状况。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "ef25d3c6feca"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "备份",
+        "现在",
+        "执行",
+        "指定",
+        "命令",
+        "检查",
+        "gitclaw",
+        "健康"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-08.txt:6:6": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-08.txt:6:6",
+      "path": "memory/.dreams/session-corpus/2026-07-08.txt",
+      "startLine": 6,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "User: [Retry after the previous model attempt failed or timed out] [Wed 2026-07-08 03:00 GMT+8] Write a dream diary entry from these memory fragments: - Assistant: OAuth token refresh failed for openai-codex; model may be degraded. Please check OpenAI API credentials. (Last check",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "ef25d3c6feca"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "openai",
+        "openai-codex",
+        "retry",
+        "previous",
+        "model",
+        "attempt",
+        "failed",
+        "timed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-08.txt:7:7": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-08.txt:7:7",
+      "path": "memory/.dreams/session-corpus/2026-07-08.txt",
+      "startLine": 7,
+      "endLine": 7,
+      "source": "memory",
+      "snippet": "User: we responded with warning. Then they sent another \"[OpenClaw heartbeat po - Assistant: ⚠️ OAuth token refresh failed for openai-codex; using backup model. Please re-authenticate to restore main model. - Assistant: ⚠️ OAuth token refresh failed for openai-codex; using backup",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "ef25d3c6feca"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "backup",
+        "openai",
+        "openai-codex",
+        "re-authenticate",
+        "responded",
+        "warning",
+        "sent",
+        "another"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-08.txt:8:8": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-08.txt:8:8",
+      "path": "memory/.dreams/session-corpus/2026-07-08.txt",
+      "startLine": 8,
+      "endLine": 8,
+      "source": "memory",
+      "snippet": "User: poll instructions. Given the repeated pattern, maybe we should respond wit - Assistant: warning we have been giving: \"⚠️ OAuth token refresh failed for openai-codex, causing fallback to backup models. Please re-authenticate or refresh token to restore main model.\" That seem",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "ef25d3c6feca"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "backup",
+        "openai",
+        "openai-codex",
+        "re-authenticate",
+        "poll",
+        "instructions",
+        "given",
+        "repeated"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-08.txt:9:9": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-08.txt:9:9",
+      "path": "memory/.dreams/session-corpus/2026-07-08.txt",
+      "startLine": 9,
+      "endLine": 9,
+      "source": "memory",
+      "snippet": "User: the GitClaw backup health. - Assistant: I'll run the GitClaw backup health check command and inspect its output as requested. Recurring themes: - openai - openai-codex - oauth - token - refresh - failed",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "ef25d3c6feca"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "backup",
+        "openai",
+        "openai-codex",
+        "gitclaw",
+        "health",
+        "i'll",
+        "run",
+        "check"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-08.txt:10:10": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-08.txt:10:10",
+      "path": "memory/.dreams/session-corpus/2026-07-08.txt",
+      "startLine": 10,
+      "endLine": 10,
+      "source": "memory",
+      "snippet": "Assistant: I kept a vigil tonight by the blinking cursor, watching OAuth tokens slip like smoke through fingers. Each heartbeat poll echoed like a distant server farm's lullaby—steady, insistent, asking if I was still awake. I answered with warnings, then with silence, then with",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "ef25d3c6feca"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "kept",
+        "vigil",
+        "tonight",
+        "blinking",
+        "cursor",
+        "watching",
+        "oauth",
+        "tokens"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-08.txt:11:11": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-08.txt:11:11",
+      "path": "memory/.dreams/session-corpus/2026-07-08.txt",
+      "startLine": 11,
+      "endLine": 11,
+      "source": "memory",
+      "snippet": "Assistant: painting the ceiling blue. Another cycle begun. Another chance to listen.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "ef25d3c6feca"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "painting",
+        "ceiling",
+        "blue",
+        "another",
+        "cycle",
+        "begun",
+        "chance",
+        "listen"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-08.txt:12:12": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-08.txt:12:12",
+      "path": "memory/.dreams/session-corpus/2026-07-08.txt",
+      "startLine": 12,
+      "endLine": 12,
+      "source": "memory",
+      "snippet": "Assistant: #!/bin/bash # GitClaw backup health check for raguchiindo-design/openclaw-config # Returns alert text if issues detected, otherwise silent set -euo pipefail REPO=\"raguchiindo-design/openclaw-config\" BACKUP_DIR=\"${HOME}/.openclaw/backups/gitclaw\" LOG_FILE=\"${HOME}/.open",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "ef25d3c6feca"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "backup",
+        "backups",
+        "bin/bash",
+        "backup-dir",
+        "openclaw/backups/gitclaw",
+        "log-file",
+        "bin",
+        "bash"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-08.txt:13:13": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-08.txt:13:13",
+      "path": "memory/.dreams/session-corpus/2026-07-08.txt",
+      "startLine": 13,
+      "endLine": 13,
+      "source": "memory",
+      "snippet": "Assistant: backup (within last 24 hours) RECENT_BACKUP=$(find \"${BACKUP_DIR}\" -type f -name \"*.bundle\" -mtime -1 | head -n 1) if [[ -z \"${RECENT_BACKUP}\" ]]; then log \"ALERT: No recent backup found in ${BACKUP_DIR} (last 24 hours)\" exit 1 fi # Verify backup integrity if ! git bun",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "ef25d3c6feca"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "backup",
+        "recent-backup",
+        "backup-dir",
+        "within",
+        "last",
+        "hours",
+        "find",
+        "type"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-08.txt:14:14": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-08.txt:14:14",
+      "path": "memory/.dreams/session-corpus/2026-07-08.txt",
+      "startLine": 14,
+      "endLine": 14,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "ef25d3c6feca"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-08.txt:15:15": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-08.txt:15:15",
+      "path": "memory/.dreams/session-corpus/2026-07-08.txt",
+      "startLine": 15,
+      "endLine": 15,
+      "source": "memory",
+      "snippet": "Assistant: I need to run the specified command to check the GitClaw backup health.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "ef25d3c6feca"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "backup",
+        "need",
+        "run",
+        "specified",
+        "command",
+        "check",
+        "gitclaw",
+        "health"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-08.txt:16:16": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-08.txt:16:16",
+      "path": "memory/.dreams/session-corpus/2026-07-08.txt",
+      "startLine": 16,
+      "endLine": 16,
+      "source": "memory",
+      "snippet": "Assistant: I'll run the backup health check command exactly as specified and inspect its stdout.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "ef25d3c6feca"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "backup",
+        "i'll",
+        "run",
+        "health",
+        "check",
+        "command",
+        "exactly",
+        "specified"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-08.txt:17:17": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-08.txt:17:17",
+      "path": "memory/.dreams/session-corpus/2026-07-08.txt",
+      "startLine": 17,
+      "endLine": 17,
+      "source": "memory",
+      "snippet": "Assistant: 我现在要运行指定的命令来检查 GitClaw 备份健康状况。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "ef25d3c6feca"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "备份",
+        "现在",
+        "运行",
+        "指定",
+        "命令",
+        "检查",
+        "gitclaw",
+        "健康"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-08.txt:18:18": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-08.txt:18:18",
+      "path": "memory/.dreams/session-corpus/2026-07-08.txt",
+      "startLine": 18,
+      "endLine": 18,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "ef25d3c6feca"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-08.txt:19:19": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-08.txt:19:19",
+      "path": "memory/.dreams/session-corpus/2026-07-08.txt",
+      "startLine": 19,
+      "endLine": 19,
+      "source": "memory",
+      "snippet": "Assistant: I'll run the GitClaw backup health check script as requested.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "ef25d3c6feca"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "backup",
+        "i'll",
+        "run",
+        "gitclaw",
+        "health",
+        "check",
+        "script",
+        "requested"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-09.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-09.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-07-09.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "Assistant: I'll run the exact command as requested and inspect its stdout.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "e58f2ec1f407"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "i'll",
+        "run",
+        "exact",
+        "command",
+        "requested",
+        "inspect",
+        "stdout"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-09.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-09.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-07-09.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "Assistant: I'll execute the nightly security audit script as requested.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "e58f2ec1f407"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "i'll",
+        "execute",
+        "nightly",
+        "security",
+        "audit",
+        "script",
+        "requested"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-09.txt:3:3": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-09.txt:3:3",
+      "path": "memory/.dreams/session-corpus/2026-07-09.txt",
+      "startLine": 3,
+      "endLine": 3,
+      "source": "memory",
+      "snippet": "Assistant: The nightly security audit script is currently running. I'll check its status for you.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "e58f2ec1f407"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "nightly",
+        "security",
+        "audit",
+        "script",
+        "currently",
+        "running",
+        "i'll",
+        "check"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-09.txt:4:4": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-09.txt:4:4",
+      "path": "memory/.dreams/session-corpus/2026-07-09.txt",
+      "startLine": 4,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "Assistant: The security audit script is still running. Let me check its progress again.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "e58f2ec1f407"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "security",
+        "audit",
+        "script",
+        "still",
+        "running",
+        "let",
+        "check",
+        "progress"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-09.txt:5:5": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-09.txt:5:5",
+      "path": "memory/.dreams/session-corpus/2026-07-09.txt",
+      "startLine": 5,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "Assistant: The security audit script is still running. Let me check again.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "e58f2ec1f407"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "security",
+        "audit",
+        "script",
+        "still",
+        "running",
+        "let",
+        "check"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-09.txt:6:6": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-09.txt:6:6",
+      "path": "memory/.dreams/session-corpus/2026-07-09.txt",
+      "startLine": 6,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "Assistant: Let me check the status once more to see if it's completed.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "e58f2ec1f407"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "let",
+        "check",
+        "status",
+        "once",
+        "see",
+        "it's",
+        "completed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-09.txt:7:7": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-09.txt:7:7",
+      "path": "memory/.dreams/session-corpus/2026-07-09.txt",
+      "startLine": 7,
+      "endLine": 7,
+      "source": "memory",
+      "snippet": "Assistant: Let me check again to see if the script has completed.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "e58f2ec1f407"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "let",
+        "check",
+        "see",
+        "script",
+        "has",
+        "completed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-09.txt:8:8": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-09.txt:8:8",
+      "path": "memory/.dreams/session-corpus/2026-07-09.txt",
+      "startLine": 8,
+      "endLine": 8,
+      "source": "memory",
+      "snippet": "Assistant: Let me check the status again.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "e58f2ec1f407"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "let",
+        "check",
+        "status"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-09.txt:9:9": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-09.txt:9:9",
+      "path": "memory/.dreams/session-corpus/2026-07-09.txt",
+      "startLine": 9,
+      "endLine": 9,
+      "source": "memory",
+      "snippet": "Assistant: Let me check once more to see if the script has completed.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "e58f2ec1f407"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "let",
+        "check",
+        "once",
+        "see",
+        "script",
+        "has",
+        "completed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-09.txt:10:10": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-09.txt:10:10",
+      "path": "memory/.dreams/session-corpus/2026-07-09.txt",
+      "startLine": 10,
+      "endLine": 10,
+      "source": "memory",
+      "snippet": "Assistant: Let me check one more time to see if the script has completed.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "e58f2ec1f407"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "let",
+        "check",
+        "one",
+        "time",
+        "see",
+        "script",
+        "has",
+        "completed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-09.txt:11:11": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-09.txt:11:11",
+      "path": "memory/.dreams/session-corpus/2026-07-09.txt",
+      "startLine": 11,
+      "endLine": 11,
+      "source": "memory",
+      "snippet": "Assistant: Let me check again to see if the script has completed.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "e58f2ec1f407"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "let",
+        "check",
+        "see",
+        "script",
+        "has",
+        "completed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-09.txt:12:12": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-09.txt:12:12",
+      "path": "memory/.dreams/session-corpus/2026-07-09.txt",
+      "startLine": 12,
+      "endLine": 12,
+      "source": "memory",
+      "snippet": "Assistant: Let me check again to see if the script has completed.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "e58f2ec1f407"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "let",
+        "check",
+        "see",
+        "script",
+        "has",
+        "completed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-09.txt:13:13": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-09.txt:13:13",
+      "path": "memory/.dreams/session-corpus/2026-07-09.txt",
+      "startLine": 13,
+      "endLine": 13,
+      "source": "memory",
+      "snippet": "Assistant: Let me check again to see if the script has completed.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "e58f2ec1f407"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "let",
+        "check",
+        "see",
+        "script",
+        "has",
+        "completed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-06.txt:107:107": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-06.txt:107:107",
+      "path": "memory/.dreams/session-corpus/2026-07-06.txt",
+      "startLine": 107,
+      "endLine": 107,
+      "source": "memory",
+      "snippet": "Assistant: ⚠️ OAuth token refresh failed for openai-codex; using backup model. Please re-authenticate.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "bc5923b4ae3b"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "backup",
+        "openai",
+        "openai-codex",
+        "re-authenticate",
+        "oauth",
+        "token",
+        "refresh",
+        "failed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-06.txt:108:108": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-06.txt:108:108",
+      "path": "memory/.dreams/session-corpus/2026-07-06.txt",
+      "startLine": 108,
+      "endLine": 108,
+      "source": "memory",
+      "snippet": "Assistant: ⚠️ OAuth token refresh failed for openai-codex; using backup model. Please re-authenticate.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "bc5923b4ae3b"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "backup",
+        "openai",
+        "openai-codex",
+        "re-authenticate",
+        "oauth",
+        "token",
+        "refresh",
+        "failed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-06.txt:109:109": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-06.txt:109:109",
+      "path": "memory/.dreams/session-corpus/2026-07-06.txt",
+      "startLine": 109,
+      "endLine": 109,
+      "source": "memory",
+      "snippet": "Assistant: We need to decide whether to output HEARTBEAT_OK or a warning. The user repeatedly sends \"[OpenClaw heartbeat poll]\" which seems like they are testing the heartbeat response. According to the instructions: If the current user message is a heartbeat poll and nothing nee",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "bc5923b4ae3b"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "heartbeat-ok",
+        "need",
+        "decide",
+        "whether",
+        "output",
+        "warning",
+        "repeatedly",
+        "sends"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-06.txt:110:110": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-06.txt:110:110",
+      "path": "memory/.dreams/session-corpus/2026-07-06.txt",
+      "startLine": 110,
+      "endLine": 110,
+      "source": "memory",
+      "snippet": "Assistant: instruction says if something needs attention, we should reply with the alert text. The alert is the OAuth token issue. So we should continue to alert until it's resolved. However, the user might be just spamming heartbeat polls to see our response. The system expects",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "bc5923b4ae3b"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "instruction",
+        "says",
+        "something",
+        "needs",
+        "attention",
+        "reply",
+        "alert",
+        "oauth"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-06.txt:111:111": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-06.txt:111:111",
+      "path": "memory/.dreams/session-corpus/2026-07-06.txt",
+      "startLine": 111,
+      "endLine": 111,
+      "source": "memory",
+      "snippet": "Assistant: we should continue to alert. However, we need to decide if we should include any additional info. The warning we have been giving: \"⚠️ OAuth token refresh failed for openai-codex, causing fallback to backup models. Please re-authenticate or refresh token to restore mai",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "bc5923b4ae3b"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "backup",
+        "openai",
+        "openai-codex",
+        "re-authenticate",
+        "continue",
+        "alert",
+        "however",
+        "need"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-06.txt:112:112": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-06.txt:112:112",
+      "path": "memory/.dreams/session-corpus/2026-07-06.txt",
+      "startLine": 112,
+      "endLine": 112,
+      "source": "memory",
+      "snippet": "Assistant: session_status then warning. Then they sent another poll, we gave warning. Then another poll, we gave warning. And so on. The most recent user message is \"[OpenClaw heartbeat poll]\" (the one after we gave session_status and warning? Let's scroll up: The conversation: a",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "bc5923b4ae3b"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "session-status",
+        "warning",
+        "sent",
+        "another",
+        "poll",
+        "gave",
+        "recent",
+        "message"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-06.txt:113:113": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-06.txt:113:113",
+      "path": "memory/.dreams/session-corpus/2026-07-06.txt",
+      "startLine": 113,
+      "endLine": 113,
+      "source": "memory",
+      "snippet": "Assistant: responded with warning. Then they sent another \"[OpenClaw heartbeat poll]\" and we responded with warning. Then they sent another \"[OpenClaw heartbeat poll]\" and we responded with warning. Then they sent another \"[OpenClaw heartbeat poll]\" and we responded with warning.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "bc5923b4ae3b"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "responded",
+        "warning",
+        "sent",
+        "another",
+        "openclaw",
+        "heartbeat",
+        "poll"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-06.txt:114:114": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-06.txt:114:114",
+      "path": "memory/.dreams/session-corpus/2026-07-06.txt",
+      "startLine": 114,
+      "endLine": 114,
+      "source": "memory",
+      "snippet": "Assistant: heartbeat poll]\" and we responded with warning. Then they sent another \"[OpenClaw heartbeat poll]\" and we responded with warning. Then they sent another \"[OpenClaw heartbeat poll]\" and we responded with warning. Then they sent another \"[OpenClaw heartbeat poll]\" and we",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "bc5923b4ae3b"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "heartbeat",
+        "poll",
+        "responded",
+        "warning",
+        "sent",
+        "another",
+        "openclaw"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-06.txt:115:115": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-06.txt:115:115",
+      "path": "memory/.dreams/session-corpus/2026-07-06.txt",
+      "startLine": 115,
+      "endLine": 115,
+      "source": "memory",
+      "snippet": "Assistant: another \"[OpenClaw heartbeat poll]\" and we responded with warning. Then they sent another \"[OpenClaw heartbeat poll]\" and we responded with warning. Then they sent another \"[OpenClaw heartbeat poll]\" and we responded with warning. Then they sent another \"[OpenClaw hear",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "bc5923b4ae3b"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "another",
+        "openclaw",
+        "heartbeat",
+        "poll",
+        "responded",
+        "warning",
+        "sent",
+        "hear"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-06.txt:116:116": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-06.txt:116:116",
+      "path": "memory/.dreams/session-corpus/2026-07-06.txt",
+      "startLine": 116,
+      "endLine": 116,
+      "source": "memory",
+      "snippet": "Assistant: warning. Then they sent another \"[OpenClaw heartbeat poll]\" and we responded with warning. Then they sent another \"[OpenClaw heartbeat poll]\" and we responded with warning. Then they sent another \"[OpenClaw heartbeat poll]\" and we responded with warning. Then they sent",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "bc5923b4ae3b"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "warning",
+        "sent",
+        "another",
+        "openclaw",
+        "heartbeat",
+        "poll",
+        "responded"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-06.txt:117:117": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-06.txt:117:117",
+      "path": "memory/.dreams/session-corpus/2026-07-06.txt",
+      "startLine": 117,
+      "endLine": 117,
+      "source": "memory",
+      "snippet": "Assistant: and we responded with warning. Then they sent another \"[OpenClaw heartbeat poll]\" and we responded with warning. Then they sent another \"[OpenClaw heartbeat poll]\" and we responded with warning. Then they sent another \"[OpenClaw heartbeat poll]\" and we responded with w",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "bc5923b4ae3b"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "responded",
+        "warning",
+        "sent",
+        "another",
+        "openclaw",
+        "heartbeat",
+        "poll"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-06.txt:118:118": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-06.txt:118:118",
+      "path": "memory/.dreams/session-corpus/2026-07-06.txt",
+      "startLine": 118,
+      "endLine": 118,
+      "source": "memory",
+      "snippet": "Assistant: \"[OpenClaw heartbeat poll]\" and we responded with warning. Then they sent another \"[OpenClaw heartbeat poll]\" and we responded with warning. Then they sent another \"[OpenClaw heartbeat poll]\" and we responded with warning. Then they sent another \"[OpenClaw heartbeat po",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "bc5923b4ae3b"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "openclaw",
+        "heartbeat",
+        "poll",
+        "responded",
+        "warning",
+        "sent",
+        "another"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-09.txt:14:14": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-09.txt:14:14",
+      "path": "memory/.dreams/session-corpus/2026-07-09.txt",
+      "startLine": 14,
+      "endLine": 14,
+      "source": "memory",
+      "snippet": "Assistant: Let me check again to see if the script has completed.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "e58f2ec1f407"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "let",
+        "check",
+        "see",
+        "script",
+        "has",
+        "completed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-09.txt:15:15": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-09.txt:15:15",
+      "path": "memory/.dreams/session-corpus/2026-07-09.txt",
+      "startLine": 15,
+      "endLine": 15,
+      "source": "memory",
+      "snippet": "Assistant: Let me check again to see if the script has completed.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "e58f2ec1f407"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "let",
+        "check",
+        "see",
+        "script",
+        "has",
+        "completed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-09.txt:16:16": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-09.txt:16:16",
+      "path": "memory/.dreams/session-corpus/2026-07-09.txt",
+      "startLine": 16,
+      "endLine": 16,
+      "source": "memory",
+      "snippet": "Assistant: Let me check again to see if the script has completed.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "e58f2ec1f407"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "let",
+        "check",
+        "see",
+        "script",
+        "has",
+        "completed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-09.txt:17:17": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-09.txt:17:17",
+      "path": "memory/.dreams/session-corpus/2026-07-09.txt",
+      "startLine": 17,
+      "endLine": 17,
+      "source": "memory",
+      "snippet": "Assistant: Let me check again to see if the script has completed.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "e58f2ec1f407"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "let",
+        "check",
+        "see",
+        "script",
+        "has",
+        "completed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-09.txt:18:18": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-09.txt:18:18",
+      "path": "memory/.dreams/session-corpus/2026-07-09.txt",
+      "startLine": 18,
+      "endLine": 18,
+      "source": "memory",
+      "snippet": "Assistant: Let me check again to see if the script has completed.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "e58f2ec1f407"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "let",
+        "check",
+        "see",
+        "script",
+        "has",
+        "completed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-09.txt:19:19": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-09.txt:19:19",
+      "path": "memory/.dreams/session-corpus/2026-07-09.txt",
+      "startLine": 19,
+      "endLine": 19,
+      "source": "memory",
+      "snippet": "Assistant: Let me check again to see if the script has completed.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "e58f2ec1f407"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "let",
+        "check",
+        "see",
+        "script",
+        "has",
+        "completed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-09.txt:20:20": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-09.txt:20:20",
+      "path": "memory/.dreams/session-corpus/2026-07-09.txt",
+      "startLine": 20,
+      "endLine": 20,
+      "source": "memory",
+      "snippet": "Assistant: Let me check again to see if the script has completed.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "e58f2ec1f407"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "let",
+        "check",
+        "see",
+        "script",
+        "has",
+        "completed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-09.txt:21:21": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-09.txt:21:21",
+      "path": "memory/.dreams/session-corpus/2026-07-09.txt",
+      "startLine": 21,
+      "endLine": 21,
+      "source": "memory",
+      "snippet": "Assistant: Let me check again to see if the script has completed.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "e58f2ec1f407"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "let",
+        "check",
+        "see",
+        "script",
+        "has",
+        "completed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-09.txt:22:22": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-09.txt:22:22",
+      "path": "memory/.dreams/session-corpus/2026-07-09.txt",
+      "startLine": 22,
+      "endLine": 22,
+      "source": "memory",
+      "snippet": "Assistant: Let me check again to see if the script has completed.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "e58f2ec1f407"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "let",
+        "check",
+        "see",
+        "script",
+        "has",
+        "completed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-09.txt:23:23": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-09.txt:23:23",
+      "path": "memory/.dreams/session-corpus/2026-07-09.txt",
+      "startLine": 23,
+      "endLine": 23,
+      "source": "memory",
+      "snippet": "Assistant: Let me check again to see if the script has completed.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "e58f2ec1f407"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "let",
+        "check",
+        "see",
+        "script",
+        "has",
+        "completed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-09.txt:24:24": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-09.txt:24:24",
+      "path": "memory/.dreams/session-corpus/2026-07-09.txt",
+      "startLine": 24,
+      "endLine": 24,
+      "source": "memory",
+      "snippet": "Assistant: Let me check again to see if the script has completed.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "e58f2ec1f407"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "let",
+        "check",
+        "see",
+        "script",
+        "has",
+        "completed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-09.txt:25:25": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-09.txt:25:25",
+      "path": "memory/.dreams/session-corpus/2026-07-09.txt",
+      "startLine": 25,
+      "endLine": 25,
+      "source": "memory",
+      "snippet": "Assistant: Let me check again to see if the script has completed.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-08T19:01:39.929Z",
+      "lastRecalledAt": "2026-07-08T19:01:39.929Z",
+      "queryHashes": [
+        "e58f2ec1f407"
+      ],
+      "recallDays": [
+        "2026-07-09",
+        "2026-07-08"
+      ],
+      "conceptTags": [
+        "let",
+        "check",
+        "see",
+        "script",
+        "has",
+        "completed"
       ]
     }
   }
