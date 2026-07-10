@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-09T19:00:15.219Z",
+  "updatedAt": "2026-07-10T19:00:27.181Z",
   "entries": {
     "memory:memory/2026-03-14.md:84:98": {
       "key": "memory:memory/2026-03-14.md:84:98",
@@ -113227,6 +113227,1613 @@
         "warning",
         "sent",
         "another"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-08.txt:20:20": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-08.txt:20:20",
+      "path": "memory/.dreams/session-corpus/2026-07-08.txt",
+      "startLine": 20,
+      "endLine": 20,
+      "source": "memory",
+      "snippet": "Assistant: ⚠️ OAuth token refresh failed for openai-codex, causing fallback to backup models. Please re-authenticate or refresh token to restore main model.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-10T19:00:22.394Z",
+      "lastRecalledAt": "2026-07-10T19:00:22.394Z",
+      "queryHashes": [
+        "ef25d3c6feca"
+      ],
+      "recallDays": [
+        "2026-07-11",
+        "2026-07-10"
+      ],
+      "conceptTags": [
+        "backup",
+        "openai",
+        "openai-codex",
+        "re-authenticate",
+        "oauth",
+        "token",
+        "refresh",
+        "failed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-08.txt:21:21": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-08.txt:21:21",
+      "path": "memory/.dreams/session-corpus/2026-07-08.txt",
+      "startLine": 21,
+      "endLine": 21,
+      "source": "memory",
+      "snippet": "Assistant: ⚠️ OAuth token refresh failed for openai-codex, causing fallback to backup models. Please re-authenticate or refresh token to restore main model.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-10T19:00:22.394Z",
+      "lastRecalledAt": "2026-07-10T19:00:22.394Z",
+      "queryHashes": [
+        "ef25d3c6feca"
+      ],
+      "recallDays": [
+        "2026-07-11",
+        "2026-07-10"
+      ],
+      "conceptTags": [
+        "backup",
+        "openai",
+        "openai-codex",
+        "re-authenticate",
+        "oauth",
+        "token",
+        "refresh",
+        "failed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-08.txt:22:22": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-08.txt:22:22",
+      "path": "memory/.dreams/session-corpus/2026-07-08.txt",
+      "startLine": 22,
+      "endLine": 22,
+      "source": "memory",
+      "snippet": "Assistant: ⚠️ OAuth token refresh failed for openai-codex, causing fallback to backup models. Please re-authenticate or refresh token to restore main model.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-10T19:00:22.394Z",
+      "lastRecalledAt": "2026-07-10T19:00:22.394Z",
+      "queryHashes": [
+        "ef25d3c6feca"
+      ],
+      "recallDays": [
+        "2026-07-11",
+        "2026-07-10"
+      ],
+      "conceptTags": [
+        "backup",
+        "openai",
+        "openai-codex",
+        "re-authenticate",
+        "oauth",
+        "token",
+        "refresh",
+        "failed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-08.txt:23:23": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-08.txt:23:23",
+      "path": "memory/.dreams/session-corpus/2026-07-08.txt",
+      "startLine": 23,
+      "endLine": 23,
+      "source": "memory",
+      "snippet": "Assistant: ⚠️ OAuth token refresh failed for openai-codex, causing fallback to backup models. Please re-authenticate or refresh token to restore main model.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-10T19:00:22.394Z",
+      "lastRecalledAt": "2026-07-10T19:00:22.394Z",
+      "queryHashes": [
+        "ef25d3c6feca"
+      ],
+      "recallDays": [
+        "2026-07-11",
+        "2026-07-10"
+      ],
+      "conceptTags": [
+        "backup",
+        "openai",
+        "openai-codex",
+        "re-authenticate",
+        "oauth",
+        "token",
+        "refresh",
+        "failed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-08.txt:24:24": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-08.txt:24:24",
+      "path": "memory/.dreams/session-corpus/2026-07-08.txt",
+      "startLine": 24,
+      "endLine": 24,
+      "source": "memory",
+      "snippet": "Assistant: ⚠️ OAuth token refresh failed for openai-codex, causing fallback to backup models. Please re-authenticate or refresh token to restore main model.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-10T19:00:22.394Z",
+      "lastRecalledAt": "2026-07-10T19:00:22.394Z",
+      "queryHashes": [
+        "ef25d3c6feca"
+      ],
+      "recallDays": [
+        "2026-07-11",
+        "2026-07-10"
+      ],
+      "conceptTags": [
+        "backup",
+        "openai",
+        "openai-codex",
+        "re-authenticate",
+        "oauth",
+        "token",
+        "refresh",
+        "failed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-08.txt:25:25": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-08.txt:25:25",
+      "path": "memory/.dreams/session-corpus/2026-07-08.txt",
+      "startLine": 25,
+      "endLine": 25,
+      "source": "memory",
+      "snippet": "Assistant: ⚠️ OAuth token refresh failed for openai-codex, causing fallback to backup models. Please re-authenticate or refresh token to restore main model.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-10T19:00:22.394Z",
+      "lastRecalledAt": "2026-07-10T19:00:22.394Z",
+      "queryHashes": [
+        "ef25d3c6feca"
+      ],
+      "recallDays": [
+        "2026-07-11",
+        "2026-07-10"
+      ],
+      "conceptTags": [
+        "backup",
+        "openai",
+        "openai-codex",
+        "re-authenticate",
+        "oauth",
+        "token",
+        "refresh",
+        "failed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-08.txt:26:26": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-08.txt:26:26",
+      "path": "memory/.dreams/session-corpus/2026-07-08.txt",
+      "startLine": 26,
+      "endLine": 26,
+      "source": "memory",
+      "snippet": "Assistant: ⚠️ OAuth token refresh failed for openai-codex, causing fallback to backup models. Please re-authenticate or refresh token to restore main model.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-10T19:00:22.394Z",
+      "lastRecalledAt": "2026-07-10T19:00:22.394Z",
+      "queryHashes": [
+        "ef25d3c6feca"
+      ],
+      "recallDays": [
+        "2026-07-11",
+        "2026-07-10"
+      ],
+      "conceptTags": [
+        "backup",
+        "openai",
+        "openai-codex",
+        "re-authenticate",
+        "oauth",
+        "token",
+        "refresh",
+        "failed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-08.txt:27:27": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-08.txt:27:27",
+      "path": "memory/.dreams/session-corpus/2026-07-08.txt",
+      "startLine": 27,
+      "endLine": 27,
+      "source": "memory",
+      "snippet": "Assistant: ⚠️ OAuth token refresh failed for openai-codex, causing fallback to backup models. Please re-authenticate or refresh token to restore main model.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-10T19:00:22.394Z",
+      "lastRecalledAt": "2026-07-10T19:00:22.394Z",
+      "queryHashes": [
+        "ef25d3c6feca"
+      ],
+      "recallDays": [
+        "2026-07-11",
+        "2026-07-10"
+      ],
+      "conceptTags": [
+        "backup",
+        "openai",
+        "openai-codex",
+        "re-authenticate",
+        "oauth",
+        "token",
+        "refresh",
+        "failed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-08.txt:28:28": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-08.txt:28:28",
+      "path": "memory/.dreams/session-corpus/2026-07-08.txt",
+      "startLine": 28,
+      "endLine": 28,
+      "source": "memory",
+      "snippet": "Assistant: ⚠️ OAuth token refresh failed for openai-codex, causing fallback to backup models. Please re-authenticate or refresh token to restore main model.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-10T19:00:22.394Z",
+      "lastRecalledAt": "2026-07-10T19:00:22.394Z",
+      "queryHashes": [
+        "ef25d3c6feca"
+      ],
+      "recallDays": [
+        "2026-07-11",
+        "2026-07-10"
+      ],
+      "conceptTags": [
+        "backup",
+        "openai",
+        "openai-codex",
+        "re-authenticate",
+        "oauth",
+        "token",
+        "refresh",
+        "failed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-08.txt:29:29": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-08.txt:29:29",
+      "path": "memory/.dreams/session-corpus/2026-07-08.txt",
+      "startLine": 29,
+      "endLine": 29,
+      "source": "memory",
+      "snippet": "Assistant: ⚠️ OAuth token refresh failed for openai-codex, causing fallback to backup models. Please re-authenticate or refresh token to restore main model.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-10T19:00:22.394Z",
+      "lastRecalledAt": "2026-07-10T19:00:22.394Z",
+      "queryHashes": [
+        "ef25d3c6feca"
+      ],
+      "recallDays": [
+        "2026-07-11",
+        "2026-07-10"
+      ],
+      "conceptTags": [
+        "backup",
+        "openai",
+        "openai-codex",
+        "re-authenticate",
+        "oauth",
+        "token",
+        "refresh",
+        "failed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-08.txt:30:30": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-08.txt:30:30",
+      "path": "memory/.dreams/session-corpus/2026-07-08.txt",
+      "startLine": 30,
+      "endLine": 30,
+      "source": "memory",
+      "snippet": "Assistant: ⚠️ OAuth token refresh failed for openai-codex, causing fallback to backup models. Please re-authenticate or refresh token to restore main model.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-10T19:00:22.394Z",
+      "lastRecalledAt": "2026-07-10T19:00:22.394Z",
+      "queryHashes": [
+        "ef25d3c6feca"
+      ],
+      "recallDays": [
+        "2026-07-11",
+        "2026-07-10"
+      ],
+      "conceptTags": [
+        "backup",
+        "openai",
+        "openai-codex",
+        "re-authenticate",
+        "oauth",
+        "token",
+        "refresh",
+        "failed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-08.txt:31:31": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-08.txt:31:31",
+      "path": "memory/.dreams/session-corpus/2026-07-08.txt",
+      "startLine": 31,
+      "endLine": 31,
+      "source": "memory",
+      "snippet": "Assistant: ⚠️ OAuth token refresh failed for openai-codex, causing fallback to backup models. Please re-authenticate or refresh token to restore main model.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-10T19:00:22.394Z",
+      "lastRecalledAt": "2026-07-10T19:00:22.394Z",
+      "queryHashes": [
+        "ef25d3c6feca"
+      ],
+      "recallDays": [
+        "2026-07-11",
+        "2026-07-10"
+      ],
+      "conceptTags": [
+        "backup",
+        "openai",
+        "openai-codex",
+        "re-authenticate",
+        "oauth",
+        "token",
+        "refresh",
+        "failed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-10.txt:4:4": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-10.txt:4:4",
+      "path": "memory/.dreams/session-corpus/2026-07-10.txt",
+      "startLine": 4,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "Assistant: I need to run the exact command specified to check the GitClaw backup health.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-10T19:00:22.394Z",
+      "lastRecalledAt": "2026-07-10T19:00:22.394Z",
+      "queryHashes": [
+        "f29b13d34764"
+      ],
+      "recallDays": [
+        "2026-07-11",
+        "2026-07-10"
+      ],
+      "conceptTags": [
+        "backup",
+        "need",
+        "run",
+        "exact",
+        "command",
+        "specified",
+        "check",
+        "gitclaw"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-10.txt:5:5": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-10.txt:5:5",
+      "path": "memory/.dreams/session-corpus/2026-07-10.txt",
+      "startLine": 5,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "Assistant: The command printed nothing, so according to the rules, I should reply exactly: NO_REPLYPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-10T19:00:22.394Z",
+      "lastRecalledAt": "2026-07-10T19:00:22.394Z",
+      "queryHashes": [
+        "f29b13d34764"
+      ],
+      "recallDays": [
+        "2026-07-11",
+        "2026-07-10"
+      ],
+      "conceptTags": [
+        "no-replyply",
+        "command",
+        "printed",
+        "nothing",
+        "according",
+        "rules",
+        "reply",
+        "exactly"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-10.txt:6:6": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-10.txt:6:6",
+      "path": "memory/.dreams/session-corpus/2026-07-10.txt",
+      "startLine": 6,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "Assistant: I'll run the GitClaw backup health check command as requested.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-10T19:00:22.394Z",
+      "lastRecalledAt": "2026-07-10T19:00:22.394Z",
+      "queryHashes": [
+        "f29b13d34764"
+      ],
+      "recallDays": [
+        "2026-07-11",
+        "2026-07-10"
+      ],
+      "conceptTags": [
+        "backup",
+        "i'll",
+        "run",
+        "gitclaw",
+        "health",
+        "check",
+        "command",
+        "requested"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-10.txt:7:7": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-10.txt:7:7",
+      "path": "memory/.dreams/session-corpus/2026-07-10.txt",
+      "startLine": 7,
+      "endLine": 7,
+      "source": "memory",
+      "snippet": "Assistant: I need to run the specified command to check the GitClaw backup health.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-10T19:00:22.394Z",
+      "lastRecalledAt": "2026-07-10T19:00:22.394Z",
+      "queryHashes": [
+        "f29b13d34764"
+      ],
+      "recallDays": [
+        "2026-07-11",
+        "2026-07-10"
+      ],
+      "conceptTags": [
+        "backup",
+        "need",
+        "run",
+        "specified",
+        "command",
+        "check",
+        "gitclaw",
+        "health"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-10.txt:8:8": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-10.txt:8:8",
+      "path": "memory/.dreams/session-corpus/2026-07-10.txt",
+      "startLine": 8,
+      "endLine": 8,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-10T19:00:22.394Z",
+      "lastRecalledAt": "2026-07-10T19:00:22.394Z",
+      "queryHashes": [
+        "f29b13d34764"
+      ],
+      "recallDays": [
+        "2026-07-11",
+        "2026-07-10"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-10.txt:9:9": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-10.txt:9:9",
+      "path": "memory/.dreams/session-corpus/2026-07-10.txt",
+      "startLine": 9,
+      "endLine": 9,
+      "source": "memory",
+      "snippet": "Assistant: The command produced no output, so according to the rules I should reply exactly: NO_REPLY NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-10T19:00:22.394Z",
+      "lastRecalledAt": "2026-07-10T19:00:22.394Z",
+      "queryHashes": [
+        "f29b13d34764"
+      ],
+      "recallDays": [
+        "2026-07-11",
+        "2026-07-10"
+      ],
+      "conceptTags": [
+        "no-reply",
+        "command",
+        "produced",
+        "output",
+        "according",
+        "rules",
+        "reply",
+        "exactly"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-10.txt:10:10": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-10.txt:10:10",
+      "path": "memory/.dreams/session-corpus/2026-07-10.txt",
+      "startLine": 10,
+      "endLine": 10,
+      "source": "memory",
+      "snippet": "User: [Retry after the previous model attempt failed or timed out] [Fri 2026-07-10 03:00 GMT+8] Write a dream diary entry from these memory fragments: - Assistant: We need to respond to the heartbeat poll. The user has sent many heartbeat polls. According to the instructions: If",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-10T19:00:22.394Z",
+      "lastRecalledAt": "2026-07-10T19:00:22.394Z",
+      "queryHashes": [
+        "f29b13d34764"
+      ],
+      "recallDays": [
+        "2026-07-11",
+        "2026-07-10"
+      ],
+      "conceptTags": [
+        "retry",
+        "previous",
+        "model",
+        "attempt",
+        "failed",
+        "timed",
+        "out",
+        "fri"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-10.txt:11:11": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-10.txt:11:11",
+      "path": "memory/.dreams/session-corpus/2026-07-10.txt",
+      "startLine": 11,
+      "endLine": 11,
+      "source": "memory",
+      "snippet": "User: openai-codex, causing fallback to backup models. Please re-authenticate or refresh token to restore main model.\" That seems appropriate. But we have been giving that same message repeatedly. Perhaps we sho - Assistant: warning. And so on. The most recent user message is \"[O",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-10T19:00:22.394Z",
+      "lastRecalledAt": "2026-07-10T19:00:22.394Z",
+      "queryHashes": [
+        "f29b13d34764"
+      ],
+      "recallDays": [
+        "2026-07-11",
+        "2026-07-10"
+      ],
+      "conceptTags": [
+        "backup",
+        "openai",
+        "openai-codex",
+        "re-authenticate",
+        "codex",
+        "causing",
+        "fallback",
+        "models"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-10.txt:12:12": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-10.txt:12:12",
+      "path": "memory/.dreams/session-corpus/2026-07-10.txt",
+      "startLine": 12,
+      "endLine": 12,
+      "source": "memory",
+      "snippet": "User: 我需要运行指定的命令来检查GitClaw备份健康状况。让我执行这个命令并检查其输出。 - Assistant: 命令没有产生任何输出，因此根据规则，我应该回复NO_REPLY。 NO_REPLY - Assistant: #!/bin/bash # check_gitclaw_backup.sh # Checks health of GitClaw backup for repository raguchiindo-design/openclaw-config # Part of security hardening: behavior-le",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-10T19:00:22.394Z",
+      "lastRecalledAt": "2026-07-10T19:00:22.394Z",
+      "queryHashes": [
+        "f29b13d34764"
+      ],
+      "recallDays": [
+        "2026-07-11",
+        "2026-07-10"
+      ],
+      "conceptTags": [
+        "backup",
+        "备份",
+        "我应该回复no-reply",
+        "no-reply",
+        "bin/bash",
+        "check-gitclaw-backup.sh",
+        "behavior-le",
+        "需要"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-10.txt:13:13": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-10.txt:13:13",
+      "path": "memory/.dreams/session-corpus/2026-07-10.txt",
+      "startLine": 13,
+      "endLine": 13,
+      "source": "memory",
+      "snippet": "User: \"[$timestamp] ALERT: No git repository found in backup directory $BACKUP_DIR for $REPO\" exit 1 fi # If we get here, backup is healthy echo \"[$timesta - Assistant: I need to run the specified command to check the GitClaw backup health. - User: [Retry after the previous model",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-10T19:00:22.394Z",
+      "lastRecalledAt": "2026-07-10T19:00:22.394Z",
+      "queryHashes": [
+        "f29b13d34764"
+      ],
+      "recallDays": [
+        "2026-07-11",
+        "2026-07-10"
+      ],
+      "conceptTags": [
+        "backup",
+        "backup-dir",
+        "timestamp",
+        "alert",
+        "git",
+        "repository",
+        "found",
+        "directory"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-10.txt:14:14": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-10.txt:14:14",
+      "path": "memory/.dreams/session-corpus/2026-07-10.txt",
+      "startLine": 14,
+      "endLine": 14,
+      "source": "memory",
+      "snippet": "Assistant: bash /home/ubuntu/.openclaw/workspace/scripts/check_gitclaw_backup.sh echo $?",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-10T19:00:22.394Z",
+      "lastRecalledAt": "2026-07-10T19:00:22.394Z",
+      "queryHashes": [
+        "f29b13d34764"
+      ],
+      "recallDays": [
+        "2026-07-11",
+        "2026-07-10"
+      ],
+      "conceptTags": [
+        "backup",
+        "home/ubuntu",
+        "bash",
+        "home",
+        "ubuntu",
+        "openclaw",
+        "scripts",
+        "check-gitclaw-backup.sh"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-10.txt:15:15": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-10.txt:15:15",
+      "path": "memory/.dreams/session-corpus/2026-07-10.txt",
+      "startLine": 15,
+      "endLine": 15,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-10T19:00:22.394Z",
+      "lastRecalledAt": "2026-07-10T19:00:22.394Z",
+      "queryHashes": [
+        "f29b13d34764"
+      ],
+      "recallDays": [
+        "2026-07-11",
+        "2026-07-10"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-10.txt:16:16": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-10.txt:16:16",
+      "path": "memory/.dreams/session-corpus/2026-07-10.txt",
+      "startLine": 16,
+      "endLine": 16,
+      "source": "memory",
+      "snippet": "Assistant: I need to run the GitClaw backup health check script as instructed.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-10T19:00:22.394Z",
+      "lastRecalledAt": "2026-07-10T19:00:22.394Z",
+      "queryHashes": [
+        "f29b13d34764"
+      ],
+      "recallDays": [
+        "2026-07-11",
+        "2026-07-10"
+      ],
+      "conceptTags": [
+        "backup",
+        "need",
+        "run",
+        "gitclaw",
+        "health",
+        "check",
+        "script",
+        "instructed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-10.txt:17:17": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-10.txt:17:17",
+      "path": "memory/.dreams/session-corpus/2026-07-10.txt",
+      "startLine": 17,
+      "endLine": 17,
+      "source": "memory",
+      "snippet": "Assistant: 我会运行这个健康检查脚本来查看GitClaw备份的状态。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-10T19:00:22.394Z",
+      "lastRecalledAt": "2026-07-10T19:00:22.394Z",
+      "queryHashes": [
+        "f29b13d34764"
+      ],
+      "recallDays": [
+        "2026-07-11",
+        "2026-07-10"
+      ],
+      "conceptTags": [
+        "备份",
+        "运行",
+        "这个",
+        "健康",
+        "检查",
+        "脚本",
+        "查看",
+        "gitclaw"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-10.txt:18:18": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-10.txt:18:18",
+      "path": "memory/.dreams/session-corpus/2026-07-10.txt",
+      "startLine": 18,
+      "endLine": 18,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-10T19:00:22.394Z",
+      "lastRecalledAt": "2026-07-10T19:00:22.394Z",
+      "queryHashes": [
+        "f29b13d34764"
+      ],
+      "recallDays": [
+        "2026-07-11",
+        "2026-07-10"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-10.txt:19:19": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-10.txt:19:19",
+      "path": "memory/.dreams/session-corpus/2026-07-10.txt",
+      "startLine": 19,
+      "endLine": 19,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-10T19:00:22.394Z",
+      "lastRecalledAt": "2026-07-10T19:00:22.394Z",
+      "queryHashes": [
+        "f29b13d34764"
+      ],
+      "recallDays": [
+        "2026-07-11",
+        "2026-07-10"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-10.txt:20:20": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-10.txt:20:20",
+      "path": "memory/.dreams/session-corpus/2026-07-10.txt",
+      "startLine": 20,
+      "endLine": 20,
+      "source": "memory",
+      "snippet": "Assistant: I'll run the GitClaw backup health check command as requested.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-10T19:00:22.394Z",
+      "lastRecalledAt": "2026-07-10T19:00:22.394Z",
+      "queryHashes": [
+        "f29b13d34764"
+      ],
+      "recallDays": [
+        "2026-07-11",
+        "2026-07-10"
+      ],
+      "conceptTags": [
+        "backup",
+        "i'll",
+        "run",
+        "gitclaw",
+        "health",
+        "check",
+        "command",
+        "requested"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-10.txt:21:21": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-10.txt:21:21",
+      "path": "memory/.dreams/session-corpus/2026-07-10.txt",
+      "startLine": 21,
+      "endLine": 21,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-10T19:00:22.394Z",
+      "lastRecalledAt": "2026-07-10T19:00:22.394Z",
+      "queryHashes": [
+        "f29b13d34764"
+      ],
+      "recallDays": [
+        "2026-07-11",
+        "2026-07-10"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-10.txt:22:22": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-10.txt:22:22",
+      "path": "memory/.dreams/session-corpus/2026-07-10.txt",
+      "startLine": 22,
+      "endLine": 22,
+      "source": "memory",
+      "snippet": "Assistant: I need to run the specified command to check the GitClaw backup health.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-10T19:00:22.394Z",
+      "lastRecalledAt": "2026-07-10T19:00:22.394Z",
+      "queryHashes": [
+        "f29b13d34764"
+      ],
+      "recallDays": [
+        "2026-07-11",
+        "2026-07-10"
+      ],
+      "conceptTags": [
+        "backup",
+        "need",
+        "run",
+        "specified",
+        "command",
+        "check",
+        "gitclaw",
+        "health"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-10.txt:23:23": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-10.txt:23:23",
+      "path": "memory/.dreams/session-corpus/2026-07-10.txt",
+      "startLine": 23,
+      "endLine": 23,
+      "source": "memory",
+      "snippet": "Assistant: Let me run the backup health check script as requested.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-10T19:00:22.394Z",
+      "lastRecalledAt": "2026-07-10T19:00:22.394Z",
+      "queryHashes": [
+        "f29b13d34764"
+      ],
+      "recallDays": [
+        "2026-07-11",
+        "2026-07-10"
+      ],
+      "conceptTags": [
+        "backup",
+        "let",
+        "run",
+        "health",
+        "check",
+        "script",
+        "requested"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-10.txt:24:24": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-10.txt:24:24",
+      "path": "memory/.dreams/session-corpus/2026-07-10.txt",
+      "startLine": 24,
+      "endLine": 24,
+      "source": "memory",
+      "snippet": "Assistant: I need to run the backup health check script as requested. Let me execute it and inspect the output.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-10T19:00:22.394Z",
+      "lastRecalledAt": "2026-07-10T19:00:22.394Z",
+      "queryHashes": [
+        "f29b13d34764"
+      ],
+      "recallDays": [
+        "2026-07-11",
+        "2026-07-10"
+      ],
+      "conceptTags": [
+        "backup",
+        "need",
+        "run",
+        "health",
+        "check",
+        "script",
+        "requested",
+        "let"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-10.txt:25:25": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-10.txt:25:25",
+      "path": "memory/.dreams/session-corpus/2026-07-10.txt",
+      "startLine": 25,
+      "endLine": 25,
+      "source": "memory",
+      "snippet": "Assistant: I need to run the exact command specified in the",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-10T19:00:22.394Z",
+      "lastRecalledAt": "2026-07-10T19:00:22.394Z",
+      "queryHashes": [
+        "f29b13d34764"
+      ],
+      "recallDays": [
+        "2026-07-11",
+        "2026-07-10"
+      ],
+      "conceptTags": [
+        "need",
+        "run",
+        "exact",
+        "command",
+        "specified"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-10.txt:26:26": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-10.txt:26:26",
+      "path": "memory/.dreams/session-corpus/2026-07-10.txt",
+      "startLine": 26,
+      "endLine": 26,
+      "source": "memory",
+      "snippet": "Assistant: 什么值得关注:明确BD需求,可申请相关实习或合作项 Cici可以做的小行动:投递实习或岗位,准备相关市场分析材料。 重要程度:高 要点:Promoting the Export 来源:https://www.federalregister.gov/documents/full_text/html/2025/07/28/2025-14218.html 机会方向:应用分发渠道/插件生态 相关公司/产品:Verzio 为什么值得关注:分发渠道帮助作品触达用户,可考虑上 Cici可以做的小行动:了解上架要求,尝试提交一个小作品。 重要程度:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-10T19:00:22.394Z",
+      "lastRecalledAt": "2026-07-10T19:00:22.394Z",
+      "queryHashes": [
+        "f29b13d34764"
+      ],
+      "recallDays": [
+        "2026-07-11",
+        "2026-07-10"
+      ],
+      "conceptTags": [
+        "应用分发渠道/插件生态",
+        "相关公司/产品",
+        "什么",
+        "值得",
+        "关注",
+        "明确",
+        "需求",
+        "申请"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-10.txt:27:27": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-10.txt:27:27",
+      "path": "memory/.dreams/session-corpus/2026-07-10.txt",
+      "startLine": 27,
+      "endLine": 27,
+      "source": "memory",
+      "snippet": "Assistant: Cici可以做的小行动:下载体验,评估其对个人开发的助力。 重要程度:中 要点:Guidance Regarding E 来源:https://www.bis.gov/media/documents/bis-guidance-may-31-2026.pdf 机会方向:AI IDE/编辑器 相关公司/产品:未知公司 为什么值得关注:新IDE降低开发门槛,适合个人开发者快 Cici可以做的小行动:下载体验,评估其对个人开发的助力。 重要程度:中 要点:Z.ai launches ZCode 来源: VentureBeat|https:/",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-10T19:00:22.394Z",
+      "lastRecalledAt": "2026-07-10T19:00:22.394Z",
+      "queryHashes": [
+        "f29b13d34764"
+      ],
+      "recallDays": [
+        "2026-07-11",
+        "2026-07-10"
+      ],
+      "conceptTags": [
+        "ide/编辑器",
+        "相关公司/产品",
+        "z.ai",
+        "cici",
+        "可以",
+        "做的",
+        "行动",
+        "下载"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-10.txt:28:28": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-10.txt:28:28",
+      "path": "memory/.dreams/session-corpus/2026-07-10.txt",
+      "startLine": 28,
+      "endLine": 28,
+      "source": "memory",
+      "snippet": "Assistant: 来源:https://www.ibm.com/products/langflow 机会方向:AI产品/技术更新 相关公司/产品:Nngroup 为什么值得关注:具备技术或市场机遇,值得持续关注。 Cici可以做的小行动:保持关注,定期查看更新。 重要程度:低 要点:New Users Need Suppo 来源:https://www.nngroup.com/articles/new-AI-users-onboarding/ 机会方向:AI产品/技术更新 相关公司/产品:Uxdesign 为什么值得关注:具备技术或市场机遇,值得持续",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-10T19:00:22.394Z",
+      "lastRecalledAt": "2026-07-10T19:00:22.394Z",
+      "queryHashes": [
+        "f29b13d34764"
+      ],
+      "recallDays": [
+        "2026-07-11",
+        "2026-07-10"
+      ],
+      "conceptTags": [
+        "www.ibm.com/products/langflow",
+        "ai产品/技术更新",
+        "相关公司/产品",
+        "来源",
+        "https",
+        "www.ibm.com",
+        "products",
+        "langflow"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-11.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-11.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-07-11.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "Assistant: 我来检查一下 GitClaw 备份健康状况。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-10T19:00:22.394Z",
+      "lastRecalledAt": "2026-07-10T19:00:22.394Z",
+      "queryHashes": [
+        "7f73b5124b2a"
+      ],
+      "recallDays": [
+        "2026-07-11",
+        "2026-07-10"
+      ],
+      "conceptTags": [
+        "备份",
+        "我来",
+        "检查",
+        "一下",
+        "gitclaw",
+        "健康",
+        "状况"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-11.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-11.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-07-11.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "Assistant: [ERROR: Agent failed (API process_nonexistent), API failed (API request returned None after all retries)]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-10T19:00:22.394Z",
+      "lastRecalledAt": "2026-07-10T19:00:22.394Z",
+      "queryHashes": [
+        "7f73b5124b2a"
+      ],
+      "recallDays": [
+        "2026-07-11",
+        "2026-07-10"
+      ],
+      "conceptTags": [
+        "process-nonexistent",
+        "error",
+        "failed",
+        "api",
+        "request",
+        "returned",
+        "none",
+        "all"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-08.txt:32:32": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-08.txt:32:32",
+      "path": "memory/.dreams/session-corpus/2026-07-08.txt",
+      "startLine": 32,
+      "endLine": 32,
+      "source": "memory",
+      "snippet": "Assistant: ⚠️ OAuth token refresh failed for openai-codex, causing fallback to backup models. Please re-authenticate or refresh token to restore main model.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-10T19:00:22.394Z",
+      "lastRecalledAt": "2026-07-10T19:00:22.394Z",
+      "queryHashes": [
+        "ef25d3c6feca"
+      ],
+      "recallDays": [
+        "2026-07-11",
+        "2026-07-10"
+      ],
+      "conceptTags": [
+        "backup",
+        "openai",
+        "openai-codex",
+        "re-authenticate",
+        "oauth",
+        "token",
+        "refresh",
+        "failed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-08.txt:33:33": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-08.txt:33:33",
+      "path": "memory/.dreams/session-corpus/2026-07-08.txt",
+      "startLine": 33,
+      "endLine": 33,
+      "source": "memory",
+      "snippet": "Assistant: ⚠️ OAuth token refresh failed for openai-codex, causing fallback to backup models. Please re-authenticate or refresh token to restore main model.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-10T19:00:22.394Z",
+      "lastRecalledAt": "2026-07-10T19:00:22.394Z",
+      "queryHashes": [
+        "ef25d3c6feca"
+      ],
+      "recallDays": [
+        "2026-07-11",
+        "2026-07-10"
+      ],
+      "conceptTags": [
+        "backup",
+        "openai",
+        "openai-codex",
+        "re-authenticate",
+        "oauth",
+        "token",
+        "refresh",
+        "failed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-08.txt:34:34": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-08.txt:34:34",
+      "path": "memory/.dreams/session-corpus/2026-07-08.txt",
+      "startLine": 34,
+      "endLine": 34,
+      "source": "memory",
+      "snippet": "Assistant: ⚠️ OAuth token refresh failed for openai-codex, causing fallback to backup models. Please re-authenticate or refresh token to restore main model.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-10T19:00:22.394Z",
+      "lastRecalledAt": "2026-07-10T19:00:22.394Z",
+      "queryHashes": [
+        "ef25d3c6feca"
+      ],
+      "recallDays": [
+        "2026-07-11",
+        "2026-07-10"
+      ],
+      "conceptTags": [
+        "backup",
+        "openai",
+        "openai-codex",
+        "re-authenticate",
+        "oauth",
+        "token",
+        "refresh",
+        "failed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-08.txt:35:35": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-08.txt:35:35",
+      "path": "memory/.dreams/session-corpus/2026-07-08.txt",
+      "startLine": 35,
+      "endLine": 35,
+      "source": "memory",
+      "snippet": "Assistant: ⚠️ OAuth token refresh failed for openai-codex, causing fallback to backup models. Please re-authenticate or refresh token to restore main model.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-10T19:00:22.394Z",
+      "lastRecalledAt": "2026-07-10T19:00:22.394Z",
+      "queryHashes": [
+        "ef25d3c6feca"
+      ],
+      "recallDays": [
+        "2026-07-11",
+        "2026-07-10"
+      ],
+      "conceptTags": [
+        "backup",
+        "openai",
+        "openai-codex",
+        "re-authenticate",
+        "oauth",
+        "token",
+        "refresh",
+        "failed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-08.txt:36:36": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-08.txt:36:36",
+      "path": "memory/.dreams/session-corpus/2026-07-08.txt",
+      "startLine": 36,
+      "endLine": 36,
+      "source": "memory",
+      "snippet": "Assistant: ⚠️ OAuth token refresh failed for openai-codex, causing fallback to backup models. Please re-authenticate or refresh token to restore main model.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-10T19:00:22.394Z",
+      "lastRecalledAt": "2026-07-10T19:00:22.394Z",
+      "queryHashes": [
+        "ef25d3c6feca"
+      ],
+      "recallDays": [
+        "2026-07-11",
+        "2026-07-10"
+      ],
+      "conceptTags": [
+        "backup",
+        "openai",
+        "openai-codex",
+        "re-authenticate",
+        "oauth",
+        "token",
+        "refresh",
+        "failed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-08.txt:37:37": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-08.txt:37:37",
+      "path": "memory/.dreams/session-corpus/2026-07-08.txt",
+      "startLine": 37,
+      "endLine": 37,
+      "source": "memory",
+      "snippet": "Assistant: ⚠️ OAuth token refresh failed for openai-codex, causing fallback to backup models. Please re-authenticate or refresh token to restore main model.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-10T19:00:22.394Z",
+      "lastRecalledAt": "2026-07-10T19:00:22.394Z",
+      "queryHashes": [
+        "ef25d3c6feca"
+      ],
+      "recallDays": [
+        "2026-07-11",
+        "2026-07-10"
+      ],
+      "conceptTags": [
+        "backup",
+        "openai",
+        "openai-codex",
+        "re-authenticate",
+        "oauth",
+        "token",
+        "refresh",
+        "failed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-08.txt:38:38": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-08.txt:38:38",
+      "path": "memory/.dreams/session-corpus/2026-07-08.txt",
+      "startLine": 38,
+      "endLine": 38,
+      "source": "memory",
+      "snippet": "Assistant: ⚠️ OAuth token refresh failed for openai-codex, causing fallback to backup models. Please re-authenticate or refresh token to restore main model.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-10T19:00:22.394Z",
+      "lastRecalledAt": "2026-07-10T19:00:22.394Z",
+      "queryHashes": [
+        "ef25d3c6feca"
+      ],
+      "recallDays": [
+        "2026-07-11",
+        "2026-07-10"
+      ],
+      "conceptTags": [
+        "backup",
+        "openai",
+        "openai-codex",
+        "re-authenticate",
+        "oauth",
+        "token",
+        "refresh",
+        "failed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-08.txt:39:39": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-08.txt:39:39",
+      "path": "memory/.dreams/session-corpus/2026-07-08.txt",
+      "startLine": 39,
+      "endLine": 39,
+      "source": "memory",
+      "snippet": "Assistant: We need to respond to the heartbeat poll.й &nbsp gravitational}-> I >) audio. I.html)..Cljson)(",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-10T19:00:22.394Z",
+      "lastRecalledAt": "2026-07-10T19:00:22.394Z",
+      "queryHashes": [
+        "ef25d3c6feca"
+      ],
+      "recallDays": [
+        "2026-07-11",
+        "2026-07-10"
+      ],
+      "conceptTags": [
+        "poll.й",
+        "i.html",
+        "need",
+        "respond",
+        "heartbeat",
+        "nbsp",
+        "gravitational",
+        "audio"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-08.txt:40:40": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-08.txt:40:40",
+      "path": "memory/.dreams/session-corpus/2026-07-08.txt",
+      "startLine": 40,
+      "endLine": 40,
+      "source": "memory",
+      "snippet": "Assistant: ⚠️ OAuth token refresh failed for openai-codex, causing fallback to backup models. Please re-authenticate or refresh token to restore main model.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-10T19:00:22.394Z",
+      "lastRecalledAt": "2026-07-10T19:00:22.394Z",
+      "queryHashes": [
+        "ef25d3c6feca"
+      ],
+      "recallDays": [
+        "2026-07-11",
+        "2026-07-10"
+      ],
+      "conceptTags": [
+        "backup",
+        "openai",
+        "openai-codex",
+        "re-authenticate",
+        "oauth",
+        "token",
+        "refresh",
+        "failed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-08.txt:41:41": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-08.txt:41:41",
+      "path": "memory/.dreams/session-corpus/2026-07-08.txt",
+      "startLine": 41,
+      "endLine": 41,
+      "source": "memory",
+      "snippet": "Assistant: ⚠️ OAuth token refresh failed for openai-codex, causing fallback to backup models. Please re-authenticate or refresh token to restore main model.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-10T19:00:22.394Z",
+      "lastRecalledAt": "2026-07-10T19:00:22.394Z",
+      "queryHashes": [
+        "ef25d3c6feca"
+      ],
+      "recallDays": [
+        "2026-07-11",
+        "2026-07-10"
+      ],
+      "conceptTags": [
+        "backup",
+        "openai",
+        "openai-codex",
+        "re-authenticate",
+        "oauth",
+        "token",
+        "refresh",
+        "failed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-08.txt:42:42": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-08.txt:42:42",
+      "path": "memory/.dreams/session-corpus/2026-07-08.txt",
+      "startLine": 42,
+      "endLine": 42,
+      "source": "memory",
+      "snippet": "Assistant: ⚠️ OAuth token refresh failed for openai-codex, causing fallback to backup models. Please re-authenticate or refresh token to restore main model.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-10T19:00:22.394Z",
+      "lastRecalledAt": "2026-07-10T19:00:22.394Z",
+      "queryHashes": [
+        "ef25d3c6feca"
+      ],
+      "recallDays": [
+        "2026-07-11",
+        "2026-07-10"
+      ],
+      "conceptTags": [
+        "backup",
+        "openai",
+        "openai-codex",
+        "re-authenticate",
+        "oauth",
+        "token",
+        "refresh",
+        "failed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-07-08.txt:43:43": {
+      "key": "memory:memory/.dreams/session-corpus/2026-07-08.txt:43:43",
+      "path": "memory/.dreams/session-corpus/2026-07-08.txt",
+      "startLine": 43,
+      "endLine": 43,
+      "source": "memory",
+      "snippet": "Assistant: ⚠️ OAuth token refresh failed for openai-codex, causing fallback to backup models. Please re-authenticate or refresh token to restore main model.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-07-10T19:00:22.394Z",
+      "lastRecalledAt": "2026-07-10T19:00:22.394Z",
+      "queryHashes": [
+        "ef25d3c6feca"
+      ],
+      "recallDays": [
+        "2026-07-11",
+        "2026-07-10"
+      ],
+      "conceptTags": [
+        "backup",
+        "openai",
+        "openai-codex",
+        "re-authenticate",
+        "oauth",
+        "token",
+        "refresh",
+        "failed"
       ]
     }
   }
