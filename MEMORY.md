@@ -483,3 +483,8 @@
 
 <!-- openclaw-memory-promotion:memory:memory/2026-06-09.md:24:24 -->
 - **后续行动**： [score=0.885 recalls=0 avg=0.620 source=memory/2026-06-09.md:24-24]
+
+## Promoted From Short-Term Memory (2026-07-24)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-05-07.md:1:26 -->
+- # 2026-05-07 ## 回复风格 / token 控制 **时间**：2026年5月7日 10:02（北京时间） 小雪要求：墨衍默认不显示详细思考过程，只保留关键点，同时不能降低思考深度和质量，目的是减少 token 消耗。 执行记录： - 已检查当前 session 状态：Think=medium、Text=low，符合“保留思考深度、压缩输出”的方向。 - 已更新长期记忆 MEMORY.md。 - 后续默认输出：结论优先、关键依据、必要动作；不写长篇推理过程。 ## Device Brief 周更发布迁移 Codex **时间**：2026年5月7日 上午（北京时间） 背景：Device Brief 四平台发布在云端 OpenClaw 执行时，因本机真实浏览器 relay/云端通道不稳定，导致 Substack / Beehiiv / Patreon 已登录状态无法稳定接管；Whop 验证码也存在过期问题。 小雪决定：将 Device Brief 周更发布任务迁移到本机 Codex 执行，以减少本地-云端通道依赖。 已完成： - 整理并回复了一份可直接复制给 Codex 的完整 Prompt。 - Prompt 覆盖：任务目标、微信公众号 URL 输入、正文提取、清洗规则、英文改写、配图规则、四平台发布 SOP、登录/验证码/Cloudflare 异常处理、完成回执格式、2026-05-05 MOONIX 历史任务状态。 当前状态： [score=1.000 recalls=3 avg=1.000 source=memory/2026-05-07.md:1-26]
