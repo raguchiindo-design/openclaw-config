@@ -29,7 +29,7 @@
 - **备用模型**：openrouter/google/gemma-4-31b-it:free、google-antigravity/gemini-3-flash、minimax/minimax-m2.5、openrouter/nvidia/nemotron-3-super-120b-a12b:free
 - ⚠️ **OAuth Token 问题**：系统日志显示多次出现 "OAuth token refresh failed for openai-codex" 错误，导致模型自动降级到备用方案。此问题持续存在，影响部分功能的正常运行。**建议**：检查 OpenAI Codex 令牌或重新授权。
 - **OAuth token issue last alerted**:2026-07-25 15:49 (北京时间)
-- **最后提醒时间**:2026-07-25 15:49 (北京时间)
+- **最后提醒时间**:2026-07-25 16:49 (北京时间)
 
 ### 待办事项
 - [x] 处理安全审计警告项：已优化脚本并清理 tmp 环境（2026-04-08）
