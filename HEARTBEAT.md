@@ -50,3 +50,5 @@
 - [x] 调整每日AI机会雷达 cron job 超时时间：将 timeoutSeconds 从 120 增至 180 秒，以防止脚本执行超时（2026-06-19）
  [最后检查: 2026-07-04 07:19:21, 最近10分钟无新错误]
 
+
+- [Investigated] OAuth token refresh failed for openai-codex; likely expired refresh token. User should re-run `openclaw configure` to refresh OAuth or manually update token.
