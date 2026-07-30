@@ -34,7 +34,7 @@ TMP_RESULTS=$(mktemp)
 for pair in "${SOURCES[@]}"; do
     IFS=':' read -r NAME DOMAIN <<< "$pair"
     echo "Searching $NAME..."
-    timeout 5 python3 /home/ubuntu/.openclaw/workspace/skills/anysearch-skill/scripts/anysearch_cli.py search "site:$DOMAIN AI" --max_results $MAX_PER_SOURCE >> "$TMP_RESULTS" 2>&1
+    timeout 5 python3 /home/ubuntu/.openclaw/workspace/skills/anysearch-skill/scripts/anysearch_cli.py search --max_results $MAX_PER_SOURCE "site:$DOMAIN AI" >> "$TMP_RESULTS" 2>&1
     sleep 0.1
 done
 
