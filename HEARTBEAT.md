@@ -1,6 +1,6 @@
 # HEARTBEAT.md
 
-更新时间：2026年08月07日 03:13:44（北京时间）
+更新时间：2026年08月07日 04:20:02（北京时间）
 
 ### 巡检摘要 (三日看板)
 - ✅ **nightly-security-audit**：今日审计通过（0 errors, 3 warnings）；基线校验一致，配置更新后哈希匹配。
@@ -28,8 +28,8 @@
 - **当前主模型**：openai-codex/gpt-5.5 ✅
 - **备用模型**：openrouter/google/gemma-4-31b-it:free、google-antigravity/gemini-3-flash、minimax/minimax-m2.5、openrouter/nvidia/nemotron-3-super-120b-a12b:free
 - ⚠️ **OAuth Token 问题**：系统日志显示多次出现 "OAuth token refresh failed for openai-codex" 错误，导致模型自动降级到备用方案。此问题持续存在，影响部分功能的正常运行。**建议**：检查 OpenAI Codex 令牌或重新授权。
-- **OAuth token issue last alerted**:2026年08月07日 03:15 (北京时间)
-- **最后提醒时间:2026年08月07日 03:16 (北京时间)
+- **OAuth token issue last alerted**:2026年08月07日 04:20 (北京时间)
+- **最后提醒时间:2026年08月07日 04:20 (北京时间)
 
 ### 待办事项
 - [x] 处理安全审计警告项：已优化脚本并清理 tmp 环境（2026-04-08）
