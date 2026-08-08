@@ -1,4 +1,5 @@
 #!/bin/bash
+set -x
 echo "DEBUG: Script starting" >&2
 # Daily AI Opportunity Radar script
 # Generates 20 items with titles, ~20-char points, meaning for Xiao Xue, and short links
@@ -7,7 +8,7 @@ echo "DEBUG: Script starting" >&2
 LOG_DIR="/home/ubuntu/.openclaw/logs"
 mkdir -p "$LOG_DIR"
 LOG_FILE="$LOG_DIR/ai_opportunity_radar_$(date +%Y%m%d).log"
-# exec >>"$LOG_FILE" 2>exec >>"$LOG_FILE" 2>&11
+exec >>"$LOG_FILE" 2>&1
 
 echo "=== AI Opportunity Radar started at $(date) ==="
 
@@ -15,10 +16,18 @@ echo "=== AI Opportunity Radar started at $(date) ==="
 SOURCES=(
     "TLDR AI:tldr.tech/ai"
     "The Rundown AI:rundown.ai"
+    "Agentic Daily:agenticdaily.ai"
+    "The Batch:deeplearning.ai/the-batch"
     "Product Hunt AI:producthunt.com/topics/artificial-intelligence"
+    "Latent Space:latent.space"
+    "Import AI:importai.net"
+    "OpenAI Blog:openai.com/blog"
+    "Google DeepMind Blog:deepmind.com/blog"
+    "NVIDIA Blog:blogs.nvidia.com"
+    "YC Work at a Startup:workatastartup.com"
+    "Wellfound AI Jobs:wellfound.com"
 )
-MAX_PER_SOURCE=1
-MAX_PER_SOURCE=1
+MAX_PER_SOURCE=2
 TODAY=$(date +%Y-%m-%d)
 
 # Temporary file for raw results
@@ -26,7 +35,7 @@ TMP_RESULTS=$(mktemp)
 for pair in "${SOURCES[@]}"; do
     IFS=':' read -r NAME DOMAIN <<< "$pair"
     echo "Searching $NAME..."
-    timeout 5 python3 /home/ubuntu/.openclaw/workspace/skills/anysearch-skill/scripts/anysearch_cli.py search "site:$DOMAIN AI" --max_results $MAX_PER_SOURCE >> "$TMP_RESULTS" 2>&1
+    timeout 5 python3 /home/ubuntu/.openclaw/workspace/skills/anysearch-skill/scripts/anysearch_cli.py search --max_results $MAX_PER_SOURCE "site:$DOMAIN AI" >> "$TMP_RESULTS" 2>&1
     sleep 0.1
 done
 
