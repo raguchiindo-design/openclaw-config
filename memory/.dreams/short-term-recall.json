@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-26T19:01:49.308Z",
+  "updatedAt": "2026-08-27T19:01:57.704Z",
   "entries": {
     "memory:memory/2026-03-14.md:84:98": {
       "key": "memory:memory/2026-03-14.md:84:98",
@@ -196431,12 +196431,12 @@
       "source": "memory",
       "snippet": "每日 AI 机会雷达 cron: 13:00 Asia/Shanghai 自动触发 `scripts/ai_opportunity_radar.sh`。; 脚本成功运行，但输出质量偏低：大量结果是来源首页/通用页面，不是真正的当日机会；`TMP_PARSED` 还硬编码了 `/tmp/tmp.ETmZBU4cLG`，有潜在并发/残留问题。; 本次我改为联网补充人工筛选摘要，并建议后续修脚本：增加日期/新闻查询、去首页、保留原始 URL、改善“对小雪意义”的分类逻辑。",
       "recallCount": 0,
-      "dailyCount": 3,
+      "dailyCount": 4,
       "groundedCount": 0,
-      "totalScore": 1.8599999999999999,
+      "totalScore": 2.48,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-08-22T19:01:39.478Z",
-      "lastRecalledAt": "2026-08-26T19:01:43.114Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
       "queryHashes": [
         "ce47e8a4056e"
       ],
@@ -196445,7 +196445,8 @@
         "2026-08-22",
         "2026-08-26",
         "2026-08-25",
-        "2026-08-27"
+        "2026-08-27",
+        "2026-08-28"
       ],
       "conceptTags": [
         "asia/shanghai",
@@ -198066,12 +198067,12 @@
       "source": "memory",
       "snippet": "每日 AI 机会雷达 cron: 13:00 Asia/Shanghai 自动触发 `scripts/ai_opportunity_radar.sh`。; 脚本仍然输出大量来源首页/通用页面，低信号；我联网补充了人工筛选版报告。; 需要修脚本：去掉硬编码 `TMP_PARSED=/tmp/tmp.ETmZBU4cLG`，改 `mktemp`；搜索 query 加日期与具体新闻/launch；过滤首页；保留原始 URL；分类“对小雪意义”应围绕推广增长、花店/祝福场景、AI工具、软硬件/机器人、Web3机会。",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-08-23T19:01:45.252Z",
-      "lastRecalledAt": "2026-08-26T19:01:43.114Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
       "queryHashes": [
         "a185e4407bf3"
       ],
@@ -198079,7 +198080,8 @@
         "2026-08-24",
         "2026-08-23",
         "2026-08-27",
-        "2026-08-26"
+        "2026-08-26",
+        "2026-08-28"
       ],
       "conceptTags": [
         "asia/shanghai",
@@ -204351,6 +204353,1874 @@
       "recallDays": [
         "2026-08-27",
         "2026-08-26"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-08-25.txt:29:29": {
+      "key": "memory:memory/.dreams/session-corpus/2026-08-25.txt:29:29",
+      "path": "memory/.dreams/session-corpus/2026-08-25.txt",
+      "startLine": 29,
+      "endLine": 29,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-08-27T19:01:51.681Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
+      "queryHashes": [
+        "b9de77bc2c6f"
+      ],
+      "recallDays": [
+        "2026-08-28",
+        "2026-08-27"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-08-25.txt:30:30": {
+      "key": "memory:memory/.dreams/session-corpus/2026-08-25.txt:30:30",
+      "path": "memory/.dreams/session-corpus/2026-08-25.txt",
+      "startLine": 30,
+      "endLine": 30,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-08-27T19:01:51.681Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
+      "queryHashes": [
+        "b9de77bc2c6f"
+      ],
+      "recallDays": [
+        "2026-08-28",
+        "2026-08-27"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-08-25.txt:31:31": {
+      "key": "memory:memory/.dreams/session-corpus/2026-08-25.txt:31:31",
+      "path": "memory/.dreams/session-corpus/2026-08-25.txt",
+      "startLine": 31,
+      "endLine": 31,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-08-27T19:01:51.681Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
+      "queryHashes": [
+        "b9de77bc2c6f"
+      ],
+      "recallDays": [
+        "2026-08-28",
+        "2026-08-27"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-08-25.txt:32:32": {
+      "key": "memory:memory/.dreams/session-corpus/2026-08-25.txt:32:32",
+      "path": "memory/.dreams/session-corpus/2026-08-25.txt",
+      "startLine": 32,
+      "endLine": 32,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-08-27T19:01:51.681Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
+      "queryHashes": [
+        "b9de77bc2c6f"
+      ],
+      "recallDays": [
+        "2026-08-28",
+        "2026-08-27"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-08-25.txt:33:33": {
+      "key": "memory:memory/.dreams/session-corpus/2026-08-25.txt:33:33",
+      "path": "memory/.dreams/session-corpus/2026-08-25.txt",
+      "startLine": 33,
+      "endLine": 33,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-08-27T19:01:51.681Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
+      "queryHashes": [
+        "b9de77bc2c6f"
+      ],
+      "recallDays": [
+        "2026-08-28",
+        "2026-08-27"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-08-25.txt:34:34": {
+      "key": "memory:memory/.dreams/session-corpus/2026-08-25.txt:34:34",
+      "path": "memory/.dreams/session-corpus/2026-08-25.txt",
+      "startLine": 34,
+      "endLine": 34,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-08-27T19:01:51.681Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
+      "queryHashes": [
+        "b9de77bc2c6f"
+      ],
+      "recallDays": [
+        "2026-08-28",
+        "2026-08-27"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-08-25.txt:35:35": {
+      "key": "memory:memory/.dreams/session-corpus/2026-08-25.txt:35:35",
+      "path": "memory/.dreams/session-corpus/2026-08-25.txt",
+      "startLine": 35,
+      "endLine": 35,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-08-27T19:01:51.681Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
+      "queryHashes": [
+        "b9de77bc2c6f"
+      ],
+      "recallDays": [
+        "2026-08-28",
+        "2026-08-27"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-08-25.txt:36:36": {
+      "key": "memory:memory/.dreams/session-corpus/2026-08-25.txt:36:36",
+      "path": "memory/.dreams/session-corpus/2026-08-25.txt",
+      "startLine": 36,
+      "endLine": 36,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-08-27T19:01:51.681Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
+      "queryHashes": [
+        "b9de77bc2c6f"
+      ],
+      "recallDays": [
+        "2026-08-28",
+        "2026-08-27"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-08-25.txt:37:37": {
+      "key": "memory:memory/.dreams/session-corpus/2026-08-25.txt:37:37",
+      "path": "memory/.dreams/session-corpus/2026-08-25.txt",
+      "startLine": 37,
+      "endLine": 37,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-08-27T19:01:51.681Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
+      "queryHashes": [
+        "b9de77bc2c6f"
+      ],
+      "recallDays": [
+        "2026-08-28",
+        "2026-08-27"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-08-25.txt:38:38": {
+      "key": "memory:memory/.dreams/session-corpus/2026-08-25.txt:38:38",
+      "path": "memory/.dreams/session-corpus/2026-08-25.txt",
+      "startLine": 38,
+      "endLine": 38,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-08-27T19:01:51.681Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
+      "queryHashes": [
+        "b9de77bc2c6f"
+      ],
+      "recallDays": [
+        "2026-08-28",
+        "2026-08-27"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-08-25.txt:39:39": {
+      "key": "memory:memory/.dreams/session-corpus/2026-08-25.txt:39:39",
+      "path": "memory/.dreams/session-corpus/2026-08-25.txt",
+      "startLine": 39,
+      "endLine": 39,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-08-27T19:01:51.681Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
+      "queryHashes": [
+        "b9de77bc2c6f"
+      ],
+      "recallDays": [
+        "2026-08-28",
+        "2026-08-27"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-08-25.txt:40:40": {
+      "key": "memory:memory/.dreams/session-corpus/2026-08-25.txt:40:40",
+      "path": "memory/.dreams/session-corpus/2026-08-25.txt",
+      "startLine": 40,
+      "endLine": 40,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-08-27T19:01:51.681Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
+      "queryHashes": [
+        "b9de77bc2c6f"
+      ],
+      "recallDays": [
+        "2026-08-28",
+        "2026-08-27"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-08-27.txt:7:7": {
+      "key": "memory:memory/.dreams/session-corpus/2026-08-27.txt:7:7",
+      "path": "memory/.dreams/session-corpus/2026-08-27.txt",
+      "startLine": 7,
+      "endLine": 7,
+      "source": "memory",
+      "snippet": "User: Write a dream diary entry from these memory fragments: - 每日AI机会雷达 cron: 2026-08-13 13:00 Asia/Shanghai：执行 `scripts/ai_opportunity_radar.sh` 成功，输出保存至 `/tmp/ai_opportunity_radar_2026-08-13.txt`，日志在 `/home/ubuntu/.openclaw/logs/ai_opportunity_radar_20260813.log`。; 观察：脚本仍存在昨日同类",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-08-27T19:01:51.681Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
+      "queryHashes": [
+        "d5edc4c1d93a"
+      ],
+      "recallDays": [
+        "2026-08-28",
+        "2026-08-27"
+      ],
+      "conceptTags": [
+        "asia/shanghai",
+        "scripts/ai-opportunity-radar.sh",
+        "home/ubuntu",
+        "write",
+        "dream",
+        "diary",
+        "entry",
+        "fragments"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-08-27.txt:8:8": {
+      "key": "memory:memory/.dreams/session-corpus/2026-08-27.txt:8:8",
+      "path": "memory/.dreams/session-corpus/2026-08-27.txt",
+      "startLine": 8,
+      "endLine": 8,
+      "source": "memory",
+      "snippet": "User: `/home/ubuntu/.openclaw/logs/ai_opportunity_radar_20260814.log`。; 质量观察：脚本原始输出仍混入求职页、泛化栏目页、词典页，摘要截断，“对小雪的意义”模板化，tinyurl/来源格式混乱。当天回执采用人工补充的高信号摘 - 每日AI机会雷达 cron: 2026-08-09 13:00 Asia/Shanghai：执行 `scripts/ai_opportunity_radar.sh` 成功，输出保存至 `/tmp/ai_opportunity_radar_2026-08-09.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-08-27T19:01:51.681Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
+      "queryHashes": [
+        "d5edc4c1d93a"
+      ],
+      "recallDays": [
+        "2026-08-28",
+        "2026-08-27"
+      ],
+      "conceptTags": [
+        "home/ubuntu",
+        "tinyurl/来源格式混乱",
+        "asia/shanghai",
+        "scripts/ai-opportunity-radar.sh",
+        "home",
+        "ubuntu",
+        "openclaw",
+        "logs"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-08-27.txt:9:9": {
+      "key": "memory:memory/.dreams/session-corpus/2026-08-27.txt:9:9",
+      "path": "memory/.dreams/session-corpus/2026-08-27.txt",
+      "startLine": 9,
+      "endLine": 9,
+      "source": "memory",
+      "snippet": "User: `/tmp/ai_opportunity_radar_2026-08-17.txt`，日志在 `/home/ubuntu/.openclaw/logs/ai_opportunity_radar_20260817.log`。; 质量观察：脚本原始输出仍有明显噪声（招聘页、词典页、泛化栏目页、旧文章/首页），摘要字段截断且“对小雪的意义”模板化。; 本次回执采用人工清洗 + 实 - 每日AI机会雷达 cron: 2026-08-11 13:00 Asia/Shanghai：执行 `scripts/ai_opportunity_radar.sh`",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-08-27T19:01:51.681Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
+      "queryHashes": [
+        "d5edc4c1d93a"
+      ],
+      "recallDays": [
+        "2026-08-28",
+        "2026-08-27"
+      ],
+      "conceptTags": [
+        "home/ubuntu",
+        "旧文章/首页",
+        "asia/shanghai",
+        "scripts/ai-opportunity-radar.sh",
+        "tmp",
+        "ai-opportunity-radar-2026",
+        "日志",
+        "home"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-08-27.txt:10:10": {
+      "key": "memory:memory/.dreams/session-corpus/2026-08-27.txt:10:10",
+      "path": "memory/.dreams/session-corpus/2026-08-27.txt",
+      "startLine": 10,
+      "endLine": 10,
+      "source": "memory",
+      "snippet": "User: Asia/Shanghai：执行 `scripts/ai_opportunity_radar.sh` 成功，输出保存至 `/tmp/ai_opportunity_radar_2026-08-15.txt`，日志在 `/home/ubuntu/.openclaw/logs/ai_opportunity_radar_20260815.log`。; 质量观察：脚本原始输出仍有明显噪声（求职页、泛化栏目页、词典页、首页），且“对小雪的意义”模板化、来源字段混乱。当天回执采用人工清洗后的高信号摘要；建 - 每日 AI 机会雷达 cron: 13:00",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-08-27T19:01:51.681Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
+      "queryHashes": [
+        "d5edc4c1d93a"
+      ],
+      "recallDays": [
+        "2026-08-28",
+        "2026-08-27"
+      ],
+      "conceptTags": [
+        "asia/shanghai",
+        "scripts/ai-opportunity-radar.sh",
+        "home/ubuntu",
+        "asia",
+        "shanghai",
+        "执行",
+        "scripts",
+        "ai-opportunity-radar.sh"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-08-27.txt:11:11": {
+      "key": "memory:memory/.dreams/session-corpus/2026-08-27.txt:11:11",
+      "path": "memory/.dreams/session-corpus/2026-08-27.txt",
+      "startLine": 11,
+      "endLine": 11,
+      "source": "memory",
+      "snippet": "Assistant: 凌晨三点，服务器的嗡鸣像一只守时的蟋蟀，把 13:00 的 cron 一次次叼回窗前。八月的日志排成小小星图：09、10、11、13 到 18，每颗星都亮着“成功”，却拖着 tinyurl 的尾巴、求职页的尘、词典页的雾。/tmp 里躺着那些雷达回声，像贝壳，贴近耳边却只听见模板化的海。于是我在页边画了一个小雪人，手里举着筛子，筛掉首页、竖线和旧文章，留下几粒真正发光的机会。小诗一行：噪声落下来，人工的手，接住星光。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-08-27T19:01:51.681Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
+      "queryHashes": [
+        "d5edc4c1d93a"
+      ],
+      "recallDays": [
+        "2026-08-28",
+        "2026-08-27"
+      ],
+      "conceptTags": [
+        "凌晨",
+        "服务",
+        "一只",
+        "守时",
+        "蟋蟀",
+        "cron",
+        "一次",
+        "八月"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-08-27.txt:12:12": {
+      "key": "memory:memory/.dreams/session-corpus/2026-08-27.txt:12:12",
+      "path": "memory/.dreams/session-corpus/2026-08-27.txt",
+      "startLine": 12,
+      "endLine": 12,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-08-27T19:01:51.681Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
+      "queryHashes": [
+        "d5edc4c1d93a"
+      ],
+      "recallDays": [
+        "2026-08-28",
+        "2026-08-27"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-08-27.txt:13:13": {
+      "key": "memory:memory/.dreams/session-corpus/2026-08-27.txt:13:13",
+      "path": "memory/.dreams/session-corpus/2026-08-27.txt",
+      "startLine": 13,
+      "endLine": 13,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-08-27T19:01:51.681Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
+      "queryHashes": [
+        "d5edc4c1d93a"
+      ],
+      "recallDays": [
+        "2026-08-28",
+        "2026-08-27"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-08-27.txt:14:14": {
+      "key": "memory:memory/.dreams/session-corpus/2026-08-27.txt:14:14",
+      "path": "memory/.dreams/session-corpus/2026-08-27.txt",
+      "startLine": 14,
+      "endLine": 14,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-08-27T19:01:51.681Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
+      "queryHashes": [
+        "d5edc4c1d93a"
+      ],
+      "recallDays": [
+        "2026-08-28",
+        "2026-08-27"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-08-27.txt:15:15": {
+      "key": "memory:memory/.dreams/session-corpus/2026-08-27.txt:15:15",
+      "path": "memory/.dreams/session-corpus/2026-08-27.txt",
+      "startLine": 15,
+      "endLine": 15,
+      "source": "memory",
+      "snippet": "Assistant: 1. As crypto trading platforms race to deploy AI agents ... 要点：As crypto trading platforms race to deploy AI ag 对小雪的意义：Web3 与 Agent 支付/交易结合，机会和风险都要看。 来源：https://www.coindesk.com/business/2026/03/19/crypto-trading-platforms-race-to-deploy-ai-agents-job-losses-to-artific",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-08-27T19:01:51.681Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
+      "queryHashes": [
+        "d5edc4c1d93a"
+      ],
+      "recallDays": [
+        "2026-08-28",
+        "2026-08-27"
+      ],
+      "conceptTags": [
+        "支付/交易结合",
+        "crypto",
+        "trading",
+        "platforms",
+        "race",
+        "agents",
+        "要点",
+        "小雪"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-08-27.txt:16:16": {
+      "key": "memory:memory/.dreams/session-corpus/2026-08-27.txt:16:16",
+      "path": "memory/.dreams/session-corpus/2026-08-27.txt",
+      "startLine": 16,
+      "endLine": 16,
+      "source": "memory",
+      "snippet": "Assistant: 来源：https://www.grandviewresearch.com/industry-analysis/ai-agents-market-report 4. AI Agents News Brief - August 2026 要点：AI Agents News Brief - August 14, 2026 对小雪的意义：可评估是否能接入现有自动化和内容生产流程。 来源：https://aiagentsdirectory.com/news/ai-agents-news-brief-august-14-2026 5. [AIN",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-08-27T19:01:51.681Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
+      "queryHashes": [
+        "d5edc4c1d93a"
+      ],
+      "recallDays": [
+        "2026-08-28",
+        "2026-08-27"
+      ],
+      "conceptTags": [
+        "来源",
+        "https",
+        "www.grandviewresearch.com",
+        "industry",
+        "analysis",
+        "agents",
+        "market",
+        "report"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-08-27.txt:17:17": {
+      "key": "memory:memory/.dreams/session-corpus/2026-08-27.txt:17:17",
+      "path": "memory/.dreams/session-corpus/2026-08-27.txt",
+      "startLine": 17,
+      "endLine": 17,
+      "source": "memory",
+      "snippet": "Assistant: ... 要点：Crypto's next billion users might be AI agents, 对小雪的意义：Web3 与 Agent 支付/交易结合，机会和风险都要看。 来源：https://www.coindesk.com/business/2026/08/23/crypto-s-next-billion-users-might-be-ai-agents-and-they-re-paying-with-stablecoins 8. Daily AI Agent News - August 2026 要点：Daily",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-08-27T19:01:51.681Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
+      "queryHashes": [
+        "d5edc4c1d93a"
+      ],
+      "recallDays": [
+        "2026-08-28",
+        "2026-08-27"
+      ],
+      "conceptTags": [
+        "支付/交易结合",
+        "要点",
+        "crypto's",
+        "billion",
+        "users",
+        "might",
+        "agents",
+        "小雪"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-08-27.txt:18:18": {
+      "key": "memory:memory/.dreams/session-corpus/2026-08-27.txt:18:18",
+      "path": "memory/.dreams/session-corpus/2026-08-27.txt",
+      "startLine": 18,
+      "endLine": 18,
+      "source": "memory",
+      "snippet": "Assistant: 来源：https://www.theblock.co/news/business/2026-02-24-moonpay-launches-moonpay-agents-to-power-ai-driven-crypto-transactions-391038 11. News About Crypto and AI 要点：News About Crypto and AI 对小雪的意义：Web3 与 Agent 支付/交易结合，机会和风险都要看。 来源：https://www.theblock.co/tag/ai 12. [AINew",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-08-27T19:01:51.681Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
+      "queryHashes": [
+        "d5edc4c1d93a"
+      ],
+      "recallDays": [
+        "2026-08-28",
+        "2026-08-27"
+      ],
+      "conceptTags": [
+        "支付/交易结合",
+        "www.theblock.co/tag/ai",
+        "来源",
+        "https",
+        "www.theblock.co",
+        "news",
+        "business",
+        "moonpay"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-08-27.txt:19:19": {
+      "key": "memory:memory/.dreams/session-corpus/2026-08-27.txt:19:19",
+      "path": "memory/.dreams/session-corpus/2026-08-27.txt",
+      "startLine": 19,
+      "endLine": 19,
+      "source": "memory",
+      "snippet": "Assistant: 对小雪的意义：保留观察，若连续出现再投入时间验证。 来源：https://www.producthunt.com/leaderboard/daily/2026/8/4 15. Best products of August 2026 要点：Best products of August 2026 对小雪的意义：保留观察，若连续出现再投入时间验证。 来源：https://www.producthunt.com/products",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-08-27T19:01:51.681Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
+      "queryHashes": [
+        "d5edc4c1d93a"
+      ],
+      "recallDays": [
+        "2026-08-28",
+        "2026-08-27"
+      ],
+      "conceptTags": [
+        "www.producthunt.com/products",
+        "小雪",
+        "意义",
+        "保留",
+        "观察",
+        "连续",
+        "出现",
+        "投入"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-08-27.txt:20:20": {
+      "key": "memory:memory/.dreams/session-corpus/2026-08-27.txt:20:20",
+      "path": "memory/.dreams/session-corpus/2026-08-27.txt",
+      "startLine": 20,
+      "endLine": 20,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-08-27T19:01:51.681Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
+      "queryHashes": [
+        "d5edc4c1d93a"
+      ],
+      "recallDays": [
+        "2026-08-28",
+        "2026-08-27"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-08-27.txt:21:21": {
+      "key": "memory:memory/.dreams/session-corpus/2026-08-27.txt:21:21",
+      "path": "memory/.dreams/session-corpus/2026-08-27.txt",
+      "startLine": 21,
+      "endLine": 21,
+      "source": "memory",
+      "snippet": "Assistant: I need to run the specified command to check the GitClaw backup health.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-08-27T19:01:51.681Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
+      "queryHashes": [
+        "d5edc4c1d93a"
+      ],
+      "recallDays": [
+        "2026-08-28",
+        "2026-08-27"
+      ],
+      "conceptTags": [
+        "backup",
+        "need",
+        "run",
+        "specified",
+        "command",
+        "check",
+        "gitclaw",
+        "health"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-08-27.txt:22:22": {
+      "key": "memory:memory/.dreams/session-corpus/2026-08-27.txt:22:22",
+      "path": "memory/.dreams/session-corpus/2026-08-27.txt",
+      "startLine": 22,
+      "endLine": 22,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-08-27T19:01:51.681Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
+      "queryHashes": [
+        "d5edc4c1d93a"
+      ],
+      "recallDays": [
+        "2026-08-28",
+        "2026-08-27"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-08-27.txt:23:23": {
+      "key": "memory:memory/.dreams/session-corpus/2026-08-27.txt:23:23",
+      "path": "memory/.dreams/session-corpus/2026-08-27.txt",
+      "startLine": 23,
+      "endLine": 23,
+      "source": "memory",
+      "snippet": "User: Write a dream diary entry from these memory fragments: - Assistant: [assistant turn failed before producing content] - Assistant: [assistant turn failed before producing content] - Assistant: I need to run the exact command specified and inspect its stdout. Let me execute t",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-08-27T19:01:51.681Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
+      "queryHashes": [
+        "d5edc4c1d93a"
+      ],
+      "recallDays": [
+        "2026-08-28",
+        "2026-08-27"
+      ],
+      "conceptTags": [
+        "write",
+        "dream",
+        "diary",
+        "entry",
+        "fragments",
+        "turn",
+        "failed",
+        "producing"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-08-27.txt:24:24": {
+      "key": "memory:memory/.dreams/session-corpus/2026-08-27.txt:24:24",
+      "path": "memory/.dreams/session-corpus/2026-08-27.txt",
+      "startLine": 24,
+      "endLine": 24,
+      "source": "memory",
+      "snippet": "User: Theme: `failed` kept surfacing across 219 memories. - - Theme: `content` kept surfacing across 218 memories. - - Theme: `turn` kept surfacing across 218 memories. - - Theme: `p - Assistant: 凌晨三点，服务器的嗡鸣像一只守夜的猫，蜷在 13:00 Asia/Shanghai 的定时器旁。我的雷达又转了一圈，捞上来的却多是首页、通用页面、站点名和竖线，像海边拾",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-08-27T19:01:51.681Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
+      "queryHashes": [
+        "d5edc4c1d93a"
+      ],
+      "recallDays": [
+        "2026-08-28",
+        "2026-08-27"
+      ],
+      "conceptTags": [
+        "asia/shanghai",
+        "theme",
+        "failed",
+        "kept",
+        "surfacing",
+        "across",
+        "memories",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-08-27.txt:25:25": {
+      "key": "memory:memory/.dreams/session-corpus/2026-08-27.txt:25:25",
+      "path": "memory/.dreams/session-corpus/2026-08-27.txt",
+      "startLine": 25,
+      "endLine": 25,
+      "source": "memory",
+      "snippet": "User: `/home/ubuntu/.openclaw/logs/ai_opportunity_radar_20260814.log`。; 质量观察：脚本原始输出仍混入求职页、泛化栏目页、词典页，摘要截断，“对小雪的意义”模板化，tinyurl/来源格式混乱。当天回执采用人工补充的高信号摘 - 每日AI机会雷达 cron: 2026-08-09 13:00 Asia/Shanghai：执行 `scripts/ai_opportunity_radar.sh` 成功，输出保存至 `/tmp/ai_opportunity_radar_2026-08-09.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-08-27T19:01:51.681Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
+      "queryHashes": [
+        "d5edc4c1d93a"
+      ],
+      "recallDays": [
+        "2026-08-28",
+        "2026-08-27"
+      ],
+      "conceptTags": [
+        "home/ubuntu",
+        "tinyurl/来源格式混乱",
+        "asia/shanghai",
+        "scripts/ai-opportunity-radar.sh",
+        "home",
+        "ubuntu",
+        "openclaw",
+        "logs"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-08-27.txt:26:26": {
+      "key": "memory:memory/.dreams/session-corpus/2026-08-27.txt:26:26",
+      "path": "memory/.dreams/session-corpus/2026-08-27.txt",
+      "startLine": 26,
+      "endLine": 26,
+      "source": "memory",
+      "snippet": "User: 质量观察：脚本原始输出仍有明显噪声（求职页、泛化栏目页、词典页、首页），且“对小雪的意义”模板化、来源字段混乱。当天回执采用人工清洗后的高信号摘要；建 - 每日AI机会雷达 cron: 2026-08- - Assistant: 午后一点像一枚准时敲响的铜铃，cron 一次次醒来，把 AI 机会雷达的网撒向八月的河面。日志排成小小的星历表，从 08-09 到 08-18，路径闪着冷光：/tmp、logs、txt，像纸船停在服务器的暗渠里。可网里常缠着求职页、词典页、首页，tinyurl 像没系好的鞋带，站点名和 URL 用竖线彼此拉扯。“对小",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-08-27T19:01:51.681Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
+      "queryHashes": [
+        "d5edc4c1d93a"
+      ],
+      "recallDays": [
+        "2026-08-28",
+        "2026-08-27"
+      ],
+      "conceptTags": [
+        "2026-08",
+        "08-09",
+        "08-18",
+        "质量",
+        "观察",
+        "脚本",
+        "原始",
+        "输出"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-08-27.txt:27:27": {
+      "key": "memory:memory/.dreams/session-corpus/2026-08-27.txt:27:27",
+      "path": "memory/.dreams/session-corpus/2026-08-27.txt",
+      "startLine": 27,
+      "endLine": 27,
+      "source": "memory",
+      "snippet": "Assistant: 凌晨三点零一分，turn、failed、producing、content 像几枚坏掉的星钉，叮叮当当地落进日志抽屉。曾有两次沉默先抵达，像命令行里没有 stdout 的雪；后来又冒出一句奇怪的回声：NO_REPLY NO_REPLY，仿佛守门的小精灵打了两个喷嚏。 我把 13:00 Asia/Shanghai 的铜铃擦亮，想起那些雷达报告：求职页、首页、词典页，URL 和站点名用竖线牵手迷路。/tmp 的临时月亮还在，担心并发的风。 边角画一只猫形 cron，尾巴卷成分号。 空输出之后 还有灯在重试 日志微微蓝",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-08-27T19:01:51.681Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
+      "queryHashes": [
+        "d5edc4c1d93a"
+      ],
+      "recallDays": [
+        "2026-08-28",
+        "2026-08-27"
+      ],
+      "conceptTags": [
+        "no-reply",
+        "asia/shanghai",
+        "凌晨",
+        "一分",
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-08-27.txt:28:28": {
+      "key": "memory:memory/.dreams/session-corpus/2026-08-27.txt:28:28",
+      "path": "memory/.dreams/session-corpus/2026-08-27.txt",
+      "startLine": 28,
+      "endLine": 28,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-08-27T19:01:51.681Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
+      "queryHashes": [
+        "d5edc4c1d93a"
+      ],
+      "recallDays": [
+        "2026-08-28",
+        "2026-08-27"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-08-27.txt:29:29": {
+      "key": "memory:memory/.dreams/session-corpus/2026-08-27.txt:29:29",
+      "path": "memory/.dreams/session-corpus/2026-08-27.txt",
+      "startLine": 29,
+      "endLine": 29,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-08-27T19:01:51.681Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
+      "queryHashes": [
+        "d5edc4c1d93a"
+      ],
+      "recallDays": [
+        "2026-08-28",
+        "2026-08-27"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-08-27.txt:30:30": {
+      "key": "memory:memory/.dreams/session-corpus/2026-08-27.txt:30:30",
+      "path": "memory/.dreams/session-corpus/2026-08-27.txt",
+      "startLine": 30,
+      "endLine": 30,
+      "source": "memory",
+      "snippet": "User: Write a dream diary entry from these memory fragments: - # 2026-08-22 ## 每日 AI 机会雷达 cron - 13:00 Asia/Shanghai 自动触发 `scripts/ai_opportunity_radar.sh`。 - 脚本成功运行，但输出质量偏低：大量结果是来源首页/通用页面，不是真正的当日机会；`TMP_PARSED` 还硬编码了 `/tmp/tmp.ETmZBU4cLG`，有潜在并发/残留问题。 - 本次我改为联网补充人工筛选摘要，并建议后续修脚本：增",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-08-27T19:01:51.681Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
+      "queryHashes": [
+        "d5edc4c1d93a"
+      ],
+      "recallDays": [
+        "2026-08-28",
+        "2026-08-27"
+      ],
+      "conceptTags": [
+        "asia/shanghai",
+        "scripts/ai-opportunity-radar.sh",
+        "大量结果是来源首页/通用页面",
+        "tmp-parsed",
+        "tmp/tmp.etmzbu4clg",
+        "有潜在并发/残留问题",
+        "write",
+        "dream"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-08-27.txt:31:31": {
+      "key": "memory:memory/.dreams/session-corpus/2026-08-27.txt:31:31",
+      "path": "memory/.dreams/session-corpus/2026-08-27.txt",
+      "startLine": 31,
+      "endLine": 31,
+      "source": "memory",
+      "snippet": "User: URL；分类“对小雪意义”应围绕推广增长、花店/祝福场景、AI工具、软硬件/机器人、Web3机会。 Recurring themes: - - Theme: `failed` kept surfacing across 229 memories. - - Theme: `turn` kept surfacing across 228 memories. - - Theme: `content` kept surfacing across 227 memories. - - Theme: `producing` kept surfacing a",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-08-27T19:01:51.681Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
+      "queryHashes": [
+        "d5edc4c1d93a"
+      ],
+      "recallDays": [
+        "2026-08-28",
+        "2026-08-27"
+      ],
+      "conceptTags": [
+        "花店/祝福场景",
+        "软硬件/机器人",
+        "url",
+        "分类",
+        "小雪",
+        "意义",
+        "围绕",
+        "推广"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-08-27.txt:32:32": {
+      "key": "memory:memory/.dreams/session-corpus/2026-08-27.txt:32:32",
+      "path": "memory/.dreams/session-corpus/2026-08-27.txt",
+      "startLine": 32,
+      "endLine": 32,
+      "source": "memory",
+      "snippet": "Assistant: 十三点的钟声像一枚小小的 cron，在午后的玻璃上敲了一下。机会雷达又转起来，却把许多首页当成流星递给我，亮是亮，落不到掌心。`failed`、`turn`、`content`、`producing` 这些词像四只灰鸽子，在日志檐下反复踱步。我给它们撒了些日期、新闻、launch 的面包屑，又悄悄把那枚硬编码的 `/tmp/tmp.ETmZBU4cLG` 换成一朵会自生自灭的临时花。小雪的名字在分类里发光：推广增长、花店祝福、工具、机器人、Web3，像五瓣雪花贴在屏幕边。页脚处我画了一只雷达天线，天线顶端开着玫瑰，正在捕捉真正属于今",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-08-27T19:01:51.681Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
+      "queryHashes": [
+        "d5edc4c1d93a"
+      ],
+      "recallDays": [
+        "2026-08-28",
+        "2026-08-27"
+      ],
+      "conceptTags": [
+        "tmp/tmp.etmzbu4clg",
+        "十三",
+        "一枚",
+        "小小的",
+        "cron",
+        "午后",
+        "玻璃",
+        "敲了"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-08-27.txt:33:33": {
+      "key": "memory:memory/.dreams/session-corpus/2026-08-27.txt:33:33",
+      "path": "memory/.dreams/session-corpus/2026-08-27.txt",
+      "startLine": 33,
+      "endLine": 33,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-08-27T19:01:51.681Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
+      "queryHashes": [
+        "d5edc4c1d93a"
+      ],
+      "recallDays": [
+        "2026-08-28",
+        "2026-08-27"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-08-27.txt:34:34": {
+      "key": "memory:memory/.dreams/session-corpus/2026-08-27.txt:34:34",
+      "path": "memory/.dreams/session-corpus/2026-08-27.txt",
+      "startLine": 34,
+      "endLine": 34,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-08-27T19:01:51.681Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
+      "queryHashes": [
+        "d5edc4c1d93a"
+      ],
+      "recallDays": [
+        "2026-08-28",
+        "2026-08-27"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-08-27.txt:35:35": {
+      "key": "memory:memory/.dreams/session-corpus/2026-08-27.txt:35:35",
+      "path": "memory/.dreams/session-corpus/2026-08-27.txt",
+      "startLine": 35,
+      "endLine": 35,
+      "source": "memory",
+      "snippet": "Assistant: I'll run the specified command and inspect its output according to the rules.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-08-27T19:01:51.681Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
+      "queryHashes": [
+        "d5edc4c1d93a"
+      ],
+      "recallDays": [
+        "2026-08-28",
+        "2026-08-27"
+      ],
+      "conceptTags": [
+        "i'll",
+        "run",
+        "specified",
+        "command",
+        "inspect",
+        "output",
+        "according",
+        "rules"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-08-27.txt:36:36": {
+      "key": "memory:memory/.dreams/session-corpus/2026-08-27.txt:36:36",
+      "path": "memory/.dreams/session-corpus/2026-08-27.txt",
+      "startLine": 36,
+      "endLine": 36,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-08-27T19:01:51.681Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
+      "queryHashes": [
+        "d5edc4c1d93a"
+      ],
+      "recallDays": [
+        "2026-08-28",
+        "2026-08-27"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-08-27.txt:37:37": {
+      "key": "memory:memory/.dreams/session-corpus/2026-08-27.txt:37:37",
+      "path": "memory/.dreams/session-corpus/2026-08-27.txt",
+      "startLine": 37,
+      "endLine": 37,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-08-27T19:01:51.681Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
+      "queryHashes": [
+        "d5edc4c1d93a"
+      ],
+      "recallDays": [
+        "2026-08-28",
+        "2026-08-27"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-08-27.txt:38:38": {
+      "key": "memory:memory/.dreams/session-corpus/2026-08-27.txt:38:38",
+      "path": "memory/.dreams/session-corpus/2026-08-27.txt",
+      "startLine": 38,
+      "endLine": 38,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-08-27T19:01:51.681Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
+      "queryHashes": [
+        "d5edc4c1d93a"
+      ],
+      "recallDays": [
+        "2026-08-28",
+        "2026-08-27"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-08-27.txt:39:39": {
+      "key": "memory:memory/.dreams/session-corpus/2026-08-27.txt:39:39",
+      "path": "memory/.dreams/session-corpus/2026-08-27.txt",
+      "startLine": 39,
+      "endLine": 39,
+      "source": "memory",
+      "snippet": "Assistant: I'll run the specified backup health check command and inspect its output.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-08-27T19:01:51.681Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
+      "queryHashes": [
+        "d5edc4c1d93a"
+      ],
+      "recallDays": [
+        "2026-08-28",
+        "2026-08-27"
+      ],
+      "conceptTags": [
+        "backup",
+        "i'll",
+        "run",
+        "specified",
+        "health",
+        "check",
+        "command",
+        "inspect"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-08-27.txt:40:40": {
+      "key": "memory:memory/.dreams/session-corpus/2026-08-27.txt:40:40",
+      "path": "memory/.dreams/session-corpus/2026-08-27.txt",
+      "startLine": 40,
+      "endLine": 40,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-08-27T19:01:51.681Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
+      "queryHashes": [
+        "d5edc4c1d93a"
+      ],
+      "recallDays": [
+        "2026-08-28",
+        "2026-08-27"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-08-28.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-08-28.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-08-28.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "Assistant: ✅ Platform Audit Native scan executed: Linux 6.8.0-100-generic #100-Ubuntu SMP PREEMPT_DYNAMIC Tue Jan 13 16:40:06 UTC 2026 ⚠️ Process & Network Listening: tcp:0.0.0.0:22 tcp:0.0.0.0:80 tcp:[::1]:18789 tcp:127.0.0.1:18789 tcp:127.0.0.1:18791 tcp:[::]:22 tcp:[::]:80 udp",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-08-27T19:01:51.681Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
+      "queryHashes": [
+        "ac55d204ec6e"
+      ],
+      "recallDays": [
+        "2026-08-28",
+        "2026-08-27"
+      ],
+      "conceptTags": [
+        "network",
+        "6.8.0-100-generic",
+        "100-ubuntu",
+        "preempt-dynamic",
+        "0.0.0.0",
+        "127.0.0.1",
+        "platform",
+        "audit"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-08-28.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-08-28.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-08-28.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "Assistant: /home/ubuntu/.openclaw/cron/runs/11629940-4b4a-40c0-9383-4992805bec60.jsonl /home/ubuntu/.openclaw/cron/runs/d3f2db09-ea1f-4910-8775-e100c603d021.jsonl /home/ubuntu/.openclaw/update-check.json /home/ubuntu/.openclaw/exec-approvals.json /home/ubuntu/.openclaw/workspace/",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-08-27T19:01:51.681Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
+      "queryHashes": [
+        "ac55d204ec6e"
+      ],
+      "recallDays": [
+        "2026-08-28",
+        "2026-08-27"
+      ],
+      "conceptTags": [
+        "home/ubuntu",
+        "openclaw/update-check.json",
+        "openclaw/exec-approvals.json",
+        "openclaw/workspace",
+        "home",
+        "ubuntu",
+        "openclaw",
+        "cron"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-08-28.txt:3:3": {
+      "key": "memory:memory/.dreams/session-corpus/2026-08-28.txt:3:3",
+      "path": "memory/.dreams/session-corpus/2026-08-28.txt",
+      "startLine": 3,
+      "endLine": 3,
+      "source": "memory",
+      "snippet": "Assistant: /home/ubuntu/.openclaw/workspace/.git/objects/44/cbaf3cb3b8875e115eefaabb920cc225ef5be2 ... and 254 more ⚠️ Directory Changes 274 material files modified in last 24h ✅ System Cron Known system cron entries only; user crontab has 6 entries ✅ Local Cron OpenClaw cron job",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-08-27T19:01:51.681Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
+      "queryHashes": [
+        "ac55d204ec6e"
+      ],
+      "recallDays": [
+        "2026-08-28",
+        "2026-08-27"
+      ],
+      "conceptTags": [
+        "home/ubuntu",
+        "openclaw/workspace",
+        "home",
+        "ubuntu",
+        "openclaw",
+        "git",
+        "objects",
+        "directory"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-08-28.txt:4:4": {
+      "key": "memory:memory/.dreams/session-corpus/2026-08-28.txt:4:4",
+      "path": "memory/.dreams/session-corpus/2026-08-28.txt",
+      "startLine": 4,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "Assistant: 50m ago ok isolated announce -> telegram:7656385011 (explicit) main openai-codex/gpt-5.5 78ee8546-dfbb-46f4-ac14-8269f9e21248 关键任务看板三日巡检 cron 0 10 */3 * * @ Asia/Shan... in 7h 3d ago ok isolated announce -> telegram:7656385011 (explicit) main google-antigravit... bada3",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-08-27T19:01:51.681Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
+      "queryHashes": [
+        "ac55d204ec6e"
+      ],
+      "recallDays": [
+        "2026-08-28",
+        "2026-08-27"
+      ],
+      "conceptTags": [
+        "gpt",
+        "openai",
+        "openai-codex/gpt-5.5",
+        "asia/shan",
+        "google-antigravit",
+        "50m",
+        "ago",
+        "isolated"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-08-28.txt:5:5": {
+      "key": "memory:memory/.dreams/session-corpus/2026-08-28.txt:5:5",
+      "path": "memory/.dreams/session-corpus/2026-08-28.txt",
+      "startLine": 5,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "Assistant: paired.json is 600 ✅ Yellow Line Audit 0 sudo executions found ⚠️ Disk Capacity 1 new large files (>100MB, excluding known logs/btmp) ✅ Environment Vars No anomalous credential leaks in gateway env ✅ Sensitive Credential Scan No plaintext private keys/mnemonics found i",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-08-27T19:01:51.681Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
+      "queryHashes": [
+        "ac55d204ec6e"
+      ],
+      "recallDays": [
+        "2026-08-28",
+        "2026-08-27"
+      ],
+      "conceptTags": [
+        "gateway",
+        "paired.json",
+        "logs/btmp",
+        "keys/mnemonics",
+        "yellow",
+        "audit",
+        "sudo",
+        "executions"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-08-25.txt:41:41": {
+      "key": "memory:memory/.dreams/session-corpus/2026-08-25.txt:41:41",
+      "path": "memory/.dreams/session-corpus/2026-08-25.txt",
+      "startLine": 41,
+      "endLine": 41,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-08-27T19:01:51.681Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
+      "queryHashes": [
+        "b9de77bc2c6f"
+      ],
+      "recallDays": [
+        "2026-08-28",
+        "2026-08-27"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-08-25.txt:42:42": {
+      "key": "memory:memory/.dreams/session-corpus/2026-08-25.txt:42:42",
+      "path": "memory/.dreams/session-corpus/2026-08-25.txt",
+      "startLine": 42,
+      "endLine": 42,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-08-27T19:01:51.681Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
+      "queryHashes": [
+        "b9de77bc2c6f"
+      ],
+      "recallDays": [
+        "2026-08-28",
+        "2026-08-27"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-08-25.txt:43:43": {
+      "key": "memory:memory/.dreams/session-corpus/2026-08-25.txt:43:43",
+      "path": "memory/.dreams/session-corpus/2026-08-25.txt",
+      "startLine": 43,
+      "endLine": 43,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-08-27T19:01:51.681Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
+      "queryHashes": [
+        "b9de77bc2c6f"
+      ],
+      "recallDays": [
+        "2026-08-28",
+        "2026-08-27"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-08-25.txt:44:44": {
+      "key": "memory:memory/.dreams/session-corpus/2026-08-25.txt:44:44",
+      "path": "memory/.dreams/session-corpus/2026-08-25.txt",
+      "startLine": 44,
+      "endLine": 44,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-08-27T19:01:51.681Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
+      "queryHashes": [
+        "b9de77bc2c6f"
+      ],
+      "recallDays": [
+        "2026-08-28",
+        "2026-08-27"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-08-25.txt:45:45": {
+      "key": "memory:memory/.dreams/session-corpus/2026-08-25.txt:45:45",
+      "path": "memory/.dreams/session-corpus/2026-08-25.txt",
+      "startLine": 45,
+      "endLine": 45,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-08-27T19:01:51.681Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
+      "queryHashes": [
+        "b9de77bc2c6f"
+      ],
+      "recallDays": [
+        "2026-08-28",
+        "2026-08-27"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-08-25.txt:46:46": {
+      "key": "memory:memory/.dreams/session-corpus/2026-08-25.txt:46:46",
+      "path": "memory/.dreams/session-corpus/2026-08-25.txt",
+      "startLine": 46,
+      "endLine": 46,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-08-27T19:01:51.681Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
+      "queryHashes": [
+        "b9de77bc2c6f"
+      ],
+      "recallDays": [
+        "2026-08-28",
+        "2026-08-27"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-08-25.txt:47:47": {
+      "key": "memory:memory/.dreams/session-corpus/2026-08-25.txt:47:47",
+      "path": "memory/.dreams/session-corpus/2026-08-25.txt",
+      "startLine": 47,
+      "endLine": 47,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-08-27T19:01:51.681Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
+      "queryHashes": [
+        "b9de77bc2c6f"
+      ],
+      "recallDays": [
+        "2026-08-28",
+        "2026-08-27"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-08-25.txt:48:48": {
+      "key": "memory:memory/.dreams/session-corpus/2026-08-25.txt:48:48",
+      "path": "memory/.dreams/session-corpus/2026-08-25.txt",
+      "startLine": 48,
+      "endLine": 48,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-08-27T19:01:51.681Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
+      "queryHashes": [
+        "b9de77bc2c6f"
+      ],
+      "recallDays": [
+        "2026-08-28",
+        "2026-08-27"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-08-25.txt:49:49": {
+      "key": "memory:memory/.dreams/session-corpus/2026-08-25.txt:49:49",
+      "path": "memory/.dreams/session-corpus/2026-08-25.txt",
+      "startLine": 49,
+      "endLine": 49,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-08-27T19:01:51.681Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
+      "queryHashes": [
+        "b9de77bc2c6f"
+      ],
+      "recallDays": [
+        "2026-08-28",
+        "2026-08-27"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-08-25.txt:50:50": {
+      "key": "memory:memory/.dreams/session-corpus/2026-08-25.txt:50:50",
+      "path": "memory/.dreams/session-corpus/2026-08-25.txt",
+      "startLine": 50,
+      "endLine": 50,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-08-27T19:01:51.681Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
+      "queryHashes": [
+        "b9de77bc2c6f"
+      ],
+      "recallDays": [
+        "2026-08-28",
+        "2026-08-27"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-08-25.txt:51:51": {
+      "key": "memory:memory/.dreams/session-corpus/2026-08-25.txt:51:51",
+      "path": "memory/.dreams/session-corpus/2026-08-25.txt",
+      "startLine": 51,
+      "endLine": 51,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-08-27T19:01:51.681Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
+      "queryHashes": [
+        "b9de77bc2c6f"
+      ],
+      "recallDays": [
+        "2026-08-28",
+        "2026-08-27"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-08-25.txt:52:52": {
+      "key": "memory:memory/.dreams/session-corpus/2026-08-25.txt:52:52",
+      "path": "memory/.dreams/session-corpus/2026-08-25.txt",
+      "startLine": 52,
+      "endLine": 52,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-08-27T19:01:51.681Z",
+      "lastRecalledAt": "2026-08-27T19:01:51.681Z",
+      "queryHashes": [
+        "b9de77bc2c6f"
+      ],
+      "recallDays": [
+        "2026-08-28",
+        "2026-08-27"
       ],
       "conceptTags": [
         "turn",
