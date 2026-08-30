@@ -1,5 +1,4 @@
 #!/bin/bash
-echo "DEBUG: Script starting" >&2
 # Daily AI Opportunity Radar script
 # Generates timely AI opportunity items with titles, short points, meaning for Xiao Xue, and links.
 # Uses AnySearch; filters generic home/category pages so the cron sends higher-signal items.
@@ -7,6 +6,8 @@ echo "DEBUG: Script starting" >&2
 LOG_DIR="/home/ubuntu/.openclaw/logs"
 mkdir -p "$LOG_DIR"
 LOG_FILE="$LOG_DIR/ai_opportunity_radar_$(date +%Y%m%d).log"
+# Keep cron-visible stdout on fd 3, while detailed logs go to file.
+exec 3>&1
 exec >>"$LOG_FILE" 2>&1
 
 echo "=== AI Opportunity Radar started at $(date) ==="
@@ -117,13 +118,11 @@ done < "$TMP_SORTED"
 # Send via message tool (Telegram)
 if [[ -f "$OUTPUT_FILE" && -s "$OUTPUT_FILE" ]]; then
     CONTENT=$(cat "$OUTPUT_FILE")
-    # Use OpenClaw message tool via exec? We'll call the message tool via the agent's built-in? 
-    # Since we are in a script, we cannot directly call the tool; we will output to stdout and let the cron's announce handle it.
-    # However we have --announce in cron config, which will send the script's stdout as a message.
-    # So just print the content.
-    echo "$CONTENT"
+    # Print the final report to the original stdout so cron announce can deliver it,
+    # while keeping noisy search logs in LOG_FILE.
+    echo "$CONTENT" >&3
 else
-    echo "No output generated."
+    echo "No output generated." >&3
 fi
 
 echo "=== AI Opportunity Radar finished at $(date) ==="
