@@ -493,3 +493,8 @@
 
 <!-- openclaw-memory-promotion:memory:memory/2026-08-06.md:1:1 -->
 - 2026-08-06 13:00 CST - AI Opportunity Radar cron job executed successfully. Generated 20 AI opportunity items from various sources including TLDR AI, The Rundown AI, Agentic Daily, etc. Top items included Wellfound startup jobs platform, Agentic Daily news, AI Magic by Jeremy Howard, etc. Output sent via Telegram announcement. [score=0.865 recalls=0 avg=0.620 source=memory/2026-08-06.md:1-1]
+
+## Promoted From Short-Term Memory (2026-09-07)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-03-12.md:118:151 -->
+- - **结果**：成功解锁 - **执行时间**：2026-03-12 13:06 CST - **完整命令**：`sudo -n chattr +i /home/ubuntu/.openclaw/workspace/scripts/nightly-security-audit.sh` - **原因**：逻辑优化完成后恢复脚本 immutable 保护 - **结果**：成功重新加锁 #### 修复内容 - Yellow Line Audit 不再强制比较 `auth.log sudo 次数 == memory 中 sudo 次数` - 改为： - 若 `auth.log` 无 sudo，则直接通过 - 若存在 sudo，只要 memory 中存在对应 Yellow Line / 命令记录，即视为通过 - 仅在 `auth.log` 有 sudo 而 memory 中完全无对应记录时才 warning #### 最终验证结果 - `Yellow Line Audit = OK` - `Environment Vars = OK` - 当前最终汇总进一步降为：`0 errors, 4 warnings` ### 最小改动降噪（不删除文件/任务/服务） **时间**：2026-03-12 13:17-13:20 CST #### Yellow Line 执行记录 - **执行时间**：2026-03-12 13:17 CST - **完整命令**：`sudo -n chattr -i /home/ubuntu/.openclaw/workspace/scripts/nightly-security-audit.sh` - **原因**：按用户要求，仅通过调整审计规则做最小改动降噪 - **结果**：成功解锁 - **执行时间**：2026-03-12 13:20 CST - **完整命令**：`sudo -n chattr +i /home/ubuntu/.openclaw/workspace/scripts/nightly-security-audit.sh` - **原因**：降噪规则调整完成后恢复脚本 immutable 保护 - **结果**：成功重新加锁 #### 降噪内容 [score=0.994 recalls=3 avg=1.000 source=memory/2026-03-12.md:118-151]
