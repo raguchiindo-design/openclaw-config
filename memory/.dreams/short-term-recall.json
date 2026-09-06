@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-05T19:02:01.079Z",
+  "updatedAt": "2026-09-06T02:38:08.702Z",
   "entries": {
     "memory:memory/2026-03-14.md:84:98": {
       "key": "memory:memory/2026-03-14.md:84:98",
@@ -213203,19 +213203,21 @@
       "endLine": 5,
       "source": "memory",
       "snippet": "## 13:00 AI机会雷达 cron - 执行 `scripts/ai_opportunity_radar.sh` 成功，返回 12 条 AI Agent / Web3 / 产品机会线索。 - 重点线索集中在：AI agents + crypto/stablecoin 支付、AI agent market、Coinbase/OKX agent accounts/marketplace、Product Hunt agent 工具榜单。",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-08-31T19:02:32.102Z",
-      "lastRecalledAt": "2026-08-31T19:02:32.102Z",
+      "lastRecalledAt": "2026-09-06T02:38:08.702Z",
       "queryHashes": [
-        "06d590c707ad"
+        "06d590c707ad",
+        "52def976ccd6"
       ],
       "recallDays": [
         "2026-09-01",
-        "2026-08-31"
+        "2026-08-31",
+        "2026-09-06"
       ],
       "conceptTags": [
         "scripts/ai-opportunity-radar.sh",
@@ -221230,6 +221232,37 @@
         "23-12",
         "结果",
         "成功",
+        "执行"
+      ]
+    },
+    "memory:memory/2026-09-03.md:1:5": {
+      "key": "memory:memory/2026-09-03.md:1:5",
+      "path": "memory/2026-09-03.md",
+      "startLine": 1,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "## 13:00 AI机会雷达 cron - 执行 `scripts/ai_opportunity_radar.sh` 成功，返回 12 条 AI Agent / Web3 / 产品机会线索。 - 重点线索：Coinbase AI agent accounts、AI agent crypto projects、Solana AI agent platform、智能合约 + AI agents、NVIDIA Vision AI/GTC 2026、Product Hunt AI agent 工具榜单。 - 低信号/需谨慎项：YouTube 榜单、BingX榜单、课程页、Product Hunt/Hunted 分类页、LinkedIn个人帖。后续应继续优化过滤规则，提高对官方发布、融资、真实产品上线的权重。",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-09-06T02:38:08.702Z",
+      "lastRecalledAt": "2026-09-06T02:38:08.702Z",
+      "queryHashes": [
+        "52def976ccd6"
+      ],
+      "recallDays": [
+        "2026-09-06"
+      ],
+      "conceptTags": [
+        "scripts/ai-opportunity-radar.sh",
+        "ai/gtc",
+        "低信号/需谨慎项",
+        "hunt/hunted",
+        "机会",
+        "雷达",
+        "cron",
         "执行"
       ]
     }
