@@ -246,13 +246,17 @@ fi
 # 12. Skill/MCP Integrity Baseline
 SKILL_MANIFEST="$OC/.skill-manifest.sha256"
 if [ ! -f "$SKILL_MANIFEST" ]; then
-    find "$OC/agents/" "$OC/skills/" -type f \( -name "*.sh" -o -name "*.py" -o -name "*.js" \) 2>/dev/null | \
-        xargs sha256sum 2>/dev/null | sort > "$SKILL_MANIFEST" || true
+    find "$OC/agents/" "$OC/skills/" \
+        \( -path "*/.tmp/*" -o -path "*/shell_snapshots/*" -o -path "*/node_modules/*" \) -prune -o \
+        -type f \( -name "*.sh" -o -name "*.py" -o -name "*.js" \) -print 2>/dev/null | \
+        xargs -r sha256sum 2>/dev/null | sort > "$SKILL_MANIFEST" || true
     report "✅" "Skill Baseline" "Baseline generated (first run)"
 else
     CURRENT_MANIFEST="$(mktemp)"
-    find "$OC/agents/" "$OC/skills/" -type f \( -name "*.sh" -o -name "*.py" -o -name "*.js" \) 2>/dev/null | \
-        xargs sha256sum 2>/dev/null | sort > "$CURRENT_MANIFEST"
+    find "$OC/agents/" "$OC/skills/" \
+        \( -path "*/.tmp/*" -o -path "*/shell_snapshots/*" -o -path "*/node_modules/*" \) -prune -o \
+        -type f \( -name "*.sh" -o -name "*.py" -o -name "*.js" \) -print 2>/dev/null | \
+        xargs -r sha256sum 2>/dev/null | sort > "$CURRENT_MANIFEST"
     if diff -q "$SKILL_MANIFEST" "$CURRENT_MANIFEST" &>/dev/null; then
         report "✅" "Skill Baseline" "No suspicious extension changes"
     else

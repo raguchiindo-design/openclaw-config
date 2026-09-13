@@ -470,38 +470,25 @@
 - 2026-06-19 15:00
 （所有时间均为北京时间）
 
-## Promoted From Short-Term Memory (2026-06-15)
+## Promoted From Short-Term Memory (2026-09-14)
 
-<!-- openclaw-memory-promotion:memory:memory/2026-06-09.md:5:5 -->
-- **时间**：2026年6月9日 下午（北京时间） [score=0.856 recalls=0 avg=0.620 source=memory/2026-06-09.md:5-5]
-<!-- openclaw-memory-promotion:memory:memory/2026-06-09.md:7:7 -->
-- **事件**：在安装 anysearch-skill 时，我仅基于 GitHub 星数、更新时间和 README 外观进行判断，直接克隆仓库而未进行正式安全扫描。 [score=0.856 recalls=0 avg=0.620 source=memory/2026-06-09.md:7-7]
-<!-- openclaw-memory-promotion:memory:memory/2026-06-09.md:9:9 -->
-- **错误**：这违背了安全最佳实践。第三方 skill/plugin/MCP 工具不应仅凭表面指标安装，必须先审查代码、数据流向、依赖、许可证等风险点，并在安装前向用户报告潜在风险并等待确认。 [score=0.856 recalls=0 avg=0.620 source=memory/2026-06-09.md:9-9]
-
-## Promoted From Short-Term Memory (2026-06-16)
-
-<!-- openclaw-memory-promotion:memory:memory/2026-06-09.md:24:24 -->
-- **后续行动**： [score=0.885 recalls=0 avg=0.620 source=memory/2026-06-09.md:24-24]
-
-## Promoted From Short-Term Memory (2026-07-24)
-
-<!-- openclaw-memory-promotion:memory:memory/2026-05-07.md:1:26 -->
-- # 2026-05-07 ## 回复风格 / token 控制 **时间**：2026年5月7日 10:02（北京时间） 小雪要求：墨衍默认不显示详细思考过程，只保留关键点，同时不能降低思考深度和质量，目的是减少 token 消耗。 执行记录： - 已检查当前 session 状态：Think=medium、Text=low，符合“保留思考深度、压缩输出”的方向。 - 已更新长期记忆 MEMORY.md。 - 后续默认输出：结论优先、关键依据、必要动作；不写长篇推理过程。 ## Device Brief 周更发布迁移 Codex **时间**：2026年5月7日 上午（北京时间） 背景：Device Brief 四平台发布在云端 OpenClaw 执行时，因本机真实浏览器 relay/云端通道不稳定，导致 Substack / Beehiiv / Patreon 已登录状态无法稳定接管；Whop 验证码也存在过期问题。 小雪决定：将 Device Brief 周更发布任务迁移到本机 Codex 执行，以减少本地-云端通道依赖。 已完成： - 整理并回复了一份可直接复制给 Codex 的完整 Prompt。 - Prompt 覆盖：任务目标、微信公众号 URL 输入、正文提取、清洗规则、英文改写、配图规则、四平台发布 SOP、登录/验证码/Cloudflare 异常处理、完成回执格式、2026-05-05 MOONIX 历史任务状态。 当前状态： [score=1.000 recalls=3 avg=1.000 source=memory/2026-05-07.md:1-26]
-
-## Promoted From Short-Term Memory (2026-08-11)
-
-<!-- openclaw-memory-promotion:memory:memory/2026-08-06.md:1:1 -->
-- 2026-08-06 13:00 CST - AI Opportunity Radar cron job executed successfully. Generated 20 AI opportunity items from various sources including TLDR AI, The Rundown AI, Agentic Daily, etc. Top items included Wellfound startup jobs platform, Agentic Daily news, AI Magic by Jeremy Howard, etc. Output sent via Telegram announcement. [score=0.865 recalls=0 avg=0.620 source=memory/2026-08-06.md:1-1]
-
-## Promoted From Short-Term Memory (2026-09-07)
-
-<!-- openclaw-memory-promotion:memory:memory/2026-03-12.md:118:151 -->
-- - **结果**：成功解锁 - **执行时间**：2026-03-12 13:06 CST - **完整命令**：`sudo -n chattr +i /home/ubuntu/.openclaw/workspace/scripts/nightly-security-audit.sh` - **原因**：逻辑优化完成后恢复脚本 immutable 保护 - **结果**：成功重新加锁 #### 修复内容 - Yellow Line Audit 不再强制比较 `auth.log sudo 次数 == memory 中 sudo 次数` - 改为： - 若 `auth.log` 无 sudo，则直接通过 - 若存在 sudo，只要 memory 中存在对应 Yellow Line / 命令记录，即视为通过 - 仅在 `auth.log` 有 sudo 而 memory 中完全无对应记录时才 warning #### 最终验证结果 - `Yellow Line Audit = OK` - `Environment Vars = OK` - 当前最终汇总进一步降为：`0 errors, 4 warnings` ### 最小改动降噪（不删除文件/任务/服务） **时间**：2026-03-12 13:17-13:20 CST #### Yellow Line 执行记录 - **执行时间**：2026-03-12 13:17 CST - **完整命令**：`sudo -n chattr -i /home/ubuntu/.openclaw/workspace/scripts/nightly-security-audit.sh` - **原因**：按用户要求，仅通过调整审计规则做最小改动降噪 - **结果**：成功解锁 - **执行时间**：2026-03-12 13:20 CST - **完整命令**：`sudo -n chattr +i /home/ubuntu/.openclaw/workspace/scripts/nightly-security-audit.sh` - **原因**：降噪规则调整完成后恢复脚本 immutable 保护 - **结果**：成功重新加锁 #### 降噪内容 [score=0.994 recalls=3 avg=1.000 source=memory/2026-03-12.md:118-151]
-
-## Promoted From Short-Term Memory (2026-09-09)
-
-<!-- openclaw-memory-promotion:memory:memory/2026-03-12.md:70:102 -->
-- - **结果**：成功解锁 - **执行时间**：2026-03-12 11:20 CST - **完整命令**：`sudo -n chattr +i /home/ubuntu/.openclaw/workspace/scripts/nightly-security-audit.sh` - **原因**：目录校验修复完成后恢复脚本 immutable 保护 - **结果**：成功重新加锁 #### 修复内容 - 将 baseline 校验改为：在 `$OC` 目录下执行 `sha256sum -c "$BASELINE_FILE"` - 避免因 cron/手动运行时工作目录不同而误报 `openclaw.json` 不存在 #### 最终验证结果 - 手动执行脚本成功，退出码：`0` - 最终生效结果： - `Config Baseline = OK` - `Sensitive Credential Scan = OK` - 当前最终汇总：`0 errors, 6 warnings` ### Yellow Line / Environment Vars 规则修正 **时间**：2026-03-12 12:23-12:26 CST #### Yellow Line 执行记录 - **执行时间**：2026-03-12 12:23 CST - **完整命令**：`sudo -n chattr -i /home/ubuntu/.openclaw/workspace/scripts/nightly-security-audit.sh` - **原因**：修正 Yellow Line Audit 与 Environment Vars 审计规则，需先解除 immutable 锁 - **结果**：成功解锁 - **执行时间**：2026-03-12 12:26 CST - **完整命令**：`sudo -n chattr +i /home/ubuntu/.openclaw/workspace/scripts/nightly-security-audit.sh` - **原因**：规则修正完成后恢复脚本 immutable 保护 - **结果**：成功重新加锁 #### 修复内容 [score=0.935 recalls=3 avg=1.000 source=memory/2026-03-12.md:70-102]
-<!-- openclaw-memory-promotion:memory:memory/2026-03-12.md:1:32 -->
-- # 2026-03-12 ### 夜间安全审计脚本修复 **时间**：2026-03-12 09:48-09:52 CST **背景**：用户确认修复 `~/.openclaw/workspace/scripts/nightly-security-audit.sh` #### Yellow Line 执行记录 - **执行时间**：2026-03-12 09:48 CST - **完整命令**：`sudo -n chattr -i /home/ubuntu/.openclaw/workspace/scripts/nightly-security-audit.sh` - **原因**：脚本被 immutable 锁定，需先解锁后修复 bash 逻辑 bug - **结果**：成功解锁 - **执行时间**：2026-03-12 09:49 CST - **完整命令**：`sudo -n chattr +i /home/ubuntu/.openclaw/workspace/scripts/nightly-security-audit.sh` - **原因**：修复完成后恢复脚本 immutable 保护 - **结果**：成功重新加锁 #### 修复内容 - 将脚本中的 `((ERRORS++))` 全部替换为 `((ERRORS+=1))` - 将脚本中的 `((WARNINGS++))` 全部替换为 `((WARNINGS+=1))` - 原因：在 `set -e` 下，`((VAR++))` 第一次执行会因返回状态导致脚本中途退出 #### 验证结果 - 手动执行：`bash /home/ubuntu/.openclaw/workspace/scripts/nightly-security-audit.sh` - 退出码：`0` - 结果：脚本已可完整运行并生成报告 - 报告路径：`/tmp/openclaw/security-reports/report-2026-03-12.txt` #### 本次审计主要发现 - `Config Baseline`：FAILED - `Sensitive Credential Scan`：13 potential credential patterns - `Yellow Line Audit`：auth.log 与 memory 日志计数不一致（修复前尚无当日记录） [score=0.922 recalls=3 avg=1.000 source=memory/2026-03-12.md:1-32]
+<!-- openclaw-memory-promotion:memory:memory/2026-09-03.md:2:4 -->
+- 13:00 AI机会雷达 cron: 执行 `scripts/ai_opportunity_radar.sh` 成功，返回 12 条 AI Agent / Web3 / 产品机会线索。; 重点线索：Coinbase AI agent accounts、AI agent crypto projects、Solana AI agent platform、智能合约 + AI agents、NVIDIA Vision AI/GTC 2026、Product Hunt AI agent 工具榜单。; 低信号/需谨慎项：YouTube 榜单、BingX榜单、课程页、Product Hunt/Hunted 分类页、LinkedIn个人帖。后续应继续优化过滤规则，提高对官方发布、融资、真实产品上线的权重。 [score=0.929 recalls=0 avg=0.620 source=memory/2026-09-03.md:2-4]
+<!-- openclaw-memory-promotion:memory:memory/2026-09-06.md:12:15 -->
+- Agent Mail CLI 接入完成: 小雪已新建 Agent 邮箱：`colight@agent.qq.com`。; 发信昵称：`共耀 COLIGHT｜小助手`。; 身份简介：`我是共耀COLIGHT的 AI 小助手，觉得画像卡哪里不像你，或有话想告诉共耀，都可以直接回复邮件`。; 已根据官方文档安装 `@tencent-qqmail/agently-cli` 版本 `1.0.18`。 [score=0.922 recalls=0 avg=0.620 source=memory/2026-09-06.md:12-15]
+<!-- openclaw-memory-promotion:memory:memory/2026-09-04.md:2:5 -->
+- 13:00 AI机会雷达 cron: 执行 `scripts/ai_opportunity_radar.sh` 成功，返回 14 条 AI Agent / Web3 / 产品机会线索。; 高优先级线索：Coinbase AI agent accounts、The Block 关于 AI agents 放大 crypto hack 风险、NVIDIA Vision AI/GTC 2026、Block/Square/Cash App AI strategy。; 中等观察线索：Product Hunt AI agents 分类、Solana AI agent platform、StartupCorners 产品发布摘要、DeepLearning.AI 活动。; 低信号/需谨慎项：BingX 榜单、Litslink 综述、YouTube 单条访谈、AIAgentStore 月度页、Yahoo/CES 视频类内容。后续应提升官方发布/真实产品上线/安全风险/融资信号权重，降低 SEO 榜单权重。 [score=0.901 recalls=0 avg=0.620 source=memory/2026-09-04.md:2-5]
+<!-- openclaw-memory-promotion:memory:memory/2026-09-02.md:2:4 -->
+- 13:00 AI机会雷达 cron: 执行 `scripts/ai_opportunity_radar.sh` 成功，返回 15 条 AI Agent / Web3 / 产品机会线索。; 重点线索集中在：AI agents + crypto/stablecoin 支付、Coinbase/OKX agent accounts/marketplace、The Block/Coindesk 的 Agent 支付与安全讨论、Product Hunt agent 工具榜单。; 本次输出仍有部分低信号结果（课程页、活动页、Product Hunt 分类页、Medium/BingX榜单），后续可继续优化过滤规则。 [score=0.898 recalls=0 avg=0.620 source=memory/2026-09-02.md:2-4]
+<!-- openclaw-memory-promotion:memory:memory/2026-09-06.md:16:19 -->
+- Agent Mail CLI 接入完成: 已运行 `npx skills add https://agent.qq.com --skill -g -y` 安装 agently-mail skill；提示 PromptScript 不支持 global skill installation，但 agently-mail 已安装并 symlink 到 OpenClaw。; 已完成 OAuth 授权并验证成功。; `agently-cli +me` 返回主邮箱：`colight@agent.qq.com`，主别名名称：`共耀 COLIGHT｜小助手`。; 当前权限 scopes：`alias:read`, `mail:delete`, `mail:read`, `mail:send`。 [score=0.890 recalls=0 avg=0.620 source=memory/2026-09-06.md:16-19]
+<!-- openclaw-memory-promotion:memory:memory/2026-09-06.md:20:20 -->
+- Agent Mail CLI 接入完成: 额度：每日发送 50 封；每小时 200 请求；每分钟 10 请求；附件最多 50 个，单附件/总附件上限 20MB。 [score=0.890 recalls=0 avg=0.620 source=memory/2026-09-06.md:20-20]
+<!-- openclaw-memory-promotion:memory:memory/2026-09-06.md:23:26 -->
+- Agent Mail 测试邮件: 小雪要求发送一封测试邮件到 `raguchiindo@gmail.com`。; 已按 agently-mail 两阶段确认流程执行：先生成确认 token，收到小雪回复「发」后提交确认。; 发送结果返回 `queued: true`。; 心跳复查 `sent` 文件夹确认邮件已入已发送：主题 `Agent Mail 测试邮件`，message_id `msg_T_o_EbALQi2bsqImHSVjPK0fOjGrrLOBj-Yn_PQ8nzmExw`，发送时间 `2026-09-06T03:14:49Z`。 [score=0.890 recalls=0 avg=0.620 source=memory/2026-09-06.md:23-26]
+<!-- openclaw-memory-promotion:memory:memory/2026-09-06.md:29:31 -->
+- 每日AI机会雷达（13:00）: 已执行 `/home/ubuntu/.openclaw/workspace/scripts/ai_opportunity_radar.sh`。; 输出 15 条机会信号，重点集中在 AI agents、Agentic AI 融资、AI+Crypto/Agent 支付交易、Product Hunt/StartupCorners 新产品、CLI 工作流趋势。; 对小雪相关性最高：AI agents 作为获客入口变化、Agent 支付/交易基础设施、近期 AI/机器人/开发工具新品观察。 [score=0.890 recalls=0 avg=0.620 source=memory/2026-09-06.md:29-31]
+<!-- openclaw-memory-promotion:memory:memory/2026-09-06.md:4:7 -->
+- Agent QQ 邮箱改名调查: 小雪询问以前配置过的 Agent QQ 邮箱 `aidiry@agent.qq.com` 是否能改名或重新申请为 `colight@agent.qq.com`。; 已查官方入口 `https://agent.qq.com/`：仍显示「微信扫码登录」，不像完全下线；但本机无小雪登录态，无法进入管理页。; 官方 CLI 文档仅提供安装、OAuth 授权、`agently-cli +me` 查看邮箱/alias、邮件收发等命令，未发现改邮箱地址命令。; CodeBuddy 文档提到「管理邮箱」入口和「邮箱别名」可修改；第三方资料称邮箱地址可在网页管理端修改且只能修改一次，旧地址会立即失效。 [score=0.890 recalls=0 avg=0.620 source=memory/2026-09-06.md:4-7]
+<!-- openclaw-memory-promotion:memory:memory/2026-09-06.md:8:9 -->
+- Agent QQ 邮箱改名调查: 本机未找到已安装/授权的 `agently-cli`，无法直接查询 `aidiry@agent.qq.com` 状态或占用情况。; 已建议小雪通过网页登录管理端尝试修改为 `colight`，并提醒最终保存前谨慎确认。 [score=0.890 recalls=0 avg=0.620 source=memory/2026-09-06.md:8-9]
