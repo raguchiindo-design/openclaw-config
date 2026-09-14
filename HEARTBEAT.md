@@ -1,9 +1,9 @@
 # HEARTBEAT.md
 
-更新时间：2026年09月14日 07:49（北京时间）
+更新时间：2026年09月14日 15:19（北京时间）
 
 ### 巡检摘要 (三日看板)
-- ✅ **nightly-security-audit**：2026-09-14 03:00 报告先出现 1 error, 4 warnings；心跳已复查并处理。`Config Baseline` 是 2026-09-13 合法模型/备用模型配置更新后的旧 baseline 漂移，已重新同步并验证 `openclaw.json: OK`；`Skill Baseline` 497 行变化来自运行时 `.tmp`、`shell_snapshots`、`node_modules` 被扫入，已修正审计脚本排除这些目录，稳定 manifest 为 16 条，脚本已重新 `chattr +i` 锁定。07:49 复查：active cron 全部 ok，最近 4 小时无 error/OAuth/fallback 日志命中，两个 baseline 仍稳定。
+- ✅ **nightly-security-audit**：2026-09-14 03:00 报告先出现 1 error, 4 warnings；心跳已复查并处理。`Config Baseline` 是 2026-09-13 合法模型/备用模型配置更新后的旧 baseline 漂移，已重新同步并验证 `openclaw.json: OK`；`Skill Baseline` 497 行变化来自运行时 `.tmp`、`shell_snapshots`、`node_modules` 被扫入，已修正审计脚本排除这些目录，稳定 manifest 为 16 条，脚本已重新 `chattr +i` 锁定。15:19 复查：active cron 全部 ok，`openclaw.json` baseline 仍稳定。
 - ✅ **Security Audit Note**：small model 沙箱已配置 (agents.defaults.sandbox.mode: require)。需继续监控 web 工具使用情况是否符合沙箱策略。
 - ⚠️ **Yellow Line Audit**：审计检测到 12 次 sudo 操作（主要来自我们最近的脚本修复），但内存中未发现对应的 Yellow Line 记录；这属于预期的管理行为，可安全忽略。
 - ✅ **GitClaw 自动备份**：持续稳定运行。2026-05-16 心跳复查发现 GitClaw backup health check 因“无输出时不回文本”导致 cron 误判 error，已将无异常返回改为 `NO_REPLY` 并手动验证，状态恢复 ok。
@@ -43,7 +43,7 @@
 - [x] Config Baseline 已更新：openclaw.json 配置更改（添加 fallback 模型）合法，基线已同步。
 - [x] 已将 ~/.openclaw/devices/paired.json 复制到 ~/.openclaw/paired.json 并设置权限 600，以恢复缺失的配置文件。
 - [x] 审查 small model 沙箱需求：已配置 agents.defaults.sandbox.mode: require；需验证是否满足安全要求。
-- [x] 每日AI机会雷达旧 cron job (ID: bada3c2e-de65-42f4-8032-1fb2143beed5) 2026-09-13 13:00 再次 timeout；已于 16:49 停用旧 13:00 任务（`enabled=false`, `next=-`, `status=disabled`）。新版 Daily Career Opportunity Assessment (ID: e82f5af8-72d6-40fb-9f95-ab7636a0303c) 保持启用，15:00 最近一次运行 ok。
+- [x] 每日AI机会雷达旧 cron job (ID: bada3c2e-de65-42f4-8032-1fb2143beed5) 2026-09-13 13:00 再次 timeout；已于 16:49 停用旧 13:00 任务（`enabled=false`, `next=-`, `status=disabled`）。新版 Daily Career Opportunity Assessment (ID: e82f5af8-72d6-40fb-9f95-ab7636a0303c) 保持启用，2026-09-14 15:00 已正常运行（15:00:08 started, 15:00:32 finished, cron status ok）。
     - [x] 修复 daily_career_opportunity.sh 脚本，改用直接 AnySearch API 调用，增加 curl 超时和 null-byte 处理，脚本现在能在约1分钟内完成并输出机会列表。
 - [x] 调整每日AI机会雷达 cron job 超时时间：将 timeoutSeconds 从 120 增至 180 秒，以防止脚本执行超时（2026-06-19）
  [最后检查: 2026-07-04 07:19:21, 最近10分钟无新错误]
