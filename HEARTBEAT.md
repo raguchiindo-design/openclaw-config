@@ -1,16 +1,16 @@
 # HEARTBEAT.md
 
-更新时间：2026年09月14日 15:19（北京时间）
+更新时间：2026年09月14日 17:50（北京时间）
 
 ### 巡检摘要 (三日看板)
 - ✅ **nightly-security-audit**：2026-09-14 03:00 报告先出现 1 error, 4 warnings；心跳已复查并处理。`Config Baseline` 是 2026-09-13 合法模型/备用模型配置更新后的旧 baseline 漂移，已重新同步并验证 `openclaw.json: OK`；`Skill Baseline` 497 行变化来自运行时 `.tmp`、`shell_snapshots`、`node_modules` 被扫入，已修正审计脚本排除这些目录，稳定 manifest 为 16 条，脚本已重新 `chattr +i` 锁定。15:19 复查：active cron 全部 ok，`openclaw.json` baseline 仍稳定。
-- ✅ **Security Audit Note**：small model 沙箱已配置 (agents.defaults.sandbox.mode: require)。需继续监控 web 工具使用情况是否符合沙箱策略。
+- ✅ **Security Audit Note**：small model 沙箱已按当前 OpenClaw schema 配置为 `agents.defaults.sandbox.mode: all`（旧记录中的 `require` 已不被当前 schema 接受）。2026-09-14 17:50 复查：cron 列表正常读取，active 任务全部 ok，`openclaw.json: OK`。
 - ⚠️ **Yellow Line Audit**：审计检测到 12 次 sudo 操作（主要来自我们最近的脚本修复），但内存中未发现对应的 Yellow Line 记录；这属于预期的管理行为，可安全忽略。
 - ✅ **GitClaw 自动备份**：持续稳定运行。2026-05-16 心跳复查发现 GitClaw backup health check 因“无输出时不回文本”导致 cron 误判 error，已将无异常返回改为 `NO_REPLY` 并手动验证，状态恢复 ok。
 - ✅ **QQBot 插件迁移**：已从旧 `@sliverp/qqbot@1.5.3` 迁移到官方 `@openclaw/qqbot@2026.5.3`，手机 QQ 收发验证成功。
 - ✅ **google-antigravity-auth 编译产物修复**：已本地编译为 `dist/index.js` 并切换入口，compiled runtime warning 已消失。
 - ⏸️ **Device Brief 四平台周更发布**：本次已由小雪迁移到 Codex 并完成发布；OpenClaw 云端该周任务已暂停，后续不再主动跑需要浏览器登录的四平台发布。
-- ✅ **Config Baseline**：2026-09-14 心跳已按当前合法 `openclaw.json` 刷新 baseline，并通过 `sha256sum -c .config-baseline.sha256` 验证。
+- ✅ **Config Baseline**：2026-09-14 心跳已按当前合法 `openclaw.json` 刷新 baseline，并通过 `sha256sum -c .config-baseline.sha256` 验证；17:50 因 sandbox schema 修正为 `all` 再次刷新并验证通过。
 
 ### 趋势分析任务
 - **任务名称**：数字花束与春节送礼趋势深度调研 - 每2小时执行
@@ -23,7 +23,7 @@
 ### 系统状态
 - ✅ OpenClaw Gateway：运行中
 - ✅ Cron任务系统：运行中
-- ✅ 安全防护矩阵：核心项通过，需关注的警告均为预期管理行为。
+- ✅ 安全防护矩阵：核心项通过，small model 沙箱为 `all`；需关注的警告均为预期管理行为。
 - ✅ Git灾难恢复：已部署。
 - **当前主模型**：openai/gpt-5.6-sol ✅
 - **备用模型**：openai/gpt-5.6-terra、openai/gpt-5.5、openrouter/nvidia/nemotron-3-super-120b-a12b:free
@@ -42,7 +42,7 @@
 - [x] Review Skill Baseline changes (3 lines) from security audit 2026-06-01: manifest diff is one added file `/home/ubuntu/.openclaw/skills/gpt-image/scripts/generate.py` (diff header counts as 3 lines). This matches installed gpt-image skill; no unexpected removed/changed script found. Skill baseline deliberately refreshed.
 - [x] Config Baseline 已更新：openclaw.json 配置更改（添加 fallback 模型）合法，基线已同步。
 - [x] 已将 ~/.openclaw/devices/paired.json 复制到 ~/.openclaw/paired.json 并设置权限 600，以恢复缺失的配置文件。
-- [x] 审查 small model 沙箱需求：已配置 agents.defaults.sandbox.mode: require；需验证是否满足安全要求。
+- [x] 审查 small model 沙箱需求：当前 OpenClaw schema 只接受 `off / non-main / all`，已将 `agents.defaults.sandbox.mode` 从误漂移的 `off` 修正为 `all` 并刷新配置基线（2026-09-14 17:50）。
 - [x] 每日AI机会雷达旧 cron job (ID: bada3c2e-de65-42f4-8032-1fb2143beed5) 2026-09-13 13:00 再次 timeout；已于 16:49 停用旧 13:00 任务（`enabled=false`, `next=-`, `status=disabled`）。新版 Daily Career Opportunity Assessment (ID: e82f5af8-72d6-40fb-9f95-ab7636a0303c) 保持启用，2026-09-14 15:00 已正常运行（15:00:08 started, 15:00:32 finished, cron status ok）。
     - [x] 修复 daily_career_opportunity.sh 脚本，改用直接 AnySearch API 调用，增加 curl 超时和 null-byte 处理，脚本现在能在约1分钟内完成并输出机会列表。
 - [x] 调整每日AI机会雷达 cron job 超时时间：将 timeoutSeconds 从 120 增至 180 秒，以防止脚本执行超时（2026-06-19）
