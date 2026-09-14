@@ -1,9 +1,9 @@
 # HEARTBEAT.md
 
-更新时间：2026年09月14日 03:22（北京时间）
+更新时间：2026年09月14日 07:49（北京时间）
 
 ### 巡检摘要 (三日看板)
-- ✅ **nightly-security-audit**：2026-09-14 03:00 报告先出现 1 error, 4 warnings；心跳已复查并处理。`Config Baseline` 是 2026-09-13 合法模型/备用模型配置更新后的旧 baseline 漂移，已重新同步并验证 `openclaw.json: OK`；`Skill Baseline` 497 行变化来自运行时 `.tmp`、`shell_snapshots`、`node_modules` 被扫入，已修正审计脚本排除这些目录，稳定 manifest 为 16 条，脚本已重新 `chattr +i` 锁定。
+- ✅ **nightly-security-audit**：2026-09-14 03:00 报告先出现 1 error, 4 warnings；心跳已复查并处理。`Config Baseline` 是 2026-09-13 合法模型/备用模型配置更新后的旧 baseline 漂移，已重新同步并验证 `openclaw.json: OK`；`Skill Baseline` 497 行变化来自运行时 `.tmp`、`shell_snapshots`、`node_modules` 被扫入，已修正审计脚本排除这些目录，稳定 manifest 为 16 条，脚本已重新 `chattr +i` 锁定。07:49 复查：active cron 全部 ok，最近 4 小时无 error/OAuth/fallback 日志命中，两个 baseline 仍稳定。
 - ✅ **Security Audit Note**：small model 沙箱已配置 (agents.defaults.sandbox.mode: require)。需继续监控 web 工具使用情况是否符合沙箱策略。
 - ⚠️ **Yellow Line Audit**：审计检测到 12 次 sudo 操作（主要来自我们最近的脚本修复），但内存中未发现对应的 Yellow Line 记录；这属于预期的管理行为，可安全忽略。
 - ✅ **GitClaw 自动备份**：持续稳定运行。2026-05-16 心跳复查发现 GitClaw backup health check 因“无输出时不回文本”导致 cron 误判 error，已将无异常返回改为 `NO_REPLY` 并手动验证，状态恢复 ok。
@@ -27,7 +27,7 @@
 - ✅ Git灾难恢复：已部署。
 - **当前主模型**：openai/gpt-5.6-sol ✅
 - **备用模型**：openai/gpt-5.6-terra、openai/gpt-5.5、openrouter/nvidia/nemotron-3-super-120b-a12b:free
-- ✅ **OAuth Token 复查**：2026年09月13日 16:20 心跳检查时，`openai-codex:huangmmail@gmail.com` 与 `openai:huangmmail@gmail.com` 认证 profile 均存在；最近日志中仅发现 14:10 的历史 `openai-codex` 过期错误，15:55 后未发现新的 refresh 失败。暂不重复提醒用户，继续观察后续 cron 是否仍降级。
+- ✅ **OAuth Token 复查**：2026年09月13日 16:20 心跳检查时，`openai-codex:huangmmail@gmail.com` 与 `openai:huangmmail@gmail.com` 认证 profile 均存在；2026年09月14日 07:49 复查最近 4 小时日志，无新的 refresh 失败、fallback 或降级命中。暂不提醒用户。
 
 ### 待办事项
 - [x] 处理安全审计警告项：已优化脚本并清理 tmp 环境（2026-04-08）
