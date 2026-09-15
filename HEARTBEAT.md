@@ -1,9 +1,9 @@
 # HEARTBEAT.md
 
-更新时间：2026年09月15日 15:20（北京时间）
+更新时间：2026年09月16日 03:20（北京时间）
 
 ### 巡检摘要 (三日看板)
-- ✅ **nightly-security-audit**：2026-09-15 03:00 报告为 0 errors, 3 warnings。警告项为正常监听端口/目录变更、预期 Yellow Line sudo 记录缺口；核心项通过：`Config Baseline` OK、权限 OK、`Skill Baseline` OK、灾备备份已触发。报告中发现旧的 `/home/ubuntu/.openclaw/.git/index.lock` 空锁文件（2026-09-14 03:00 遗留），03:20 已确认无 git/OpenClaw cron 进程占用，并改名保留为 `.git/index.lock.stale-20260915-0320`，避免后续 GitClaw 写入被卡住。历史：2026-09-14 `Config Baseline` 与 `Skill Baseline` 误报已处理，稳定 manifest 为 16 条，脚本已重新 `chattr +i` 锁定。
+- ✅ **nightly-security-audit**：2026-09-16 03:00 报告为 0 errors, 4 warnings。警告项为正常监听端口/目录变更、预期 Yellow Line sudo 记录缺口，以及 1 个新增大文件；核心项通过：`Config Baseline` OK、权限 OK、`Skill Baseline` OK、灾备备份已触发。新增大文件已核对为 Git pack 文件 `/home/ubuntu/.openclaw/workspace/.git/objects/pack/pack-a854e3d3fdf1124dde8e4e84113b18411a5d2427.pack`（约 107MB）。报告中再次出现 `/home/ubuntu/.openclaw/.git/index.lock` 0 字节锁文件（2026-09-16 03:00 遗留），03:20 已确认无 git/OpenClaw cron 进程占用，并改名保留为 `.git/index.lock.stale-20260916-0320`，避免后续 GitClaw 写入被卡住。历史：2026-09-14 `Config Baseline` 与 `Skill Baseline` 误报已处理，稳定 manifest 为 16 条，脚本已重新 `chattr +i` 锁定。
 - ✅ **Security Audit Note**：small model 沙箱已按当前 OpenClaw schema 配置为 `agents.defaults.sandbox.mode: all`（旧记录中的 `require` 已不被当前 schema 接受）。2026-09-15 03:20 复查：cron 列表正常读取，active 任务全部 ok，`openclaw.json: OK`，skill manifest 16 条。
 - ⚠️ **Yellow Line Audit**：审计检测到 12 次 sudo 操作（主要来自我们最近的脚本修复），但内存中未发现对应的 Yellow Line 记录；这属于预期的管理行为，可安全忽略。
 - ✅ **GitClaw 自动备份**：持续稳定运行。2026-05-16 心跳复查发现 GitClaw backup health check 因“无输出时不回文本”导致 cron 误判 error，已将无异常返回改为 `NO_REPLY` 并手动验证，状态恢复 ok。

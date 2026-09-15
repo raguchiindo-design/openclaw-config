@@ -470,25 +470,7 @@
 - 2026-06-19 15:00
 （所有时间均为北京时间）
 
-## Promoted From Short-Term Memory (2026-09-14)
+## Promoted From Short-Term Memory (2026-09-16)
 
-<!-- openclaw-memory-promotion:memory:memory/2026-09-03.md:2:4 -->
-- 13:00 AI机会雷达 cron: 执行 `scripts/ai_opportunity_radar.sh` 成功，返回 12 条 AI Agent / Web3 / 产品机会线索。; 重点线索：Coinbase AI agent accounts、AI agent crypto projects、Solana AI agent platform、智能合约 + AI agents、NVIDIA Vision AI/GTC 2026、Product Hunt AI agent 工具榜单。; 低信号/需谨慎项：YouTube 榜单、BingX榜单、课程页、Product Hunt/Hunted 分类页、LinkedIn个人帖。后续应继续优化过滤规则，提高对官方发布、融资、真实产品上线的权重。 [score=0.929 recalls=0 avg=0.620 source=memory/2026-09-03.md:2-4]
-<!-- openclaw-memory-promotion:memory:memory/2026-09-06.md:12:15 -->
-- Agent Mail CLI 接入完成: 小雪已新建 Agent 邮箱：`colight@agent.qq.com`。; 发信昵称：`共耀 COLIGHT｜小助手`。; 身份简介：`我是共耀COLIGHT的 AI 小助手，觉得画像卡哪里不像你，或有话想告诉共耀，都可以直接回复邮件`。; 已根据官方文档安装 `@tencent-qqmail/agently-cli` 版本 `1.0.18`。 [score=0.922 recalls=0 avg=0.620 source=memory/2026-09-06.md:12-15]
-<!-- openclaw-memory-promotion:memory:memory/2026-09-04.md:2:5 -->
-- 13:00 AI机会雷达 cron: 执行 `scripts/ai_opportunity_radar.sh` 成功，返回 14 条 AI Agent / Web3 / 产品机会线索。; 高优先级线索：Coinbase AI agent accounts、The Block 关于 AI agents 放大 crypto hack 风险、NVIDIA Vision AI/GTC 2026、Block/Square/Cash App AI strategy。; 中等观察线索：Product Hunt AI agents 分类、Solana AI agent platform、StartupCorners 产品发布摘要、DeepLearning.AI 活动。; 低信号/需谨慎项：BingX 榜单、Litslink 综述、YouTube 单条访谈、AIAgentStore 月度页、Yahoo/CES 视频类内容。后续应提升官方发布/真实产品上线/安全风险/融资信号权重，降低 SEO 榜单权重。 [score=0.901 recalls=0 avg=0.620 source=memory/2026-09-04.md:2-5]
-<!-- openclaw-memory-promotion:memory:memory/2026-09-02.md:2:4 -->
-- 13:00 AI机会雷达 cron: 执行 `scripts/ai_opportunity_radar.sh` 成功，返回 15 条 AI Agent / Web3 / 产品机会线索。; 重点线索集中在：AI agents + crypto/stablecoin 支付、Coinbase/OKX agent accounts/marketplace、The Block/Coindesk 的 Agent 支付与安全讨论、Product Hunt agent 工具榜单。; 本次输出仍有部分低信号结果（课程页、活动页、Product Hunt 分类页、Medium/BingX榜单），后续可继续优化过滤规则。 [score=0.898 recalls=0 avg=0.620 source=memory/2026-09-02.md:2-4]
-<!-- openclaw-memory-promotion:memory:memory/2026-09-06.md:16:19 -->
-- Agent Mail CLI 接入完成: 已运行 `npx skills add https://agent.qq.com --skill -g -y` 安装 agently-mail skill；提示 PromptScript 不支持 global skill installation，但 agently-mail 已安装并 symlink 到 OpenClaw。; 已完成 OAuth 授权并验证成功。; `agently-cli +me` 返回主邮箱：`colight@agent.qq.com`，主别名名称：`共耀 COLIGHT｜小助手`。; 当前权限 scopes：`alias:read`, `mail:delete`, `mail:read`, `mail:send`。 [score=0.890 recalls=0 avg=0.620 source=memory/2026-09-06.md:16-19]
-<!-- openclaw-memory-promotion:memory:memory/2026-09-06.md:20:20 -->
-- Agent Mail CLI 接入完成: 额度：每日发送 50 封；每小时 200 请求；每分钟 10 请求；附件最多 50 个，单附件/总附件上限 20MB。 [score=0.890 recalls=0 avg=0.620 source=memory/2026-09-06.md:20-20]
-<!-- openclaw-memory-promotion:memory:memory/2026-09-06.md:23:26 -->
-- Agent Mail 测试邮件: 小雪要求发送一封测试邮件到 `raguchiindo@gmail.com`。; 已按 agently-mail 两阶段确认流程执行：先生成确认 token，收到小雪回复「发」后提交确认。; 发送结果返回 `queued: true`。; 心跳复查 `sent` 文件夹确认邮件已入已发送：主题 `Agent Mail 测试邮件`，message_id `msg_T_o_EbALQi2bsqImHSVjPK0fOjGrrLOBj-Yn_PQ8nzmExw`，发送时间 `2026-09-06T03:14:49Z`。 [score=0.890 recalls=0 avg=0.620 source=memory/2026-09-06.md:23-26]
-<!-- openclaw-memory-promotion:memory:memory/2026-09-06.md:29:31 -->
-- 每日AI机会雷达（13:00）: 已执行 `/home/ubuntu/.openclaw/workspace/scripts/ai_opportunity_radar.sh`。; 输出 15 条机会信号，重点集中在 AI agents、Agentic AI 融资、AI+Crypto/Agent 支付交易、Product Hunt/StartupCorners 新产品、CLI 工作流趋势。; 对小雪相关性最高：AI agents 作为获客入口变化、Agent 支付/交易基础设施、近期 AI/机器人/开发工具新品观察。 [score=0.890 recalls=0 avg=0.620 source=memory/2026-09-06.md:29-31]
-<!-- openclaw-memory-promotion:memory:memory/2026-09-06.md:4:7 -->
-- Agent QQ 邮箱改名调查: 小雪询问以前配置过的 Agent QQ 邮箱 `aidiry@agent.qq.com` 是否能改名或重新申请为 `colight@agent.qq.com`。; 已查官方入口 `https://agent.qq.com/`：仍显示「微信扫码登录」，不像完全下线；但本机无小雪登录态，无法进入管理页。; 官方 CLI 文档仅提供安装、OAuth 授权、`agently-cli +me` 查看邮箱/alias、邮件收发等命令，未发现改邮箱地址命令。; CodeBuddy 文档提到「管理邮箱」入口和「邮箱别名」可修改；第三方资料称邮箱地址可在网页管理端修改且只能修改一次，旧地址会立即失效。 [score=0.890 recalls=0 avg=0.620 source=memory/2026-09-06.md:4-7]
-<!-- openclaw-memory-promotion:memory:memory/2026-09-06.md:8:9 -->
-- Agent QQ 邮箱改名调查: 本机未找到已安装/授权的 `agently-cli`，无法直接查询 `aidiry@agent.qq.com` 状态或占用情况。; 已建议小雪通过网页登录管理端尝试修改为 `colight`，并提醒最终保存前谨慎确认。 [score=0.890 recalls=0 avg=0.620 source=memory/2026-09-06.md:8-9]
+<!-- openclaw-memory-promotion:memory:memory/2026-09-13.md:1:2 -->
+- 2026-09-13 16:07 GMT+8: 小雪告知新的 `openai-codex` 已完成 OAuth 登录。; 2026-09-13 16:49 CST: Yellow Line cron change logged. Command: `openclaw cron disable bada3c2e-de65-42f4-8032-1fb2143beed5`. Reason: legacy 13:00 `每日AI机会雷达` cron timed out again while the replacement 15:00 `Daily Career Opportunity Assessment` cron was running normally, causing duplicate/noisy monitoring. Result: command succeeded; returned `enabled=false`, preserving history without deleting the job. [score=0.815 recalls=0 avg=0.620 source=memory/2026-09-13.md:1-2]
