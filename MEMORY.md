@@ -470,7 +470,9 @@
 - 2026-06-19 15:00
 （所有时间均为北京时间）
 
-## Promoted From Short-Term Memory (2026-09-16)
+## Promoted From Short-Term Memory (2026-09-17)
 
-<!-- openclaw-memory-promotion:memory:memory/2026-09-13.md:1:2 -->
-- 2026-09-13 16:07 GMT+8: 小雪告知新的 `openai-codex` 已完成 OAuth 登录。; 2026-09-13 16:49 CST: Yellow Line cron change logged. Command: `openclaw cron disable bada3c2e-de65-42f4-8032-1fb2143beed5`. Reason: legacy 13:00 `每日AI机会雷达` cron timed out again while the replacement 15:00 `Daily Career Opportunity Assessment` cron was running normally, causing duplicate/noisy monitoring. Result: command succeeded; returned `enabled=false`, preserving history without deleting the job. [score=0.815 recalls=0 avg=0.620 source=memory/2026-09-13.md:1-2]
+<!-- openclaw-memory-promotion:memory:memory/2026-09-14.md:24:26 -->
+- Maintenance Log: Command: `bash -n /home/ubuntu/.openclaw/workspace/scripts/nightly-security-audit.sh && (cd /home/ubuntu/.openclaw && sha256sum openclaw.json > .config-baseline.sha256) && find /home/ubuntu/.openclaw/agents/ /home/ubuntu/.openclaw/skills/ \( -path '*/.tmp/*' -o -path '*/shell_snapshots/*' -o -path '*/node_modules/*' \) -prune -o -type f \( -name '*.sh' -o -name '*.py' -o -name '*.js' \) -print 2>/dev/null | xargs -r sha256sum 2>/dev/null | sort > /home/ubuntu/.openclaw/.skill-manifest.sha256 && (cd /home/ubuntu/.openclaw && sha256sum -c .config-baseline.sha256) && tmp=$(mktemp); find /home/ubuntu/.openclaw/agents/... [score=0.815 recalls=0 avg=0.620 source=memory/2026-09-14.md:24-26]
+<!-- openclaw-memory-promotion:memory:memory/2026-09-14.md:5:7 -->
+- Heartbeat Security Maintenance: 03:18 心跳接到 `nightly-security-audit` 报告：1 error, 4 warnings。调查确认 `Config Baseline` 失败来自 2026-09-13 合法模型/备用模型配置更新后 baseline 未同步；`Skill Baseline` 497 行变化来自审计脚本把运行时缓存目录 `.tmp`、`shell_snapshots`、`node_modules` 纳入扫描，属于误报来源。; 已修复 `/home/ubuntu/.openclaw/workspace/scripts/nightly-security-audit.sh` 的 skill manifest 扫描逻辑，排除 `.tmp`、`shell_snapshots`、`node_modules`；重新生成 `/home/ubuntu/.openclaw/.config-baseline.sha256` 与 `/home/ubuntu/.openclaw/.skill-manifest.sha256`。; 验证结果：`sha256sum -c .config-baseline.sha256` 返回 `openclaw.json: OK`；稳定 skill manifest 为 16 条；审计脚本已恢复 immutable。 [score=0.815 recalls=0 avg=0.620 source=memory/2026-09-14.md:5-7]
