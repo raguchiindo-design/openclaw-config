@@ -470,9 +470,17 @@
 - 2026-06-19 15:00
 （所有时间均为北京时间）
 
-## Promoted From Short-Term Memory (2026-09-17)
+## Promoted From Short-Term Memory (2026-09-18)
 
-<!-- openclaw-memory-promotion:memory:memory/2026-09-14.md:24:26 -->
-- Maintenance Log: Command: `bash -n /home/ubuntu/.openclaw/workspace/scripts/nightly-security-audit.sh && (cd /home/ubuntu/.openclaw && sha256sum openclaw.json > .config-baseline.sha256) && find /home/ubuntu/.openclaw/agents/ /home/ubuntu/.openclaw/skills/ \( -path '*/.tmp/*' -o -path '*/shell_snapshots/*' -o -path '*/node_modules/*' \) -prune -o -type f \( -name '*.sh' -o -name '*.py' -o -name '*.js' \) -print 2>/dev/null | xargs -r sha256sum 2>/dev/null | sort > /home/ubuntu/.openclaw/.skill-manifest.sha256 && (cd /home/ubuntu/.openclaw && sha256sum -c .config-baseline.sha256) && tmp=$(mktemp); find /home/ubuntu/.openclaw/agents/... [score=0.815 recalls=0 avg=0.620 source=memory/2026-09-14.md:24-26]
-<!-- openclaw-memory-promotion:memory:memory/2026-09-14.md:5:7 -->
-- Heartbeat Security Maintenance: 03:18 心跳接到 `nightly-security-audit` 报告：1 error, 4 warnings。调查确认 `Config Baseline` 失败来自 2026-09-13 合法模型/备用模型配置更新后 baseline 未同步；`Skill Baseline` 497 行变化来自审计脚本把运行时缓存目录 `.tmp`、`shell_snapshots`、`node_modules` 纳入扫描，属于误报来源。; 已修复 `/home/ubuntu/.openclaw/workspace/scripts/nightly-security-audit.sh` 的 skill manifest 扫描逻辑，排除 `.tmp`、`shell_snapshots`、`node_modules`；重新生成 `/home/ubuntu/.openclaw/.config-baseline.sha256` 与 `/home/ubuntu/.openclaw/.skill-manifest.sha256`。; 验证结果：`sha256sum -c .config-baseline.sha256` 返回 `openclaw.json: OK`；稳定 skill manifest 为 16 条；审计脚本已恢复 immutable。 [score=0.815 recalls=0 avg=0.620 source=memory/2026-09-14.md:5-7]
+<!-- openclaw-memory-promotion:memory:memory/2026-09-14.md:11:11 -->
+- Yellow Line Log: Execution time: 2026-09-14 03:18 Asia/Shanghai [score=0.828 recalls=0 avg=0.620 source=memory/2026-09-14.md:11-11]
+<!-- openclaw-memory-promotion:memory:memory/2026-09-14.md:12:14 -->
+- Yellow Line Log: Full command: `sudo chattr -i /home/ubuntu/.openclaw/workspace/scripts/nightly-security-audit.sh` Reason: 解锁 nightly security audit 脚本，以修复 Skill Baseline 扫描运行时缓存目录导致的误报。 Result: succeeded, no output. [score=0.828 recalls=0 avg=0.620 source=memory/2026-09-14.md:12-14]
+<!-- openclaw-memory-promotion:memory:memory/2026-09-14.md:16:16 -->
+- Yellow Line Log: Execution time: 2026-09-14 03:20 Asia/Shanghai [score=0.828 recalls=0 avg=0.620 source=memory/2026-09-14.md:16-16]
+<!-- openclaw-memory-promotion:memory:memory/2026-09-14.md:17:19 -->
+- Yellow Line Log: Full command: `sudo chattr +i /home/ubuntu/.openclaw/workspace/scripts/nightly-security-audit.sh && lsattr /home/ubuntu/.openclaw/workspace/scripts/nightly-security-audit.sh` Reason: 修复完成后重新锁定 nightly security audit 脚本，恢复审计脚本保护。 Result: succeeded; `lsattr` showed `----i---------e------- /home/ubuntu/.openclaw/workspace/scripts/nightly-security-audit.sh`. [score=0.828 recalls=0 avg=0.620 source=memory/2026-09-14.md:17-19]
+<!-- openclaw-memory-promotion:memory:memory/2026-09-14.md:23:23 -->
+- Maintenance Log: Execution time: 2026-09-14 03:19 Asia/Shanghai [score=0.828 recalls=0 avg=0.620 source=memory/2026-09-14.md:23-23]
+<!-- openclaw-memory-promotion:memory:memory/2026-09-14.md:28:28 -->
+- Maintenance Log: Execution time: 2026-09-14 17:50 Asia/Shanghai [score=0.828 recalls=0 avg=0.620 source=memory/2026-09-14.md:28-28]
