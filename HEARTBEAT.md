@@ -1,6 +1,6 @@
 # HEARTBEAT.md
 
-更新时间：2026年09月17日 13:21（北京时间）
+更新时间：2026年09月17日 14:56（北京时间）
 
 ### 巡检摘要 (三日看板)
 - ✅ **nightly-security-audit**：2026-09-17 03:00 报告为 0 errors, 3 warnings。警告项为正常监听端口/目录变更，以及预期 Yellow Line sudo 记录缺口；核心项通过：`Config Baseline` OK、权限 OK、`Skill Baseline` OK、灾备备份已触发，磁盘无新增大文件。报告仍列出 stale lock 备份；03:19 复查发现新生成的 `/home/ubuntu/.openclaw/.git/index.lock` 0 字节文件（2026-09-17 03:00），已确认无 git/OpenClaw cron 进程占用，并改名保留为 `.git/index.lock.stale-20260917-0320`，避免后续 GitClaw 写入被卡住。历史：2026-09-14 `Config Baseline` 与 `Skill Baseline` 误报已处理，稳定 manifest 为 16 条，脚本已重新 `chattr +i` 锁定。
@@ -13,6 +13,7 @@
 - ✅ **Config Baseline**：2026-09-14 心跳已按当前合法 `openclaw.json` 刷新 baseline，并通过 `sha256sum -c .config-baseline.sha256` 验证；17:50 因 sandbox schema 修正为 `all` 再次刷新并验证通过。
 - ✅ **Config Baseline 复查**：2026-09-17 13:20 心跳发现 12:37 合法配置清理后 baseline 未同步；核对差异仅为 `agents.defaults.model.primary` 从 `openai/gpt-5.6-sol` 调整为 `openai/gpt-5.5`、fallback 列表顺序/内容保持 3 个可用模型、`meta.lastTouchedAt` 更新时间。`openclaw config validate` 通过，`openclaw models status` 显示 OpenAI OAuth 可用，已刷新 `.config-baseline.sha256` 并验证 `openclaw.json: OK`。
 - 🟡 **GPT-5.5 退休观察**：2026-09-17 13:48 复查模型缓存，`gpt-5.5` 的 `upgrade.retirement_at` 为 `2026-10-14T19:00:00Z`，建议迁移到 `gpt-5.6-sol`。当前配置仍为 `openai/gpt-5.5` 主模型，但 fallback 已包含 `openai/gpt-5.6-sol` 与 `openai/gpt-5.6-terra`；`openclaw config validate` 通过，`openclaw models status` 显示 OpenAI OAuth 可用。未获用户明确授权前不自动切换主模型。
+- ✅ **主力模型统一**：2026-09-17 14:56 按小雪明确指令，将当前主会话重置为默认模型；系统默认模型与当前主会话均为 `openrouter/inclusionai/ling-3.0-flash:free`，fallback 为 `openrouter/nvidia/nemotron-3-super-120b-a12b:free`。`openclaw models status --json` 与 `openclaw status --json` 已验证一致，`sha256sum -c .config-baseline.sha256` 返回 `openclaw.json: OK`。
 
 ### 趋势分析任务
 - **任务名称**：数字花束与春节送礼趋势深度调研 - 每2小时执行
@@ -27,8 +28,9 @@
 - ✅ Cron任务系统：运行中
 - ✅ 安全防护矩阵：核心项通过，small model 沙箱为 `all`；需关注的警告均为预期管理行为。
 - ✅ Git灾难恢复：已部署。
-- **当前主模型**：openai/gpt-5.5 ✅
-- **备用模型**：openai/gpt-5.6-terra、openai/gpt-5.5、openrouter/nvidia/nemotron-3-super-120b-a12b:free
+- **当前系统默认模型**：openrouter/inclusionai/ling-3.0-flash:free ✅
+- **当前主会话模型**：openrouter/inclusionai/ling-3.0-flash:free ✅
+- **备用模型**：openrouter/nvidia/nemotron-3-super-120b-a12b:free
 - ✅ **OAuth Token 复查**：2026年09月13日 16:20 心跳检查时，`openai-codex:huangmmail@gmail.com` 与 `openai:huangmmail@gmail.com` 认证 profile 均存在；2026年09月14日 07:49 复查最近 4 小时日志，无新的 refresh 失败、fallback 或降级命中。暂不提醒用户。
 
 ### 待办事项
