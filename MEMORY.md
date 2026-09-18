@@ -470,17 +470,7 @@
 - 2026-06-19 15:00
 （所有时间均为北京时间）
 
-## Promoted From Short-Term Memory (2026-09-18)
+## Promoted From Short-Term Memory (2026-09-19)
 
-<!-- openclaw-memory-promotion:memory:memory/2026-09-14.md:11:11 -->
-- Yellow Line Log: Execution time: 2026-09-14 03:18 Asia/Shanghai [score=0.828 recalls=0 avg=0.620 source=memory/2026-09-14.md:11-11]
-<!-- openclaw-memory-promotion:memory:memory/2026-09-14.md:12:14 -->
-- Yellow Line Log: Full command: `sudo chattr -i /home/ubuntu/.openclaw/workspace/scripts/nightly-security-audit.sh` Reason: 解锁 nightly security audit 脚本，以修复 Skill Baseline 扫描运行时缓存目录导致的误报。 Result: succeeded, no output. [score=0.828 recalls=0 avg=0.620 source=memory/2026-09-14.md:12-14]
-<!-- openclaw-memory-promotion:memory:memory/2026-09-14.md:16:16 -->
-- Yellow Line Log: Execution time: 2026-09-14 03:20 Asia/Shanghai [score=0.828 recalls=0 avg=0.620 source=memory/2026-09-14.md:16-16]
-<!-- openclaw-memory-promotion:memory:memory/2026-09-14.md:17:19 -->
-- Yellow Line Log: Full command: `sudo chattr +i /home/ubuntu/.openclaw/workspace/scripts/nightly-security-audit.sh && lsattr /home/ubuntu/.openclaw/workspace/scripts/nightly-security-audit.sh` Reason: 修复完成后重新锁定 nightly security audit 脚本，恢复审计脚本保护。 Result: succeeded; `lsattr` showed `----i---------e------- /home/ubuntu/.openclaw/workspace/scripts/nightly-security-audit.sh`. [score=0.828 recalls=0 avg=0.620 source=memory/2026-09-14.md:17-19]
-<!-- openclaw-memory-promotion:memory:memory/2026-09-14.md:23:23 -->
-- Maintenance Log: Execution time: 2026-09-14 03:19 Asia/Shanghai [score=0.828 recalls=0 avg=0.620 source=memory/2026-09-14.md:23-23]
-<!-- openclaw-memory-promotion:memory:memory/2026-09-14.md:28:28 -->
-- Maintenance Log: Execution time: 2026-09-14 17:50 Asia/Shanghai [score=0.828 recalls=0 avg=0.620 source=memory/2026-09-14.md:28-28]
+<!-- openclaw-memory-promotion:memory:memory/2026-09-15.md:5:7 -->
+- 心跳记录: 03:20 CST：按心跳要求读取 `/home/ubuntu/.openclaw/workspace/HEARTBEAT.md`。复查 2026-09-15 03:00 nightly-security-audit：报告为 0 errors, 3 warnings；警告为正常监听端口/目录变更，以及预期的 Yellow Line sudo 记录缺口。核心项通过：Config Baseline OK、openclaw.json/paired.json 权限 OK、Skill Baseline OK、敏感凭据扫描 OK、灾备备份已触发。; 03:20 CST：发现 `/home/ubuntu/.openclaw/.git/index.lock` 是 2026-09-14 03:00 遗留的 0 字节锁文件；确认无 git/GitClaw/OpenClaw cron 进程占用后，改名保留为 `/home/ubuntu/.openclaw/.git/index.lock.stale-20260915-0320`。未使用 sudo。; 15:19 CST：心跳复查新版 Daily Career Opportunity Assessment（ID: `e82f5af8-72d6-40fb-9f95-ab7636a0303c`）已在 15:00 正常运行并推送机会列表；`openclaw cron list` 显示 last 19m ago, status... [score=0.859 recalls=0 avg=0.620 source=memory/2026-09-15.md:5-7]
