@@ -1,9 +1,10 @@
 # HEARTBEAT.md
 
-更新时间：2026年09月20日 15:51（北京时间）
+更新时间：2026年09月21日 03:30（北京时间）
 
 ### 巡检摘要 (三日看板)
-- ✅ **nightly-security-audit**：2026-09-17 03:00 报告为 0 errors, 3 warnings。警告项为正常监听端口/目录变更，以及预期 Yellow Line sudo 记录缺口；核心项通过：`Config Baseline` OK、权限 OK、`Skill Baseline` OK、灾备备份已触发，磁盘无新增大文件。报告仍列出 stale lock 备份；03:19 复查发现新生成的 `/home/ubuntu/.openclaw/.git/index.lock` 0 字节文件（2026-09-17 03:00），已确认无 git/OpenClaw cron 进程占用，并改名保留为 `.git/index.lock.stale-20260917-0320`，避免后续 GitClaw 写入被卡住。历史：2026-09-14 `Config Baseline` 与 `Skill Baseline` 误报已处理，稳定 manifest 为 16 条，脚本已重新 `chattr +i` 锁定。
+- ✅ **nightly-security-audit**：2026-09-20 03:00 和 2026-09-21 03:00 均运行正常（status: ok，delivered至 Telegram）。核心项持续通过。
+- ✅ **Daily Career Opportunity Assessment**：2026-09-20 15:48 修复脚本路径为 `/workspace/scripts/daily_career_opportunity.sh`（沙箱正确路径），验证通过。
 - ✅ **Security Audit Note**：small model 沙箱已按当前 OpenClaw schema 配置为 `agents.defaults.sandbox.mode: all`（旧记录中的 `require` 已不被当前 schema 接受）。2026-09-15 03:20 复查：cron 列表正常读取，active 任务全部 ok，`openclaw.json: OK`，skill manifest 16 条。
 - ⚠️ **Yellow Line Audit**：2026-09-17 审计检测到 6 次 sudo 操作，但内存中未发现对应的 Yellow Line 记录；这延续近期脚本修复/维护遗留缺口，属于预期管理行为，可安全忽略。
 - ✅ **GitClaw 自动备份**：持续稳定运行。2026-05-16 心跳复查发现 GitClaw backup health check 因“无输出时不回文本”导致 cron 误判 error，已将无异常返回改为 `NO_REPLY` 并手动验证，状态恢复 ok。
@@ -49,7 +50,7 @@
 - [x] 审查 small model 沙箱需求：当前 OpenClaw schema 只接受 `off / non-main / all`，已将 `agents.defaults.sandbox.mode` 从误漂移的 `off` 修正为 `all` 并刷新配置基线（2026-09-14 17:50）。
 - [x] 每日AI机会雷达旧 cron job (ID: bada3c2e-de65-42f4-8032-1fb2143beed5) 2026-09-13 13:00 再次 timeout；已于 16:49 停用旧 13:00 任务（`enabled=false`, `next=-`, `status=disabled`）。新版 Daily Career Opportunity Assessment (ID: e82f5af8-72d6-40fb-9f95-ab7636a0303c) 保持启用，2026-09-15 15:00 已正常运行并推送机会列表，15:19 复查 cron status ok。
     - [x] 修复 Daily Career Opportunity Assessment cron job 脚本路径：`/home/ubuntu/.openclaw/workspace/scripts/daily_career_opportunity.sh` → `/workspace/scripts/daily_career_opportunity.sh`（沙箱环境正确路径），2026-09-20 15:48 验证脚本可正常执行
-- [x] 调整每日AI机会雷达 cron job 超时时间：将 timeoutSeconds 从 120 增至 180 秒，以防止脚本执行超时（2026-06-19）
+- [ ] 检查其他 cron jobs 脚本路径一致性（nightly-security-audit 使用 `~/.openclaw/workspace/scripts/` 路径）
  [最后检查: 2026-07-04 07:19:21, 最近10分钟无新错误]
 
 
