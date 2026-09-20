@@ -1,6 +1,6 @@
 # HEARTBEAT.md
 
-更新时间：2026年09月17日 14:56（北京时间）
+更新时间：2026年09月20日 15:51（北京时间）
 
 ### 巡检摘要 (三日看板)
 - ✅ **nightly-security-audit**：2026-09-17 03:00 报告为 0 errors, 3 warnings。警告项为正常监听端口/目录变更，以及预期 Yellow Line sudo 记录缺口；核心项通过：`Config Baseline` OK、权限 OK、`Skill Baseline` OK、灾备备份已触发，磁盘无新增大文件。报告仍列出 stale lock 备份；03:19 复查发现新生成的 `/home/ubuntu/.openclaw/.git/index.lock` 0 字节文件（2026-09-17 03:00），已确认无 git/OpenClaw cron 进程占用，并改名保留为 `.git/index.lock.stale-20260917-0320`，避免后续 GitClaw 写入被卡住。历史：2026-09-14 `Config Baseline` 与 `Skill Baseline` 误报已处理，稳定 manifest 为 16 条，脚本已重新 `chattr +i` 锁定。
@@ -48,7 +48,7 @@
 - [x] 已将 ~/.openclaw/devices/paired.json 复制到 ~/.openclaw/paired.json 并设置权限 600，以恢复缺失的配置文件。
 - [x] 审查 small model 沙箱需求：当前 OpenClaw schema 只接受 `off / non-main / all`，已将 `agents.defaults.sandbox.mode` 从误漂移的 `off` 修正为 `all` 并刷新配置基线（2026-09-14 17:50）。
 - [x] 每日AI机会雷达旧 cron job (ID: bada3c2e-de65-42f4-8032-1fb2143beed5) 2026-09-13 13:00 再次 timeout；已于 16:49 停用旧 13:00 任务（`enabled=false`, `next=-`, `status=disabled`）。新版 Daily Career Opportunity Assessment (ID: e82f5af8-72d6-40fb-9f95-ab7636a0303c) 保持启用，2026-09-15 15:00 已正常运行并推送机会列表，15:19 复查 cron status ok。
-    - [x] 修复 daily_career_opportunity.sh 脚本，改用直接 AnySearch API 调用，增加 curl 超时和 null-byte 处理，脚本现在能在约1分钟内完成并输出机会列表。
+    - [x] 修复 Daily Career Opportunity Assessment cron job 脚本路径：`/home/ubuntu/.openclaw/workspace/scripts/daily_career_opportunity.sh` → `/workspace/scripts/daily_career_opportunity.sh`（沙箱环境正确路径），2026-09-20 15:48 验证脚本可正常执行
 - [x] 调整每日AI机会雷达 cron job 超时时间：将 timeoutSeconds 从 120 增至 180 秒，以防止脚本执行超时（2026-06-19）
  [最后检查: 2026-07-04 07:19:21, 最近10分钟无新错误]
 
