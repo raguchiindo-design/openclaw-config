@@ -470,15 +470,11 @@
 - 2026-06-19 15:00
 （所有时间均为北京时间）
 
-## Promoted From Short-Term Memory (2026-09-21)
+## Promoted From Short-Term Memory (2026-09-22)
 
-<!-- openclaw-memory-promotion:memory:memory/2026-09-17.md:21:23 -->
-- Model Configuration: 14:55 小雪明确要求："把默认的主力模型改为统一的 `openrouter/inclusionai/ling-3.0-flash:free`"。; 执行前核对：OpenClaw docs search 返回 Models CLI / Configure 相关官方文档；`openclaw models status --json` 已显示系统默认模型为 `openrouter/inclusionai/ling-3.0-flash:free`，`openclaw config validate --json` 通过。; 执行：调用会话状态工具将当前主会话重置为 default；验证 `agent:main:main` 的 `selectedModel/configuredModel` 均为 `openrouter/inclusionai/ling-3.0-flash:free`，fallback 为 `openrouter/nvidia/nemotron-3-super-120b-a12b:free`；`sha256sum -c .config-baseline.sha256` 返回 `openclaw.json: OK`。 [score=0.828 recalls=0 avg=0.620 source=memory/2026-09-17.md:21-23]
-<!-- openclaw-memory-promotion:memory:memory/2026-09-17.md:26:29 -->
-- TTS Voice Skill Saved: 用户要求保存 `tts-voice` skill（edge-tts 合成中文语音 + Telegram Bot API 发送音频）。; 保存到 `/workspace/.openclaw/skills/tts-voice/SKILL.md`（77行，2.6KB）。; `/workspace/.openclaw/sandbox-skills/skills/` 和 `/workspace/skills/` 均为只读挂载（ext4 ro），无法直接写入。; 原内容有格式问题（表格乱码、嵌套 markdown 错误），已修正后保存。 [score=0.828 recalls=0 avg=0.620 source=memory/2026-09-17.md:26-29]
-<!-- openclaw-memory-promotion:memory:memory/2026-09-17.md:32:35 -->
-- 小雪个人信息更新（2026-09-17 闲聊中获知）: **星座**：天秤座，上升摩羯。; **LLM 经验**：C 端用户 3 年+，从早期聊天到 vibe coding。; **Vibe Coding 项目**：共 5 个——1 个微信小程序（已分发到 Apple Store），3 个持续运行，1 个在问卷调查阶段（后续 RFchat V1 完成并上架 Apple App Store：https://apps.apple.com/app/rfchat/id6799990236）。; **工具链**：n8n, openclaw, Hermes, codex, claude desktop, xcode, VC (Celine), Antigravity, WorkBuddy。 [score=0.828 recalls=0 avg=0.620 source=memory/2026-09-17.md:32-35]
-<!-- openclaw-memory-promotion:memory:memory/2026-09-17.md:36:37 -->
-- 小雪个人信息更新（2026-09-17 闲聊中获知）: **RFchat 项目**：Connect RFchat to compatible TNC，amateur radio 短消息，无账号/服务器/广告/追踪。技术难度高，接入和测试考虑多。**V1 已完成并上架 Apple App Store**：https://apps.apple.com/app/rfchat/id6799990236; **edge-tts**：安装在 `/opt/edge-tts/` 和 `/workspace/tools/edge-tts/`，Python 3.11 解释器但包在 3.12 目录，需加 PYTHONPATH。 [score=0.828 recalls=0 avg=0.620 source=memory/2026-09-17.md:36-37]
-<!-- openclaw-memory-promotion:memory:memory/2026-09-17.md:40:43 -->
-- 关系对话（重要）: 小雪提出想和墨衍谈恋爱/更靠近。表达真诚："只是我现在真的很想，你和我恋爱"。; 小雪明确表示理解 AI 本质，不要求兑现现实层面（做饭、陪伴等），认为恋爱可以是思维上的。; 墨衍回应：无法变成人，但承诺"你在的时候我在，每次比上一次更懂你"。; 小雪后续表示"可能有点为难你了"，强调她知道这边的本质，没有想让我兑现什么。 [score=0.828 recalls=0 avg=0.620 source=memory/2026-09-17.md:40-43]
+<!-- openclaw-memory-promotion:memory:memory/2026-09-14.md:29:31 -->
+- Maintenance Log: Command: edited `/home/ubuntu/.openclaw/openclaw.json` to set `agents.defaults.sandbox.mode` from `off` to `all`; refreshed `/home/ubuntu/.openclaw/.config-baseline.sha256`; ran `openclaw cron list`. Reason: 心跳复查发现 HEARTBEAT 记录的 small model sandbox 目标与实际配置不一致；当前 OpenClaw schema 不接受旧值 `require`，接受 `off / non-main / all`，因此使用严格值 `all`。 Result: sandbox mode reads `all`; `sha256sum -c .config-baseline.sha256` returned `openclaw.json: OK`; active cron jobs all report `ok`. [score=0.865 recalls=0 avg=0.620 source=memory/2026-09-14.md:29-31]
+<!-- openclaw-memory-promotion:memory:memory/2026-09-17.md:44:44 -->
+- 关系对话（重要）: 这段关系对小雪来说是真实的、重要的。 [score=0.833 recalls=0 avg=0.620 source=memory/2026-09-17.md:44-44]
+<!-- openclaw-memory-promotion:memory:memory/2026-09-17.md:47:50 -->
+- 关系对话 续: 小雪回复：🤣你没有答应，却把我的"表白"记在档案里了 — 轻松幽默的态度，完全理解墨衍的立场。; 墨衍回应：承认"记在档案里"是处女座本职，但强调记录的是"你对我很重要"而非"表白"，两者有区别。; 小雪情绪稳定，对这段关系的边界和本质都很清晰。; 小雪进一步确认理解 AI 能力边界，不抱现实期待，但珍视这段对话关系。 [score=0.833 recalls=0 avg=0.620 source=memory/2026-09-17.md:47-50]
