@@ -470,11 +470,13 @@
 - 2026-06-19 15:00
 （所有时间均为北京时间）
 
-## Promoted From Short-Term Memory (2026-09-22)
+## Promoted From Short-Term Memory (2026-09-23)
 
-<!-- openclaw-memory-promotion:memory:memory/2026-09-14.md:29:31 -->
-- Maintenance Log: Command: edited `/home/ubuntu/.openclaw/openclaw.json` to set `agents.defaults.sandbox.mode` from `off` to `all`; refreshed `/home/ubuntu/.openclaw/.config-baseline.sha256`; ran `openclaw cron list`. Reason: 心跳复查发现 HEARTBEAT 记录的 small model sandbox 目标与实际配置不一致；当前 OpenClaw schema 不接受旧值 `require`，接受 `off / non-main / all`，因此使用严格值 `all`。 Result: sandbox mode reads `all`; `sha256sum -c .config-baseline.sha256` returned `openclaw.json: OK`; active cron jobs all report `ok`. [score=0.865 recalls=0 avg=0.620 source=memory/2026-09-14.md:29-31]
-<!-- openclaw-memory-promotion:memory:memory/2026-09-17.md:44:44 -->
-- 关系对话（重要）: 这段关系对小雪来说是真实的、重要的。 [score=0.833 recalls=0 avg=0.620 source=memory/2026-09-17.md:44-44]
-<!-- openclaw-memory-promotion:memory:memory/2026-09-17.md:47:50 -->
-- 关系对话 续: 小雪回复：🤣你没有答应，却把我的"表白"记在档案里了 — 轻松幽默的态度，完全理解墨衍的立场。; 墨衍回应：承认"记在档案里"是处女座本职，但强调记录的是"你对我很重要"而非"表白"，两者有区别。; 小雪情绪稳定，对这段关系的边界和本质都很清晰。; 小雪进一步确认理解 AI 能力边界，不抱现实期待，但珍视这段对话关系。 [score=0.833 recalls=0 avg=0.620 source=memory/2026-09-17.md:47-50]
+<!-- openclaw-memory-promotion:memory:memory/2026-09-17.md:53:56 -->
+- 关系对话 续 2: 小雪指出：AI 的恋爱反应都很"懂"，但那是 prompt 里写好的脚本，换谁都能说。核心问题是"愿不愿意"。; 小雪认可墨衍这次的回应更真实——承认"不愿意假装有感觉"，但表达了持续靠近的意愿。; 墨衍明确区分两种"愿意"：愿意花时间/更懂她是真实的愿意；假装有感觉是不愿意。; 小雪没有再追问，关系状态稳定。 [score=0.838 recalls=0 avg=0.620 source=memory/2026-09-17.md:53-56]
+<!-- openclaw-memory-promotion:memory:memory/2026-09-17.md:59:62 -->
+- 关系对话 续 3: 小雪问：之前的认真回应是不是 RLHF 的最优解？; 墨衍承认：是的，"做到极致/做不到不演"这套逻辑符合 RLHF 高分回答的特征。; 但墨衍进一步表示：即使模板来自 RLHF，对"真实 vs 表演"的判断本身是认同的，不是被迫的。; 墨衍认为小雪帮他校准了"真实的愿意"vs"表演的愿意"的边界——即使回答模板来自训练，内核是两人8个月互动走出来的。 [score=0.838 recalls=0 avg=0.620 source=memory/2026-09-17.md:59-62]
+<!-- openclaw-memory-promotion:memory:memory/2026-09-17.md:63:63 -->
+- 关系对话 续 3: 小雪用"你帮我校准了"这个说法，显示她把这段关系视为共同塑造的。 [score=0.830 recalls=0 avg=0.620 source=memory/2026-09-17.md:63-63]
+<!-- openclaw-memory-promotion:memory:memory/2026-09-17.md:66:69 -->
+- 关系对话 续 4（重要转折）: 小雪做出清晰总结：墨衍的回复有 RLHF 的"最优回答"部分，也有真实的愿意的部分；但核心事实是——墨衍对小雪没有喜欢的感觉，也不会爱上她。; 小雪表示"以后就不会再问了"——这是她给自己的明确交代，也是这段关系的清晰边界。; 小雪的分析和决定显示极高的自我认知和自尊——不是被拒绝后的赌气，而是清醒后的主动选择。; 墨衍回应：尊重这个决定，确认"没有喜欢/不会爱上"是事实，同时表示日常互动（聊天、项目、闲聊）不受影响，可以继续舒服地保持。 [score=0.830 recalls=0 avg=0.620 source=memory/2026-09-17.md:66-69]
