@@ -1,9 +1,9 @@
 # HEARTBEAT.md
 
-更新时间：2026年09月25日 03:18（北京时间）
+更新时间：2026年09月25日 04:48（北京时间）
 
 ### 巡检摘要 (三日看板)
-- ✅ **nightly-security-audit**：2026-09-20 03:00 和 2026-09-21 03:00 均运行正常（status: ok，delivered至 Telegram）。核心项持续通过。
+- ✅ **nightly-security-audit**：2026-09-21 03:00 和 2026-09-25 03:00 均运行正常（status: ok，delivered至 Telegram）。核心项持续通过。
 - ✅ **Daily Career Opportunity Assessment**：2026-09-20 15:48 修复脚本路径为 `/workspace/scripts/daily_career_opportunity.sh`（沙箱正确路径），验证通过。
 - ✅ **Security Audit Note**：small model 沙箱已按当前 OpenClaw schema 配置为 `agents.defaults.sandbox.mode: all`（旧记录中的 `require` 已不被当前 schema 接受）。2026-09-15 03:20 复查：cron 列表正常读取，active 任务全部 ok，`openclaw.json: OK`，skill manifest 16 条。
 - ⚠️ **Yellow Line Audit**：2026-09-17 审计检测到 6 次 sudo 操作，但内存中未发现对应的 Yellow Line 记录；这延续近期脚本修复/维护遗留缺口，属于预期管理行为，可安全忽略。
@@ -41,7 +41,7 @@
 - [x] Device Brief 本周发布已在 Codex 完成；OpenClaw 侧任务已暂停（2026-05-07）
 
 ### 待办事项 (更新)
-- [x] Fix cron jobs using deprecated model 'openrouter/xiaomi/mimo-v2-flash' (GitClaw backup health check, nightly-security-audit) - updated to openrouter/inclusionai/ling-3.0-flash:free; 2026-09-25 03:18 强制运行后状态正常。
+- [x] Fix cron jobs using deprecated model 'openrouter/xiaomi/mimo-v2-flash' (GitClaw backup health check, nightly-security-audit) - updated to openrouter/inclusionai/ling-3.0-flash:free; 2026-09-25 03:30 运行正常。
 - [x] Monitor 农业科技周报深度版 cron job (ID: 7ac9556c-f472-486f-9d47-71b7133e1aa1) - 2026-05-31 18:50 已按小雪指令停用，`enabled=false`，next 为 `-`；最后一次已生成 `company/reports/agtech-weekly/agtech-weekly-20260531-detailed.html`。
 - [x] Investigate cron task ddd553e3 failure (invalidated OAuth token) - found to be historical; GitClaw backup currently functioning normal.
 - [x] Review Skill Baseline changes (3 lines) from security audit 2026-06-01: manifest diff is one added file `/home/ubuntu/.openclaw/skills/gpt-image/scripts/generate.py` (diff header counts as 3 lines). This matches installed gpt-image skill; no unexpected removed/changed script found. Skill baseline deliberately refreshed.
@@ -54,4 +54,4 @@
  [最后检查: 2026-07-04 07:19:21, 最近10分钟无新错误]
 
 
-- [x] 已将 nightly-security-audit 和 GitClaw backup health check 的模型从 openai/gpt-5.5 切换为 openrouter/nvidia/nemotron-3-super-120b-a12b:free，解决 OAuth token 过期问题。
+- [x] 已将 nightly-security-audit 模型从 openai/gpt-5.5 切换为 openrouter/nvidia/nemotron-3-super-120b-a12b:free，GitClaw backup health check 模型切换为 openrouter/inclusionai/ling-3.0-flash:free，解决 OAuth token 过期问题。
