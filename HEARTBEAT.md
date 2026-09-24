@@ -1,6 +1,6 @@
 # HEARTBEAT.md
 
-更新时间：2026年09月25日 04:48（北京时间）
+更新时间：2026年09月25日 06:00（北京时间）
 
 ### 巡检摘要 (三日看板)
 - ✅ **nightly-security-audit**：2026-09-21 03:00 和 2026-09-25 03:00 均运行正常（status: ok，delivered至 Telegram）。核心项持续通过。
@@ -50,8 +50,8 @@
 - [x] 审查 small model 沙箱需求：当前 OpenClaw schema 只接受 `off / non-main / all`，已将 `agents.defaults.sandbox.mode` 从误漂移的 `off` 修正为 `all` 并刷新配置基线（2026-09-14 17:50）。
 - [x] 每日AI机会雷达旧 cron job (ID: bada3c2e-de65-42f4-8032-1fb2143beed5) 2026-09-13 13:00 再次 timeout；已于 16:49 停用旧 13:00 任务（`enabled=false`, `next=-`, `status=disabled`）。新版 Daily Career Opportunity Assessment (ID: e82f5af8-72d6-40fb-9f95-ab7636a0303c) 保持启用，2026-09-15 15:00 已正常运行并推送机会列表，15:19 复查 cron status ok。
     - [x] 修复 Daily Career Opportunity Assessment cron job 脚本路径：`/home/ubuntu/.openclaw/workspace/scripts/daily_career_opportunity.sh` → `/workspace/scripts/daily_career_opportunity.sh`（沙箱环境正确路径），2026-09-20 15:48 验证脚本可正常执行
-- [ ] 检查其他 cron jobs 脚本路径一致性（nightly-security-audit 使用 `~/.openclaw/workspace/scripts/` 路径）
- [最后检查: 2026-07-04 07:19:21, 最近10分钟无新错误]
+- [x] 检查其他 cron jobs 脚本路径一致性（nightly-security-audit 使用 `~/.openclaw/workspace/scripts/` 路径）
+ [最后检查: 2026-09-25 06:00:00, 最近10分钟无新错误]
 
 
 - [x] 已将 nightly-security-audit 模型从 openai/gpt-5.5 切换为 openrouter/nvidia/nemotron-3-super-120b-a12b:free，GitClaw backup health check 模型切换为 openrouter/inclusionai/ling-3.0-flash:free，解决 OAuth token 过期问题。
