@@ -1,6 +1,6 @@
 # HEARTBEAT.md
 
-更新时间：2026年09月24日 23:48（北京时间）
+更新时间：2026年09月25日 03:18（北京时间）
 
 ### 巡检摘要 (三日看板)
 - ✅ **nightly-security-audit**：2026-09-20 03:00 和 2026-09-21 03:00 均运行正常（status: ok，delivered至 Telegram）。核心项持续通过。
@@ -41,7 +41,7 @@
 - [x] Device Brief 本周发布已在 Codex 完成；OpenClaw 侧任务已暂停（2026-05-07）
 
 ### 待办事项 (更新)
-- [x] Fix cron jobs using deprecated model 'openrouter/xiaomi/mimo-v2-flash' (GitClaw backup health check, nightly-security-audit) - updated to openrouter/nvidia/nemotron-3-super-120b-a12b:free; 2026-09-24 23:48 复查 GitClaw health check 和 nightly-security-audit 状态正常。
+- [x] Fix cron jobs using deprecated model 'openrouter/xiaomi/mimo-v2-flash' (GitClaw backup health check, nightly-security-audit) - updated to openrouter/inclusionai/ling-3.0-flash:free; 2026-09-25 03:18 强制运行后状态正常。
 - [x] Monitor 农业科技周报深度版 cron job (ID: 7ac9556c-f472-486f-9d47-71b7133e1aa1) - 2026-05-31 18:50 已按小雪指令停用，`enabled=false`，next 为 `-`；最后一次已生成 `company/reports/agtech-weekly/agtech-weekly-20260531-detailed.html`。
 - [x] Investigate cron task ddd553e3 failure (invalidated OAuth token) - found to be historical; GitClaw backup currently functioning normal.
 - [x] Review Skill Baseline changes (3 lines) from security audit 2026-06-01: manifest diff is one added file `/home/ubuntu/.openclaw/skills/gpt-image/scripts/generate.py` (diff header counts as 3 lines). This matches installed gpt-image skill; no unexpected removed/changed script found. Skill baseline deliberately refreshed.

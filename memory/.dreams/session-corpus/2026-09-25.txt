@@ -1,0 +1,31 @@
+[main/sessions/main/56644a46-cc52-46e9-a9be-a98cec529b72.jsonl#L10] Assistant: [assistant turn failed before producing content]
+[main/sessions/main/56644a46-cc52-46e9-a9be-a98cec529b72.jsonl#L13] Assistant: [assistant turn failed before producing content]
+[main/sessions/main/56644a46-cc52-46e9-a9be-a98cec529b72.jsonl#L15] Assistant: [assistant turn failed before producing content]
+[main/sessions/main/56644a46-cc52-46e9-a9be-a98cec529b72.jsonl#L17] Assistant: [assistant turn failed before producing content]
+[main/sessions/main/727e8be6-5192-4d00-b8a5-aee8b9a61bbc.jsonl#L16] Assistant: bash /workspace/scripts/nightly-security-audit.sh: line 176: [: : integer expression expected /workspace/scripts/nightly-security-audit.sh: line 196: pgrep: command not found ✅ Platform Audit Native scan executed: Linux 6.8.0-100-generic #100-Ubuntu SMP PREEMPT_DYN
+[main/sessions/main/727e8be6-5192-4d00-b8a5-aee8b9a61bbc.jsonl#L16] Assistant: /workspace/.openclaw/sandbox-skills/skills/baoyu-article-illustrator/references/styles/vector-illustration.md /workspace/.openclaw/sandbox-skills/skills/baoyu-article-illustrator/references/styles/notion.md /workspace/.openclaw/sandbox-skills/skills/baoyu-article-i
+[main/sessions/main/727e8be6-5192-4d00-b8a5-aee8b9a61bbc.jsonl#L16] Assistant: /workspace/.openclaw/sandbox-skills/skills/baoyu-article-illustrator/references/styles/elegant.md /workspace/.openclaw/sandbox-skills/skills/baoyu-article-illustrator/references/styles/chalkboard.md /workspace/.openclaw/sandbox-skills/skills/baoyu-article-illustrat
+[main/sessions/main/727e8be6-5192-4d00-b8a5-aee8b9a61bbc.jsonl#L16] Assistant: more ⚠️ Directory Changes 217 material files modified in last 24h ✅ System Cron Known system cron entries only ❌ Local Cron openclaw CLI not found ✅ SSH Security 0 failed brute-force attempts ❌ Config Baseline Baseline file missing — run sha256sum generation ❌ Perm
+[main/sessions/main/727e8be6-5192-4d00-b8a5-aee8b9a61bbc.jsonl#L16] Assistant: — set up private repo backup 📊 Summary: 3 errors, 6 warnings 📝 Detailed report saved: /tmp/openclaw/security-reports/report-2026-09-24.txt
+[main/sessions/main/79919aea-e26c-483d-9c20-72e050a93810.jsonl#L6] Assistant: [assistant turn failed before producing content]
+[main/sessions/main/79919aea-e26c-483d-9c20-72e050a93810.jsonl#L9] Assistant: [assistant turn failed before producing content]
+[main/sessions/main/79919aea-e26c-483d-9c20-72e050a93810.jsonl#L11] Assistant: [assistant turn failed before producing content]
+[main/sessions/main/79919aea-e26c-483d-9c20-72e050a93810.jsonl#L13] Assistant: [assistant turn failed before producing content]
+[main/sessions/main/a7e49623-6d8f-42c4-8fa6-8e447a603152.jsonl#L6] Assistant: [assistant turn failed before producing content]
+[main/sessions/main/a7e49623-6d8f-42c4-8fa6-8e447a603152.jsonl#L27] Assistant: ⚠️ GitClaw 备份告警：未找到备份日志 /workspace/.openclaw/gitclaw/backup.log，请检查 GitClaw 是否仍已部署。
+[main/sessions/main/fa375e8b-1ca0-4635-8167-1d0c51a614a5.jsonl#L20] Assistant: [assistant turn failed before producing content]
+[main/sessions/main/fa375e8b-1ca0-4635-8167-1d0c51a614a5.jsonl#L23] Assistant: [assistant turn failed before producing content]
+[main/sessions/main/fa375e8b-1ca0-4635-8167-1d0c51a614a5.jsonl#L25] Assistant: [assistant turn failed before producing content]
+[main/sessions/main/fa375e8b-1ca0-4635-8167-1d0c51a614a5.jsonl#L27] Assistant: [assistant turn failed before producing content]
+[main/sessions/main/80300063-1aa9-45ff-8b10-864cdb37d0f2.jsonl#L135] Assistant: [assistant turn failed before producing content]
+[main/sessions/main/80300063-1aa9-45ff-8b10-864cdb37d0f2.jsonl#L140] Assistant: [assistant turn failed before producing content]
+[main/sessions/main/80300063-1aa9-45ff-8b10-864cdb37d0f2.jsonl#L145] Assistant: [assistant turn failed before producing content]
+[main/sessions/main/80300063-1aa9-45ff-8b10-864cdb37d0f2.jsonl#L150] Assistant: [assistant turn failed before producing content]
+[main/sessions/main/80300063-1aa9-45ff-8b10-864cdb37d0f2.jsonl#L155] Assistant: [assistant turn failed before producing content]
+[main/sessions/main/80300063-1aa9-45ff-8b10-864cdb37d0f2.jsonl#L162] Assistant: [assistant turn failed before producing content]
+[main/sessions/main/80300063-1aa9-45ff-8b10-864cdb37d0f2.jsonl#L187] Assistant: ⚠️ GitClaw 备份告警：未找到备份日志 /workspace/.openclaw/gitclaw/backup.log，请检查 GitClaw 是否仍已部署。
+[main/sessions/main/80300063-1aa9-45ff-8b10-864cdb37d0f2.jsonl#L188] Assistant: bash /workspace/scripts/nightly-security-audit.sh: line 176: [: : integer expression expected /workspace/scripts/nightly-security-audit.sh: line 196: pgrep: command not found ✅ Platform Audit Native scan executed: Linux 6.8.0-100-generic #100-Ubuntu SMP PREEMPT_DY
+[main/sessions/main/80300063-1aa9-45ff-8b10-864cdb37d0f2.jsonl#L188] Assistant: /workspace/.openclaw/sandbox-skills/skills/baoyu-article-illustrator/references/styles/vector-illustration.md /workspace/.openclaw/sandbox-skills/skills/baoyu-article-illustrator/references/styles/notion.md /workspace/.openclaw/sandbox-skills/skills/baoyu-article-
+[main/sessions/main/80300063-1aa9-45ff-8b10-864cdb37d0f2.jsonl#L188] Assistant: /workspace/.openclaw/sandbox-skills/skills/baoyu-article-illustrator/references/styles/elegant.md /workspace/.openclaw/sandbox-skills/skills/baoyu-article-illustrator/references/styles/chalkboard.md /workspace/.openclaw/sandbox-skills/skills/baoyu-article-illustra
+[main/sessions/main/80300063-1aa9-45ff-8b10-864cdb37d0f2.jsonl#L188] Assistant: more ⚠️ Directory Changes 217 material files modified in last 24h ✅ System Cron Known system cron entries only ❌ Local Cron openclaw CLI not found ✅ SSH Security 0 failed brute-force attempts ❌ Config Baseline Baseline file missing — run sha256sum generation ❌ Per
+[main/sessions/main/80300063-1aa9-45ff-8b10-864cdb37d0f2.jsonl#L188] Assistant: — set up private repo backup 📊 Summary: 3 errors, 6 warnings 📝 Detailed report saved: /tmp/openclaw/security-reports/report-2026-09-24.txt
