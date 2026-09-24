@@ -48,7 +48,6 @@ else
 fi
 
 if [ ${#issues[@]} -eq 0 ]; then
-  echo "✅ GitClaw 备份健康检查通过：最近备份正常，无异常。"
   exit 0
 fi
 
@@ -59,4 +58,3 @@ for issue in "${issues[@]}"; do
   printf -- '- %s\n' "$issue"
 done
 printf '建议：检查 ~/.openclaw/gitclaw/backup.log 与仓库远端状态。\n'
-
