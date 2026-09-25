@@ -1,6 +1,6 @@
 # HEARTBEAT.md
 
-更新时间：2026年09月26日 03:48（北京时间）
+更新时间：2026年09月26日 06:48（北京时间）
 
 ### 巡检摘要 (三日看板)
 - ⚠️ **nightly-security-audit**：最近多次运行遇到模型限制错误（速率超限或过载），导致状态为 error；需检查模型配额或考虑切换至其他可用模型。之前的 2026-09-21 03:00 和 2026-09-25 03:00 运行正常。最近连续 4 次失败。
@@ -56,3 +56,4 @@
 
 - [x] 已将 nightly-security-audit 模型从 openai/gpt-5.5 切换为 openrouter/nvidia/nemotron-3-super-120b-a12b:free，GitClaw backup health check 模型切换为 openrouter/inclusionai/ling-3.0-flash:free，解决 OAuth token 过期问题。
 - [ ] 等待用户提供 GitClaw PAT 及远程仓库 URL 以重新部署备份系统。
+- [ ] 调查 nightly-security-audit 最近失败原因（模型限制/速率超限），考虑切换模型或增加配额。
