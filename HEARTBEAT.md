@@ -1,6 +1,6 @@
 # HEARTBEAT.md
 
-更新时间：2026年09月25日 06:00（北京时间）
+更新时间：2026年09月25日 10:48（北京时间）
 
 ### 巡检摘要 (三日看板)
 - ✅ **nightly-security-audit**：2026-09-21 03:00 和 2026-09-25 03:00 均运行正常（status: ok，delivered至 Telegram）。核心项持续通过。
@@ -55,3 +55,4 @@
 
 
 - [x] 已将 nightly-security-audit 模型从 openai/gpt-5.5 切换为 openrouter/nvidia/nemotron-3-super-120b-a12b:free，GitClaw backup health check 模型切换为 openrouter/inclusionai/ling-3.0-flash:free，解决 OAuth token 过期问题。
+- [ ] 等待用户提供 GitClaw PAT 及远程仓库 URL 以重新部署备份系统。
