@@ -1,9 +1,9 @@
 # HEARTBEAT.md
 
-更新时间：2026年09月26日 12:19（北京时间）
+更新时间：2026年09月26日 19:48（北京时间）
 
 ### 巡检摘要 (三日看板)
-- ⚠️ **nightly-security-audit**：已将模型从 openrouter/nvidia/nemotron-3-super-120b-a12b:free 切换为 openrouter/inclusionai/ling-3.0-flash:free 以避免速率限制。作业已重新启用，等待下次运行（03:00 北京时间）。之前的 2026-09-21 03:00 和 2026-09-25 03:00 运行正常。最近连续 4 次失败。
+- ✅ **nightly-security-audit**：已改为直接执行命令方式（不再调用大模型），最近一次运行（约 9 小时前）状态为 ok，不再受模型速率限制/过载影响。
 - ✅ **Daily Career Opportunity Assessment**：2026-09-20 15:48 修复脚本路径为 `/workspace/scripts/daily_career_opportunity.sh`（沙箱正确路径），验证通过。
 - ✅ **Security Audit Note**：small model 沙箱已按当前 OpenClaw schema 配置为 `agents.defaults.sandbox.mode: all`（旧记录中的 `require` 已不被当前 schema 接受）。2026-09-15 03:20 复查：cron 列表正常读取，active 任务全部 ok，`openclaw.json: OK`，skill manifest 16 条。
 - ⚠️ **Yellow Line Audit**：2026-09-17 审计检测到 6 次 sudo 操作，但内存中未发现对应的 Yellow Line 记录；这延续近期脚本修复/维护遗留缺口，属于预期管理行为，可安全忽略。
@@ -54,6 +54,6 @@
  [最后检查: 2026-09-25 06:00:00, 最近10分钟无新错误]
 
 
-- [x] 已将 nightly-security-audit 模型从 openai/gpt-5.5 切换为 openrouter/nvidia/nemotron-3-super-120b-a12b:free，GitClaw backup health check 模型切换为 openrouter/inclusionai/ling-3.0-flash:free，解决 OAuth token 过期问题。
+- [x] 已将 nightly-security-audit 改为直接执行命令方式（不再依赖大模型），最近一次运行状态为 ok；GitClaw backup health check 模型已切换为 openrouter/inclusionai/ling-3.0-flash:free，解决 OAuth token 过期问题。
 - [ ] 等待用户提供 GitClaw PAT 及远程仓库 URL 以重新部署备份系统。
-- [ ] 调查 nightly-security-audit 最近失败原因（模型限制/速率超限），考虑切换模型或增加配额。
+- [x] 已将 nightly-security-audit 改为命令方式，最近运行正常，无需进一步调查。
