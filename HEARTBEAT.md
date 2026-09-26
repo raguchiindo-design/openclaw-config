@@ -1,9 +1,9 @@
 # HEARTBEAT.md
 
-更新时间：2026年09月26日 11:48（北京时间）
+更新时间：2026年09月26日 12:19（北京时间）
 
 ### 巡检摘要 (三日看板)
-- ⚠️ **nightly-security-audit**：最近多次运行遇到模型限制错误（速率超限或过载），导致状态为 error；需检查模型配额或考虑切换至其他可用模型。之前的 2026-09-21 03:00 和 2026-09-25 03:00 运行正常。最近连续 4 次失败。
+- ⚠️ **nightly-security-audit**：已将模型从 openrouter/nvidia/nemotron-3-super-120b-a12b:free 切换为 openrouter/inclusionai/ling-3.0-flash:free 以避免速率限制。作业已重新启用，等待下次运行（03:00 北京时间）。之前的 2026-09-21 03:00 和 2026-09-25 03:00 运行正常。最近连续 4 次失败。
 - ✅ **Daily Career Opportunity Assessment**：2026-09-20 15:48 修复脚本路径为 `/workspace/scripts/daily_career_opportunity.sh`（沙箱正确路径），验证通过。
 - ✅ **Security Audit Note**：small model 沙箱已按当前 OpenClaw schema 配置为 `agents.defaults.sandbox.mode: all`（旧记录中的 `require` 已不被当前 schema 接受）。2026-09-15 03:20 复查：cron 列表正常读取，active 任务全部 ok，`openclaw.json: OK`，skill manifest 16 条。
 - ⚠️ **Yellow Line Audit**：2026-09-17 审计检测到 6 次 sudo 操作，但内存中未发现对应的 Yellow Line 记录；这延续近期脚本修复/维护遗留缺口，属于预期管理行为，可安全忽略。
