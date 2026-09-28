@@ -151,3 +151,27 @@
 [main/sessions/main/2d033386-4de0-4516-b8dd-ad81ce854135.jsonl#L84] Assistant: 等待用户提供 GitClaw PAT 及远程仓库 URL 以重新部署备份系统。
 [main/sessions/main/2d033386-4de0-4516-b8dd-ad81ce854135.jsonl#L86] Assistant: 等待用户提供 GitClaw PAT 及远程仓库 URL 以重新部署备份系统。
 [main/sessions/main/2d033386-4de0-4516-b8dd-ad81ce854135.jsonl#L88] Assistant: 等待用户提供 GitClaw PAT 及远程仓库 URL 以重新部署备份系统。
+[main/sessions/main/80300063-1aa9-45ff-8b10-864cdb37d0f2.jsonl.reset.2026-09-26T04-25-12.829Z#L1280] Assistant: ⚠️ GitClaw 备份告警：未找到备份日志 /workspace/.openclaw/gitclaw/backup.log，请检查 GitClaw 是否仍已部署。
+[main/sessions/main/80300063-1aa9-45ff-8b10-864cdb37d0f2.jsonl.reset.2026-09-26T04-25-12.829Z#L1283] Assistant: [assistant turn failed before producing content]
+[main/sessions/main/80300063-1aa9-45ff-8b10-864cdb37d0f2.jsonl.reset.2026-09-26T04-25-12.829Z#L1285] Assistant: ⚠️ GitClaw 备份尚未配置，等待提供 PAT 和远程仓库 URL 以重新部署备份系统。夜间安全审计运行正常。
+[main/sessions/main/80300063-1aa9-45ff-8b10-864cdb37d0f2.jsonl.reset.2026-09-26T04-25-12.829Z#L1288] Assistant: [assistant turn failed before producing content]
+[main/sessions/main/80300063-1aa9-45ff-8b10-864cdb37d0f2.jsonl.reset.2026-09-26T04-25-12.829Z#L1290] Assistant: ⚠️ GitClaw 备份尚未配置，等待提供 GitClaw PAT 及远程仓库 URL 以重新部署备份系统。夜间安全审计运行正常。请在方便时提供这些信息，谢谢！
+[main/sessions/main/80300063-1aa9-45ff-8b10-864cdb37d0f2.jsonl.reset.2026-09-26T04-25-12.829Z#L1291] Assistant: ⚠️ GitClaw 备份告警：未找到备份日志 /workspace/.openclaw/gitclaw/backup.log，请检查 GitClaw 是否仍已部署。
+[main/sessions/main/80300063-1aa9-45ff-8b10-864cdb37d0f2.jsonl.reset.2026-09-26T04-25-12.829Z#L1294] Assistant: [assistant turn failed before producing content]
+[main/sessions/main/80300063-1aa9-45ff-8b10-864cdb37d0f2.jsonl.reset.2026-09-26T04-25-12.829Z#L1296] Assistant: ⚠️ GitClaw 备份尚未配置，等待提供 GitClaw PAT 及远程仓库 URL 以重新部署备份系统。
+[main/sessions/main/80300063-1aa9-45ff-8b10-864cdb37d0f2.jsonl.reset.2026-09-26T04-25-12.829Z#L1299] Assistant: [assistant turn failed before producing content]
+[main/sessions/main/80300063-1aa9-45ff-8b10-864cdb37d0f2.jsonl.reset.2026-09-26T04-25-12.829Z#L1304] Assistant: [assistant turn failed before producing content]
+[main/sessions/main/80300063-1aa9-45ff-8b10-864cdb37d0f2.jsonl.reset.2026-09-26T04-25-12.829Z#L1311] Assistant: [assistant turn failed before producing content]
+[main/sessions/main/80300063-1aa9-45ff-8b10-864cdb37d0f2.jsonl.reset.2026-09-26T04-25-12.829Z#L1314] Assistant: ⚠️ GitClaw 备份告警：未找到备份日志 /workspace/.openclaw/gitclaw/backup.log，请检查 GitClaw 是否仍已部署。
+[main/sessions/main/80300063-1aa9-45ff-8b10-864cdb37d0f2.jsonl.reset.2026-09-26T04-25-12.829Z#L1317] Assistant: [assistant turn failed before producing content]
+[main/sessions/main/80300063-1aa9-45ff-8b10-864cdb37d0f2.jsonl.reset.2026-09-26T04-25-12.829Z#L1323] Assistant: ⚠️ GitClaw 备份尚未配置，等待提供 PAT 和远程仓库 URL 以重新部署备份系统。
+[main/sessions/main/80300063-1aa9-45ff-8b10-864cdb37d0f2.jsonl.reset.2026-09-26T04-25-12.829Z#L1326] Assistant: [assistant turn failed before producing content]
+[main/sessions/main/80300063-1aa9-45ff-8b10-864cdb37d0f2.jsonl.reset.2026-09-26T04-25-12.829Z#L1332] Assistant: 已更新 HEARTBEAT.md：夜间安全审计近期出错（模型限制），等待提供 GitClaw PAT 及远程仓库 URL。
+[main/sessions/main/80300063-1aa9-45ff-8b10-864cdb37d0f2.jsonl.reset.2026-09-26T04-25-12.829Z#L1333] Assistant: ⚠️ GitClaw 备份告警：未找到备份日志 /workspace/.openclaw/gitclaw/backup.log，请检查 GitClaw 是否仍已部署。
+[main/sessions/main/80300063-1aa9-45ff-8b10-864cdb37d0f2.jsonl.reset.2026-09-26T04-25-12.829Z#L1336] Assistant: [assistant turn failed before producing content]
+[main/sessions/main/80300063-1aa9-45ff-8b10-864cdb37d0f2.jsonl.reset.2026-09-26T04-25-12.829Z#L1341] Assistant: [assistant turn failed before producing content]
+[main/sessions/main/80300063-1aa9-45ff-8b10-864cdb37d0f2.jsonl.reset.2026-09-26T04-25-12.829Z#L1344] Assistant: ⚠️ GitClaw 备份告警：未找到备份日志 /workspace/.openclaw/gitclaw/backup.log，请检查 GitClaw 是否仍已部署。
+[main/sessions/main/80300063-1aa9-45ff-8b10-864cdb37d0f2.jsonl.reset.2026-09-26T04-25-12.829Z#L1347] Assistant: [assistant turn failed before producing content]
+[main/sessions/main/80300063-1aa9-45ff-8b10-864cdb37d0f2.jsonl.reset.2026-09-26T04-25-12.829Z#L1352] Assistant: [assistant turn failed before producing content]
+[main/sessions/main/80300063-1aa9-45ff-8b10-864cdb37d0f2.jsonl.reset.2026-09-26T04-25-12.829Z#L1358] Assistant: ⚠️ Nightly security audit 连续 4 次失败（模型限制/速率超限）。等待用户提供 GitClaw PAT 和远程仓库 URL 以重新部署备份系统。
+[main/sessions/main/80300063-1aa9-45ff-8b10-864cdb37d0f2.jsonl.reset.2026-09-26T04-25-12.829Z#L1359] Assistant: ⚠️ GitClaw 备份告警：未找到备份日志 /workspace/.openclaw/gitclaw/backup.log，请检查 GitClaw 是否仍已部署。
