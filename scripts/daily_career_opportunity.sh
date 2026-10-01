@@ -64,9 +64,9 @@ for q in "${QUERIES[@]}"; do
     rm -f "$TMP_ANYOUT"
     sleep 0.1
 done
-# If no results, exit gracefully
+# If no results, output a message and exit gracefully
 if [[ ! -s "$TMP_RESULTS" ]]; then
-    echo "No results found." >&2
+    echo "未找到相关机会。" >&1
     rm -f "$TMP_RESULTS"
     echo "=== Daily Career Opportunity Assessment finished at $(date) ===" >&2
     exit 0
