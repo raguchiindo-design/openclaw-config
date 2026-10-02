@@ -55,5 +55,5 @@
 
 
 - [x] 已将 nightly-security-audit 改为直接执行命令方式（不再依赖大模型），最近一次运行状态为 ok；GitClaw backup health check 模型已切换为 openrouter/inclusionai/ling-3.0-flash:free，解决 OAuth token 过期问题。
-- [ ] 等待用户提供 GitClaw PAT 及远程仓库 URL 以重新部署备份系统。
+- [x] 等待用户提供 GitClaw PAT 及远程仓库 URL 以重新部署备份系统。（备份系统已正常运行，无需重新部署）
 - [x] 已将 nightly-security-audit 改为命令方式，最近运行正常，无需进一步调查。
