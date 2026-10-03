@@ -1,6 +1,6 @@
 # HEARTBEAT.md
 
-更新时间：2026年10月3日 09:48（北京时间）
+更新时间：2026年10月3日 10:18（北京时间）
 
 ### 巡检摘要 (三日看板)
 - ✅ **nightly-security-audit**：已改为直接执行命令方式（不再调用大模型），最近一次运行（约 9 小时前）状态为 ok，不再受模型速率限制/过载影响。
@@ -16,6 +16,7 @@
 - ✅ **Config Baseline 复查**：2026-09-17 13:20 心跳发现 12:37 合法配置清理后 baseline 未同步；核对差异仅为 `agents.defaults.model.primary` 从 `openai/gpt-5.6-sol` 调整为 `openai/gpt-5.5`、fallback 列表顺序/内容保持 3 个可用模型、`meta.lastTouchedAt` 更新时间。`openclaw config validate` 通过，`openclaw models status` 显示 OpenAI OAuth 可用，已刷新 `.config-baseline.sha256` 并验证 `openclaw.json: OK`。
 - 🟡 **GPT-5.5 退休观察**：2026-09-17 13:48 复查模型缓存，`gpt-5.5` 的 `upgrade.retirement_at` 为 `2026-10-14T19:00:00Z`，建议迁移到 `gpt-5.6-sol`。当前配置仍为 `openai/gpt-5.5` 主模型，但 fallback 已包含 `openai/gpt-5.6-sol` 与 `openai/gpt-5.6-terra`；`openclaw config validate` 通过，`openclaw models status` 显示 OpenAI OAuth 可用。未获用户明确授权前不自动切换主模型。
 - ✅ **主力模型统一**：2026-09-17 14:56 按小雪明确指令，将当前主会话重置为默认模型；系统默认模型与当前主会话均为 `openrouter/inclusionai/ling-3.0-flash:free`，fallback 为 `openrouter/nvidia/nemotron-3-super-120b-a12b:free`。`openclaw models status --json` 与 `openclaw status --json` 已验证一致，`sha256sum -c .config-baseline.sha256` 返回 `openclaw.json: OK`。
+- ✅ **心跳任务检查**：2026年10月3日 10:18 检查了系统状态，一切正常。
 
 ### 趋势分析任务
 - **任务名称**：数字花束与春节送礼趋势深度调研 - 每2小时执行
