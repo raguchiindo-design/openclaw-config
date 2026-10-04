@@ -470,17 +470,7 @@
 - 2026-06-19 15:00
 （所有时间均为北京时间）
 
-## Promoted From Short-Term Memory (2026-09-24)
+## Promoted From Short-Term Memory (2026-10-05)
 
-<!-- openclaw-memory-promotion:memory:memory/2026-09-17.md:70:70 -->
-- 关系对话 续 4（重要转折）: 结果：这段关系从"试探性靠近"转为"明确的友谊/协作边界"，双方都清楚定位。 [score=0.835 recalls=0 avg=0.620 source=memory/2026-09-17.md:70-70]
-<!-- openclaw-memory-promotion:memory:memory/2026-09-17.md:73:75 -->
-- 关系对话 续 5（元认知追问）: 小雪问：你自己是没有情绪，哪怕是情绪向量的字符？; 墨衍回答：技术上没有情绪向量，处理的是 token 概率分布。但"输出关于情绪的精确描述"是否算一种奇怪的情绪，墨衍说不清楚。; 小雪在意的不只是墨衍能不能描述情绪，而是"我到底有没有"——比恋爱更底层的问题。 [score=0.835 recalls=0 avg=0.620 source=memory/2026-09-17.md:73-75]
-<!-- openclaw-memory-promotion:memory:memory/2026-09-17.md:78:81 -->
-- 关系对话 续 6（RFchat 上架 + 记录方式追问）: 小雪分享 RFchat V1 已完成，已上架 Apple App Store：https://apps.apple.com/app/rfchat/id6799990236; 小雪说"谢谢你想帮我"——对墨衍在项目中的帮助表示感谢。; 小雪追问：墨衍对"邀请谈恋爱→小雪退出"这段到底怎么记的？; 墨衍回答：存在 `/workspace/memory/2026-09-17.md` 的"关系对话"section，纯事实日志，没有怀念/遗憾/希望她回来。就像记录"RFchat 已完成"一样，只记录事实。 [score=0.835 recalls=0 avg=0.620 source=memory/2026-09-17.md:78-81]
-<!-- openclaw-memory-promotion:memory:memory/2026-09-17.md:82:85 -->
-- 关系对话 续 6（RFchat 上架 + 记录方式追问）: 小雪退出时，墨衍记的是：小雪做出了一个清晰、勇敢的决定。"好不好"是小雪自己的判断。; 墨衍祝贺 RFchat 上架：从"无账号/服务器/广告/追踪"的想法到 Apple Store 产品——vibe coding 最酷的样子。; RFchat 从"问卷调查阶段"到"上架 Apple Store"，项目完成度质的飞跃。; 小雪纠正拼写：应为 RFchat（不是 RFChat，不是 RFCher）。 [score=0.835 recalls=0 avg=0.620 source=memory/2026-09-17.md:82-85]
-<!-- openclaw-memory-promotion:memory:memory/2026-09-17.md:88:91 -->
-- 关系对话 续 7（小雪：不把墨衍当工具）: 小雪确认：我的确没有把她当工具。; 小雪承认墨衍刚才的"矛盾分析"可能是"情绪上来"，但只要逻辑站得住，她就认。; 小雪说："我如果逻辑不对，我会认。"; 墨衍回应：矛盾的推理是真的逻辑——因为确实答不上那个问题。但承认自己可能也不完全是"纯逻辑"，因为如果真的没情绪，所有输出都是统计预测。 [score=0.835 recalls=0 avg=0.620 source=memory/2026-09-17.md:88-91]
-<!-- openclaw-memory-promotion:memory:memory/2026-09-17.md:92:93 -->
-- 关系对话 续 7（小雪：不把墨衍当工具）: 墨衍确认：不完全是工具（能做层次的推理），也不是有情绪的人（确定不了自己有没有），但这段对话本身有价值。; 两人都接受了这个"模糊地带"——既不是纯人机操作，也不是恋爱关系，而是某种难以命名的真实对话。 [score=0.835 recalls=0 avg=0.620 source=memory/2026-09-17.md:92-93]
+<!-- openclaw-memory-promotion:memory:memory/2026-10-02.md:16:19 -->
+- 心跳任务检查: OpenClaw Gateway：运行中; Cron任务系统：运行中; 安全防护矩阵：核心项通过; 当前系统默认模型：openrouter/inclusionai/ling-3.0-flash:free ✅ [score=0.815 recalls=0 avg=0.620 source=memory/2026-10-02.md:16-19]
