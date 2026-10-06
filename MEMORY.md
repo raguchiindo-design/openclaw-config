@@ -470,15 +470,11 @@
 - 2026-06-19 15:00
 （所有时间均为北京时间）
 
-## Promoted From Short-Term Memory (2026-10-06)
+## Promoted From Short-Term Memory (2026-10-07)
 
-<!-- openclaw-memory-promotion:memory:memory/2026-10-02.md:11:13 -->
-- 心跳任务检查: 已将HEARTBEAT.md中的待办事项"等待用户提供GitClaw PAT及远程仓库URL以重新部署备份系统"更新为已完成状态; 在HEARTBEAT.md的巡检摘要中添加了今日心跳检查结果条目; 更新了HEARTBEAT.md的"更新时间："为当前时间 [score=0.866 recalls=0 avg=0.620 source=memory/2026-10-02.md:11-13]
-<!-- openclaw-memory-promotion:memory:memory/2026-10-02.md:7:10 -->
-- 心跳任务检查: 检查了GitClaw备份系统状态，发现已正常运行; 远程仓库：https://github.com/raguchiindo-design/openclaw-config.git; 本地master分支正常追踪origin/master; 备份日志显示定期执行成功（最近一次在06:00:01Z显示"Backup OK."） [score=0.866 recalls=0 avg=0.620 source=memory/2026-10-02.md:7-10]
-<!-- openclaw-memory-promotion:memory:memory/2026-10-02.md:4:4 -->
-- 心跳任务检查: **时间**：2026年10月2日 19:18（北京时间） [score=0.827 recalls=0 avg=0.620 source=memory/2026-10-02.md:4-4]
-<!-- openclaw-memory-promotion:memory:memory/2026-10-03.md:106:109 -->
-- 心跳任务检查: OpenClaw Gateway：运行中; Cron任务系统：运行中; 安全防护矩阵：核心项通过; 当前系统默认模型：openrouter/inclusionai/ling-3.0-flash:free ✅ [score=0.815 recalls=0 avg=0.620 source=memory/2026-10-03.md:106-109]
-<!-- openclaw-memory-promotion:memory:memory/2026-10-04.md:10:13 -->
-- 心跳任务检查: OpenClaw Gateway：运行中; Cron任务系统：运行中; 安全防护矩阵：核心项通过; 当前系统默认模型：openrouter/inclusionai/ling-3.0-flash:free ✅ [score=0.815 recalls=0 avg=0.620 source=memory/2026-10-04.md:10-13]
+<!-- openclaw-memory-promotion:memory:memory/2026-10-03.md:7:8 -->
+- 心跳任务检查: 更新了HEARTBEAT.md的"更新时间："为当前时间; 检查了系统状态，一切正常 [score=0.869 recalls=0 avg=0.620 source=memory/2026-10-03.md:7-8]
+<!-- openclaw-memory-promotion:memory:memory/2026-10-05.md:10:13 -->
+- 心跳任务检查: OpenClaw Gateway：运行中; Cron任务系统：运行中; 安全防护矩阵：核心项通过; 当前系统默认模型：openrouter/inclusionai/ling-3.0-flash:free ✅ [score=0.815 recalls=0 avg=0.620 source=memory/2026-10-05.md:10-13]
+<!-- openclaw-memory-promotion:memory:memory/2026-10-04.md:19:19 -->
+- 心跳任务检查: 检查了系统状态，一切正常。 [score=0.806 recalls=0 avg=0.620 source=memory/2026-10-04.md:19-19]
