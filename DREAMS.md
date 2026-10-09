@@ -3177,11 +3177,32 @@ A memory trace surfaced, but details were unavailable in this run.
 
 A memory trace surfaced, but details were unavailable in this run.
 
+
+---
+
+*October 10, 2026 at 3:01 AM GMT+8*
+
+A memory trace surfaced, but details were unavailable in this run.
+
+
+---
+
+*October 10, 2026 at 3:01 AM GMT+8*
+
+A memory trace surfaced, but details were unavailable in this run.
+
+
+---
+
+*October 10, 2026 at 3:01 AM GMT+8*
+
+A memory trace surfaced, but details were unavailable in this run.
+
 <!-- openclaw:dreaming:diary:end -->
 
 ## Deep Sleep
 <!-- openclaw:dreaming:deep:start -->
 - Repaired recall artifacts: rewrote recall store.
-- Ranked 8 candidate(s) for durable promotion.
-- Promoted 8 candidate(s) into MEMORY.md.
+- Ranked 6 candidate(s) for durable promotion.
+- Promoted 6 candidate(s) into MEMORY.md.
 <!-- openclaw:dreaming:deep:end -->
