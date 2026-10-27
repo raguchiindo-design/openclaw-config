@@ -470,25 +470,25 @@
 - 2026-06-19 15:00
 （所有时间均为北京时间）
 
-## Promoted From Short-Term Memory (2026-10-27)
+## Promoted From Short-Term Memory (2026-10-28)
 
-<!-- openclaw-memory-promotion:memory:memory/2026-10-19.md:47:47 -->
-- 心跳任务检查: 检查了系统状态，一切正常。 [score=0.841 recalls=0 avg=0.620 source=memory/2026-10-19.md:47-47]
-<!-- openclaw-memory-promotion:memory:memory/2026-10-19.md:50:53 -->
-- 心跳任务检查: OpenClaw Gateway：运行中; Cron任务系统：运行中; 安全防护矩阵：核心项通过; 当前系统默认模型：openrouter/inclusionai/ling-3.0-flash:free ✅ [score=0.841 recalls=0 avg=0.620 source=memory/2026-10-19.md:50-53]
-<!-- openclaw-memory-promotion:memory:memory/2026-10-19.md:60:60 -->
-- 心跳任务检查: 检查了系统状态，一切正常。 [score=0.841 recalls=0 avg=0.620 source=memory/2026-10-19.md:60-60]
-<!-- openclaw-memory-promotion:memory:memory/2026-10-20.md:47:47 -->
-- 心跳任务检查: 检查了系统状态，一切正常。 [score=0.841 recalls=0 avg=0.620 source=memory/2026-10-20.md:47-47]
-<!-- openclaw-memory-promotion:memory:memory/2026-10-20.md:50:53 -->
-- 心跳任务检查: OpenClaw Gateway：运行中; Cron任务系统：运行中; 安全防护矩阵：核心项通过; 当前系统默认模型：openrouter/inclusionai/ling-3.0-flash:free ✅ [score=0.841 recalls=0 avg=0.620 source=memory/2026-10-20.md:50-53]
-<!-- openclaw-memory-promotion:memory:memory/2026-10-20.md:60:60 -->
-- 心跳任务检查: 检查了系统状态，一切正常。 [score=0.841 recalls=0 avg=0.620 source=memory/2026-10-20.md:60-60]
-<!-- openclaw-memory-promotion:memory:memory/2026-10-19.md:56:56 -->
-- 心跳任务检查: **时间**：2026年10月19日 02:18（北京时间） [score=0.831 recalls=0 avg=0.620 source=memory/2026-10-19.md:56-56]
-<!-- openclaw-memory-promotion:memory:memory/2026-10-20.md:56:56 -->
-- 心跳任务检查: **时间**：2026年10月20日 02:18（北京时间） [score=0.831 recalls=0 avg=0.620 source=memory/2026-10-20.md:56-56]
-<!-- openclaw-memory-promotion:memory:memory/2026-10-19.md:63:66 -->
-- 心跳任务检查: OpenClaw Gateway：运行中; Cron任务系统：运行中; 安全防护矩阵：核心项通过; 当前系统默认模型：openrouter/inclusionai/ling-3.0-flash:free ✅ [score=0.825 recalls=0 avg=0.620 source=memory/2026-10-19.md:63-66]
-<!-- openclaw-memory-promotion:memory:memory/2026-10-19.md:73:73 -->
-- 心跳任务检查: 检查了系统状态，一切正常。 [score=0.825 recalls=0 avg=0.620 source=memory/2026-10-19.md:73-73]
+<!-- openclaw-memory-promotion:memory:memory/2026-10-20.md:63:66 -->
+- 心跳任务检查: OpenClaw Gateway：运行中; Cron任务系统：运行中; 安全防护矩阵：核心项通过; 当前系统默认模型：openrouter/inclusionai/ling-3.0-flash:free ✅ [score=0.841 recalls=0 avg=0.620 source=memory/2026-10-20.md:63-66]
+<!-- openclaw-memory-promotion:memory:memory/2026-10-20.md:73:73 -->
+- 心跳任务检查: 检查了系统状态，一切正常。 [score=0.841 recalls=0 avg=0.620 source=memory/2026-10-20.md:73-73]
+<!-- openclaw-memory-promotion:memory:memory/2026-10-20.md:76:79 -->
+- 心跳任务检查: OpenClaw Gateway：运行中; Cron任务系统：运行中; 安全防护矩阵：核心项通过; 当前系统默认模型：openrouter/inclusionai/ling-3.0-flash:free ✅ [score=0.841 recalls=0 avg=0.620 source=memory/2026-10-20.md:76-79]
+<!-- openclaw-memory-promotion:memory:memory/2026-10-20.md:108:108 -->
+- 心跳任务检查: **时间**：2026年10月20日 04:18（北京时间） [score=0.838 recalls=0 avg=0.620 source=memory/2026-10-20.md:108-108]
+<!-- openclaw-memory-promotion:memory:memory/2026-10-20.md:147:147 -->
+- 心跳任务检查: **时间**：2026年10月20日 05:48（北京时间） [score=0.838 recalls=0 avg=0.620 source=memory/2026-10-20.md:147-147]
+<!-- openclaw-memory-promotion:memory:memory/2026-10-20.md:69:69 -->
+- 心跳任务检查: **时间**：2026年10月20日 02:48（北京时间） [score=0.831 recalls=0 avg=0.620 source=memory/2026-10-20.md:69-69]
+<!-- openclaw-memory-promotion:memory:memory/2026-10-20.md:86:86 -->
+- 心跳任务检查: 检查了系统状态，一切正常。 [score=0.825 recalls=0 avg=0.620 source=memory/2026-10-20.md:86-86]
+<!-- openclaw-memory-promotion:memory:memory/2026-10-17.md:30:30 -->
+- 心跳任务检查: **时间**：2026年10月17日 01:18（北京时间） [score=0.820 recalls=0 avg=0.620 source=memory/2026-10-17.md:30-30]
+<!-- openclaw-memory-promotion:memory:memory/2026-10-19.md:76:79 -->
+- 心跳任务检查: OpenClaw Gateway：运行中; Cron任务系统：运行中; 安全防护矩阵：核心项通过; 当前系统默认模型：openrouter/inclusionai/ling-3.0-flash:free ✅ [score=0.818 recalls=0 avg=0.620 source=memory/2026-10-19.md:76-79]
+<!-- openclaw-memory-promotion:memory:memory/2026-10-20.md:82:82 -->
+- 心跳任务检查: **时间**：2026年10月20日 03:18（北京时间） [score=0.815 recalls=0 avg=0.620 source=memory/2026-10-20.md:82-82]
